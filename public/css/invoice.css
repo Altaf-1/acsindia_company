@@ -1,0 +1,86 @@
+.invoice{
+    margin: auto;
+}
+
+.full-border-top{
+    border-top: 5px solid black;
+}
+
+.full-border-bottom{
+    border-top: 5px solid black;
+}
+
+
+
+.header{
+    color: black;
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.header-main {
+
+    font-weight: bolder;
+    text-align: center;
+}
+
+.header-sub{
+    color: orange;
+
+}
+
+.header-img{
+    padding: 10px;
+    width: 50%;
+}
+
+.auth-img{
+    width: 100%;
+    height: 20%;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+
+.invoice-sub{
+    padding: 50px;
+    color: #020a45;
+    font-size: 20px;
+    background-color: white;
+}
+
+.invoice-line{
+    height: 5px;
+    background-color: orange;
+}
+
+.invoice-payment{
+    padding: 50px;
+    color: #020a45;
+}
+
+.invoice-info{
+    padding: 50px;
+    color: #020a45;
+    font-weight: bolder;
+}
+
+
+.invoice-total{
+    padding: 50px 130px 50px 50px;
+    color: #020a45;
+}
+
+.invoice-total-content{
+    margin-left: 930px;
+}
+
+.invoice-footer{
+    background-color: orange;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}

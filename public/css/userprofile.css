@@ -1,0 +1,227 @@
+.user_profile {
+    position: relative;
+    z-index: 1;
+    background-color: #345c72 !important;
+    margin-bottom: 200px;
+}
+
+.user_profile .box {
+    height: 60%;
+    border-radius: 12px;
+    position: relative;
+    bottom: -200px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0px 20px 80px 0px ;
+}
+
+.user_profile .user_inner {
+    position: relative;
+    width: 100%;
+    height: 60%;
+}
+
+.user_profile .user_inner .user_description {
+    color: #345c72;
+    vertical-align: middle;
+    align-self: center;
+    text-align: left;
+}
+
+.task{
+    padding: 20px;
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: 0px 20px 80px 0px rgba(153, 153, 153, 0.3);
+ }
+
+.profile-img{
+    height:400px;
+    width: 400px;
+}
+
+img{
+    width: 80%;
+}
+
+h3,
+h6 {
+    font-family: "Heebo", sans-serif;
+    font-weight: bold;
+}
+
+
+
+
+.profile_inner {
+    border-bottom: 1px solid #eeeeee;
+}
+
+.profile_inner .personal_text {
+    padding-left: 95px;
+}
+
+.personal_text h6 {
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2.1px;
+    font-weight: normal;
+    margin-bottom: 12px;
+    color: #222222;
+}
+
+.personal_text h4 {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #222222;
+}
+
+.personal_text h3 {
+    font-size: 48px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: #222222;
+}
+
+.personal_text p {
+    font-family: "Roboto", sans-serif;
+    max-width: 540px;
+    color: #777777;
+    margin-bottom: 40px;
+}
+
+.personal_text .basic_info li {
+    margin-bottom: 15px; }
+.personal_text .basic_info li a {
+    position: relative;
+    padding-left: 40px;
+    font-size: 16px;
+    color: #777777; }
+.personal_text .basic_info li a i {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+ }
+.personal_text .basic_info li:last-child {
+    margin-bottom: 0px; }
+
+
+
+
+.list {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.course {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background: #f9f9ff;
+}
+
+.course.feature_tow {
+    background: #fff;
+}
+
+.course.feature_tow .course_docs{
+    background: #f9f9ff;
+}
+
+.course.feature_tow .course_dcocs:hover {
+    background: #fff;
+}
+
+.course.white_feature {
+    background: #fff;
+}
+
+.course.white_feature .course_docs{
+    background: #f9f9ff;
+}
+
+.course.white_feature .course_docs:hover {
+    background: #fff;
+}
+
+.course_inner {
+    margin-bottom: -30px;
+}
+
+.course_docs{
+    padding: 50px 35px;
+    border-radius: 10px;
+    transition: all 300ms linear 0s;
+    background: #fff;
+    margin-bottom: 30px;
+}
+
+
+
+.course_docs h4 {
+    color: #222222;
+    font-size: 21px;
+    font-family: "Heebo", sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.course_docs p {
+    margin-bottom: 0px;
+}
+
+.course_docs.main_btn {
+    padding: 0px 30px;
+    line-height: 38px;
+}
+
+.feature_item:hover {
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.08);
+    border-color: #fff;
+    background: #fff;
+}
+
+.feature_item:hover i:before {
+    background: linear-gradient(to right, #8490ff 0%, #62bdfc 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.main_title {
+    text-align: center;
+    max-width: 670px;
+    margin: 0px auto 75px;
+}
+
+.main_title h2 {
+    font-family: "Heebo", sans-serif;
+    font-size: 36px;
+    color: #222222;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.main_title p {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    line-height: 26px;
+    color: #777777;
+    margin-bottom: 0px;
+}
+
+
+
+
+
+

@@ -22,13 +22,13 @@
     <!-- Magnific Popup core CSS file -->
     <link rel="stylesheet" href="{{asset('css/magnific-popup.css')}}">
     <style type="text/css">
-        .bg-courses {
-            background-image: url('{{asset('comimages/corbg.webp')}}');
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
+    .bg-courses {
+        background-image: url('{{asset('comimages/corbg.webp')}}');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     </style>
 </head>
 
@@ -80,7 +80,7 @@
                         <div class="lernen_breadcrumb">
                             <div class="breadcrumbs">
                                 <span class="first-item">
-									<a href="/">Homepage</a></span>
+                                    <a href="/">Homepage</a></span>
                                 <span class="separator">&gt;</span>
                                 <span class="last-item">current affairs 2023</span>
                             </div>
@@ -96,88 +96,90 @@
             <div class="container">
                 <!-- .row -->
                 <div class="container justify-content-center">
-                <div class="row justify-content-center">
-                    
-                    <div class="col-xs-12 col-sm-12 col-md-4">
-                        <!-- 1 -->
-                        <div class="single-features-light text-center bg-light">
-                            <!-- single features -->
-                            <div>
-                                <!-- uses solid style -->
-                                <i class="base-color fas fa-book fa-3x"></i>
-                                <h4>DAILY CURRENT AFFAIRS</h4>
-                                <a href="https://acsindiaias.com/current-affair/current_affair" class=" btn color-two button text-white">OPEN</a>
+                    <div class="row justify-content-center">
+
+                        <div class="col-xs-12 col-sm-12 col-md-4">
+                            <!-- 1 -->
+                            <div class="single-features-light text-center bg-light">
+                                <!-- single features -->
+                                <div>
+                                    <!-- uses solid style -->
+                                    <i class="base-color fas fa-book fa-3x"></i>
+                                    <h4>DAILY CURRENT AFFAIRS</h4>
+                                    <a href="{{asset('/current-affair/current_affair')}}"
+                                        class=" btn color-two button text-white">OPEN</a>
+                                </div>
                             </div>
+                            <!-- end single features -->
                         </div>
-                        <!-- end single features -->
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-4">
-                        <!-- 1 -->
-                        <div class="single-features-light text-center bg-light">
-                            <!-- single features -->
-                            <div>
-                                <!-- uses solid style -->
-                                <i class="base-color fas fa-book fa-3x"></i>
-                                <h4>DAILY NEWS ANALYSIS</h4>
-                                <a href="daily_news_analysis" class=" btn color-two button text-white">OPEN</a>
+                        <div class="col-xs-12 col-sm-12 col-md-4">
+                            <!-- 1 -->
+                            <div class="single-features-light text-center bg-light">
+                                <!-- single features -->
+                                <div>
+                                    <!-- uses solid style -->
+                                    <i class="base-color fas fa-book fa-3x"></i>
+                                    <h4>DAILY NEWS ANALYSIS</h4>
+                                    <a href="{{asset('/daily_news_analysis')}}"
+                                        class=" btn color-two button text-white">OPEN</a>
+                                </div>
                             </div>
+                            <!-- end single features -->
                         </div>
-                        <!-- end single features -->
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-4">
-                        <!-- 1 -->
-                        <div class="single-features-light text-center bg-light">
-                            <!-- single features -->
-                            <div>
-                                <!-- uses solid style -->
-                                <i class="base-color fas fa-book fa-3x"></i>
-                                <h4>SUBJECTWISE COMPILATION</h4>
-                                <a href="https://acsindiaias.com/acsyear" class=" btn color-two button text-white">OPEN</a>
+                        <div class="col-xs-12 col-sm-12 col-md-4">
+                            <!-- 1 -->
+                            <div class="single-features-light text-center bg-light">
+                                <!-- single features -->
+                                <div>
+                                    <!-- uses solid style -->
+                                    <i class="base-color fas fa-book fa-3x"></i>
+                                    <h4>SUBJECTWISE COMPILATION</h4>
+                                    <a href="{{asset('/acsyear')}}" class=" btn color-two button text-white">OPEN</a>
+                                </div>
                             </div>
+                            <!-- end single features -->
                         </div>
-                        <!-- end single features -->
-                    </div>
-                    
-                    <!--<div class="col-xs-12 col-sm-12 col-md-4">-->
+
+                        <!--<div class="col-xs-12 col-sm-12 col-md-4">-->
                         <!-- 1 -->
-                    <!--    <div class="single-features-light text-center bg-light">-->
-                            <!-- single features -->
-                    <!--        <div>-->
-                                <!-- uses solid style -->
-                    <!--            <i class="base-color fas fa-book fa-3x"></i>-->
-                    <!--            <h4>2020</h4>-->
-                    <!--            <a href="/acs2020" class=" btn color-two button text-white">OPEN</a>-->
-                    <!--        </div>-->
-                    <!--    </div>-->
+                        <!--    <div class="single-features-light text-center bg-light">-->
+                        <!-- single features -->
+                        <!--        <div>-->
+                        <!-- uses solid style -->
+                        <!--            <i class="base-color fas fa-book fa-3x"></i>-->
+                        <!--            <h4>2020</h4>-->
+                        <!--            <a href="/acs2020" class=" btn color-two button text-white">OPEN</a>-->
+                        <!--        </div>-->
+                        <!--    </div>-->
                         <!-- end single features -->
-                    <!--</div>-->
-                    <!--<div class="col-xs-12 col-sm-12 col-md-4">-->
+                        <!--</div>-->
+                        <!--<div class="col-xs-12 col-sm-12 col-md-4">-->
                         <!-- 2 -->
-                    <!--    <div class="single-features-light text-center bg-light">-->
-                            <!-- single features -->
-                    <!--        <div>-->
-                    <!--            <i class="base-color fas fa-book fa-3x"></i>-->
-                    <!--            <h4>2021</h4>-->
-                    <!--            <a href="/acs2021" class=" btn color-two button text-white">OPEN</a>-->
-                    <!--        </div>-->
-                    <!--    </div>-->
+                        <!--    <div class="single-features-light text-center bg-light">-->
+                        <!-- single features -->
+                        <!--        <div>-->
+                        <!--            <i class="base-color fas fa-book fa-3x"></i>-->
+                        <!--            <h4>2021</h4>-->
+                        <!--            <a href="/acs2021" class=" btn color-two button text-white">OPEN</a>-->
+                        <!--        </div>-->
+                        <!--    </div>-->
                         <!-- end single features -->
-                    <!--</div>-->
-                    <!--<div class="col-xs-12 col-sm-12 col-md-4">-->
+                        <!--</div>-->
+                        <!--<div class="col-xs-12 col-sm-12 col-md-4">-->
                         <!-- 2 -->
-                    <!--    <div class="single-features-light text-center bg-light">-->
-                            <!-- single features -->
-                    <!--        <div>-->
-                    <!--            <i class="base-color fas fa-book fa-3x"></i>-->
-                    <!--            <h4>2022</h4>-->
-                    <!--            <a href="/acs2022" class=" btn color-two button text-white">OPEN</a>-->
-                    <!--        </div>-->
-                    <!--    </div>-->
+                        <!--    <div class="single-features-light text-center bg-light">-->
+                        <!-- single features -->
+                        <!--        <div>-->
+                        <!--            <i class="base-color fas fa-book fa-3x"></i>-->
+                        <!--            <h4>2022</h4>-->
+                        <!--            <a href="/acs2022" class=" btn color-two button text-white">OPEN</a>-->
+                        <!--        </div>-->
+                        <!--    </div>-->
                         <!-- end single features -->
-                    <!--</div>-->
+                        <!--</div>-->
+                    </div>
+                    <!-- .row end -->
                 </div>
-                <!-- .row end -->
-            </div>
                 <!-- .row end -->
             </div>
             <!-- .container end -->
@@ -195,8 +197,10 @@
                                 <!-- Begin Newsletter Signup Form -->
                                 <form class="themeioan-form-newsletter form" action="#">
                                     <div class="newslleter-call">
-                                        <input class="input-text required-field" type="text" placeholder="Your email" title="Your email" />
-                                        <input class="newsletter-submit color-two button" type="submit" value="Subscribe" />
+                                        <input class="input-text required-field" type="text" placeholder="Your email"
+                                            title="Your email" />
+                                        <input class="newsletter-submit color-two button" type="submit"
+                                            value="Subscribe" />
                                     </div>
                                 </form>
                                 <!--End Newsletter-->
@@ -224,10 +228,13 @@
                             <p>Join with us on social media</p>
                         </div>
                         <div class="icon-round-white footer-social mt-25">
-                            <a href="https://www.facebook.com/acs.dibrugarh" title="Facebook" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.facebook.com/acs.dibrugarh" title="Facebook" target="_blank"><i
+                                    class="fab fa-facebook"></i></a>
                             <!-- <a href="" title="Twitter"><i class="fab fa-twitter"></i></a> -->
-                            <a href="https://www.instagram.com/academyofcivilservices" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-                            <a href="https://www.google.com/search?q=academic+of+civil+services&oq=ac&aqs=chrome.1.69i60j69i59j69i57j35i39j69i60l3j69i61.1534j0j7&sourceid=chrome&ie=UTF-8" target="_blank" title="Google+"><i class="fab fa-google-plus"></i></a>
+                            <a href="https://www.instagram.com/academyofcivilservices" title="Instagram"
+                                target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.google.com/search?q=academic+of+civil+services&oq=ac&aqs=chrome.1.69i60j69i59j69i57j35i39j69i60l3j69i61.1534j0j7&sourceid=chrome&ie=UTF-8"
+                                target="_blank" title="Google+"><i class="fab fa-google-plus"></i></a>
                         </div>
                     </div>
                     <!-- footer widget -->

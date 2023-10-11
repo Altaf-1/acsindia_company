@@ -37,6 +37,7 @@ class CreateStudentAdmissionsTable extends Migration
             $table->bigInteger('discount_amount');
             $table->bigInteger('course_fee_pay');
             $table->string('pay_mode');
+            $table->string('branch')->nullable();
             $table->unsignedBigInteger('refer_code_id')->nullable();
             $table->bigInteger('refer_discount')->nullable();
             $table->bigInteger('course_pending');

@@ -20,6 +20,7 @@ class CreateAcsScholarshipAndMentoringsTable extends Migration
             $table->string('phone');
             $table->string('year');
             $table->string('location');
+            $table->string('type');
             $table->timestamps();
         });
     }

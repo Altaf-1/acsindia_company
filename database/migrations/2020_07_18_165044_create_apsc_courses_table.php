@@ -28,8 +28,9 @@ class CreateApscCoursesTable extends Migration
             $table->integer('active')->default(1);
             $table->string('discount')->nullable();
             $table->text('options')->nullable();
-                  $table->boolean('is_gst')->default(1);
-             $table->boolean('use_coupon')->default(0);
+            $table->boolean('is_gst')->default(1);
+            $table->bigInteger('sequence')->nullable();
+            $table->boolean('use_coupon')->default(0);
             $table->timestamps();
         });
     }

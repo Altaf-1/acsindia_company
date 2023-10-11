@@ -17,7 +17,7 @@
 @section('styles')
     <style>
         .bg-courses {
-            background-image: url({{asset('comimages/corbg.webp')}});
+            background-image: url("{{asset('comimages/corbg.webp')}}");
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
@@ -138,7 +138,7 @@
                         <div class="lernen_breadcrumb">
                             <div class="breadcrumbs">
                                 <span class="first-item">
-									<a href="/">Homepage</a></span>
+                                    <a href="/">Homepage</a></span>
                                 <span class="separator">&gt;</span>
                                 <span class="last-item">UPSC Courses</span>
                             </div>

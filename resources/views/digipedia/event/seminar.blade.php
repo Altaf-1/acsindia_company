@@ -56,289 +56,307 @@ Academy of Civil Services | Best IAS Coaching in India
 @endsection
 @section('styles')
 <style>
-	.whatsapp_float{
-	position: fixed;
-	bottom:100px;
-	right:20px;
-	z-index: 1000;
-	}
-	button {
-	position: relative;
-	display: block;
-	text-decoration: none;
-	text-transform: uppercase;
-	width: 200px;
-	overflow: hidden;
-	border-radius: 40px;
-	border: none;
-	}
-	button span {
-	position: relative;
-	color: #fff;
-	fot-size: 20px;
-	font-family: Arial;
-	letter-spacing: 5px;
-	z-index: 1;
-	}
-	button .liquid {
-	position: absolute;
-	top: -80px;
-	left: 0;
-	width: 250px;
-	height: 200px;
-	background: #92089e;
-	box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
-	transition: .5s;
-	}
-	button .liquid::after,
-	button .liquid::before {
-	content: '';
-	width: 200%;
-	height: 200%;
-	position: absolute;
-	top: 0;
-	left: 50%;
-	transform: translate(-50%, -75%);
-	background: #fff;
-	}
-	button .liquid::before {
-	border-radius: 45%;
-	background: rgba(20, 20, 20, 1);
-	animation: animate 5s linear infinite;
-	}
-	button .liquid::after {
-	border-radius: 40%;
-	background: rgba(20, 20, 20, .5);
-	animation: animate 10s linear infinite;
-	}
-	button:hover .liquid {
-	top: -120px;
-	}
-	@keyframes animate {
-	0% {
-	transform: translate(-50%, -75%) rotate(0deg);
-	}
-	100% {
-	transform: translate(-50%, -75%) rotate(360deg);
-	}
-	}
-	.stu-review{
-	display: flex;
-	}
-	.stu-cont{
-	display: flex;
-	flex-direction: column;
-	padding: 20px;
-	}
-	.table td {
-	text-align: center;
-	} 
-	.rounded-circle {
-	border-radius: 50% !important;
-	}
-	img {
-	max-width: 100%;
-	height: auto;
-	vertical-align: top;
-	}
-	.sub-info{
-	font-weight: 600;
-	font-family: 'Poppins', sans-serif;
-	color: #004975;
-	}
-	.display-30 {
-	font-size: 0.9rem;
-	}
-	
+.whatsapp_float {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    z-index: 1000;
+}
+
+button {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 40px;
+    border: none;
+}
+
+button span {
+    position: relative;
+    color: #fff;
+    fot-size: 20px;
+    font-family: Arial;
+    letter-spacing: 5px;
+    z-index: 1;
+}
+
+button .liquid {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 250px;
+    height: 200px;
+    background: #92089e;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
+    transition: .5s;
+}
+
+button .liquid::after,
+button .liquid::before {
+    content: '';
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    background: #fff;
+}
+
+button .liquid::before {
+    border-radius: 45%;
+    background: rgba(20, 20, 20, 1);
+    animation: animate 5s linear infinite;
+}
+
+button .liquid::after {
+    border-radius: 40%;
+    background: rgba(20, 20, 20, .5);
+    animation: animate 10s linear infinite;
+}
+
+button:hover .liquid {
+    top: -120px;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(-50%, -75%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -75%) rotate(360deg);
+    }
+}
+
+.stu-review {
+    display: flex;
+}
+
+.stu-cont {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.table td {
+    text-align: center;
+}
+
+.rounded-circle {
+    border-radius: 50% !important;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+.sub-info {
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: #004975;
+}
+
+.display-30 {
+    font-size: 0.9rem;
+}
 </style>
 @endsection
 @section('content')
 @if($message = Session::get('success'))
 <script>
-	const Toast = Swal.mixin({
-	    toast: true,
-	    position: 'top-start',
-	    showConfirmButton: false,
-	    timer: 2000,
-	    timerProgressBar: true,
-	    onOpen: (toast) => {
-	        toast.addEventListener('mouseenter', Swal.stopTimer)
-	        toast.addEventListener('mouseleave', Swal.resumeTimer)
-	    }
-	})
-	
-	Toast.fire({
-	    icon: 'success',
-	    title: '{{$message}}'
-	})
+const Toast = Swal.mixin({
+    toast: true,
+    position: 'top-start',
+    showConfirmButton: false,
+    timer: 2000,
+    timerProgressBar: true,
+    onOpen: (toast) => {
+        toast.addEventListener('mouseenter', Swal.stopTimer)
+        toast.addEventListener('mouseleave', Swal.resumeTimer)
+    }
+})
+
+Toast.fire({
+    icon: 'success',
+    title: '{{$message}}'
+})
 </script>
 @endif
 <!-- header area start -->
-<header id="header" >
-	<!-- #navigation start class="transparent-header"-->
-	@include('partials.navbar')
-	<!-- #navigation end -->
+<header id="header">
+    <!-- #navigation start class="transparent-header"-->
+    @include('partials.navbar')
+    <!-- #navigation end -->
 </header>
 <main>
-	<!--Preloader area start here-->
-	<!--<div id="loader" class="loader purple-color">-->
-	<!--	<div class="loader-container">-->
-	<!--		<div class='loader-icon'>-->
-	<!--			<img src="{{asset('comimages/c-logo.png')}}" alt="">-->
-	<!--		</div>-->
-	<!--	</div>-->
-	<!--</div>-->
-	<!--Preloader area End here-->
-	<div class="whatsapp_float">
-		<a href="https://wa.me/919085268769" target="_blank"><img src="{{asset('comimages/whatsapp.png')}}" width="80px" class="whatsapp_float_btn"/></a>
-	</div>
-	
-	<div class="container mt-4 mb-4" >
-		<div class="row">
-			<div class="col-lg-6">
-				<div class="event-photo themeioan_event">
-					<div class="date mt-5" style="background-color: #92089e;">
-						<h4><span>3</span> Sep, 2023</h4>
-					</div>
-					<img src="{{asset('comimages/head/3.jpg')}}" style="height: 400px; width: 100%;" alt="">
-					<!--<img src="{{asset('comimages/eventias.webp')}}" alt="">-->
-					<!--<img src="{{asset('comimages/head/dibru.png')}}" style="height: 400px; width: 100%;" alt="">-->
-				</div>
-			</div>
-			<div class="col-lg-6">
-				<div class="d-flex flex-column">
-					<h2 class="text-center text-white" style="background-color: #129ea3; border-radius: 30px;">UPCOMING EVENTS</h2>
-					<h3 class="text-center mt-4">SEMINAR</h3>
-					<table class="table bg-light mt-3 justify-content-center">
-						<tbody>
-							<tr>
-								<td>Date</td>
-								<td>&nbsp;</td>
-								<td>3rd Sep, 2023</td>
-							</tr>
-							<tr>
-								<td>Phone Number</td>
-								<td>&nbsp;</td>
-								<td>600793224</td>
-							</tr>
-							<tr>
-								<td>Location</td>
-								<td>&nbsp;</td>
-								<td>Guwahati Branch</td>
-							</tr>
-						</tbody>
-					</table>
-					<div class="btn-section">
-						<form action="https://acsindiaias.com/scholarship-registration">
-							<button type="submit" style="width:250px;">
-								<span>Book Now</span>
-								<div class="liquid"></div>
-							</button>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div class="container mt-4 mb-4" >
-		<div class="row">
-			<div class="col-lg-6">
-				<div class="event-photo themeioan_event">
-					<div class="date mt-5" style="background-color: #92089e;">
-						<h4 ><span>3</span> Sep, 2023</h4>
-					</div>
-					<!--<img src="{{asset('comimages/eventias.webp')}}" alt="">-->
-					<!--<img src="{{asset('comimages/head/ghu.png')}}" style="height: 400px; width: 100%;" alt="">-->
-					<img src="{{asset('comimages/head/dibru.png')}}" style="height: 400px; width: 100%;" alt="">
-				</div>
-			</div>
-			<div class="col-lg-6">
-				<div class="d-flex flex-column">
-					<h2 class="text-center text-white" style="background-color: #129ea3; border-radius: 30px;">UPCOMING EVENTS</h2>
-					<h3 class="text-center mt-4">SEMINAR</h3>
-					<table class="table bg-light mt-3 justify-content-center">
-						<tbody>
-							<tr>
-								<td>Date</td>
-								<td>&nbsp;</td>
-								<td>3rd Sep, 2023</td>
-							</tr>
-							<tr>
-								<td>Time</td>
-								<td>&nbsp;</td>
-								<td>10.00a.m - 12.30p.m</td>
-							</tr>
-							<tr>
-								<td>Location</td>
-								<td>&nbsp;</td>
-								<td>Dibrugarh Branch</td>
-							</tr>
-						</tbody>
-					</table>
-					<div class="btn-section">
-						<form action="https://acsindiaias.com/seminar">
-							<button type="submit" style="width:250px;">
-								<span>Book Now</span>
-								<div class="liquid"></div>
-							</button>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <!--Preloader area start here-->
+    <!--<div id="loader" class="loader purple-color">-->
+    <!--	<div class="loader-container">-->
+    <!--		<div class='loader-icon'>-->
+    <!--			<img src="{{asset('comimages/c-logo.png')}}" alt="">-->
+    <!--		</div>-->
+    <!--	</div>-->
+    <!--</div>-->
+    <!--Preloader area End here-->
+    <div class="whatsapp_float">
+        <a href="https://wa.me/919085268769" target="_blank"><img src="{{asset('comimages/whatsapp.png')}}" width="80px"
+                class="whatsapp_float_btn" /></a>
+    </div>
 
-	
-	<!--2nd section-->
-	<!--<div class="container mt-4 mb-4" >-->
-	<!--	<div class="row">-->
-	<!--		<div class="col-lg-6">-->
-	<!--			<div class="event-photo themeioan_event">-->
-	<!--				<div class="date" style="background-color: #92089e;">-->
-	<!--					<h4><span>11</span> September, 2022</h4>-->
-	<!--				</div>-->
-					<!--<img src="{{asset('comimages/eventias.webp')}}" alt="">-->
-	<!--				<img src="{{asset('comimages/head/1.png')}}" style="height: 400px; width: 100%;" alt="">-->
-	<!--			</div>-->
-	<!--		</div>-->
-	<!--		<div class="col-lg-6">-->
-	<!--			<div class="d-flex flex-column">-->
-	<!--				<h2 class="text-center text-white" style="background-color: #129ea3; border-radius: 30px;">UPCOMING EVENTS</h2>-->
-	<!--				<h3 class="text-center mt-4">SEMINAR</h3>-->
-	<!--				<table class="table bg-light mt-3 justify-content-center">-->
-	<!--					<tbody>-->
-	<!--						<tr>-->
-	<!--							<td>Date</td>-->
-	<!--							<td>&nbsp;</td>-->
-	<!--							<td>11 September, 2022</td>-->
-	<!--						</tr>-->
-	<!--						<tr>-->
-	<!--							<td>Time</td>-->
-	<!--							<td>&nbsp;</td>-->
-	<!--							<td>2 pm - 4 pm</td>-->
-	<!--						</tr>-->
-	<!--						<tr>-->
-	<!--							<td>Location</td>-->
-	<!--							<td>&nbsp;</td>-->
-	<!--							<td>Dibrugarh</td>-->
-	<!--						</tr>-->
-	<!--					</tbody>-->
-	<!--				</table>-->
-	<!--				<div class="btn-section">-->
-	<!--					<form action="/offline_seminar">-->
-	<!--						<button type="submit" style="width:250px;">-->
-	<!--							<span>Book Now</span>-->
-	<!--							<div class="liquid"></div>-->
-	<!--						</button>-->
-	<!--					</form>-->
-	<!--				</div>-->
-	<!--			</div>-->
-	<!--		</div>-->
-	<!--	</div>-->
-	<!--</div>-->
-	
-	
+    <div class="container mt-4 mb-4">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="event-photo themeioan_event">
+                    <div class="date mt-5" style="background-color: #92089e;">
+                        <h4><span>3</span> Sep, 2023</h4>
+                    </div>
+                    <img src="{{asset('comimages/head/3.jpg')}}" style="height: 400px; width: 100%;" alt="">
+                    <!--<img src="{{asset('comimages/eventias.webp')}}" alt="">-->
+                    <!--<img src="{{asset('comimages/head/dibru.png')}}" style="height: 400px; width: 100%;" alt="">-->
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="d-flex flex-column">
+                    <h2 class="text-center text-white" style="background-color: #129ea3; border-radius: 30px;">UPCOMING
+                        EVENTS</h2>
+                    <h3 class="text-center mt-4">SEMINAR</h3>
+                    <table class="table bg-light mt-3 justify-content-center">
+                        <tbody>
+                            <tr>
+                                <td>Date</td>
+                                <td>&nbsp;</td>
+                                <td>3rd Sep, 2023</td>
+                            </tr>
+                            <tr>
+                                <td>Phone Number</td>
+                                <td>&nbsp;</td>
+                                <td>600793224</td>
+                            </tr>
+                            <tr>
+                                <td>Location</td>
+                                <td>&nbsp;</td>
+                                <td>Guwahati Branch</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="btn-section">
+                        <form action="{{asset('/scholarship-registration')}}">
+                            <button type="submit" style="width:250px;">
+                                <span>Book Now</span>
+                                <div class="liquid"></div>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4 mb-4">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="event-photo themeioan_event">
+                    <div class="date mt-5" style="background-color: #92089e;">
+                        <h4><span>3</span> Sep, 2023</h4>
+                    </div>
+                    <!--<img src="{{asset('comimages/eventias.webp')}}" alt="">-->
+                    <!--<img src="{{asset('comimages/head/ghu.png')}}" style="height: 400px; width: 100%;" alt="">-->
+                    <img src="{{asset('comimages/head/dibru.png')}}" style="height: 400px; width: 100%;" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="d-flex flex-column">
+                    <h2 class="text-center text-white" style="background-color: #129ea3; border-radius: 30px;">UPCOMING
+                        EVENTS</h2>
+                    <h3 class="text-center mt-4">SEMINAR</h3>
+                    <table class="table bg-light mt-3 justify-content-center">
+                        <tbody>
+                            <tr>
+                                <td>Date</td>
+                                <td>&nbsp;</td>
+                                <td>3rd Sep, 2023</td>
+                            </tr>
+                            <tr>
+                                <td>Time</td>
+                                <td>&nbsp;</td>
+                                <td>10.00a.m - 12.30p.m</td>
+                            </tr>
+                            <tr>
+                                <td>Location</td>
+                                <td>&nbsp;</td>
+                                <td>Dibrugarh Branch</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="btn-section">
+                        <form action="{{asset('/seminar')}}">
+                            <button type="submit" style="width:250px;">
+                                <span>Book Now</span>
+                                <div class="liquid"></div>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--2nd section-->
+    <!--<div class="container mt-4 mb-4" >-->
+    <!--	<div class="row">-->
+    <!--		<div class="col-lg-6">-->
+    <!--			<div class="event-photo themeioan_event">-->
+    <!--				<div class="date" style="background-color: #92089e;">-->
+    <!--					<h4><span>11</span> September, 2022</h4>-->
+    <!--				</div>-->
+    <!--<img src="{{asset('comimages/eventias.webp')}}" alt="">-->
+    <!--				<img src="{{asset('comimages/head/1.png')}}" style="height: 400px; width: 100%;" alt="">-->
+    <!--			</div>-->
+    <!--		</div>-->
+    <!--		<div class="col-lg-6">-->
+    <!--			<div class="d-flex flex-column">-->
+    <!--				<h2 class="text-center text-white" style="background-color: #129ea3; border-radius: 30px;">UPCOMING EVENTS</h2>-->
+    <!--				<h3 class="text-center mt-4">SEMINAR</h3>-->
+    <!--				<table class="table bg-light mt-3 justify-content-center">-->
+    <!--					<tbody>-->
+    <!--						<tr>-->
+    <!--							<td>Date</td>-->
+    <!--							<td>&nbsp;</td>-->
+    <!--							<td>11 September, 2022</td>-->
+    <!--						</tr>-->
+    <!--						<tr>-->
+    <!--							<td>Time</td>-->
+    <!--							<td>&nbsp;</td>-->
+    <!--							<td>2 pm - 4 pm</td>-->
+    <!--						</tr>-->
+    <!--						<tr>-->
+    <!--							<td>Location</td>-->
+    <!--							<td>&nbsp;</td>-->
+    <!--							<td>Dibrugarh</td>-->
+    <!--						</tr>-->
+    <!--					</tbody>-->
+    <!--				</table>-->
+    <!--				<div class="btn-section">-->
+    <!--					<form action="/offline_seminar">-->
+    <!--						<button type="submit" style="width:250px;">-->
+    <!--							<span>Book Now</span>-->
+    <!--							<div class="liquid"></div>-->
+    <!--						</button>-->
+    <!--					</form>-->
+    <!--				</div>-->
+    <!--			</div>-->
+    <!--		</div>-->
+    <!--	</div>-->
+    <!--</div>-->
+
+
 </main>
 <!-- Modal -->
 @endsection

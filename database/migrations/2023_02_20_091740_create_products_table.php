@@ -18,6 +18,7 @@ class CreateProductsTable extends Migration
             $table->string('code');
             $table->string('path')->nullable();
             $table->boolean('sold')->default(0);
+            $table->string('type');
             $table->timestamps();
         });
     }

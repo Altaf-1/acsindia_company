@@ -20,6 +20,7 @@ class CreateSeminarsTable extends Migration
             $table->string('phone');
             $table->string('city');
             $table->string('qualification');
+            $table->string('type');
             $table->string('whatsapp_no');
             $table->string('solo_debate')->default(0);
             $table->string('quiz')->default(0);

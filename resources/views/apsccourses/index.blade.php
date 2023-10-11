@@ -17,7 +17,7 @@
 @section('styles')
     <style>
         .bg-courses {
-            background-image: url({{asset('comimages/corbg.webp')}});
+            background-image: url("{{asset('comimages/corbg.webp')}}");
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
@@ -165,7 +165,7 @@
                                     <div class="blog-content">
                                         <h5 class="title text-center">---- SELECT DATE ----</h5>
                                         <ul class="themeioan_ul_icon justify-content-center text-center">
-                                            <li><a href="https://acsindiaias.com/apsc/course/38" class=" btn color-two button text-white mb-3">25 SEP</a></li>
+                                            <li><a href="{{asset('/apsc/course/38')}}" class=" btn color-two button text-white mb-3">25 SEP</a></li>
                                         </ul>
                                     </div>
                                 </article>
@@ -185,7 +185,7 @@
                                     <div class="blog-content">
                                         <h5 class="title text-center">---- SELECT DATE ----</h5>
                                         <ul class="themeioan_ul_icon justify-content-center text-center">
-                                            <li><a href="https://acsindiaias.com/apsc/course/44" class=" btn color-two button text-white mb-3">25 SEP</a></li>
+                                            <li><a href="{{asset('/apsc/course/44')}}" class=" btn color-two button text-white mb-3">25 SEP</a></li>
                                         </ul>
                                     </div>
                                 </article>
@@ -203,8 +203,8 @@
                                     <div class="blog-content">
                                         <h5 class="title text-center">---- SELECT DATE ----</h5>
                                         <ul class="themeioan_ul_icon justify-content-center text-center">
-                                            <li><a href="https://acsindiaias.com/apsc/course/39" class=" btn color-two button text-white mb-3">4 SEP</a></li>
-                                            <li><a href="https://acsindiaias.com/apsc/course/45" class=" btn color-two button text-white mb-3">9 OCT</a></li>
+                                            <li><a href="{{asset('/apsc/course/39')}}" class=" btn color-two button text-white mb-3">4 SEP</a></li>
+                                            <li><a href="{{asset('/apsc/course/45')}}" class=" btn color-two button text-white mb-3">9 OCT</a></li>
                                         </ul>
                                     </div>
                                 </article>
@@ -222,7 +222,7 @@
                                         <h4 class="title text-center text-danger">---- 50% OFF ----</h4>
                                             <!--<p class="text-primary display-4 text-center" id="demo"></p>-->
                                         <ul class="themeioan_ul_icon justify-content-center text-center">
-                                            <li><a href="https://acsindiaias.com/user/study/show/34" class=" btn color-two button text-white mb-3">Enroll Now</a></li>
+                                            <li><a href="{{asset('/user/study/show/34')}}" class=" btn color-two button text-white mb-3">Enroll Now</a></li>
                                         </ul>
                                     </div>
                                 </article>

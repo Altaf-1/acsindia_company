@@ -21,6 +21,7 @@ class CreateAdmissionEnqueriesTable extends Migration
             $table->string('address');
             $table->string('visitors')->nullable();
             $table->string('source')->nullable();
+            $table->string('branch')->nullable();
             $table->timestamps();
         });
     }

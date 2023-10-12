@@ -17,6 +17,17 @@ use Razorpay\Api\Api;
 
 class RecordedController extends Controller
 {
+
+    private $razorpayId;
+    private $razorpayKey;
+
+
+    public function __construct() {
+        $this->razorpayId = env('RAZORPAY_API_KEY', null);
+        $this->razorpayKey = env('RAZORPAY_API_SECRET', null);
+    }
+
+    
     public function recordedindex(){
         $courses = Recorded::where('active',1)->get();
         return view('recorded_courses.index',compact('courses'));
@@ -119,13 +130,6 @@ class RecordedController extends Controller
             ->with('success', 'Your Payment Has been submitted');
 
     }
-
-    // razor pay
-    // private $razorpayId = "rzp_test_HXMF8qW8rBFyS6";
-    // private $razorpayKey = "8BewVxFMJUgmUr80lDD945Al";
-    private $razorpayId = "rzp_test_OBpPCjwD4HdfME";
-    private $razorpayKey = "fIGqcC4fHMjiKTNQ8954dpe9";
-
 
     public function initiate(Request $request, $slug)
     {

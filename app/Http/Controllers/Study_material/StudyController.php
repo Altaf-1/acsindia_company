@@ -22,9 +22,14 @@ use Razorpay\Api\Api;
 class StudyController extends Controller
 {
     //
-    private $razorpayId = "rzp_test_OBpPCjwD4HdfME";
-    private $razorpayKey = "fIGqcC4fHMjiKTNQ8954dpe9";  
+    private $razorpayId;
+    private $razorpayKey;
 
+
+    public function __construct() {
+        $this->razorpayId = env('RAZORPAY_API_KEY', null);
+        $this->razorpayKey = env('RAZORPAY_API_SECRET', null);
+    }
     /**
      * @param $id
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View

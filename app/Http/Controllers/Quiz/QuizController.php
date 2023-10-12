@@ -89,10 +89,18 @@ class QuizController extends Controller
     //result
     public function result($id,$user_id='')
     {
+        $datas=[];
         if($user_id == ''){
             $user_id = Auth()->user()->id;
         }
-        $datas = QuizUser::where('user_id', $user_id)->where('quiz_id', $id)->get();
-        return view('user_tabs.quiz.result', compact('datas'));
+        $result = QuizResult::where('user_id', $user_id)->where('quiz_id', $id)->latest()->first();
+        if ($result) {
+            $limit = $result->correct_answers + $result->wrong_answers;
+            $datas = QuizUser::where('user_id', $user_id)->where('quiz_id', $id)->latest()->limit($limit)->get();
+        }
+        // $datas = QuizUser::where('user_id', $user_id)->where('quiz_id', $id)->get();
+        return view('user_tabs.quiz.result', compact('datas', 'result'));
     }
+
+   
 }

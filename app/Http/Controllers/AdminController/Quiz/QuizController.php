@@ -120,7 +120,7 @@ class QuizController extends Controller
     public function viewResult($id)
     {
         $datas = QuizResult::where('quiz_id', $id)->get();
-        return view('admin.quiz.result.index', compact('datas'));
+        return view('admin.quiz.result.index', compact('datas')); 
     }
 
     public function quizResultDestroy($id)

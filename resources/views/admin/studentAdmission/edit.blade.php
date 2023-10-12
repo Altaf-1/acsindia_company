@@ -7,25 +7,25 @@ Student Admission Edit
 @endsection
 @section('styles')
 <style>
-    .form-control {
-        border-radius: 0;
-    }
+.form-control {
+    border-radius: 0;
+}
 
-    .borderDiv {
-        position: relative;
-        border: 2px solid #cb910c;
-        padding: 30px;
-        margin: 20px;
-    }
+.borderDiv {
+    position: relative;
+    border: 2px solid #cb910c;
+    padding: 30px;
+    margin: 20px;
+}
 
-    .header {
-        position: absolute;
-        top: -14px;
-        left: 1%;
-        padding: 0% 2px;
-        margin: 0%;
-        background: white !important;
-    }
+.header {
+    position: absolute;
+    top: -14px;
+    left: 1%;
+    padding: 0% 2px;
+    margin: 0%;
+    background: white !important;
+}
 </style>
 @endsection
 @section('content')
@@ -53,7 +53,8 @@ Student Admission Edit
             <div class="row bg-transparent">
                 <div class="col-lg-4 p-2">
                     <label for="admission_no">Admission No</label>
-                    <input type="text" class="form-control @error('admission_no') is-invalid @enderror" name="admission_no" placeholder="Admission No" value="{{$student->admission_no}}">
+                    <input type="text" class="form-control @error('admission_no') is-invalid @enderror"
+                        name="admission_no" placeholder="Admission No" value="{{$student->admission_no}}">
                     @error('current_street')
                     <div class="invalid-feedback mt-2" role="alert">
                         <strong class="alert-danger" class="alert-danger">{{ $message }}</strong>
@@ -62,7 +63,8 @@ Student Admission Edit
                 </div>
                 <div class="col-lg-4 p-2">
                     <label for="roll_no">Roll No</label>
-                    <input type="text" class="form-control @error('roll_no') is-invalid @enderror" name="roll_no" placeholder="Roll No" value="{{$student->roll_no}}">
+                    <input type="text" class="form-control @error('roll_no') is-invalid @enderror" name="roll_no"
+                        placeholder="Roll No" value="{{$student->roll_no}}">
                     @error('roll_no')
                     <div class="invalid-feedback mt-2" role="alert">
                         <strong class="alert-danger" class="alert-danger">{{ $message }}</strong>
@@ -79,7 +81,8 @@ Student Admission Edit
                 </div>
                 <div class="col-lg-4 p-2">
                     <label for="std_name">Student Name</label>
-                    <input type="text" class="form-control @error('std_name') is-invalid @enderror" name="std_name" placeholder="Enter Student Name" value="{{$student->std_name}}">
+                    <input type="text" class="form-control @error('std_name') is-invalid @enderror" name="std_name"
+                        placeholder="Enter Student Name" value="{{$student->std_name}}">
                     @error('std_name')
                     <div class="invalid-feedback mt-2" role="alert">
                         <strong class="alert-danger" class="alert-danger">{{ $message }}</strong>
@@ -88,7 +91,8 @@ Student Admission Edit
                 </div>
                 <div class="col-lg-4 p-2">
                     <label for="std_email">Email</label>
-                    <input type="text" class="form-control @error('std_email') is-invalid @enderror" name="std_email" placeholder="Email" value="{{$student->std_email}}">
+                    <input type="text" class="form-control @error('std_email') is-invalid @enderror" name="std_email"
+                        placeholder="Email" value="{{$student->std_email}}">
                     @error('std_email')
                     <div class="invalid-feedback mt-2" role="alert">
                         <strong class="alert-danger" class="alert-danger">{{ $message }}</strong>
@@ -97,7 +101,8 @@ Student Admission Edit
                 </div>
                 <div class="col-lg-4 p-2">
                     <label for="std_phone">Phone Number</label>
-                    <input type="text" class="form-control @error('std_phone') is-invalid @enderror" name="std_phone" placeholder="Enter Phone Number" value="{{$student->std_phone}}">
+                    <input type="text" class="form-control @error('std_phone') is-invalid @enderror" name="std_phone"
+                        placeholder="Enter Phone Number" value="{{$student->std_phone}}">
                     @error('std_phone')
                     <div class="invalid-feedback mt-2" role="alert">
                         <strong class="alert-danger" class="alert-danger">{{ $message }}</strong>
@@ -106,7 +111,8 @@ Student Admission Edit
                 </div>
                 <div class="col-lg-4 p-2">
                     <label for="std_dob">DOB</label>
-                    <input type="date" class="form-control @error('std_dob') is-invalid @enderror" name="std_dob" value="{{$student->std_dob}}">
+                    <input type="date" class="form-control @error('std_dob') is-invalid @enderror" name="std_dob"
+                        value="{{$student->std_dob}}">
                     @error('std_dob')
                     <div class="invalid-feedback mt-2" role="alert">
                         <strong class="alert-danger" class="alert-danger">{{ $message }}</strong>
@@ -166,7 +172,8 @@ Student Admission Edit
                 </div>
                 <div class="col-lg-4 p-2">
                     <label for="std_district">District</label>
-                    <input type="text" class="form-control @error('std_district') is-invalid @enderror" name="std_district" value="{{$student->std_district}}">
+                    <input type="text" class="form-control @error('std_district') is-invalid @enderror"
+                        name="std_district" value="{{$student->std_district}}">
                     @error('std_district')
                     <div class="invalid-feedback mt-2" role="alert">
                         <strong class="alert-danger" class="alert-danger">{{ $message }}</strong>
@@ -175,7 +182,8 @@ Student Admission Edit
                 </div>
                 <div class="col-lg-4 p-2">
                     <label for="std_category">Category</label>
-                    <input type="text" class="form-control @error('std_category') is-invalid @enderror" name="std_category" value="{{$student->std_category}}">
+                    <input type="text" class="form-control @error('std_category') is-invalid @enderror"
+                        name="std_category" value="{{$student->std_category}}">
                     @error('std_category')
                     <div class="invalid-feedback mt-2" role="alert">
                         <strong class="alert-danger" class="alert-danger">{{ $message }}</strong>
@@ -199,7 +207,8 @@ Student Admission Edit
                 </div>
                 <div class="col-lg-4 p-2">
                     <label for="admission_date">Admission Date</label>
-                    <input type="date" class="form-control @error('admission_date') is-invalid @enderror" name="admission_date" value="{{$student->admission_date}}">
+                    <input type="date" class="form-control @error('admission_date') is-invalid @enderror"
+                        name="admission_date" value="{{$student->admission_date}}">
                     @error('admission_date')
                     <div class="invalid-feedback mt-2" role="alert">
                         <strong class="alert-danger" class="alert-danger">{{ $message }}</strong>
@@ -213,7 +222,8 @@ Student Admission Edit
             <div class="row bg-transparent">
                 <div class="col-lg-4 p-2">
                     <label for="guardian_name">Parents Name</label>
-                    <input type="text" class="form-control @error('guardian_name') is-invalid @enderror" name="guardian_name" placeholder="Admission No" value="{{$student->guardian_name}}">
+                    <input type="text" class="form-control @error('guardian_name') is-invalid @enderror"
+                        name="guardian_name" placeholder="Admission No" value="{{$student->guardian_name}}">
                     @error('guardian_name')
                     <div class="invalid-feedback mt-2" role="alert">
                         <strong class="alert-danger" class="alert-danger">{{ $message }}</strong>
@@ -222,7 +232,8 @@ Student Admission Edit
                 </div>
                 <div class="col-lg-4 p-2">
                     <label for="relation">Relation</label>
-                    <input type="text" class="form-control @error('relation') is-invalid @enderror" name="relation" placeholder="relation " value="{{$student->relation}}">
+                    <input type="text" class="form-control @error('relation') is-invalid @enderror" name="relation"
+                        placeholder="relation " value="{{$student->relation}}">
                     @error('relation')
                     <div class="invalid-feedback mt-2" role="alert">
                         <strong class="alert-danger" class="alert-danger">{{ $message }}</strong>
@@ -231,7 +242,8 @@ Student Admission Edit
                 </div>
                 <div class="col-lg-4 p-2">
                     <label for="guardian_phone">Phone No</label>
-                    <input type="text" class="form-control @error('guardian_phone') is-invalid @enderror" name="guardian_phone" placeholder="Enter Student Name" value="{{$student->guardian_phone}}">
+                    <input type="text" class="form-control @error('guardian_phone') is-invalid @enderror"
+                        name="guardian_phone" placeholder="Enter Student Name" value="{{$student->guardian_phone}}">
                     @error('guardian_phone')
                     <div class="invalid-feedback mt-2" role="alert">
                         <strong class="alert-danger" class="alert-danger">{{ $message }}</strong>
@@ -240,7 +252,8 @@ Student Admission Edit
                 </div>
                 <div class="col-lg-4 p-2">
                     <label for="guardian_email">Email</label>
-                    <input type="text" class="form-control @error('guardian_email') is-invalid @enderror" name="guardian_email" placeholder="Email" value="{{$student->guardian_email}}">
+                    <input type="text" class="form-control @error('guardian_email') is-invalid @enderror"
+                        name="guardian_email" placeholder="Email" value="{{$student->guardian_email}}">
                     @error('guardian_email')
                     <div class="invalid-feedback mt-2" role="alert">
                         <strong class="alert-danger" class="alert-danger">{{ $message }}</strong>
@@ -254,7 +267,8 @@ Student Admission Edit
             <div class="row bg-transparent">
                 <div class="col-lg-4 p-2">
                     <label for="roll_no">Course</label>
-                    <Select id="course" class="form-control" onmousedown="this.value='';" onchange="getCourse(this.value);">
+                    <Select id="course" class="form-control" onmousedown="this.value='';"
+                        onchange="getCourse(this.value);">
                         <option value="{{$student->course}}" selected>{{$student->courses($student->course)}}</option>
                         <hr>
                         @foreach($courses as $course)
@@ -264,8 +278,9 @@ Student Admission Edit
                 </div>
                 <div class="col-lg-4 p-2">
                     <label for="course_price">Course Price</label>
-                    <input id="course_price" type="number" class="form-control @error('course_price') is-invalid @enderror "
-                           name="course_price" readonly value="{{$student->course_price}}">
+                    <input id="course_price" type="number"
+                        class="form-control @error('course_price') is-invalid @enderror " name="course_price" readonly
+                        value="{{$student->course_price}}">
                     @error('course_price')
                     <div class="invalid-feedback mt-2" role="alert">
                         <strong class="alert-danger" class="alert-danger">{{ $message }}</strong>
@@ -275,9 +290,9 @@ Student Admission Edit
 
                 <div class="col-lg-4 p-2">
                     <label for="course_price">Discount Amount</label>
-                    <input id="discount_amount" onchange="getCourseDiscountAmount(this.value)"
-                           type="number" class="form-control @error('discount_amount') is-invalid @enderror"
-                           name="discount_amount" value="{{$student->discount_amount}}">
+                    <input id="discount_amount" onchange="getCourseDiscountAmount(this.value)" type="number"
+                        class="form-control @error('discount_amount') is-invalid @enderror" name="discount_amount"
+                        value="{{$student->discount_amount}}">
                     @error('discount_amount')
                     <div class="invalid-feedback mt-2" role="alert">
                         <strong class="alert-danger" class="alert-danger">{{ $message }}</strong>
@@ -287,8 +302,9 @@ Student Admission Edit
 
                 <div class="col-lg-4 p-2">
                     <label for="course_price">Course Discount Amount</label>
-                    <input id="course_discount_amount" readonly type="number" class="form-control @error('course_discount_amount') is-invalid @enderror"
-                           name="course_discount_amount" value="{{$student->course_price - $student->discount_amount}}">
+                    <input id="course_discount_amount" readonly type="number"
+                        class="form-control @error('course_discount_amount') is-invalid @enderror"
+                        name="course_discount_amount" value="{{$student->course_price - $student->discount_amount}}">
                     @error('course_discount_amount')
                     <div class="invalid-feedback mt-2" role="alert">
                         <strong class="alert-danger" class="alert-danger">{{ $message }}</strong>
@@ -298,10 +314,9 @@ Student Admission Edit
 
                 <div class="col-lg-4 p-2">
                     <label for="course_fee_pay">Course Fee</label>
-                    <input type="number" id="course_fee_pay"
-                           class="form-control @error('course_fee_pay')
-                    is-invalid @enderror" name="course_fee_pay"
-                           onchange="getPending(this.value);" value="{{$student->course_fee_pay}}">
+                    <input type="number" id="course_fee_pay" class="form-control @error('course_fee_pay')
+                    is-invalid @enderror" name="course_fee_pay" onchange="getPending(this.value);"
+                        value="{{$student->course_fee_pay}}">
                     @error('course_fee_pay')
                     <div class="invalid-feedback mt-2" role="alert">
                         <strong class="alert-danger" class="alert-danger">{{ $message }}</strong>
@@ -310,7 +325,9 @@ Student Admission Edit
                 </div>
                 <div class="col-lg-4 p-2">
                     <label for="course_pending">Course Pending Amount</label>
-                    <input id="course_pending" type="number" class="form-control @error('course_pending') is-invalid @enderror" name="course_pending" readonly value="{{$student->course_pending}}">
+                    <input id="course_pending" type="number"
+                        class="form-control @error('course_pending') is-invalid @enderror" name="course_pending"
+                        readonly value="{{$student->course_pending}}">
                     @error('course_pending')
                     <div class="invalid-feedback mt-2" role="alert">
                         <strong class="alert-danger" class="alert-danger">{{ $message }}</strong>
@@ -319,7 +336,8 @@ Student Admission Edit
                 </div>
                 <div class="col-lg-4 p-2">
                     <label for="pay_mode">Payment Mode</label>
-                    <input id="pay_mode" type="text" class="form-control @error('pay_mode') is-invalid @enderror" name="pay_mode" value="{{$student->pay_mode}}">
+                    <input id="pay_mode" type="text" class="form-control @error('pay_mode') is-invalid @enderror"
+                        name="pay_mode" value="{{$student->pay_mode}}">
                     @error('pay_mode')
                     <div class="invalid-feedback mt-2" role="alert">
                         <strong class="alert-danger" class="alert-danger">{{ $message }}</strong>
@@ -335,33 +353,34 @@ Student Admission Edit
 </div>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script>
-    function getCourse(course) {
-        axios.get(`https://www.acsindiaias.com/api/getCourse/${course}`)
-            .then(result => {
-                // document.getElementById('course').value = result.data[0];
-                document.getElementById('course_price').value = result.data;
-                console.log(result.data);
-            })
-            .catch(err => {
-                console.log(err);
-            })
-    }
+function getCourse(course) {
+    var api = route('get.course', course);
+    axios.get(api)
+        .then(result => {
+            // document.getElementById('course').value = result.data[0];
+            document.getElementById('course_price').value = result.data;
+            console.log(result.data);
+        })
+        .catch(err => {
+            console.log(err);
+        })
+}
 
-    /**
-     *
-     * @param paidAmount Amount Paid by user
-     */
-    function getPending(paidAmount) {
-        const courseDiscountPrice = document.getElementById('course_discount_amount').value;
-        document.getElementById('course_pending').value = courseDiscountPrice - paidAmount;
-    }
+/**
+ *
+ * @param paidAmount Amount Paid by user
+ */
+function getPending(paidAmount) {
+    const courseDiscountPrice = document.getElementById('course_discount_amount').value;
+    document.getElementById('course_pending').value = courseDiscountPrice - paidAmount;
+}
 
-    function getCourseDiscountAmount(discountAmount){
-        console.log(discountAmount);
-        const coursePrice = document.getElementById('course_price').value;
-        document.getElementById('course_discount_amount').value = coursePrice - discountAmount;
-        const paidAmount = document.getElementById('course_fee_pay').value;
-        getPending(paidAmount)
-    }
+function getCourseDiscountAmount(discountAmount) {
+    console.log(discountAmount);
+    const coursePrice = document.getElementById('course_price').value;
+    document.getElementById('course_discount_amount').value = coursePrice - discountAmount;
+    const paidAmount = document.getElementById('course_fee_pay').value;
+    getPending(paidAmount)
+}
 </script>
 @endsection

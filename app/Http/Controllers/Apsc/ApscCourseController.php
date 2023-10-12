@@ -234,8 +234,11 @@ class ApscCourseController extends Controller
                     ->get()
                     ->first();
 
+                if($coupon)
+                {
                 $coupon->status = 0;
                 $coupon->save();
+                }
             }
 
             $order = ApscOrder::where('order_id', $request->rzp_orderid)->get()->first();

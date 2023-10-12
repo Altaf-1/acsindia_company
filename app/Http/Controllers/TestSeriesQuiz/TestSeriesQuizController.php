@@ -91,7 +91,7 @@ class TestSeriesQuizController extends Controller
     }
 
     //result
-    public function result($id)
+    public function result($id) 
     {
         $user_id = Auth()->user()->id;
         $datas = [];

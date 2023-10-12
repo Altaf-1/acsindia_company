@@ -204,8 +204,11 @@ class CoursePaymentController extends Controller
                 ->get()
                 ->first();
 
-            $coupon->status = 0;
-            $coupon->save();
+            if($coupon)
+                {
+                $coupon->status = 0;
+                $coupon->save();
+                }
             }
 
             $order = Order::where('order_id', $request->rzp_orderid)->get()->first();

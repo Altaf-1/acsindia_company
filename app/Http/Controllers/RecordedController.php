@@ -305,9 +305,11 @@ class RecordedController extends Controller
                     ->orWhere('phone', $user->phone)
                     ->get()
                     ->first();
-
+                if($coupon)
+                {
                 $coupon->status = 0;
                 $coupon->save();
+                }
             }
 
             $order = RecordedRazor::where('order_id', $request->rzp_orderid)->get()->first();

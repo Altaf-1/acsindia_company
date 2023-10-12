@@ -22,8 +22,8 @@ class CreateSeminarsTable extends Migration
             $table->string('qualification');
             $table->string('type');
             $table->string('whatsapp_no');
-            $table->string('solo_debate')->default(0);
-            $table->string('quiz')->default(0);
+            $table->string('solo_debate')->nullable();
+            $table->string('quiz')->nullable();
             $table->timestamps();
         });
     }

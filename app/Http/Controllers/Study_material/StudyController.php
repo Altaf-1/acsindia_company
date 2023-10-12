@@ -22,8 +22,8 @@ use Razorpay\Api\Api;
 class StudyController extends Controller
 {
     //
-    private $razorpayId = "rzp_live_nf6xajoSM1yLzl";
-    private $razorpayKey = "QnugJno0wkd7MxeCI1b9WfRX";
+    private $razorpayId = "rzp_test_OBpPCjwD4HdfME";
+    private $razorpayKey = "fIGqcC4fHMjiKTNQ8954dpe9";  
 
     /**
      * @param $id

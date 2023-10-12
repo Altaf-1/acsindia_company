@@ -25,6 +25,7 @@ class CreateUsersTable extends Migration
             $table->string('landmark')->nullable();
             $table->string('city')->nullable();
             $table->string('district')->nullable();
+            $table->string('postal')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->unsignedBigInteger('photo_id')->nullable();

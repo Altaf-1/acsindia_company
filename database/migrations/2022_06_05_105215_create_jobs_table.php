@@ -21,6 +21,7 @@ class CreateJobsTable extends Migration
             $table->string('city');
             $table->string('apply_for');
             $table->string('resume');
+            $table->string('subjects')->nullable();
             $table->timestamps();
         });
     }

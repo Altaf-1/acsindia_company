@@ -3895,7 +3895,7 @@ Route::get('/apsc-prelims-pyq', function () {
 Route::get('/exam-registration', function () {
     return view('digipedia.exam');
 });
-
+  
 // exam registration
 
 Route::get('/scholarship-registration', function () {

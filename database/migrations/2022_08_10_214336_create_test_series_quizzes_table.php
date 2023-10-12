@@ -19,6 +19,7 @@ class CreateTestSeriesQuizzesTable extends Migration
             $table->string('status');
             $table->string('set');
             $table->string('pdf');
+            $table->string('type');
             $table->timestamps();
         });
     }

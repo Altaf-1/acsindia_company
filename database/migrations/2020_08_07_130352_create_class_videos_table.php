@@ -21,6 +21,7 @@ class CreateClassVideosTable extends Migration
             $table->string('date')->nullable();
             $table->string('knowledge')->nullable();
             $table->string('download')->nullable();
+            $table->string('type')->nullable();
             $table->timestamps();
         });
     }

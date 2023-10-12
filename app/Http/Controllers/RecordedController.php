@@ -123,8 +123,8 @@ class RecordedController extends Controller
     // razor pay
     // private $razorpayId = "rzp_test_HXMF8qW8rBFyS6";
     // private $razorpayKey = "8BewVxFMJUgmUr80lDD945Al";
-   private $razorpayId = "rzp_live_nf6xajoSM1yLzl";
-    private $razorpayKey = "QnugJno0wkd7MxeCI1b9WfRX";
+    private $razorpayId = "rzp_test_OBpPCjwD4HdfME";
+    private $razorpayKey = "fIGqcC4fHMjiKTNQ8954dpe9";
 
 
     public function initiate(Request $request, $slug)

@@ -19,7 +19,7 @@ class CreateQuizzesTable extends Migration
             $table->string('description')->nullable();
             $table->string('set')->nullable();
             $table->string('quiz_date')->nullable();
-                $table->bigInteger('total_time')->nullable();
+            $table->bigInteger('total_time')->nullable();
             $table->string('status');
 
             $table->timestamps();

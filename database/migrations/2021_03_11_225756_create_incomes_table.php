@@ -19,9 +19,9 @@ class CreateIncomesTable extends Migration
             $table->bigInteger('basic');
             $table->date('month');
             $table->bigInteger('earning');
-            $table->mediumText('earning_reason');
+            $table->mediumText('earning_reason')->nullable();
             $table->bigInteger('deduction');
-            $table->mediumText('deduction_reason');
+            $table->mediumText('deduction_reason')->nullable();
             $table->bigInteger('net_salary');
             $table->timestamps();
         });

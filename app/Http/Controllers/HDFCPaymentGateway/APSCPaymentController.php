@@ -256,8 +256,8 @@ class APSCPaymentController extends Controller
 
             $failureStatus = ['Aborted', 'Failure', ''];
             $jsonResponse = json_encode($responseArray);
-            
-        
+
+
             $hdfcOrder = HdfcCourseOrder::where('order_id', $responseArray['order_id']);
             $user = User::findOrFail($hdfcOrder->first()->user_id);
 
@@ -270,6 +270,7 @@ class APSCPaymentController extends Controller
                 return redirect()
                     ->route('order.index', compact('orders'));
             }
+
 
             $hdfcOrder->update(['payment_id' =>  $responseArray['tracking_id'],
                 'hdfc_payment_data' => $jsonResponse,
@@ -314,7 +315,7 @@ class APSCPaymentController extends Controller
 
 
             DB::commit();
-        
+
             return redirect()
                 ->route('order.index', compact('orders'))
                 ->with('success', 'Payment Successful');

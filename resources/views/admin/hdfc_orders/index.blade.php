@@ -90,8 +90,10 @@
                             <td>
                                 @if($order->status == 0)
                                     Created
-                                @else
+                                @elseif($order->status == 1)
                                     Sucessfull
+                                @else
+                                    Cancelled
                                 @endif
                             </td>
                             <td>{{$order->created_at}}</td>
@@ -99,8 +101,10 @@
                                 @if($order->status == 0)
                                     <a class="btn btn-primary small"
                                        href="{{route('admin.hdfc-orders.allow-course',$order->id)}}">Allow Course</a>
-                                @else
+                                @elseif($order->status == 1)
                                     Provided
+                                @else
+                                    Cancelled
                                 @endif
                             </td>
                                 <td>

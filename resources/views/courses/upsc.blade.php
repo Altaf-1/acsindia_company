@@ -178,7 +178,7 @@
                                     </ul>
                                     <hr>
                                     <div class="row course-end">
-                                        
+
                                     </div>
                                     <div class="row course-end pb-2 mt-1">
                                         <!--<div class="col-sm-6 p-4 d-flex justify-content-center">-->
@@ -280,11 +280,11 @@
                                                                 '  <img src="{{asset('comimages/payment/razorpay.webp')}}" width="100%">\n' +
                                                                 '</a>' +
                                                                 '</div>' +
-                                                                // '<div class="card col-5 m-2 p-5">' +
-                                                                // '<a href="{{route('hdfc.payment.initiate', $course->slug)}}">\n' +
-                                                                // '  <img src="{{asset('comimages/payment/hdfc.png')}}" width="100%">\n' +
-                                                                // '</a>' +
-                                                                // '</div>' +
+                                                                '<div class="card col-5 m-2 p-5">' +
+                                                                '<a href="{{route('hdfc.payment.initiate', $course->slug)}}">\n' +
+                                                                '  <img src="{{asset('comimages/payment/hdfc.png')}}" width="100%">\n' +
+                                                                '</a>' +
+                                                                '</div>' +
                                                                 '</div>',
                                                             width: 800,
                                                         })

@@ -160,8 +160,11 @@ Swal.fire({
                             <div class="blog-content">
                                 <h5 class="title text-center">---- SELECT DATE ----</h5>
                                 <ul class="themeioan_ul_icon justify-content-center text-center">
-                                    <li><a href="{{asset('/course/ias-booster-course-n')}}"
-                                            class=" btn color-two button text-white mb-3">25 SEP</a>
+                                    <!--<li><a href="{{asset('/course/ias-booster-course-n')}}"-->
+                                    <!--        class=" btn color-two button text-white mb-3">25 SEP</a>-->
+                                    <!--</li>-->
+                                    <li><a href="{{asset('/course/ias-booster-course-r')}}"
+                                            class=" btn color-two button text-white mb-3">16 NOV</a>
                                     </li>
                                 </ul>
                             </div>
@@ -170,67 +173,67 @@ Swal.fire({
                     </div>
                 </div>
 
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 p-0 course-animation mb20">
-                    <!-- 2 -->
-                    <div class="themeioan_course">
-                        <article>
-                            <!-- single course -->
-                            <div class="blog-photo ">
-                                <img class="img-fluid course-img" src="{{asset('cor/main/3.png')}}" alt="">
-                            </div>
-                            <div class="blog-content">
-                                <h5 class="title text-center">---- SELECT DATE ----</h5>
-                                <ul class="themeioan_ul_icon justify-content-center text-center">
-                                    <li><a href="{{asset('/course/ias-booster-course-p')}}"
-                                            class=" btn color-two button text-white mb-3">25 SEP</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </article>
-                        <!-- end single course -->
-                    </div>
-                </div>
+                <!--<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 p-0 course-animation mb20">-->
+                <!--     2 -->
+                <!--    <div class="themeioan_course">-->
+                <!--        <article>-->
+                <!--             single course -->
+                <!--            <div class="blog-photo ">-->
+                <!--                <img class="img-fluid course-img" src="{{asset('cor/main/3.png')}}" alt="">-->
+                <!--            </div>-->
+                <!--            <div class="blog-content">-->
+                <!--                <h5 class="title text-center">---- SELECT DATE ----</h5>-->
+                <!--                <ul class="themeioan_ul_icon justify-content-center text-center">-->
+                <!--                    <li><a href="{{asset('/course/ias-booster-course-p')}}"-->
+                <!--                            class=" btn color-two button text-white mb-3">25 SEP</a>-->
+                <!--                    </li>-->
+                <!--                </ul>-->
+                <!--            </div>-->
+                <!--        </article>-->
+                <!--         end single course -->
+                <!--    </div>-->
+                <!--</div>-->
 
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 p-0 course-animation mb20">
-                    <div class="themeioan_course">
-                        <article>
-                            <div class="blog-photo ">
-                                <img class="img-fluid course-img" src="{{asset('cor/main/5.png')}}" alt="">
-                            </div>
-                            <div class="blog-content">
-                                <h5 class="title text-center">---- SELECT DATE ----</h5>
-                                <ul class="themeioan_ul_icon justify-content-center text-center">
-                                    <li><a href="{{asset('/course/ias-booster-course-0')}}"
-                                            class=" btn color-two button text-white mb-3">4 SEP</a>
-                                    </li>
-                                    <li><a href="{{asset('/course/ias-booster-course-q')}}"
-                                            class=" btn color-two button text-white mb-3">9 Oct</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </article>
-                    </div>
-                </div>
+                <!--<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 p-0 course-animation mb20">-->
+                <!--    <div class="themeioan_course">-->
+                <!--        <article>-->
+                <!--            <div class="blog-photo ">-->
+                <!--                <img class="img-fluid course-img" src="{{asset('cor/main/5.png')}}" alt="">-->
+                <!--            </div>-->
+                <!--            <div class="blog-content">-->
+                <!--                <h5 class="title text-center">---- SELECT DATE ----</h5>-->
+                <!--                <ul class="themeioan_ul_icon justify-content-center text-center">-->
+                <!--                    <li><a href="{{asset('/course/ias-booster-course-0')}}"-->
+                <!--                            class=" btn color-two button text-white mb-3">4 SEP</a>-->
+                <!--                    </li>-->
+                <!--                    <li><a href="{{asset('/course/ias-booster-course-q')}}"-->
+                <!--                            class=" btn color-two button text-white mb-3">9 Oct</a>-->
+                <!--                    </li>-->
+                <!--                </ul>-->
+                <!--            </div>-->
+                <!--        </article>-->
+                <!--    </div>-->
+                <!--</div>-->
 
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 p-0 course-animation mb20">
-                    <div class="themeioan_course">
-                        <article>
-                            <div class="blog-photo ">
-                                <img class="img-fluid course-img" src="{{asset('cor/write.png')}}" alt="">
-                            </div>
-                            <div class="blog-content">
-                                <h4 class="title text-center text-danger">---- 50% OFF ----</h4>
-                                <!--<p class="text-primary display-4 text-center" id="demo"></p>-->
-                                <ul class="themeioan_ul_icon justify-content-center text-center">
-                                    <li><a href="{{asset('/user/study/show/33')}}"
-                                            class=" btn color-two button text-white mb-3">Enroll
-                                            Now</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </article>
-                    </div>
-                </div>
+                <!--<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 p-0 course-animation mb20">-->
+                <!--    <div class="themeioan_course">-->
+                <!--        <article>-->
+                <!--            <div class="blog-photo ">-->
+                <!--                <img class="img-fluid course-img" src="{{asset('cor/write.png')}}" alt="">-->
+                <!--            </div>-->
+                <!--            <div class="blog-content">-->
+                <!--                <h4 class="title text-center text-danger">---- 50% OFF ----</h4>-->
+                <!--<p class="text-primary display-4 text-center" id="demo"></p>-->
+                <!--                <ul class="themeioan_ul_icon justify-content-center text-center">-->
+                <!--                    <li><a href="{{asset('/user/study/show/33')}}"-->
+                <!--                            class=" btn color-two button text-white mb-3">Enroll-->
+                <!--                            Now</a>-->
+                <!--                    </li>-->
+                <!--                </ul>-->
+                <!--            </div>-->
+                <!--        </article>-->
+                <!--    </div>-->
+                <!--</div>-->
             </div>
         </div>
     </div>

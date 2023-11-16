@@ -17,11 +17,7 @@ Course - Academy of Civil Services
 @section('styles')
 <style>
 .bg-courses {
-    background-image: url({{asset('comimages/corbg.webp')
-}
-}
-
-);
+    background-image: url({{asset('comimages/corbg.webp')}}) !important;
 background-attachment: fixed;
 background-position: center;
 background-repeat: no-repeat;
@@ -297,25 +293,18 @@ Swal.fire({
                                                 Swal.fire({
                                                     title: 'Pay Using',
                                                     html: '<div class="row justify-content-center"> ' +
+                                                            '<div class="card col-5 m-2">' +
+                                                            '<a href="{{route('apsc.bank.payment.course', $course->slug)}}">\n' +'<img src="{{asset('comimages/payment/bank.webp')}}" width="100%" >\n' +
+                                                        ' </a>' +
+                                                        '</div>\n' +
                                                         '<div class="card col-5 m-2">' +
-                                                        '<a href="{{route('
-                                                    apsc.bank.payment.course ', $course->slug)}}">\n' +
-                                                    '  <img src="{{asset('
-                                                    comimages / payment / bank.webp ')}}" width="100%" >\n' +
-                                                    ' </a>' +
-                                                    '</div>\n' +
-                                                    '<div class="card col-5 m-2">' +
-                                                    '<a href="{{route('
-                                                    apsc.course.payment ', $course->slug)}}">\n' +
-                                                    '  <img src="{{asset('
-                                                    comimages / payment / razorpay.webp ')}}" width="100%">\n' +
+                                                        '<a href="{{route('apsc.course.payment', $course->slug)}}">\n' +
+                                                    '  <img src="{{asset('comimages/payment/razorpay.webp')}}" width="100%">\n' +
                                                     '</a>' +
                                                     '</div>' +
                                                     '<div class="card col-5 m-2 p-5">' +
-                                                    '<a href="{{route('
-                                                    hdfc.payment.apsc.initiate ', $course->slug)}}">\n' +
-                                                    '  <img src="{{asset('
-                                                    comimages / payment / hdfc.png ')}}" width="100%">\n' +
+                                                    '<a href="{{route('hdfc.payment.apsc.initiate', $course->slug)}}">\n' +
+                                                    '  <img src="{{asset('comimages/payment/hdfc.png')}}" width="100%">\n' +
                                                     '</a>' +
                                                     '</div>' +
                                                     '</div>',

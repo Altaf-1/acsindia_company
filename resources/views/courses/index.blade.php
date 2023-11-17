@@ -164,7 +164,7 @@ Swal.fire({
                                     <!--        class=" btn color-two button text-white mb-3">25 SEP</a>-->
                                     <!--</li>-->
                                     <li><a href="{{asset('/course/ias-booster-course-r')}}"
-                                            class=" btn color-two button text-white mb-3">16 NOV</a>
+                                            class=" btn color-two button text-white mb-3">22 NOV</a>
                                     </li>
                                 </ul>
                             </div>

@@ -80,6 +80,26 @@
                         </div>
                         <!-- end single features -->
                     </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                        <!-- 3 -->
+                        <div class="single-features-light text-center">
+                            <!-- single features -->
+                            <div>
+                                <i class="base-color fab fa-leanpub fa-3x"></i>
+                                <h4>ETHICS</h4>
+                                <form action="{{route('user.pdf-view.index')}}" method="post">
+                                        @csrf
+                                        <input type="hidden"
+                                               name="drive_link"
+                                               value="https://drive.google.com/file/d/1jVFcRvOMwh00np3rQiCn7riizsMSK9-a/">
+                                        <button type="submit" class="btn color-two button text-white">Download</button>
+                                    </form>
+                            </div>
+                        </div>
+                        <!-- end single features -->
+                    </div>
+
                     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
                         <!-- 3 -->
                         <div class="single-features-light text-center">

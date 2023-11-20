@@ -231,16 +231,16 @@ Swal.fire({
                     <div class="themeioan_course">
                         <article>
                             <div class="blog-photo ">
-                                <img class="img-fluid course-img" src="{{asset('comimages/2023/2024/6.png')}}" alt="">
+                                <img class="img-fluid course-img" src="{{asset('cor/e2.png')}}" alt="">
                             </div>
                             <div class="blog-content">
                                 <h5 class="title text-center">---- SELECT DATE ----</h5>
                                 <ul class="themeioan_ul_icon justify-content-center text-center">
                                     <!--<li><a href="{{asset('/apsc/course/39')}}" class=" btn color-two button text-white mb-3">4 SEP</a></li>-->
-                                    
-                                            <li><a href="{{asset('/apsc/course/52')}}"
-                                           class=" btn color-two button text-white mb-3">26 DEC</a>
-                                   </li>
+
+                                    <li><a href="{{asset('/apsc/course/52')}}"
+                                            class=" btn color-two button text-white mb-3">26 DEC</a>
+                                    </li>
                                 </ul>
                             </div>
                         </article>

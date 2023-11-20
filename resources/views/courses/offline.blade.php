@@ -179,6 +179,17 @@ Toast.fire({
                 class="whatsapp_float_btn" /></a>
     </div>
     <!--header content area start  position-center-->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <img src="{{asset('comimages/offline/1.png')}}" class="rounded" alt="Cinque Terre">
+            </div>
+            <div class="col-lg-5">
+                <img src="{{asset('comimages/offline/2.png')}}" class="rounded" alt="Cinque Terre">
+            </div>
+        </div>
+    </div>
+
     <div class="text-center container-fluid p-2 mb-2 post-heading-center mb-60 mt-5" style="background-color: #134982">
         <h2 data-aos="fade-right" class="text-white ml2">OFFLINE COURSE DETAILS</h2>
     </div>
@@ -210,7 +221,7 @@ Toast.fire({
                                         </a></div>
                                 </li>
                                 <li class="wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2000ms">
-                                    <div class="desc">For More Details ->DIBRUGARH CENTER: 9085268769
+                                    <div class="desc">For More Details ->DIBRUGARH CENTER: 6000505707
                                         </a></div>
                                 </li>
                                 <li class="wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2000ms">

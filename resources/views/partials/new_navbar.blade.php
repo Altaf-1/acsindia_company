@@ -41,6 +41,8 @@
                                             <div class="dropdown-content">
                                                 <a href="{{asset('/course')}}">Online
                                                     Courses</a>
+                                                <a href="{{asset('/offline')}}">UPSC
+                                                    Offline Courses</a>
                                                 <a href="{{asset('/current_affairs_2023')}}">Current
                                                     Affairs</a>
                                                 <a href="{{asset('/syllabus')}}">UPSC Syllabus</a>
@@ -62,6 +64,8 @@
                                             <div class="dropdown-content">
                                                 <a href="{{asset('/apsc/courses')}}">APSC
                                                     Online Courses</a>
+                                                <a href="{{asset('/offline')}}">APSC
+                                                    Offline Courses</a>
                                                 <a href="{{asset('/current_affairs_2023')}}">Current
                                                     Affairs</a>
                                                 <a href="{{asset('/syllabus')}}">APSC
@@ -75,6 +79,7 @@
                                             </div>
                                         </div>
                                     </li>
+
                                     <li id="menu-item-238"
                                         class="menu-item menu-item-type-custom menu-item-object-custom menu-item-238">
                                         @auth

@@ -239,6 +239,9 @@ Swal.fire({
                                     <!--<li><a href="{{asset('/apsc/course/39')}}" class=" btn color-two button text-white mb-3">4 SEP</a></li>-->
                                     <li><a href="{{asset('/apsc/course/47')}}"
                                             class=" btn color-two button text-white mb-3">6 NOV</a></li>
+                                            <li><a href="{{asset('/apsc/course/52')}}"
+                                           class=" btn color-two button text-white mb-3">26 DEC</a>
+                                   </li>
                                 </ul>
                             </div>
                         </article>

@@ -166,6 +166,18 @@ Swal.fire({
                                     <li><a href="{{asset('/course/ias-booster-course-r')}}"
                                             class=" btn color-two button text-white mb-3">22 NOV</a>
                                     </li>
+                                    <li><a href="{{asset('/course/ias-booster-course-s')}}"
+                                            class=" btn color-two button text-white mb-3">27 NOV</a>
+                                    </li>
+                                    <li><a href="{{asset('/course/ias-booster-course-t')}}"
+                                            class=" btn color-two button text-white mb-3">18 DEC</a>
+                                    </li>
+                                    <li><a href="{{asset('/course/ias-booster-course-u')}}"
+                                            class=" btn color-two button text-white mb-3">10 JAN</a>
+                                    </li>
+                                    <li><a href="{{asset('/course/ias-booster-course-v')}}"
+                                            class=" btn color-two button text-white mb-3">07 FEB</a>
+                                    </li>
                                 </ul>
                             </div>
                         </article>
@@ -194,26 +206,23 @@ Swal.fire({
                 <!--    </div>-->
                 <!--</div>-->
 
-                <!--<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 p-0 course-animation mb20">-->
-                <!--    <div class="themeioan_course">-->
-                <!--        <article>-->
-                <!--            <div class="blog-photo ">-->
-                <!--                <img class="img-fluid course-img" src="{{asset('cor/main/5.png')}}" alt="">-->
-                <!--            </div>-->
-                <!--            <div class="blog-content">-->
-                <!--                <h5 class="title text-center">---- SELECT DATE ----</h5>-->
-                <!--                <ul class="themeioan_ul_icon justify-content-center text-center">-->
-                <!--                    <li><a href="{{asset('/course/ias-booster-course-0')}}"-->
-                <!--                            class=" btn color-two button text-white mb-3">4 SEP</a>-->
-                <!--                    </li>-->
-                <!--                    <li><a href="{{asset('/course/ias-booster-course-q')}}"-->
-                <!--                            class=" btn color-two button text-white mb-3">9 Oct</a>-->
-                <!--                    </li>-->
-                <!--                </ul>-->
-                <!--            </div>-->
-                <!--        </article>-->
-                <!--    </div>-->
-                <!--</div>-->
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 p-0 course-animation mb20">
+                <div class="themeioan_course">
+                        <article>
+                            <div class="blog-photo ">
+                               <img class="img-fluid course-img" src="{{asset('cor/main/5.png')}}" alt="">
+                            </div>
+                            <div class="blog-content">
+                               <h5 class="title text-center">---- SELECT DATE ----</h5>
+                                <ul class="themeioan_ul_icon justify-content-center text-center">
+                                   <li><a href="{{asset('/course/ias-booster-course-w')}}"
+                                           class=" btn color-two button text-white mb-3">26 DEC</a>
+                                   </li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                </div>
 
                 <!--<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 p-0 course-animation mb20">-->
                 <!--    <div class="themeioan_course">-->

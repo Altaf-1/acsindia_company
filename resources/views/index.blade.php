@@ -357,10 +357,10 @@ Toast.fire({
                             <h5>Online/Offline</h5>
                             <h5><span><i class="fa fa-phone fa-phone-top"></i> </span> 6000505707</h5>
                             <a href="{{route('free.trial.course')}}" class="shadow_2 mt-3"
-                                style="background-color: #134982; font-family: 'Righteous';">JOIN DEMO CLASS</a><br />
-                            <a href="https://acsindiaias.com/recorded/course/ias-workshop" class="shadow_2 mt-3"
+                                style="background-color: #134982; font-family: 'Righteous';">JOIN DEMO CLASS</a>
+                            <!-- <a href="https://acsindiaias.com/recorded/course/ias-workshop" class="shadow_2 mt-3"
                                 style="background-color: #134982; font-family: 'Righteous';">IAS WORKSHOP</a><sup
-                                class="text-white bg-danger p-3 ml-2 rounded-circle vert-move">NEW</sup>
+                                class="text-white bg-danger p-3 ml-2 rounded-circle vert-move">NEW</sup> -->
                         </div>
                     </div>
                 </div>
@@ -474,115 +474,72 @@ Toast.fire({
                 </div>
 
             </div>
-
-            <div class="container mt-4 mb-4">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="event-photo themeioan_event">
-                            <div class="date" style="background-color: #92089e;">
-                                <h4><span>6</span> Oct, 2023</h4>
+            <div class="row">
+                <div class="col-lg-6 bg-light p-3">
+                    <div class="row ">
+                        <div class="col-lg-4">
+                            <img src="{{ asset('comimages/2023/e-1.webp') }}" alt="images">
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="course-info">
+                                <h3 class="course-title">
+                                    <a href="/acs_seminar">
+                                        <h3 class="font-weight-bold" style="font-family: 'Righteous';">APSC/UPSC FREE
+                                            SEMINAR</h3>
+                                    </a>
+                                </h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <ul>
+                                            <li class="ratings">
+                                                <i class="font-weight-bold"> Offline Mode</i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-part">
+                                        <!-- /acs_seminar -->
+                                        <a href="" class="btn text-white font-weight-bold mb-4 shadow_2"
+                                            style="background-color: #e52e06;">UPCOMING<i
+                                                class="flaticon-right-arrow"></i></a>
+                                    </div>
+                                </div>
                             </div>
-                            <img src="{{asset('comimages/work_2.png')}}" style="height: 80px, width: 120px" alt="">
-                            <!--<img src="{{asset('comimages/apsc_event.webp')}}" alt="">-->
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="d-flex flex-column">
-
-                            <h3 class="text-center mt-4 text-white"
-                                style="background-color: #129ea3; border-radius: 30px;">IAS WEBINAR</h3>
-                            <table class="table bg-light mt-3 justify-content-center">
-                                <tbody>
-                                    <tr>
-                                        <td>Date</td>
-                                        <td>&nbsp;</td>
-                                        <td>6,7,8,9 Oct, 2023</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Time</td>
-                                        <td>&nbsp;</td>
-                                        <td>7 pm - 8 pm</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mode</td>
-                                        <td>&nbsp;</td>
-                                        <td>Online</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <div class="btn-section">
-                                <a href="https://acsindiaias.com/recorded/course/ias-workshop" target="_blank"
-                                    class="bg-primary text-center p-3 mt-5 pt-3 text-white">Book Now</a>
-
+                </div>
+                <div class="col-lg-6 bg-light p-3">
+                    <div class="row ">
+                        <div class="col-lg-4">
+                            <img src="{{ asset('comimages/2023/e-2.webp') }}" alt="images">
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="course-info">
+                                <h3 class="course-title">
+                                    <a href="/acs_seminar">
+                                        <h3 class="font-weight-bold" style="font-family: 'Righteous';">APSC/UPSC FREE
+                                            WEBINAR</h3>
+                                    </a>
+                                </h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <ul>
+                                            <li class="ratings">
+                                                <i class="font-weight-bold"> Online Mode</i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-part">
+                                        <!-- /acs_webinar -->
+                                        <a href="" class="btn text-white font-weight-bold mb-4 shadow_2"
+                                            style="background-color: #e52e06;">UPCOMING<i
+                                                class="flaticon-right-arrow"></i></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!--<div class="row">-->
-            <!--    <div class="col-lg-6 bg-light p-3">-->
-            <!--        <div class="row ">-->
-            <!--            <div class="col-lg-4">-->
-            <!--                <img src="{{ asset('comimages/2023/e-1.webp') }}" alt="images">-->
-            <!--            </div>-->
-            <!--            <div class="col-lg-7">-->
-            <!--                <div class="course-info">-->
-            <!--                    <h3 class="course-title">-->
-            <!--                        <a href="/acs_seminar">-->
-            <!--                            <h3 class="font-weight-bold" style="font-family: 'Righteous';">APSC/UPSC FREE SEMINAR</h3>-->
-            <!--                        </a>-->
-            <!--                    </h3>-->
-            <!--                    <div class="bottom-part">-->
-            <!--                        <div class="info-meta">-->
-            <!--                            <ul>-->
-            <!--                                <li class="ratings">-->
-            <!--                                    <i class="font-weight-bold"> Offline Mode</i>-->
-            <!--                                </li>-->
-            <!--                            </ul>-->
-            <!--                        </div>-->
-            <!--                        <div class="btn-part">-->
-            <!--                            <a href="/acs_seminar"-->
-            <!--                                class="btn text-white font-weight-bold mb-4 shadow_2" style="background-color: #e52e06;" >Apply Now<i-->
-            <!--                                    class="flaticon-right-arrow"></i></a>-->
-            <!--                        </div>-->
-            <!--                    </div>-->
-            <!--                </div>-->
-            <!--            </div>-->
-            <!--        </div>-->
-            <!--    </div>-->
-            <!--    <div class="col-lg-6 bg-light p-3 ">-->
-            <!--        <div class="row">-->
-            <!--            <div class="col-lg-4">-->
-            <!--                <img src="{{ asset('comimages/2023/e-2.webp') }}" alt="images">-->
-            <!--            </div>-->
-            <!--            <div class="col-lg-7">-->
-            <!--                <div class="course-info">-->
-            <!--                    <h3 class="course-title">-->
-            <!--                        <a href="/acs_seminar">-->
-            <!--                            <h3 class="font-weight-bold" style="font-family: 'Righteous';">APSC/UPSC FREE WEBINAR</h3>-->
-            <!--                        </a>-->
-            <!--                    </h3>-->
-            <!--                    <div class="bottom-part">-->
-            <!--                        <div class="info-meta">-->
-            <!--                            <ul>-->
-            <!--                                <li class="ratings">-->
-            <!--                                    <i class="font-weight-bold"> Online Mode</i>-->
-            <!--                                </li>-->
-            <!--                            </ul>-->
-            <!--                        </div>-->
-            <!--                        <div class="btn-part">-->
-            <!--                            <a href="/acs_webinar"-->
-            <!--                                class="btn text-white font-weight-bold mb-4 shadow_2" style="background-color: #e52e06;">Apply Now<i-->
-            <!--                                    class="flaticon-right-arrow"></i></a>-->
-            <!--                        </div>-->
-            <!--                    </div>-->
-            <!--                </div>-->
-            <!--            </div>-->
-            <!--        </div>-->
-            <!--    </div>-->
-            <!--    <div>-->
-        </div>
     </section>
 
 

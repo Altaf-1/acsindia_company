@@ -348,16 +348,30 @@ Toast.fire({
             data-slick="{&quot;arrows&quot;:false,&quot;slidesMargin&quot;:0,&quot;dots&quot;:true,&quot;infinite&quot;:false,&quot;speed&quot;:300,&quot;slidesToShow&quot;:1,&quot;rows&quot;:1}"
             data-responsive="[{&quot;breakpoint&quot;:480,&quot;settings&quot;:{&quot;slidesToShow&quot;:1,&quot;slidesMargin&quot;:&quot;0&quot;}},{&quot;breakpoint&quot;:768,&quot;settings&quot;:{&quot;slidesToShow&quot;:1,&quot;slidesMargin&quot;:&quot;0&quot;}},{&quot;breakpoint&quot;:992,&quot;settings&quot;:{&quot;slidesToShow&quot;:1,&quot;slidesMargin&quot;:&quot;0&quot;}},{&quot;breakpoint&quot;:1200,&quot;settings&quot;:{&quot;slidesToShow&quot;:1,&quot;slidesMargin&quot;:&quot;0&quot;}},{&quot;breakpoint&quot;:1500,&quot;settings&quot;:{&quot;slidesToShow&quot;:1,&quot;slidesMargin&quot;:&quot;0&quot;}}]">
             <div class="slide-wrap">
-                <img src="{{asset('img/1.webp')}}" alt="image">
+                <img src="{{asset('comimages/2023/head-crash.png')}}" alt="image">
                 <!--<img src="{{asset('adv/212.png')}}" alt="image">-->
                 <div class="slide-info">
                     <div class="container">
                         <div class="slide-inner">
-                            <h1 style="font-family: 'Righteous';">UPSC</h1>
-                            <h5>Online/Offline</h5>
+                            <h1 style="font-family: 'Righteous';">Target 2024</h1>
+                            <h5 class="mt-3">Online/Offline</h5>
                             <h5><span><i class="fa fa-phone fa-phone-top"></i> </span> 6000505707</h5>
-                            <a href="{{route('free.trial.course')}}" class="shadow_2 mt-3"
-                                style="background-color: #134982; font-family: 'Righteous';">JOIN DEMO CLASS</a>
+                            <div class="dropup-center dropup mt-3">
+                                <button class="btn dropdown-toggle text-white"
+                                    style="background-color: #e52e06; font-family: 'Righteous';" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    JOIN NOW >
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="https://acsindiaias.com/apsc/course/54">Online
+                                            CLASS</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="https://acsindiaias.com/apsc/course/55">Offline
+                                            CLASS</a></li>
+                                </ul>
+                            </div>
+                            <!-- <a href="{{route('free.trial.course')}}" class="shadow_2 mt-3"
+                                style="background-color: #134982; font-family: 'Righteous';">JOIN CLASS</a> -->
                             <!-- <a href="https://acsindiaias.com/recorded/course/ias-workshop" class="shadow_2 mt-3"
                                 style="background-color: #134982; font-family: 'Righteous';">IAS WORKSHOP</a><sup
                                 class="text-white bg-danger p-3 ml-2 rounded-circle vert-move">NEW</sup> -->
@@ -466,6 +480,79 @@ Toast.fire({
             </div>
         </div>
     </div>
+
+    <section>
+        <div class="rs-faq-part style1 md-pt-70 md-pb-70 mt-2">
+            <div class="container-fluid m-2">
+                <div class="row">
+                    <div class="col-lg-6 padding-0 about-intro">
+                        <div class="main-part">
+                            <div class="row">
+                                <div class="col-lg-6 pt-5 col-sm-6 col-md-6 text-center justify-content-center">
+                                    <img class="text-danger p-1 mb-4"
+                                        style="width:110px; boder: 1px solid black; border-radius: 20px;"
+                                        src="{{asset('comimages/icons/d5.png')}}">
+                                    <!--<a href="https://acsindiaias.com/apsc/courses"><h3 style="background-color: #134982; font-family: 'Righteous';" class="d-flex flex-column btn text-white p-2">Online Courses</h3></i></a>-->
+                                    <div class="dropup-center dropup mt-3">
+                                        <button class="btn dropdown-toggle text-white "
+                                            style="background-color: #134982; font-family: 'Righteous';" type="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Online Courses >
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item"
+                                                    href="https://acsindiaias.com/apsc/course/54">UPSC
+                                                    CLASS</a>
+                                            </li>
+                                            <li><a class="dropdown-item"
+                                                    href="https://acsindiaias.com/apsc/course/55">APSC
+                                                    CLASS</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- <a href="{{asset('/apsc/courses')}}"
+                                        class="shadow_1 d-flex flex-column btn dropdown-toggle text-white p-2 rounded-pill mb-2"
+                                        style="background-color: #134982; font-family: 'Righteous';"
+                                        data-bs-toggle="dropdown" aria-expanded="false">Online Courses</a> -->
+                                </div>
+                                <div class="col-lg-6 pt-5 col-sm-6 col-md-6 text-center justify-content-center">
+                                    <img class="text-danger p-1 mb-4"
+                                        style="width:110px; boder: 1px solid black; border-radius: 20px;"
+                                        src="{{asset('comimages/icons/d5.png')}}">
+                                    <!--<a href="https://acsindiaias.com/offline"><h3 style="background-color: #134982; font-family: 'Righteous';" class="d-flex flex-column btn text-white p-2">Offline Courses</h3></i></a>-->
+                                    <a href="{{asset('/offline')}}"
+                                        class="shadow_1 d-flex flex-column text-white p-2 rounded-pill mb-2"
+                                        style="background-color: #134982; font-family: 'Righteous';">Offline Courses</a>
+                                </div>
+                                <div class="col-lg-6 pt-5 col-sm-6 col-md-6 text-center justify-content-center">
+                                    <img class="text-danger p-1 mb-4"
+                                        style="width:110px; boder: 1px solid black; border-radius: 20px;"
+                                        src="{{asset('comimages/icons/d2.png')}}">
+                                    <!--<a href="{{route('dailynewsanalyse.index')}}"><h4 style="background-color: #134982; font-family: 'Righteous';" class="d-flex flex-column btn text-white p-2">Daily News</h4></i></a>-->
+                                    <a href="{{route('dailynewsanalyse.index')}}"
+                                        class="shadow_1 d-flex flex-column text-white p-2 rounded-pill mb-2"
+                                        style="background-color: #134982; font-family: 'Righteous';">Daily News</a>
+                                </div>
+                                <div class="col-lg-6 pt-5 col-sm-6 col-md-6 text-center justify-content-center">
+                                    <img class="text-danger p-1 mb-4"
+                                        style="width:110px; boder: 1px solid black; border-radius: 20px;"
+                                        src="{{asset('comimages/icons/d4.png')}}">
+                                    <!--<a href="{{route('current.affair.index', 'current_affair')}}"><h4 style="background-color: #134982; font-family: 'Righteous';" class="d-flex flex-column btn text-white p-2">Current Affairs</h4></i></a>-->
+                                    <a href="/current_affairs_2023"
+                                        class="shadow_1 d-flex flex-column text-white p-2 rounded-pill mb-2"
+                                        style="background-color: #134982; font-family: 'Righteous';">Current Affairs</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 padding-0">
+                        <div>
+                            <img src="comimages/2023/result.jpeg" class="img-fluid w-60" alt="Responsive image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="gray-bg2">
         <div class="container pb-5 pt-5">
             <div class="row justify-content-center pb-3 pt-2 pb-2">

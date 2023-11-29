@@ -32,7 +32,12 @@
              $course->title != 'DIBRU OFFLINE (M)' &&
              $course->title != 'GHY OFFLINE (M)' &&
              $course->title != 'DEMO OFFLINE COURSE' &&
-             $course->title != 'APSC BOOSTER COURSE (R)')
+             $course->title != 'APSC BOOSTER COURSE (R)' &&
+             $course->title != 'APSC BOOSTER COURSE (S_1)' &&
+             $course->title != 'APSC BOOSTER COURSE (T)' &&
+             $course->title != 'APSC BOOSTER COURSE (U)' &&
+             $course->title != 'APSC BOOSTER COURSE (V)' &&
+             $course->title != 'APSC BOOSTER COURSE (W)')
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
                  <div class="single-features-light text-center">
                      <div>
@@ -67,7 +72,12 @@
              $course->title != 'DIBRU OFFLINE (M)' &&
              $course->title != 'GHY OFFLINE (M)' &&
              $course->title != 'DEMO OFFLINE COURSE' &&
-             $course->title != 'APSC BOOSTER COURSE (R)')
+             $course->title != 'APSC BOOSTER COURSE (R)' &&
+             $course->title != 'APSC BOOSTER COURSE (S_1)' &&
+             $course->title != 'APSC BOOSTER COURSE (T)' &&
+             $course->title != 'APSC BOOSTER COURSE (U)' &&
+             $course->title != 'APSC BOOSTER COURSE (V)' &&
+             $course->title != 'APSC BOOSTER COURSE (W)')
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
                  <div class="single-features-light text-center">
                      <div>
@@ -98,7 +108,12 @@
              $course->title != 'DIBRU OFFLINE (M)' &&
              $course->title != 'GHY OFFLINE (M)' &&
              $course->title != 'DEMO OFFLINE COURSE' &&
-             $course->title != 'APSC BOOSTER COURSE (R)')
+             $course->title != 'APSC BOOSTER COURSE (R)' &&
+             $course->title != 'APSC BOOSTER COURSE (S_1)' &&
+             $course->title != 'APSC BOOSTER COURSE (T)' &&
+             $course->title != 'APSC BOOSTER COURSE (U)' &&
+             $course->title != 'APSC BOOSTER COURSE (V)' &&
+             $course->title != 'APSC BOOSTER COURSE (W)')
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
                  <div class="single-features-light text-center">
                      <div>
@@ -788,6 +803,26 @@
                              class=" btn color-two button text-white">VIEW</a>
                          @endif
                          @if ($course->title == 'APSC BOOSTER COURSE (S)')
+                         <a href="{{ route('user.new.video', $course->title) }}"
+                             class=" btn color-two button text-white">VIEW</a>
+                         @endif
+                         @if ($course->title == 'APSC BOOSTER COURSE (S_1)')
+                         <a href="{{ route('user.new.video', $course->title) }}"
+                             class=" btn color-two button text-white">VIEW</a>
+                         @endif
+                         @if ($course->title == 'APSC BOOSTER COURSE (T)')
+                         <a href="{{ route('user.new.video', $course->title) }}"
+                             class=" btn color-two button text-white">VIEW</a>
+                         @endif
+                         @if ($course->title == 'APSC BOOSTER COURSE (U)')
+                         <a href="{{ route('user.new.video', $course->title) }}"
+                             class=" btn color-two button text-white">VIEW</a>
+                         @endif
+                         @if ($course->title == 'APSC BOOSTER COURSE (V)')
+                         <a href="{{ route('user.new.video', $course->title) }}"
+                             class=" btn color-two button text-white">VIEW</a>
+                         @endif
+                         @if ($course->title == 'APSC BOOSTER COURSE (W)')
                          <a href="{{ route('user.new.video', $course->title) }}"
                              class=" btn color-two button text-white">VIEW</a>
                          @endif

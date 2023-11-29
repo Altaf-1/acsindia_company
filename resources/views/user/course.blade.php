@@ -24,7 +24,12 @@
              $course->title != 'IAS BOOSTER COURSE (N)' &&
              $course->title != 'IAS BOOSTER COURSE (0)' &&
              $course->title != 'IAS BOOSTER COURSE (P)' &&
-             $course->title != 'IAS BOOSTER COURSE (R)')
+             $course->title != 'IAS BOOSTER COURSE (R)' &&
+             $course->title != 'IAS BOOSTER COURSE (S)' &&
+             $course->title != 'IAS BOOSTER COURSE (T)' &&
+             $course->title != 'IAS BOOSTER COURSE (U)' &&
+             $course->title != 'IAS BOOSTER COURSE (V)' &&
+             $course->title != 'IAS BOOSTER COURSE (W)')
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
                  <div class="single-features-light text-center">
                      <div>
@@ -499,6 +504,26 @@
                              class=" btn color-two button text-white">VIEW</a>
                          @endif
                          @if ($course->title == 'IAS BOOSTER COURSE (R)')
+                         <a href="{{ route('user.new.video', $course->title) }}"
+                             class=" btn color-two button text-white">VIEW</a>
+                         @endif
+                         @if ($course->title == 'IAS BOOSTER COURSE (S)')
+                         <a href="{{ route('user.new.video', $course->title) }}"
+                             class=" btn color-two button text-white">VIEW</a>
+                         @endif
+                         @if ($course->title == 'IAS BOOSTER COURSE (T)')
+                         <a href="{{ route('user.new.video', $course->title) }}"
+                             class=" btn color-two button text-white">VIEW</a>
+                         @endif
+                         @if ($course->title == 'IAS BOOSTER COURSE (U)')
+                         <a href="{{ route('user.new.video', $course->title) }}"
+                             class=" btn color-two button text-white">VIEW</a>
+                         @endif
+                         @if ($course->title == 'IAS BOOSTER COURSE (V)')
+                         <a href="{{ route('user.new.video', $course->title) }}"
+                             class=" btn color-two button text-white">VIEW</a>
+                         @endif
+                         @if ($course->title == 'IAS BOOSTER COURSE (W)')
                          <a href="{{ route('user.new.video', $course->title) }}"
                              class=" btn color-two button text-white">VIEW</a>
                          @endif

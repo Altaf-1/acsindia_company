@@ -75,11 +75,11 @@ Route::get('/upsc_demo', function () {
 
 Route::get('/contact', function () {
     return view('demo.contact');
-});
+})->middleware('auth');
 
 Route::get('/upsc', function () {
     return view('upsc');
-});
+})->middleware('auth');
 
 Route::get('/index8', function () {
     return view('index8');
@@ -99,7 +99,7 @@ Route::get('/apsc1_demo', function () {
 
 Route::get('/aboutus', function () {
     return view('demo.about');
-});
+})->middleware('auth');
 
 Route::get('/index10', function () {
     return view('index1_demo');
@@ -115,7 +115,7 @@ Route::get('/acs_webinar', function () {
 
 Route::get('/current_affairs_2023', function () {
     return view('digipedia.current_affairs_2023');
-});
+})->middleware('auth');
 
 Route::get('/daily_news_analysis', function () {
     return view('digipedia.daily_news_analysis');
@@ -145,7 +145,7 @@ Route::get('/mains_toppers_answer/essay', function () {
 Route::get('/apsc', function () {
      $courses = ApscCourses::where('active',1)->get();
     return view('index_3',compact('courses'));
-})->name('apsc_course');
+})->name('apsc_course')->middleware('auth');
 
 Route::get('/apsc-rank',function(){
     return redirect(route('apsc_course')."#rank");
@@ -154,7 +154,7 @@ Route::get('/apsc-rank',function(){
 
 Route::get('/offline', function () {
     return view('courses/offline');
-});
+})->middleware('auth');
 
 Route::get('/self-study/apsc', function () {
     return view('digipedia.self_study_apsc.index');
@@ -163,7 +163,7 @@ Route::get('/self-study/apsc', function () {
 
 Route::get('/self-study', function () {
     return view('digipedia.self.index');
-})->name('digipedia.self.index');
+})->name('digipedia.self.index')->middleware('auth');
 
 Route::get('/self-study/index', function () {
     return view('digipedia.self_study.index');
@@ -332,7 +332,7 @@ Route::get('/apscall', function () {
 
 Route::get('/syllabus', function () {
     return view('digipedia.syllabus.syllabus');
-});
+})->middleware('auth');
 Route::get('/prelims', function () {
     return view('digipedia.syllabus.prelims');
 });
@@ -345,7 +345,7 @@ Route::get('/optionals', function () {
 
 Route::get('/previous', function () {
     return view('digipedia.Questions.paper');
-});
+})->middleware('auth');
 Route::get('/qprelims', function () {
     return view('digipedia.Questions.qprelims');
 });
@@ -2267,7 +2267,7 @@ Route::get('apsc/course/bank/payment/{id}','Apsc\ApscCourseController@bank')->na
 Route::post('apsc/course/bank/payment/store','Apsc\ApscCourseController@bank_store')->name('apsc.bank.payment.store')->middleware('auth');
 
 //feedback
-Route::post('user/feedback', 'FeedbackController@store')->name('user.feedback.store')->middleware('auth');
+Route::post('user/feedback', 'FeedbackController@store')->name('user.feedback.store');
 
 //wisdom page embedded
 Route::get('wisdom', function () {
@@ -3121,14 +3121,14 @@ Route::get('/target2022(batch2)', function () {
 Route::get(
     '/dailynewsanalyse',
     [\App\Http\Controllers\DailyNewsAnalyseController::class, 'index']
-)->name('dailynewsanalyse.index');
+)->name('dailynewsanalyse.index')->middleware('auth');
 
 Route::middleware(['auth'])->group(function () {
 
     Route::get(
         '/dailynews',
         [\App\Http\Controllers\DailyNewsController::class, 'index']
-    )->name('dailynews.index');
+    )->name('dailynews.index')->middleware('auth');
 
      Route::get(
         '/assignments',
@@ -3907,7 +3907,7 @@ Route::get('/scholarship-registration', function () {
 
 Route::get('/apply-job', function () {
     return view('digipedia.job');
-});
+})->middleware('auth');
 
 // apply job routes
 Route::get('/apply-job/index', [\App\Http\Controllers\JobController::class, 'index'])

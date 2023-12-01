@@ -168,9 +168,8 @@ Swal.fire({
                             <div class="blog-content">
                                 <h3 class=" text-center"><strong> {{$course->title}}</strong></h3>
                                 <ul class="themeioan_ul_icon">
-                                    <li><i class="fas fa-check-circle"></i> {{$course->days}} online coaching.</li>
-                                    <li><i class="fas fa-check-circle"></i> Daily {{$course->timing}} live online
-                                        class.
+                                    <li><i class="fas fa-check-circle"></i> {{$course->days}} coaching.</li>
+                                    <li><i class="fas fa-check-circle"></i> Daily {{$course->timing}} class.
                                     </li>
                                     {!! $course->options !!}
                                     {{--                                        <li><i class="fas fa-check-circle"></i> Daily Q&A session.</li>--}}

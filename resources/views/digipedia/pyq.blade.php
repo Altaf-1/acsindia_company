@@ -235,96 +235,49 @@ Swal.fire({
 </script>
 @endif
 <main>
-    <div class="whatsapp_float">
-        <a href="https://wa.me/917099032473" target="_blank"><img src="{{ asset('comimages/whatsapp.png') }}"
-                width="80px" class="whatsapp_float_btn" /></a>
-    </div>
-    <!--header content area start  position-center-->
-    <div class="header-content position-left bg-home-ome1 col-sm-12" role="banner">
-        <!--.container -->
-        <div class="container-fluid pl-5">
-            <!--.row -->
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 header-area">
-                    <div class="header-area-inner header-text pt-5">
-                        <!--single content header -->
-                        <div class="mobile-center mt-3"><span data-aos="fade-down " data-aos-delay="500"
-                                class="subtitle ">Welcome to</span></div>
-                        <h1 data-aos="fade-right" class="title mobile-center"><span
-                                class="base-color ml2 bg-white">&nbsp;Academy of Civil Services&nbsp;</span></h1>
-                        <h3 data-aos="fade-down" class="text-white mobile-center">Be the Best - Be the Change</h3>
-                        <div class="mt-3">
-                            <img src="{{ asset('comimages/new1.gif') }}" width="60" height="25">
-                            <h2 class="text-white">APSC INTERVIEW TRAINING</h2>
-                            <a href="#regis" style"box-shadow: 5px 10px #888888;"
-                                class="color-two btn-custom smooth-scroll">CLICK HERE FOR REGISTRATION</a>
+    <!-- why-us area start -->
+    <section>
+        <div class="rs-faq-part style1 md-pt-70 md-pb-70 mt-2">
+            <div class="container-fluid m-2">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                        <!-- 3 -->
+                        <div class="single-features-light text-center">
+                            <!-- single features -->
+                            <div>
+                                <i class="base-color fab fa-leanpub fa-3x"></i>
+                                <h4>GS-1</h4>
+                                <form action="{{route('user.pdf-view.index')}}" method="post">
+                                    @csrf
+                                    <input type="hidden" name="drive_link"
+                                        value="https://drive.google.com/file/d/14b9XYGxS9zqYwXhy_Lzg13B7AjJ4t593/">
+                                    <button type="submit" class="btn color-two button text-white">Download</button>
+                                </form>
+                            </div>
                         </div>
-
-                        <!--<a href="https://acsassam.com/upsc-test-series/" class=" btn color-two button text-white" target="_blank">UPSC TEST SERIES 2020</a>-->
+                        <!-- end single features -->
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                        <!-- 3 -->
+                        <div class="single-features-light text-center">
+                            <!-- single features -->
+                            <div>
+                                <i class="base-color fab fa-leanpub fa-3x"></i>
+                                <h4>GS-2</h4>
+                                <form action="{{route('user.pdf-view.index')}}" method="post">
+                                    @csrf
+                                    <input type="hidden" name="drive_link"
+                                        value="https://drive.google.com/file/d/14b9XYGxS9zqYwXhy_Lzg13B7AjJ4t593/">
+                                    <button type="submit" class="btn color-two button text-white">Download</button>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- end single features -->
                     </div>
                 </div>
             </div>
-            <!--.row end -->
         </div>
-        <!--.container end -->
-    </div>
-
-    <marquee scrollamount="15">THE LARGEST ONLINE PLATFORM FOR INDIAN CIVIL SERVICES
-        EXAMINATION.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;THE
-        LARGEST ONLINE PLATFORM FOR INDIAN CIVIL SERVICES EXAMINATION.
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;THE LARGEST ONLINE PLATFORM FOR INDIAN CIVIL SERVICES EXAMINATION.
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;THE LARGEST ONLINE PLATFORM FOR INDIAN CIVIL SERVICES EXAMINATION.
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;THE LARGEST ONLINE PLATFORM FOR INDIAN CIVIL SERVICES EXAMINATION.
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;THE LARGEST ONLINE PLATFORM FOR INDIAN CIVIL SERVICES EXAMINATION.
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;THE LARGEST ONLINE PLATFORM FOR INDIAN CIVIL SERVICES EXAMINATION.
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;THE LARGEST ONLINE PLATFORM FOR INDIAN CIVIL SERVICES EXAMINATION.
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;THE LARGEST ONLINE PLATFORM FOR INDIAN CIVIL SERVICES EXAMINATION.
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;THE LARGEST ONLINE PLATFORM FOR INDIAN CIVIL SERVICES EXAMINATION.
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;THE LARGEST ONLINE PLATFORM FOR INDIAN CIVIL SERVICES EXAMINATION.
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;THE LARGEST ONLINE PLATFORM FOR INDIAN CIVIL SERVICES EXAMINATION.
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;THE LARGEST ONLINE PLATFORM FOR INDIAN CIVIL SERVICES EXAMINATION.
-    </marquee>
-    <!-- end header content area start -->
-    <!-- why-us area start -->
-    <div class="m-4">
-        <div class="row">
-            <div data-aos="fade-right" class="col-xs-12 col-sm-12 col-md-5 col-xl-6 col-lg-5 why-us-left-bg">
-                <img style="height:450px; width:800px" target="_blank" src="{{asset('comimages/about1.webp')}}" /></a>
-            </div>
-            <div class="col-lg-6" id="regis">
-                <form action="{{route('eventdata.store')}}" method="POST" enctype="multipart/form-data">
-                    @csrf()
-                    <div class="mb-3">
-                        <h3>Name</h3>
-                        <input required name="name" type="text" class="form-control" id="exampleInputEmail1"
-                            aria-describedby="emailHelp">
-                    </div>
-                    <div class="mb-3">
-                        <h3>Email Address</h3>
-                        <input required name="email" type="email" class="form-control" id="exampleInputPassword1">
-                    </div>
-                    <div class="mb-3">
-                        <h3>Phone Number</h3>
-                        <input required name="phone" type="text" class="form-control" id="exampleInputPassword1">
-                    </div>
-                    <div class="mb-3">
-                        <h3>City</h3>
-                        <input required name="city" type="text" class="form-control" id="exampleInputPassword1">
-                    </div>
-                    <div class="mb-3">
-                        <h3>Mains Application Form</h3>
-                        <input required name="application_form" type="file">
-                    </div>
-                    <div class="mb-3">
-                        <h3>Upload Profile Picture</h3>
-                        <input required name="profile_img" type="file">
-                    </div>
-                    <button type="submit" class="btn btn-primary text-white">Submit</button>
-                </form>
-            </div>
-
-        </div>
-    </div>
+    </section>
     @endsection
     @section('scripts')
     <script src='{{ asset('js/jquery-3.4.1.min.js') }}'></script>

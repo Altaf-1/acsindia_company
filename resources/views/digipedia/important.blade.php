@@ -269,9 +269,10 @@ Swal.fire({
                                         style="background-color: #134982; font-family: 'Righteous';">Previous Year
                                         Question Papers</a>
                                 </div>
-                                <div class="col-lg-6 pt-5 col-sm-6 col-md-6 text-center justify-content-center">
-                                    <h5>For More Information: 6000505707</h5>
-                                    <a href="acsindiaias.com">Visit main Website</a>
+                                <div
+                                    class="col-lg-6 pt-5 col-sm-6 col-md-6 bg-danger text-center justify-content-center">
+                                    <h5 class="text-center text-white">For More Information: 6000505707</h5>
+                                    <a href="acsindiaias.com" class="btn btn-primary text-white">Visit main Website</a>
                                 </div>
                             </div>
                         </div>

@@ -258,7 +258,7 @@ Swal.fire({
                                         style="width:110px; boder: 1px solid black; border-radius: 20px;"
                                         src="{{asset('comimages/icons/d2.png')}}">
                                     <!--<a href="{{route('dailynewsanalyse.index')}}"><h4 style="background-color: #134982; font-family: 'Righteous';" class="d-flex flex-column btn text-white p-2">Daily News</h4></i></a>-->
-                                    <a href="{{route('/pyq')}}"
+                                    <a href="{{asset('/apsc_pyq')}}"
                                         class="shadow_1 d-flex flex-column text-white p-2 rounded-pill mb-2"
                                         style="background-color: #134982; font-family: 'Righteous';">Previous Year
                                         Question Papers</a>

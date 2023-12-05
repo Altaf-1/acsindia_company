@@ -240,7 +240,7 @@ Swal.fire({
         <div class="rs-faq-part style1 md-pt-70 md-pb-70 mt-2">
             <div class="container-fluid m-2">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                         <!-- 3 -->
                         <div class="single-features-light text-center">
                             <!-- single features -->
@@ -257,7 +257,7 @@ Swal.fire({
                         </div>
                         <!-- end single features -->
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                         <!-- 3 -->
                         <div class="single-features-light text-center">
                             <!-- single features -->
@@ -274,94 +274,95 @@ Swal.fire({
                         </div>
                         <!-- end single features -->
                     </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
-                    <!-- 3 -->
-                    <div class="single-features-light text-center">
-                        <!-- single features -->
-                        <div>
-                            <i class="base-color fab fa-leanpub fa-3x"></i>
-                            <h4>ECONOMY</h4>
-                            <form action="{{route('user.pdf-view.index')}}" method="post">
-                                @csrf
-                                <input type="hidden" name="drive_link"
-                                    value="https://drive.google.com/file/d/1-HM059BN-qY-sxvuvCVNBX8rSoJK-RGB/">
-                                <button type="submit" class="btn color-two button text-white">Download</button>
-                            </form>
+
+                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                        <!-- 3 -->
+                        <div class="single-features-light text-center">
+                            <!-- single features -->
+                            <div>
+                                <i class="base-color fab fa-leanpub fa-3x"></i>
+                                <h4>ECONOMY</h4>
+                                <form action="{{route('user.pdf-view.index')}}" method="post">
+                                    @csrf
+                                    <input type="hidden" name="drive_link"
+                                        value="https://drive.google.com/file/d/1-HM059BN-qY-sxvuvCVNBX8rSoJK-RGB/">
+                                    <button type="submit" class="btn color-two button text-white">Download</button>
+                                </form>
+                            </div>
                         </div>
+                        <!-- end single features -->
                     </div>
-                    <!-- end single features -->
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
-                <!-- 3 -->
-                <div class="single-features-light text-center">
-                    <!-- single features -->
-                    <div>
-                        <i class="base-color fab fa-leanpub fa-3x"></i>
-                        <h4>GEOGRAPHY</h4>
-                        <form action="{{route('user.pdf-view.index')}}" method="post">
-                            @csrf
-                            <input type="hidden" name="drive_link"
-                                value="https://drive.google.com/file/d/1HYumvyb86xFOgfBrOAJffW0Ngf9bdKVs/">
-                            <button type="submit" class="btn color-two button text-white">Download</button>
-                        </form>
+
+                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                        <!-- 3 -->
+                        <div class="single-features-light text-center">
+                            <!-- single features -->
+                            <div>
+                                <i class="base-color fab fa-leanpub fa-3x"></i>
+                                <h4>GEOGRAPHY</h4>
+                                <form action="{{route('user.pdf-view.index')}}" method="post">
+                                    @csrf
+                                    <input type="hidden" name="drive_link"
+                                        value="https://drive.google.com/file/d/1HYumvyb86xFOgfBrOAJffW0Ngf9bdKVs/">
+                                    <button type="submit" class="btn color-two button text-white">Download</button>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- end single features -->
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                        <!-- 3 -->
+                        <div class="single-features-light text-center">
+                            <!-- single features -->
+                            <div>
+                                <i class="base-color fab fa-leanpub fa-3x"></i>
+                                <h4>INDIAN POLITY</h4>
+                                <form action="{{route('user.pdf-view.index')}}" method="post">
+                                    @csrf
+                                    <input type="hidden" name="drive_link"
+                                        value="https://drive.google.com/file/d/1oXhM74to_YmEPsj3b6pFblUP6L97jHGW/">
+                                    <button type="submit" class="btn color-two button text-white">Download</button>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- end single features -->
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                        <!-- 3 -->
+                        <div class="single-features-light text-center">
+                            <!-- single features -->
+                            <div>
+                                <i class="base-color fab fa-leanpub fa-3x"></i>
+                                <h4>MODERN HISTORY</h4>
+                                <form action="{{route('user.pdf-view.index')}}" method="post">
+                                    @csrf
+                                    <input type="hidden" name="drive_link"
+                                        value="https://drive.google.com/file/d/1RlyhiA0qHLhrvLkk77-iZH5PkzjGInvZ/">
+                                    <button type="submit" class="btn color-two button text-white">Download</button>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- end single features -->
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                        <!-- 3 -->
+                        <div class="single-features-light text-center">
+                            <!-- single features -->
+                            <div>
+                                <i class="base-color fab fa-leanpub fa-3x"></i>
+                                <h4>SCIENCE AND TECH.</h4>
+                                <form action="{{route('user.pdf-view.index')}}" method="post">
+                                    @csrf
+                                    <input type="hidden" name="drive_link"
+                                        value="https://drive.google.com/file/d/1uzWpslA3v3TRLigCTY4fs9mbyDUXBAEr/">
+                                    <button type="submit" class="btn color-two button text-white">Download</button>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- end single features -->
                     </div>
                 </div>
-                <!-- end single features -->
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
-            <!-- 3 -->
-            <div class="single-features-light text-center">
-                <!-- single features -->
-                <div>
-                    <i class="base-color fab fa-leanpub fa-3x"></i>
-                    <h4>INDIAN POLITY</h4>
-                    <form action="{{route('user.pdf-view.index')}}" method="post">
-                        @csrf
-                        <input type="hidden" name="drive_link"
-                            value="https://drive.google.com/file/d/1oXhM74to_YmEPsj3b6pFblUP6L97jHGW/">
-                        <button type="submit" class="btn color-two button text-white">Download</button>
-                    </form>
-                </div>
-            </div>
-            <!-- end single features -->
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
-            <!-- 3 -->
-            <div class="single-features-light text-center">
-                <!-- single features -->
-                <div>
-                    <i class="base-color fab fa-leanpub fa-3x"></i>
-                    <h4>MODERN HISTORY</h4>
-                    <form action="{{route('user.pdf-view.index')}}" method="post">
-                        @csrf
-                        <input type="hidden" name="drive_link"
-                            value="https://drive.google.com/file/d/1RlyhiA0qHLhrvLkk77-iZH5PkzjGInvZ/">
-                        <button type="submit" class="btn color-two button text-white">Download</button>
-                    </form>
-                </div>
-            </div>
-            <!-- end single features -->
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
-            <!-- 3 -->
-            <div class="single-features-light text-center">
-                <!-- single features -->
-                <div>
-                    <i class="base-color fab fa-leanpub fa-3x"></i>
-                    <h4>SCIENCE AND TECH.</h4>
-                    <form action="{{route('user.pdf-view.index')}}" method="post">
-                        @csrf
-                        <input type="hidden" name="drive_link"
-                            value="https://drive.google.com/file/d/1uzWpslA3v3TRLigCTY4fs9mbyDUXBAEr/">
-                        <button type="submit" class="btn color-two button text-white">Download</button>
-                    </form>
-                </div>
-            </div>
-            <!-- end single features -->
-        </div>
     </section>
 
     @endsection

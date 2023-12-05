@@ -334,7 +334,7 @@ Route::get('/Probable_Question', function () {
     return view('digipedia.probable');
 });
 
-Route::get('/pyq', function () {
+Route::get('/apsc_pyq', function () {
     return view('digipedia.pyq');
 });
 

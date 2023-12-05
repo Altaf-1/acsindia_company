@@ -240,6 +240,12 @@ Swal.fire({
         <div class="rs-faq-part style1 md-pt-70 md-pb-70 mt-2">
             <div class="container-fluid m-2">
                 <div class="row">
+                    <div class="col-lg-6 padding-0">
+                        <div>
+                            <img src="comimages/2023/result.jpeg" style="height:550px; width:800px"
+                                class="img-fluid w-60" alt="Responsive image">
+                        </div>
+                    </div>
                     <div class="col-lg-6 padding-0 about-intro">
                         <div class="main-part">
                             <div class="row">
@@ -263,15 +269,14 @@ Swal.fire({
                                         style="background-color: #134982; font-family: 'Righteous';">Previous Year
                                         Question Papers</a>
                                 </div>
+                                <div class="col-lg-6 pt-5 col-sm-6 col-md-6 text-center justify-content-center">
+                                    <h5>For More Information: 6000505707</h5>
+                                    <a href="acsindiaias.com">Visit main Website</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 padding-0">
-                        <div>
-                            <img src="comimages/2023/result.jpeg" style="height:550px; width:800px"
-                                class="img-fluid w-60" alt="Responsive image">
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>

@@ -240,7 +240,7 @@ Swal.fire({
         <div class="rs-faq-part style1 md-pt-70 md-pb-70 mt-2">
             <div class="container-fluid m-2">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                         <!-- 3 -->
                         <div class="single-features-light text-center">
                             <!-- single features -->
@@ -257,7 +257,7 @@ Swal.fire({
                         </div>
                         <!-- end single features -->
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                         <!-- 3 -->
                         <div class="single-features-light text-center">
                             <!-- single features -->

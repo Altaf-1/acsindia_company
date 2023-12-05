@@ -269,9 +269,26 @@ Swal.fire({
                                         style="background-color: #134982; font-family: 'Righteous';">Previous Year
                                         Question Papers</a>
                                 </div>
-                                <div class="col-lg-6 pt-5 col-sm-6 col-md-6 text-center justify-content-center">
-                                    <h5>For More Information: 6000505707</h5>
-                                    <a href="acsindiaias.com">Visit main Website</a>
+                                <div class="col-lg-6 pt-5 col-sm-6 col-md-6 bg-info text-center justify-content-center">
+                                    <h5 class="text-center text-white">For More Information: 6000505707</h5>
+                                    <div class="dropup-center dropup mt-3">
+                                        <button class="btn dropdown-toggle text-white"
+                                            style="background-color: #e52e06; font-family: 'Righteous';" type="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            CRASH COURSE PRELIMS 2024
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item"
+                                                    href="https://acsindiaias.com/apsc/course/54">Online
+                                                    CLASS</a>
+                                            </li>
+                                            <li><a class="dropdown-item"
+                                                    href="https://acsindiaias.com/apsc/course/55">Offline
+                                                    CLASS</a></li>
+                                        </ul>
+                                    </div>
+                                    <a href="acsindiaias.com" class="btn btn-primary text-white rounded mt-3">Visit main
+                                        Website</a>
                                 </div>
                             </div>
                         </div>

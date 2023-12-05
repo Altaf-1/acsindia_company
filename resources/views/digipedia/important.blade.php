@@ -269,7 +269,8 @@ Swal.fire({
                                         style="background-color: #134982; font-family: 'Righteous';">Previous Year
                                         Question Papers</a>
                                 </div>
-                                <div class="col-lg-6 pt-5 col-sm-6 col-md-6 bg-info text-center justify-content-center">
+                                <div
+                                    class="col-lg-12 pt-5 col-sm-12 col-md-12 bg-info text-center justify-content-center">
                                     <h5 class="text-center text-white">For More Information: 6000505707</h5>
                                     <div class="dropup-center dropup mt-3">
                                         <button class="btn dropdown-toggle text-white"

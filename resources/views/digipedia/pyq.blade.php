@@ -267,7 +267,7 @@ Swal.fire({
                                 <form action="{{route('user.pdf-view.index')}}" method="post">
                                     @csrf
                                     <input type="hidden" name="drive_link"
-                                        value="https://drive.google.com/file/d/14b9XYGxS9zqYwXhy_Lzg13B7AjJ4t593/">
+                                        value="https://drive.google.com/file/d/1cnzz1gTCQN6yzV7mBbn_TPizIaXmSdHf/">
                                     <button type="submit" class="btn color-two button text-white">Download</button>
                                 </form>
                             </div>

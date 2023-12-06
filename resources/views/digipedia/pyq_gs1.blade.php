@@ -239,27 +239,37 @@ Swal.fire({
     <section>
         <div class="rs-faq-part style1 md-pt-70 md-pb-70 mt-2">
             <div class="container-fluid m-2">
-                <div class="row mt-5">
-                    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                         <!-- 3 -->
-                        <div class="single-features-light text-center bg-light">
+                        <div class="single-features-light text-center">
                             <!-- single features -->
                             <div>
                                 <i class="base-color fab fa-leanpub fa-3x"></i>
-                                <h4>GS-1</h4>
-                                <a href="/pyq_gs1" class="btn color-two button text-white">View</a>
+                                <h4>2018</h4>
+                                <form action="{{route('user.pdf-view.index')}}" method="post">
+                                    @csrf
+                                    <input type="hidden" name="drive_link"
+                                        value="https://drive.google.com/file/d/1cPyARKTEedbJcWIYq8G2tW8VNniXKX56/">
+                                    <button type="submit" class="btn color-two button text-white">Download</button>
+                                </form>
                             </div>
                         </div>
                         <!-- end single features -->
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                         <!-- 3 -->
-                        <div class="single-features-light text-center bg-light">
+                        <div class="single-features-light text-center">
                             <!-- single features -->
                             <div>
                                 <i class="base-color fab fa-leanpub fa-3x"></i>
-                                <h4>GS-2</h4>
-                                <a href="/pyq_gs2" class="btn color-two button text-white">View</a>
+                                <h4>2022</h4>
+                                <form action="{{route('user.pdf-view.index')}}" method="post">
+                                    @csrf
+                                    <input type="hidden" name="drive_link"
+                                        value="https://drive.google.com/file/d/14b9XYGxS9zqYwXhy_Lzg13B7AjJ4t593/">
+                                    <button type="submit" class="btn color-two button text-white">Download</button>
+                                </form>
                             </div>
                         </div>
                         <!-- end single features -->

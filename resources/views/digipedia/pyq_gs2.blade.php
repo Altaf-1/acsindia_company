@@ -268,7 +268,15 @@ Swal.fire({
                                     @csrf
                                     <input type="hidden" name="drive_link"
                                         value="https://drive.google.com/file/d/1cnzz1gTCQN6yzV7mBbn_TPizIaXmSdHf/">
-                                    <button type="submit" class="btn color-two button text-white">Download</button>
+                                    <button type="submit" class="btn color-two button text-white">Question
+                                        Paper</button>
+                                </form>
+                                <form action="{{route('user.pdf-view.index')}}" method="post">
+                                    @csrf
+                                    <input type="hidden" name="drive_link"
+                                        value="https://drive.google.com/file/d/1to-eBhHwG8wbuV9oHBrzOWKI1C4BLoC2/">
+                                    <button type="submit" class="btn color-two button text-white mt-3">Answer
+                                        Key</button>
                                 </form>
                             </div>
                         </div>

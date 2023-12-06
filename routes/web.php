@@ -119,7 +119,7 @@ Route::get('/current_affairs_2023', function () {
 
 Route::get('/daily_news_analysis', function () {
     return view('digipedia.daily_news_analysis');
-});
+})->middleware('auth');
 
 Route::get('/index5', function () {
     return view('index5');
@@ -445,7 +445,7 @@ Route::get('/acs2020', function () {
 });
 Route::get('/acsyear', function () {
     return view('digipedia.acsyear');
-});
+})->middleware('auth');
 Route::get('/botany', function () {
     return view('digipedia.optionals.botany');
 });
@@ -3402,7 +3402,7 @@ Route::get('/iasrecorded', function () {
 
 Route::get('/current_affairs_ppt', function () {
     return view('digipedia.current_affairs_user_ppt');
-});
+})->middleware('auth');
 
 //target2022(batch-2)
 Route::get('/ppttarget2022(batch2)', function () {
@@ -4052,10 +4052,10 @@ Route::get(
     '/current-affair/{type}',
     [\App\Http\Controllers\CurrentAffairController::class, 'index']
 )
-    ->name('current.affair.index');
+    ->name('current.affair.index')->middleware('auth');
 Route::get('/current-affair/view/{current_affair}',
     [\App\Http\Controllers\CurrentAffairController::class, 'show'])
-    ->name('current.affair.show');    
+    ->name('current.affair.show')->middleware('auth');    
     
     
     

@@ -338,6 +338,14 @@ Route::get('/apsc_pyq', function () {
     return view('digipedia.pyq');
 });
 
+Route::get('/pyq_gs1', function () {
+    return view('digipedia.pyq_gs1');
+});
+
+Route::get('/pyq_gs2', function () {
+    return view('digipedia.pyq_gs2');
+});
+
 Route::get('/apscall', function () {
     return view('digipedia.apscall');
 });

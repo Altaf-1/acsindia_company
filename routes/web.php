@@ -143,12 +143,12 @@ Route::get('/mains_toppers_answer/essay', function () {
 });
 
 Route::get('/apsc', function () {
-     $courses = ApscCourses::where('active',1)->get();
-    return view('index_3',compact('courses'));
+    $courses = ApscCourses::where('active', 1)->get();
+    return view('index_3', compact('courses'));
 })->name('apsc_course')->middleware('auth');
 
-Route::get('/apsc-rank',function(){
-    return redirect(route('apsc_course')."#rank");
+Route::get('/apsc-rank', function () {
+    return redirect(route('apsc_course') . "#rank");
 })->name('apsc_rank');
 
 
@@ -238,28 +238,32 @@ Route::get('/tips_tricks_session', function () {
 
 Route::get('/apsc_probable_question', function () {
     $datas = TestSeriesAssign::where('course_name', 'all')->get();
-    return view('digipedia.apsc.probable_question',compact('datas'));
+    return view('digipedia.apsc.probable_question', compact('datas'));
 });
 
 
 
 Route::get('/', function () {
     $events = Event::where('status', 1)->get();
-    $courses = \App\Course::where('active',1)->latest()->get();
-    $recorded_courses = \App\Recorded::where('active',1)->latest()->get();
+    $courses = \App\Course::where('active', 1)->latest()->get();
+    $recorded_courses = \App\Recorded::where('active', 1)->latest()->get();
     $user = Auth::user();
     $apsc_interview_course = \App\ApscCourses::where('title', 'APSC 2023 INTERVIEW PREPARATION')->get()->first();
-    return view('index', compact('events', 'courses', 'recorded_courses', 'user','apsc_interview_course'));
+    return view('index', compact('events', 'courses', 'recorded_courses', 'user', 'apsc_interview_course'));
 })->name('root');
 
 
 
-Route::get('/get-user-coupon-page',
-    [\App\Http\Controllers\UserCoupon::class, 'getCouponGeneratePage'])
+Route::get(
+    '/get-user-coupon-page',
+    [\App\Http\Controllers\UserCoupon::class, 'getCouponGeneratePage']
+)
     ->name('get-user-coupon-page');
 
-Route::post('/store-user-coupon',
-    [\App\Http\Controllers\UserCoupon::class, 'generateUserCoupon'])
+Route::post(
+    '/store-user-coupon',
+    [\App\Http\Controllers\UserCoupon::class, 'generateUserCoupon']
+)
     ->name('store-user-coupon');
 
 
@@ -654,7 +658,7 @@ Route::get('/electrical1', function () {
 });
 Route::get('/electrical2', function () {
     return view('digipedia.optionals.papers.electrical2');
-});    
+});
 Route::get('/english1', function () {
     return view('digipedia.optionals.papers.english1');
 });
@@ -945,10 +949,12 @@ Route::patch('/user/update/RollNo', [UserController::class, 'updateRollNo'])->na
 Route::post('user/{id}/update', 'UserController@update')->name('user.update');
 Route::post('user/{id}/update/subject', 'UserController@subject')->name('user.update.subject');
 //graph
-Route::get("user/result-graph/show",
-    "UserController@resultGraph")
+Route::get(
+    "user/result-graph/show",
+    "UserController@resultGraph"
+)
     ->name('user.result-graph.show');
-    
+
 Auth::routes();
 
 Route::get('password/check', 'Auth\LoginController@check')->name('password.check');
@@ -960,8 +966,8 @@ Route::post('password/change', 'Auth\LoginController@change')->name('password.ch
 // Admin auth routes
 Route::group(['middleware' => ['auth', 'admin']], function () {
 
-// admin
-  Route::get('/admin','AdminController\AdminDashboardController@index' )->name('admin.index');
+    // admin
+    Route::get('/admin', 'AdminController\AdminDashboardController@index')->name('admin.index');
 
     Route::get('admin/class/video/unique', 'AdminController\AdminClassVideoController@unique')->name('admin.video.unique');
     Route::resource('admin/class/video', 'AdminController\AdminClassVideoController', ['names' => [
@@ -976,27 +982,25 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
 
 
 
-//admins index
+    //admins index
     Route::get('/admin/admins', function () {
         $search = request()->get('searchUser');
         if ($search) {
             $users = User::where('role', 'admin')->where("name", "LIKE", "%{$search}%")->paginate(10);
-
         } else {
             $users = User::where('role', 'admin')->paginate(10);
-
         }
         return view('admin.admins.index', compact('users'));
     })->name('admin.admins.index');
 
-// Admin User controller
+    // Admin User controller
     Route::resource('admin/users', 'AdminController\AdminUsersController', ['names' => [
         'index' => 'admin.users.index',
         'edit' => 'admin.users.edit',
         'update' => 'admin.users.update'
     ]]);
-    
-        Route::get('admin/subject', 'AdminController\AdminUsersController@subjectIndex')->name('admin.subjects.index');
+
+    Route::get('admin/subject', 'AdminController\AdminUsersController@subjectIndex')->name('admin.subjects.index');
 
 
     // routes to change password of user
@@ -1009,7 +1013,7 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
     Route::get('admin/user/{id}/password_admin', 'AdminController\AdminUsersController@password_admin')->name('admin.users.password_admin');
     Route::patch('admin/user/{id}/change_admin', 'AdminController\AdminUsersController@change_admin')->name('admin.users.change_admin');
 
-// admin course
+    // admin course
     Route::resource('admin/course', 'AdminController\AdminCourseController', ['names' => [
         'index' => 'admin.course.index',
         'create' => 'admin.course.create',
@@ -1019,7 +1023,7 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
         'update' => 'admin.course.update'
     ]]);
 
-   Route::resource('admin/apsccourses', 'AdminController\Apsc\AdminApscCoursesController', ['names' => [
+    Route::resource('admin/apsccourses', 'AdminController\Apsc\AdminApscCoursesController', ['names' => [
         'index' => 'admin.apsccourses.index',
         'create' => 'admin.apsccourses.create',
         'store' => 'admin.apsccourses.store',
@@ -1027,7 +1031,7 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
         'show' => 'admin.apsccourses.show',
         'update' => 'admin.apsccourses.update'
     ]]);
-// admin events
+    // admin events
     Route::resource('admin/event', 'AdminController\AdminEventController', ['names' => [
         'index' => 'admin.event.index',
         'create' => 'admin.event.create',
@@ -1055,7 +1059,7 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
         'update' => 'admin.coupon.update'
     ]]);
 
-Route::get('admin/coupon/send/{id}','AdminController\AdminCouponController@send_coupon')->name('admin.coupon.send');
+    Route::get('admin/coupon/send/{id}', 'AdminController\AdminCouponController@send_coupon')->name('admin.coupon.send');
 
 
 
@@ -1076,7 +1080,7 @@ Route::get('admin/coupon/send/{id}','AdminController\AdminCouponController@send_
 
     Route::get('admin/course_payment/processed', 'AdminController\AdminCoursePaymentController@processed')
         ->name('admin.course_payment.processed');
-   
+
     // APSC course Bank requests
     Route::patch('admin/apsc/course_payment/allow/{id}', 'AdminController\Apsc\AdminApscPaymentController@allow')
         ->name('admin.apsc.course_payment.allow');
@@ -1096,17 +1100,16 @@ Route::get('admin/coupon/send/{id}','AdminController\AdminCouponController@send_
         ->name('admin.course_payment.delete');
 
 
-//active event admin
+    //active event admin
     Route::post('admin/event/{id}/isactive', 'AdminController\AdminEventController@isactive')->name('admin.event.isactive');
 
 
-//admin queries checking
+    //admin queries checking
     Route::get('admin/queries', function () {
         $search = request()->get('searchUser');
 
         if ($search) {
             $queries = Query::where("name", "LIKE", "%{$search}%")->paginate(10);
-
         } else {
             $queries = Query::latest()->paginate(10);
         }
@@ -1114,9 +1117,9 @@ Route::get('admin/coupon/send/{id}','AdminController\AdminCouponController@send_
     })->name('admin.queries.index');
 
     Route::get('admin/query/resolve/{id}', function ($id) {
-        $query= Query::findOrFail($id);
+        $query = Query::findOrFail($id);
         $query->update([
-            'status'=>'resolved'
+            'status' => 'resolved'
         ]);
 
         session()->flash('success', 'Query is Resolved :)');
@@ -1131,32 +1134,32 @@ Route::get('admin/coupon/send/{id}','AdminController\AdminCouponController@send_
 
 
     //admin orders
-    Route::get('admin/orders/create','AdminController\AdminOrderController@create')->name('admin.orders.create');
-    Route::get('admin/orders/success','AdminController\AdminOrderController@success')->name('admin.orders.success');
+    Route::get('admin/orders/create', 'AdminController\AdminOrderController@create')->name('admin.orders.create');
+    Route::get('admin/orders/success', 'AdminController\AdminOrderController@success')->name('admin.orders.success');
 
-    Route::get('admin/orders/{id}/allow','AdminController\AdminOrderController@allow')->name('admin.orders.allow');
+    Route::get('admin/orders/{id}/allow', 'AdminController\AdminOrderController@allow')->name('admin.orders.allow');
     //   user course Details
-        Route::get('admin/usercoursedetails','AdminController\AdminUserCourseDetailController@index')->name('admin.usercoursedetail.index');
-        
-            Route::get('admin/usercoursedetails/apsc', 'AdminController\AdminUserCourseDetailController@apscindex')->name('admin.usercoursedetail.apsc.index');
+    Route::get('admin/usercoursedetails', 'AdminController\AdminUserCourseDetailController@index')->name('admin.usercoursedetail.index');
+
+    Route::get('admin/usercoursedetails/apsc', 'AdminController\AdminUserCourseDetailController@apscindex')->name('admin.usercoursedetail.apsc.index');
 
     Route::delete('admin/order/{id}/destroy', 'AdminController\AdminOrderController@destroy_order')->name('admin.orders.destroy');
-    
-   
 
 
-  //show the users who have bought APSC courses
+
+
+    //show the users who have bought APSC courses
     Route::get('admin/user/apsc/course', 'AdminController\AdminUsersController@user_apsc_course')->name('admin.user.apsc.course');
 
- //admin orders APSC
+    //admin orders APSC
     Route::get('admin/apsc/orders/create', 'AdminController\Apsc\AdminApscOrderController@create')->name('admin.apsc.orders.create');
     Route::get('admin/apsc/orders/success', 'AdminController\Apsc\AdminApscOrderController@success')->name('admin.apsc.orders.success');
     Route::get('admin/apsc/orders/{id}/allow', 'AdminController\Apsc\AdminApscOrderController@allow')->name('admin.apsc.orders.allow');
     Route::delete('admin/apsc/order/{id}/destroy', 'AdminController\Apsc\AdminApscOrderController@destroy_order')->name('admin.apsc.orders.destroy');
-    Route::delete('admin/user/course/delete/{id}','AdminController\AdminUsersController@usercourseDestroy')->name('admin.user.course.delete');
-   
-    Route::delete('admin/user/apsccourse/delete/{id}','AdminController\AdminUsersController@userapsccourseDestroy')->name('admin.user.apsccourse.delete');
-    Route::delete('admin/apsc/course_payment/delete/{id}','AdminController\Apsc\AdminApscPaymentController@destroy')->name('admin.apsc.course_payment.delete');
+    Route::delete('admin/user/course/delete/{id}', 'AdminController\AdminUsersController@usercourseDestroy')->name('admin.user.course.delete');
+
+    Route::delete('admin/user/apsccourse/delete/{id}', 'AdminController\AdminUsersController@userapsccourseDestroy')->name('admin.user.apsccourse.delete');
+    Route::delete('admin/apsc/course_payment/delete/{id}', 'AdminController\Apsc\AdminApscPaymentController@destroy')->name('admin.apsc.course_payment.delete');
 
 
     Route::get('admin/feedback/index', 'FeedbackController@index')->name('admin.feedback.index')
@@ -1164,14 +1167,14 @@ Route::get('admin/coupon/send/{id}','AdminController\AdminCouponController@send_
     Route::delete('admin/feedback/delete/{id}', 'FeedbackController@destroy')->name('admin.feedback.destroy')
         ->middleware('auth', 'admin');
     Route::get('admin/course/apsc/allot', 'AdminController\Apsc\AdminApscCoursesController@apscAllot')->name('admin.apsc.allot');
-    
+
     //    admin invoice control
     Route::get('admin/invoice/razorpay', 'AdminController\AdminInvoiceController@razporpayindex')->name('admin.invoice.razorpay.index');
     Route::get('admin/invoice/bank', 'AdminController\AdminInvoiceController@bankindex')->name('admin.invoice.bank.index');
     Route::get('admin/invoice/{payment_id}', 'AdminController\AdminInvoiceController@show')->name('admin.invoice.show');
     Route::delete('admin/invoice/delete/{payment_id}', 'AdminController\AdminInvoiceController@destroy')->name('admin.invoice.destroy');
 
-   Route::resource('admin/test', 'AdminController\AdminTestController', ['names' => [
+    Route::resource('admin/test', 'AdminController\AdminTestController', ['names' => [
         'index' => 'admin.test.index',
         'create' => 'admin.test.create',
         'store' => 'admin.test.store',
@@ -1193,9 +1196,9 @@ Route::get('admin/coupon/send/{id}','AdminController\AdminCouponController@send_
         'show' => 'admin.result.show',
         'update' => 'admin.result.update'
     ]]);
-    
-    
-     //study material
+
+
+    //study material
     Route::resource('admin/studymaterial', 'AdminController\StudyMaterial\AdminStudyMaterialController', ['names' => [
         'index' => 'admin.studymaterial.index',
         'create' => 'admin.studymaterial.create',
@@ -1236,9 +1239,9 @@ Route::get('admin/coupon/send/{id}','AdminController\AdminCouponController@send_
 
     // admin user course detail excel
     Route::get('admin/usercoursedetails/study', 'AdminController\AdminUserCourseDetailController@studyindex')->name('admin.usercoursedetail.study.index');
-    
-    
-//admin answers
+
+
+    //admin answers
     Route::resource('admin/answers', 'AdminController\AdminAnswersController', ['names' => [
         'index' => 'admin.answers.index',
         'create' => 'admin.answers.create',
@@ -1250,8 +1253,8 @@ Route::get('admin/coupon/send/{id}','AdminController\AdminCouponController@send_
     ]]);
 
     Route::post('admin/answers/unique', 'AdminController\AdminAnswersController@unique')->name('admin.answers.unique');
-    
-    
+
+
     //admin result
     Route::resource('admin/showresult', 'AdminController\AdminShowResultController', ['names' => [
         'index' => 'admin.showresult.index',
@@ -1262,30 +1265,30 @@ Route::get('admin/coupon/send/{id}','AdminController\AdminCouponController@send_
         'update' => 'admin.showresult.update',
         'delete' => 'showresult.destroy'
     ]]);
-    
+
     //admin task management
-Route::get('admin/task/complete', 'AdminController\TaskController\TaskCompleteController@index')->name('admin.task-complete.index');
-Route::get('admin/task/done/{id}', 'AdminController\TaskController\TaskCompleteController@complete')->name('admin.task.done');
-Route::post('admin/task/complete/filter', 'AdminController\TaskController\TaskCompleteController@filter')->name('admin.task-complete.filter');
+    Route::get('admin/task/complete', 'AdminController\TaskController\TaskCompleteController@index')->name('admin.task-complete.index');
+    Route::get('admin/task/done/{id}', 'AdminController\TaskController\TaskCompleteController@complete')->name('admin.task.done');
+    Route::post('admin/task/complete/filter', 'AdminController\TaskController\TaskCompleteController@filter')->name('admin.task-complete.filter');
 
-Route::get('admin/leave/index', 'AdminController\TaskController\LeaveController@index')->name('admin.leave.index');
-Route::post('admin/leave/action/{id}', 'AdminController\TaskController\LeaveController@approve')->name('admin.leave.action');
-Route::post('admin/leave/filter', 'AdminController\TaskController\LeaveController@filter')->name('admin.leave.filter');
+    Route::get('admin/leave/index', 'AdminController\TaskController\LeaveController@index')->name('admin.leave.index');
+    Route::post('admin/leave/action/{id}', 'AdminController\TaskController\LeaveController@approve')->name('admin.leave.action');
+    Route::post('admin/leave/filter', 'AdminController\TaskController\LeaveController@filter')->name('admin.leave.filter');
 
-Route::get('admin/task/given', 'AdminController\TaskController\TaskGivenController@index')->name('admin.task-given.index');
-Route::get('admin/task/given/create', 'AdminController\TaskController\TaskGivenController@create')->name('admin.task-given.create');
-Route::post('admin/task/given/store', 'AdminController\TaskController\TaskGivenController@store')->name('admin.task-given.store');
-Route::get('admin/task/given/edit/{id}', 'AdminController\TaskController\TaskGivenController@edit')->name('admin.task-given.edit');
-Route::patch('admin/task/given/update/{id}', 'AdminController\TaskController\TaskGivenController@update')->name('admin.task-given.update');
-Route::post('admin/task/given/filter', 'AdminController\TaskController\TaskGivenController@filter')->name('admin.task-given.filter');
-Route::delete('admin/task/given/delete/{id}', 'AdminController\TaskController\TaskGivenController@destroy')->name('admin.task-given.delete');
+    Route::get('admin/task/given', 'AdminController\TaskController\TaskGivenController@index')->name('admin.task-given.index');
+    Route::get('admin/task/given/create', 'AdminController\TaskController\TaskGivenController@create')->name('admin.task-given.create');
+    Route::post('admin/task/given/store', 'AdminController\TaskController\TaskGivenController@store')->name('admin.task-given.store');
+    Route::get('admin/task/given/edit/{id}', 'AdminController\TaskController\TaskGivenController@edit')->name('admin.task-given.edit');
+    Route::patch('admin/task/given/update/{id}', 'AdminController\TaskController\TaskGivenController@update')->name('admin.task-given.update');
+    Route::post('admin/task/given/filter', 'AdminController\TaskController\TaskGivenController@filter')->name('admin.task-given.filter');
+    Route::delete('admin/task/given/delete/{id}', 'AdminController\TaskController\TaskGivenController@destroy')->name('admin.task-given.delete');
 
-Route::get('admin/daily/task/index', 'AdminController\TaskController\DailyTaskController@index')->name('admin.daily-task.index');
-Route::get('admin/daily/task/approve/{id}', 'AdminController\TaskController\DailyTaskController@approve')->name('admin.daily-task.approve');
-Route::post('admin/daily/task/filter', 'AdminController\TaskController\DailyTaskController@filter')->name('admin.daily-task.filter');
-Route::get('admin/daily/counsellor/{id}', 'AdminController\TaskController\DailyTaskController@counsellor_list')->name('admin.daily.counsellor-list.index');
+    Route::get('admin/daily/task/index', 'AdminController\TaskController\DailyTaskController@index')->name('admin.daily-task.index');
+    Route::get('admin/daily/task/approve/{id}', 'AdminController\TaskController\DailyTaskController@approve')->name('admin.daily-task.approve');
+    Route::post('admin/daily/task/filter', 'AdminController\TaskController\DailyTaskController@filter')->name('admin.daily-task.filter');
+    Route::get('admin/daily/counsellor/{id}', 'AdminController\TaskController\DailyTaskController@counsellor_list')->name('admin.daily.counsellor-list.index');
 
- //recorded courses
+    //recorded courses
     Route::resource('admin/recorded', 'AdminController\Recorded\AdminRecordedController', ['names' => [
         'index' => 'admin.recorded.index',
         'create' => 'admin.recorded.create',
@@ -1329,11 +1332,11 @@ Route::get('admin/daily/counsellor/{id}', 'AdminController\TaskController\DailyT
         ->name('admin.recorded.orders.allow');
     Route::delete('admin/recorded/order/{id}/destroy', 'AdminController\Recorded\AdminRecordedRazorController@destroy_order')
         ->name('admin.recorded.orders.destroy');
-Route::get('admin/usercoursedetails/recorded', 'AdminController\AdminUserCourseDetailController@recordedindex')->name('admin.usercoursedetail.recorded.index');
+    Route::get('admin/usercoursedetails/recorded', 'AdminController\AdminUserCourseDetailController@recordedindex')->name('admin.usercoursedetail.recorded.index');
 
-//admin coupon create
-Route::get('admin/admin-coupon', 'AdminController\AdminCouponController@admin_coupon_create')->name('admin.admin-coupon.create');
-Route::post('admin/admin-coupon/store', 'AdminController\AdminCouponController@admin_coupon_store')->name('admin.admin-coupon.store');
+    //admin coupon create
+    Route::get('admin/admin-coupon', 'AdminController\AdminCouponController@admin_coupon_create')->name('admin.admin-coupon.create');
+    Route::post('admin/admin-coupon/store', 'AdminController\AdminCouponController@admin_coupon_store')->name('admin.admin-coupon.store');
 
 
 
@@ -1348,9 +1351,9 @@ Route::post('admin/admin-coupon/store', 'AdminController\AdminCouponController@a
     Route::get('admin/study/course-invoice/{id}/{course}', 'AdminController\AdminUserCourseDetailController@study_razor_invoice')->name('admin.study.razor-invoice');
     //recorded
     Route::get('admin/recorded/course-invoice/{id}/{course}', 'AdminController\AdminUserCourseDetailController@recorded_razor_invoice')->name('admin.recorded.razor-invoice');
-   
+
     Route::get('admin/new/video/unique', 'AdminController\AdminNewVideoController@unique')->name('admin.new_video.unique');
-     Route::resource('admin/new/video', 'AdminController\AdminNewVideoController', ['names' => [
+    Route::resource('admin/new/video', 'AdminController\AdminNewVideoController', ['names' => [
         'index' => 'admin.new_video.index',
         'create' => 'admin.new_video.create',
         'store' => 'admin.new_video.store',
@@ -1364,19 +1367,19 @@ Route::post('admin/admin-coupon/store', 'AdminController\AdminCouponController@a
     Route::resource('admin/new/video/sub/topic', 'AdminController\AdminNewVideoSubTopicAdminController', ['names' => [
         'index' => 'admin.new_video_sub_topic.index',
         'store' => 'admin.new_video_sub_topic.store',
-          'edit' => 'admin.new_video_sub_topic.edit',
+        'edit' => 'admin.new_video_sub_topic.edit',
         'update' => 'admin.new_video_sub_topic.update',
         'destroy' => 'new_video_sub_topic.destroy'
     ]]);
-    
+
     // student information 
-     Route::get('admin/studentAdmission/show/{id}', [\App\Http\Controllers\AdminController\AdminStudentAdmissionController::class, 'show'])->name('admin.student-admission.show');
-    
+    Route::get('admin/studentAdmission/show/{id}', [\App\Http\Controllers\AdminController\AdminStudentAdmissionController::class, 'show'])->name('admin.student-admission.show');
+
     // Student addmission Invoice
     Route::get('admin/studentAdmission/invoice/{id}', [\App\Http\Controllers\AdminController\AdminStudentAdmissionController::class, 'invoice'])
         ->name('admin.studentAdmission.invoice');
-    
-       // admission enquiries
+
+    // admission enquiries
     Route::get('admin/admissionenquiries/{branch}', [\App\Http\Controllers\AdminController\AdminAdmissionEnqueryController::class, 'index'])
         ->name('admin.admissionenquiries.index');
     Route::get('admin/admissionenquiries/create/{branch}', [\App\Http\Controllers\AdminController\AdminAdmissionEnqueryController::class, 'create'])
@@ -1405,12 +1408,14 @@ Route::post('admin/admin-coupon/store', 'AdminController\AdminCouponController@a
         'index' => 'admin.studentAdmissionPay.index',
         'edit' => 'admin.studentAdmissionPay.edit',
         'store' => 'admin.studentAdmissionPay.store',
-        'show'=>'admin.studentAdmissionPay.show',
+        'show' => 'admin.studentAdmissionPay.show',
         'update' => 'admin.studentAdmissionPay.update',
         'destroy' => 'studentAdmissionPay.destroy'
     ]]);
-    Route::get('admin/studentAdmissionPay/create/{id}',
-        'AdminController\AdminStudentAdmissionPayController@create_pay')
+    Route::get(
+        'admin/studentAdmissionPay/create/{id}',
+        'AdminController\AdminStudentAdmissionPayController@create_pay'
+    )
         ->name('admin.studentAdmissionPay.create');
     // Student Admission
     Route::get('admin/studentAdmission/{branch}', [\App\Http\Controllers\AdminController\AdminStudentAdmissionController::class, 'index'])
@@ -1418,9 +1423,9 @@ Route::post('admin/admin-coupon/store', 'AdminController\AdminCouponController@a
     Route::get('admin/studentAdmission/create/{branch}', [\App\Http\Controllers\AdminController\AdminStudentAdmissionController::class, 'create'])
         ->name('admin.studentAdmission.create');
     Route::get('admin/studentAdmission/monthsearch', [\App\Http\Controllers\AdminController\AdminStudentAdmissionController::class, 'monthSearch'])
-    ->name('admin.studentAdmission.monthsearch');
+        ->name('admin.studentAdmission.monthsearch');
     Route::get('admin/studentAdmission/datesearch', [\App\Http\Controllers\AdminController\AdminStudentAdmissionController::class, 'dateSearch'])
-    ->name('admin.studentAdmission.datesearch');
+        ->name('admin.studentAdmission.datesearch');
     Route::resource('admin/studentAdmission', 'AdminController\AdminStudentAdmissionController', ['names' => [
         'store' => 'admin.studentAdmission.store',
         'edit' => 'admin.studentAdmission.edit',
@@ -1435,7 +1440,7 @@ Route::post('admin/admin-coupon/store', 'AdminController\AdminCouponController@a
         'create' => 'admin.staffInformation.create',
         'store' => 'admin.staffInformation.store',
         'edit' => 'admin.staffInformation.edit',
-        'show'=>'admin.staffInformation.show',
+        'show' => 'admin.staffInformation.show',
         'update' => 'admin.staffInformation.update',
         'destroy' => 'staffInformation.destroy'
     ]]);
@@ -1459,8 +1464,8 @@ Route::post('admin/admin-coupon/store', 'AdminController\AdminCouponController@a
         'update' => 'admin.new_test_sub_topic.update',
         'destroy' => 'new_test_sub_topic.destroy'
     ]]);
-    
-      //Income details
+
+    //Income details
     Route::get('admin/staff-income', [\App\Http\Controllers\AdminController\AdminStaffIncomeController::class, 'index'])
         ->name('admin.staff-income.index');
     Route::get('admin/staff-income/create-salary/{id}', [\App\Http\Controllers\AdminController\AdminStaffIncomeController::class, 'create_salary'])
@@ -1479,10 +1484,10 @@ Route::post('admin/admin-coupon/store', 'AdminController\AdminCouponController@a
         ->name('admin.staff-income.salary-update');
     Route::delete('admin/staff-income/salary-delete/{id}', [\App\Http\Controllers\AdminController\AdminStaffIncomeController::class, 'salary_delete'])
         ->name('admin.staff-income.salary-delete');
-            Route::get('admin/staff-income/salary-pdf/{income}', [\App\Http\Controllers\AdminController\AdminStaffIncomeController::class, 'salaryPdf'])
+    Route::get('admin/staff-income/salary-pdf/{income}', [\App\Http\Controllers\AdminController\AdminStaffIncomeController::class, 'salaryPdf'])
         ->name('admin.staff-income.salary-pdf');
-        
-            //Staff Points
+
+    //Staff Points
     Route::get('admin/staff-point', [\App\Http\Controllers\AdminController\AdminPointsController::class, 'index'])
         ->name('admin.staff-point.index');
     Route::get('admin/staff-point/create/{id}', [\App\Http\Controllers\AdminController\AdminPointsController::class, 'create'])
@@ -1499,17 +1504,18 @@ Route::post('admin/admin-coupon/store', 'AdminController\AdminCouponController@a
         ->name('admin.staff-point.delete');
     Route::get('admin/staff-point/show/{point}', [\App\Http\Controllers\AdminController\AdminPointsController::class, 'show'])
         ->name('admin.staff-point.show');
-        Route::get('admin/monthsearch/', [\App\Http\Controllers\AdminController\AdminStudentAdmissionController::class, 'monthSearch'])
+    Route::get('admin/monthsearch/', [\App\Http\Controllers\AdminController\AdminStudentAdmissionController::class, 'monthSearch'])
         ->name('admin.studentAdmission.monthsearch');
-         Route::get('admin/datesearch/', [\App\Http\Controllers\AdminController\AdminStudentAdmissionController::class, 'dateSearch'])
+    Route::get('admin/datesearch/', [\App\Http\Controllers\AdminController\AdminStudentAdmissionController::class, 'dateSearch'])
         ->name('admin.studentAdmission.datesearch');
-        
-         // request coupon
+
+    // request coupon
     Route::get(
         'admin/request/coupon/index',
-        [\App\Http\Controllers\AdminController\Request\AdminRequestCouponController::class, 'index'])
+        [\App\Http\Controllers\AdminController\Request\AdminRequestCouponController::class, 'index']
+    )
         ->name('admin.request.coupon.index');
-        
+
     // Rating
     Route::get(
         'admin/video-rating/index',
@@ -1533,8 +1539,8 @@ Route::post('admin/admin-coupon/store', 'AdminController\AdminCouponController@a
         [\App\Http\Controllers\AdminController\AdminUsersController::class, 'videoRatingNewSearch']
     )
         ->name('admin.video-rating-new-search.index');
-        
-     // articles
+
+    // articles
     Route::get(
         'admin/articles',
         [\App\Http\Controllers\AdminController\Article\ArticleController::class, 'index']
@@ -1548,8 +1554,8 @@ Route::post('admin/admin-coupon/store', 'AdminController\AdminCouponController@a
         'update' => 'admin.notification.update',
         'destroy' => 'notification.destroy'
     ]]);
-    
-     // daily news
+
+    // daily news
     Route::resource('admin/dailynews', 'AdminController\DailyNews\DailyNewsController', ['names' => [
         'index' => 'admin.dailynews.index',
         'store' => 'admin.dailynews.store',
@@ -1576,7 +1582,7 @@ Route::post('admin/admin-coupon/store', 'AdminController\AdminCouponController@a
         'update' => 'admin.assignments.update',
         'destroy' => 'assignments.destroy'
     ]]);
-      Route::get(
+    Route::get(
         'admin/assignments/create/score/{id}&{course}',
         [\App\Http\Controllers\AdminController\Assignment\AssignmentController::class, 'createScore']
     )->name('admin.assignments.createScore');
@@ -1584,8 +1590,8 @@ Route::post('admin/admin-coupon/store', 'AdminController\AdminCouponController@a
         'admin/assignments/add/score/{id}',
         [\App\Http\Controllers\AdminController\Assignment\AssignmentController::class, 'addScore']
     )->name('admin.assignments.addScore');
-    
-        Route::get(
+
+    Route::get(
         'admin/assignments/create/result/{id}&{course}',
         [\App\Http\Controllers\AdminController\Assignment\AssignmentController::class, 'createResult']
     )->name('admin.assignments.createResult');
@@ -1602,32 +1608,38 @@ Route::post('admin/admin-coupon/store', 'AdminController\AdminCouponController@a
         'admin/assignments/add/feedback/{id}',
         [\App\Http\Controllers\AdminController\Assignment\AssignmentController::class, 'addFeedback']
     )->name('admin.assignments.addFeedback');
-    
+
     Route::get(
         'admin/assignments/submission/{course}',
         [\App\Http\Controllers\AdminController\Assignment\AssignmentController::class, 'studentSubmission']
     )->name('admin.assignments.submission');
-    
-    
-        /**
+
+
+    /**
      * Chat routes
      */
-    Route::get("admin/chat-teachers/index",
-        'AdminController\AdminChatController@index')
+    Route::get(
+        "admin/chat-teachers/index",
+        'AdminController\AdminChatController@index'
+    )
         ->name('admin.chat-teachers.index');
-    Route::post("admin/chat-teachers/create",
-        'AdminController\AdminChatController@create')
+    Route::post(
+        "admin/chat-teachers/create",
+        'AdminController\AdminChatController@create'
+    )
         ->name('admin.chat-teachers.create');
-            Route::get('admin/chat-teachers/status/{val}',
-        'AdminController\AdminChatController@teacherStatusChange')
+    Route::get(
+        'admin/chat-teachers/status/{val}',
+        'AdminController\AdminChatController@teacherStatusChange'
+    )
         ->name('admin.chat-teachers.status');
-        
-        
-        
-         //calculator
-    Route::get('admin/calculator', [\App\Http\Controllers\AdminController\Calculator\CalculatorController::class,'index'])->name('admin.calculator');
-    
-        //Tracking iD Routes
+
+
+
+    //calculator
+    Route::get('admin/calculator', [\App\Http\Controllers\AdminController\Calculator\CalculatorController::class, 'index'])->name('admin.calculator');
+
+    //Tracking iD Routes
     Route::get(
         'admin/tracking/index',
         [\App\Http\Controllers\AdminController\AdminTrackingController::class, 'index']
@@ -1640,21 +1652,21 @@ Route::post('admin/admin-coupon/store', 'AdminController\AdminCouponController@a
         'admin/tracking/delete/{id}',
         [\App\Http\Controllers\AdminController\AdminTrackingController::class, 'delete']
     )->name('admin.tracking.delete');
-    
-        //student admission payment info
+
+    //student admission payment info
     Route::get(
         'admin/student-admission-payment/index',
         [\App\Http\Controllers\AdminController\AdminStudentAdmissionController::class, 'studentPaymentInfo']
     )->name('admin.student-admission-payment.index');
-    
-        Route::get(
+
+    Route::get(
         'admin/user-address-details/show/{id}',
         [\App\Http\Controllers\AdminController\AdminUserCourseDetailController::class, 'userAddressDetail']
     )->name('admin.user-address-detail.show');
-    
-    
-    
-      // apsc all material
+
+
+
+    // apsc all material
     Route::resource('admin/apscall', 'AdminController\Apsc\ApscAllController', ['names' => [
         'index' => 'admin.apscall.index',
         'store' => 'admin.apscall.store',
@@ -1663,8 +1675,8 @@ Route::post('admin/admin-coupon/store', 'AdminController\AdminCouponController@a
         'update' => 'admin.apscall.update',
         'destroy' => 'apscall.destroy'
     ]]);
-    
-    
+
+
     // quiz 
     Route::resource('admin/quiz', 'AdminController\Quiz\QuizController', ['names' => [
         'index' => 'admin.quiz.index',
@@ -1710,21 +1722,27 @@ Route::post('admin/admin-coupon/store', 'AdminController\AdminCouponController@a
 
     Route::delete('admin/quizresult/{id}', [App\Http\Controllers\AdminController\Quiz\QuizController::class, 'quizResultDestroy'])
         ->name('quizresult.destroy');
-        
-        
-         // export quiz result
+
+
+    // export quiz result
     Route::get('/export/quiz-result', [ExportController::class, 'quizExport'])->name('export.quiz.result');
-    
-    
-        // add user to installment
-    Route::get('admin/payment-installment-add/index',
-        [App\Http\Controllers\AdminController\AdminPaymentInstallmentsController::class, 'userInstallmentIndex'])
+
+
+    // add user to installment
+    Route::get(
+        'admin/payment-installment-add/index',
+        [App\Http\Controllers\AdminController\AdminPaymentInstallmentsController::class, 'userInstallmentIndex']
+    )
         ->name('admin.payment-installment-add.index');
-    Route::post('admin/payment-installment-add/add-user',
-        [App\Http\Controllers\AdminController\AdminPaymentInstallmentsController::class, 'addUserToInstallment'])
+    Route::post(
+        'admin/payment-installment-add/add-user',
+        [App\Http\Controllers\AdminController\AdminPaymentInstallmentsController::class, 'addUserToInstallment']
+    )
         ->name('admin.payment-installment-add.add-user');
-    Route::delete('admin/payment-installment-add/delete',
-        [App\Http\Controllers\AdminController\AdminPaymentInstallmentsController::class, 'deleteUserFromInstallment'])
+    Route::delete(
+        'admin/payment-installment-add/delete',
+        [App\Http\Controllers\AdminController\AdminPaymentInstallmentsController::class, 'deleteUserFromInstallment']
+    )
         ->name('admin.payment-installment-add.delete');
 
     // Payment Installments
@@ -1740,39 +1758,46 @@ Route::post('admin/admin-coupon/store', 'AdminController\AdminCouponController@a
         ->name('admin.payment-installments.allow');
     Route::get('admin/payment-installments/create-invoice/{id}', [App\Http\Controllers\AdminController\AdminPaymentInstallmentsController::class, 'createInvoice'])
         ->name('admin.payment-installments.create-invoice');
-        
-        
-           // User rating admin routes
-    Route::get('/admin/user-rating/index',
+
+
+    // User rating admin routes
+    Route::get(
+        '/admin/user-rating/index',
         [App\Http\Controllers\AdminController\AdminUserRatingController::class, 'index']
     )->name('admin.user-rating.index');
-    
-        // Admin Poll routes
-    Route::get('/admin/poll/index',
+
+    // Admin Poll routes
+    Route::get(
+        '/admin/poll/index',
         [App\Http\Controllers\AdminController\Poll\AdminPollController::class, 'index']
     )->name('admin.poll.index');
 
-    Route::get('/admin/poll/create',
+    Route::get(
+        '/admin/poll/create',
         [App\Http\Controllers\AdminController\Poll\AdminPollController::class, 'create']
     )->name('admin.poll.create');
 
-    Route::post('/admin/poll/store',
+    Route::post(
+        '/admin/poll/store',
         [App\Http\Controllers\AdminController\Poll\AdminPollController::class, 'store']
     )->name('admin.poll.store');
 
-    Route::get('/admin/poll/edit/{id}',
+    Route::get(
+        '/admin/poll/edit/{id}',
         [App\Http\Controllers\AdminController\Poll\AdminPollController::class, 'edit']
     )->name('admin.poll.edit');
 
-    Route::patch('/admin/poll/update/{id}',
+    Route::patch(
+        '/admin/poll/update/{id}',
         [App\Http\Controllers\AdminController\Poll\AdminPollController::class, 'update']
     )->name('admin.poll.update');
 
-    Route::delete('/admin/poll/delete/{id}',
+    Route::delete(
+        '/admin/poll/delete/{id}',
         [App\Http\Controllers\AdminController\Poll\AdminPollController::class, 'destroy']
     )->name('admin.poll.delete');
-    
-       // Display User polls routes
+
+    // Display User polls routes
     Route::get(
         '/admin/user-poll/index',
         [App\Http\Controllers\AdminController\Poll\AdminUserPollController::class, 'index']
@@ -1782,14 +1807,14 @@ Route::post('admin/admin-coupon/store', 'AdminController\AdminCouponController@a
         '/admin/user-poll/show/{id}',
         [App\Http\Controllers\AdminController\Poll\AdminUserPollController::class, 'show']
     )->name('admin.user-poll.show');
-    
+
     // admin eventdata
     Route::get('/admin/eventdata/index', [App\Http\Controllers\AdminController\EventData\EventDataController::class, 'index'])
         ->name('admin.eventdata.index');
-        
-        
-      // admin user webinar data
- Route::get(
+
+
+    // admin user webinar data
+    Route::get(
         '/admin/user-webinar/index',
         [\App\Http\Controllers\AdminController\AdminUserWebinarController::class, 'index']
     )
@@ -1808,21 +1833,23 @@ Route::post('admin/admin-coupon/store', 'AdminController\AdminCouponController@a
         ->name('admin.user-webinar.counsellor.create');
 
     Route::post(
-      '/admin/user-webinar/counsellor/store',
-      [\App\Http\Controllers\AdminController\AdminUserWebinarController::class, 'store']
+        '/admin/user-webinar/counsellor/store',
+        [\App\Http\Controllers\AdminController\AdminUserWebinarController::class, 'store']
     )
         ->name('admin.user-webinar.counsellor.store');
 
-    Route::post('/admin/user-webinar/import',
-        [\App\Http\Controllers\AdminController\AdminUserWebinarController::class, 'import'])
+    Route::post(
+        '/admin/user-webinar/import',
+        [\App\Http\Controllers\AdminController\AdminUserWebinarController::class, 'import']
+    )
         ->name('admin.user-webinar.import');
     Route::get(
         '/admin/user-webinar/search',
         [\App\Http\Controllers\AdminController\AdminUserWebinarController::class, 'search_result']
     )
         ->name('admin.user-webinar.search');
-        
-            Route::get(
+
+    Route::get(
         '/admin/user-webinar/counsellor-students/{counsellorId}',
         [\App\Http\Controllers\AdminController\AdminUserWebinarController::class, 'show_counsellor_students']
     )
@@ -1832,34 +1859,34 @@ Route::post('admin/admin-coupon/store', 'AdminController\AdminCouponController@a
         [\App\Http\Controllers\AdminController\AdminUserWebinarController::class, 'search_student']
     )
         ->name('admin.user-webinar.student-search');
-        
-        Route::post(
+
+    Route::post(
         '/admin/user-webinar/students/show',
         [\App\Http\Controllers\AdminController\AdminUserWebinarController::class, 'show_students']
     )
         ->name('admin.user-webinar.students.show');
-        
-        Route::delete(
+
+    Route::delete(
         '/admin/user-webinar/{id}',
         [\App\Http\Controllers\AdminController\AdminUserWebinarController::class, 'destroy']
     )
-        ->name('admin.user-webinar.destroy');    
-        
-        
-          Route::get(
+        ->name('admin.user-webinar.destroy');
+
+
+    Route::get(
         '/admin/seminars/{type}',
         [\App\Http\Controllers\AdminController\AdminSeminarController::class, 'index']
     )->name('admin.seminars.index');
-    
 
-    
-     Route::delete(
+
+
+    Route::delete(
         '/admin/seminars/{type}',
         [\App\Http\Controllers\AdminController\AdminSeminarController::class, 'delete']
     )->name('admin.seminars.delete');
-    
+
     //job routes
-     Route::get(
+    Route::get(
         '/admin/jobs/index',
         [\App\Http\Controllers\AdminController\AdminJobController::class, 'index']
     )->name('admin.job.index');
@@ -1867,8 +1894,8 @@ Route::post('admin/admin-coupon/store', 'AdminController\AdminCouponController@a
         '/admin/jobs/destroy/{id}',
         [\App\Http\Controllers\AdminController\AdminJobController::class, 'destroy']
     )->name('admin.job.destroy');
-    
-      // Student analysis routes
+
+    // Student analysis routes
     Route::get(
         '/admin/student-analysis/index',
         [\App\Http\Controllers\AdminController\AdminStudentAnalysisController::class, 'index']
@@ -1885,18 +1912,18 @@ Route::post('admin/admin-coupon/store', 'AdminController\AdminCouponController@a
         '/admin/student-analysis/store',
         [\App\Http\Controllers\AdminController\AdminStudentAnalysisController::class, 'store']
     )->name('admin.student.analysis.store');
-        Route::delete(
+    Route::delete(
         '/admin/student-analysis/delete/{id}',
         [\App\Http\Controllers\AdminController\AdminStudentAnalysisController::class, 'destroy']
     )->name('admin.student.analysis.delete');
-       Route::delete(
+    Route::delete(
         '/admin/student-analysis/delete',
         [\App\Http\Controllers\AdminController\AdminStudentAnalysisController::class, 'deleteAll']
     )->name('admin.student.analysis.deleteAll');
-        Route::get('/export/student-analysis', [ExportController::class, 'studentAnalysis'])->name('export.studentAnalysis');
+    Route::get('/export/student-analysis', [ExportController::class, 'studentAnalysis'])->name('export.studentAnalysis');
 
-    
-     //faculty poll
+
+    //faculty poll
     Route::resource('admin/faculty/poll', 'AdminController\FacultyPoll\FacultyPollController', ['names' => [
         'index' => 'admin.faculty_poll.index',
         'store' => 'admin.faculty_poll.store',
@@ -1905,7 +1932,7 @@ Route::post('admin/admin-coupon/store', 'AdminController\AdminCouponController@a
         'update' => 'admin.faculty_poll.update',
         'destroy' => 'faculty_poll.destroy'
     ]]);
-      //faculty poll questions
+    //faculty poll questions
     Route::get(
         'admin/faculty/poll/questions/{id}',
         [\App\Http\Controllers\AdminController\FacultyPoll\FacultyPollQuestionController::class, 'index']
@@ -1930,9 +1957,9 @@ Route::post('admin/admin-coupon/store', 'AdminController\AdminCouponController@a
         '/admin/faculty-user-poll/show/{id}',
         [App\Http\Controllers\AdminController\FacultyPoll\FacultyUserPollController::class, 'show']
     )->name('admin.faculty_user_poll.show');
-    
-    
-       // current affairs routes
+
+
+    // current affairs routes
     Route::get(
         '/admin/current-affairs/index',
         [\App\Http\Controllers\AdminController\AdminCurrentAffairController::class, 'index']
@@ -1957,9 +1984,9 @@ Route::post('admin/admin-coupon/store', 'AdminController\AdminCouponController@a
         '/admin/current-affairs/destroy/{current_affair}',
         [\App\Http\Controllers\AdminController\AdminCurrentAffairController::class, 'destroy']
     )->name('admin.current.affairs.destroy');
-    
-    
-        // test series quiz
+
+
+    // test series quiz
     Route::resource('admin/testseriesquiz', 'AdminController\TestSeriesQuiz\TestSeriesQuizController', ['names' => [
         'index' => 'admin.testseriesquiz.index',
         'store' => 'admin.testseriesquiz.store',
@@ -1999,15 +2026,15 @@ Route::post('admin/admin-coupon/store', 'AdminController\AdminCouponController@a
     // export quiz result
     Route::get('/export/test-series-quiz-result', [ExportController::class, 'testSeriesQuizExport'])->name('export.testseriesquiz.result');
 
-  // admin prelims faq
+    // admin prelims faq
     Route::get('/admin/prelims-faq', [\App\Http\Controllers\AdminController\PrelimsFaq\PrelimsFaqController::class, 'index'])
         ->name('admin.prelims.faq.index');
     Route::post('/admin/prelims-faq', [\App\Http\Controllers\AdminController\PrelimsFaq\PrelimsFaqController::class, 'store'])
         ->name('admin.prelims.faq.store');
     Route::delete('/admin/prelims-faq/{id}', [\App\Http\Controllers\AdminController\PrelimsFaq\PrelimsFaqController::class, 'destroy'])
         ->name('admin.prelims.faq.destroy');
-        
-         // Online Quiz
+
+    // Online Quiz
     Route::resource('admin/onlineQuiz', 'AdminController\OnlineQuiz\OnlineQuizController', ['names' => [
         'index' => 'admin.onlineQuiz.index',
         'store' => 'admin.onlineQuiz.store',
@@ -2052,7 +2079,7 @@ Route::post('admin/admin-coupon/store', 'AdminController\AdminCouponController@a
         ->name('onlineQuizresult.destroy');
     Route::get('/apsc_exam', [\App\Http\Controllers\AdminController\AdminApscExamController::class, 'index'])->name('admin.apsc.exam.index');
     Route::delete('/apsc_exam/{id}', [\App\Http\Controllers\AdminController\AdminApscExamController::class, 'destroy'])->name('apsc.exam.destroy');
-        Route::get(
+    Route::get(
         '/admin/offline-exam-registration',
         [\App\Http\Controllers\AdminController\AdminOfflineExamRegistartionController::class, 'index']
     )->name('admin.offline.exam.register.index');
@@ -2060,7 +2087,7 @@ Route::post('admin/admin-coupon/store', 'AdminController\AdminCouponController@a
         '/admin/offline-exam-registration',
         [\App\Http\Controllers\AdminController\AdminOfflineExamRegistartionController::class, 'deleteAll']
     )->name('admin.offline.exam.register.deleteAll');
-        // Product Code
+    // Product Code
     Route::resource('admin/products', 'AdminController\Product\ProductController', ['names' => [
         'index' => 'admin.products.index',
         'store' => 'admin.products.store',
@@ -2080,11 +2107,11 @@ Route::post('admin/admin-coupon/store', 'AdminController\AdminCouponController@a
         'update' => 'admin.products.orders.update',
         'destroy' => 'products.orders.destroy'
     ]]);
-        Route::resource('admin/free-master-class', 'AdminController\FreeMasterClassController', ['names' => [
+    Route::resource('admin/free-master-class', 'AdminController\FreeMasterClassController', ['names' => [
         'index' => 'admin.free.master.class.index',
         'destroy' => 'free.master.class.destroy'
     ]]);
- // test series quiz roll
+    // test series quiz roll
     Route::resource('admin/testseriesquizroll', 'AdminController\TestSeriesQuizRoll\TestSeriesQuizRollController', ['names' => [
         'index' => 'admin.testseriesquizroll.index',
         'store' => 'admin.testseriesquizroll.store',
@@ -2111,7 +2138,7 @@ Route::post('admin/admin-coupon/store', 'AdminController\AdminCouponController@a
 
     Route::delete('admin/testseriesquizresultroll/{id}', [App\Http\Controllers\AdminController\TestSeriesQuizRoll\TestSeriesQuizRollController::class, 'quizResultDestroy'])
         ->name('testseriesquizresultroll.destroy');
-            //Personal Mentor
+    //Personal Mentor
     Route::resource('admin/personalmentor', 'AdminController\PersonalMentorController', ['names' => [
         'index' => 'admin.personalmentor.index',
         'store' => 'admin.personalmentor.store',
@@ -2124,14 +2151,14 @@ Route::post('admin/admin-coupon/store', 'AdminController\AdminCouponController@a
         ->name('admin.personalmentor.set_time');
     Route::get('admin/personalmentor/time/table', [App\Http\Controllers\AdminController\PersonalMentorController::class, 'timetable'])
         ->name('admin.personalmentor.timetable');
-        
-            // free trial course 
+
+    // free trial course 
     Route::resource('admin/free-trial-course', 'AdminController\FreeTrialCourseController', ['names' => [
         'index' => 'admin.free.trial.course.index',
         'destroy' => 'free.trial.course.destroy'
     ]]);
-    
-       // Referal Code Routes
+
+    // Referal Code Routes
     Route::resource('admin/referralcode', 'AdminController\AdminReferralCodeController', ['names' => [
         'index' => 'admin.referralcode.index',
         'create' => 'admin.referralcode.create',
@@ -2140,7 +2167,7 @@ Route::post('admin/admin-coupon/store', 'AdminController\AdminCouponController@a
         'update' => 'admin.referralcode.update',
         'destroy' => 'referralcode.destroy'
     ]]);
-    
+
     // Group Email routes
     Route::resource('admin/group-email', 'AdminController\GroupEmailController', ['names' => [
         'index' => 'admin.group.email.index',
@@ -2154,8 +2181,8 @@ Route::post('admin/admin-coupon/store', 'AdminController\AdminCouponController@a
         'index' => 'admin.interview.preparation.index',
         'destroy' => 'interview.preparation.destroy'
     ]]);
-    
-       //  scholarships and mentoring
+
+    //  scholarships and mentoring
     Route::get(
         '/admin/scholarships-mentoring/{type}',
         [\App\Http\Controllers\AdminController\AdminAcsScholarshipMentoringController::class, 'index']
@@ -2164,15 +2191,14 @@ Route::post('admin/admin-coupon/store', 'AdminController\AdminCouponController@a
         '/admin/scholarships-mentoring/{type}',
         [\App\Http\Controllers\AdminController\AdminAcsScholarshipMentoringController::class, 'delete']
     )->name('admin.scholarships.mentoring.delete');
-    
-    
-    
-        // HDFC order
+
+
+
+    // HDFC order
     Route::get('/hdfc/order/index/{course_type}', [AdminHDFCOrdersController::class, 'index'])
         ->name('admin.hdfc-orders.index');
     Route::get('/hdfc/order/allow-course/{order_id}', [AdminHDFCOrdersController::class, 'allow_course'])
         ->name('admin.hdfc-orders.allow-course');
-    
 });
 
 
@@ -2225,7 +2251,7 @@ Route::get('user/order/invoice/apsc/{id}', 'InvoiceController@apsc')->name('user
 Route::get('user/order/invoice/upsc/{id}', 'InvoiceController@upsc')->name('user.order.upsc.invoice');
 Route::get('user/order/invoice/show/{id}', 'InvoiceController@show')->name('user.order.invoice.show');
 
-Route::get('/order/pending/payment/{order_id}','CoursePaymentController@pendingComplete')->name('order.pending.payment');
+Route::get('/order/pending/payment/{order_id}', 'CoursePaymentController@pendingComplete')->name('order.pending.payment');
 
 
 Route::get('user/coupon/verify', 'UserCoupon@verify')->name('user.coupon.verify');
@@ -2239,20 +2265,28 @@ Route::get('user/class/video/{course}/{type}', 'ClassVideoController@subVideos')
 /**
  * Chat Routes
  */
-Route::get('user/chat/index',
-    'ChatController@index')
+Route::get(
+    'user/chat/index',
+    'ChatController@index'
+)
     ->name("user.chat.index")
     ->middleware('auth');
-Route::get('user/chat/teacher-index',
-    'ChatController@teacherIndex')
+Route::get(
+    'user/chat/teacher-index',
+    'ChatController@teacherIndex'
+)
     ->name("user.chat.teacher-index")
     ->middleware('auth');
-Route::get('user/chat/chat-panel/{id}',
-    'ChatController@chatPanel')
+Route::get(
+    'user/chat/chat-panel/{id}',
+    'ChatController@chatPanel'
+)
     ->name("user.chat.chatPanel")
     ->middleware('auth');
-Route::get('user/chat/chat-notify/{id}',
-    'ChatController@notifyTeacher')
+Route::get(
+    'user/chat/chat-notify/{id}',
+    'ChatController@notifyTeacher'
+)
     ->name('user.chat.chat-notify')
     ->middleware('auth');
 
@@ -2264,27 +2298,29 @@ Route::get('user/chat/chat-notify/{id}',
 Route::get('payment/course/{slug}', 'PaymentController@pay')->name('payment.course')->middleware('auth');
 
 // payment using razorpay
-Route::get('course/payment/{course}','CoursePaymentController@initiate')->name('course.payment')->middleware('auth');
-Route::post('course/payment/complete','CoursePaymentController@complete')->name('course.payment.complete')->middleware('auth');
+Route::get('course/payment/{course}', 'CoursePaymentController@initiate')->name('course.payment')->middleware('auth');
+Route::post('course/payment/complete', 'CoursePaymentController@complete')->name('course.payment.complete')->middleware('auth');
 
 /**
  * User Extra Material Routes
  */
-Route::post('user/extra-material/add-remove',
-    [\App\Http\Controllers\AdminController\AdminUserExtraMaterialController::class, 'add_remove_material'])
+Route::post(
+    'user/extra-material/add-remove',
+    [\App\Http\Controllers\AdminController\AdminUserExtraMaterialController::class, 'add_remove_material']
+)
     ->name('user.extra_material.add_remove_material');
 
 // payment for apsc course
-Route::get('apsc/course/payment/{course}','Apsc\ApscCourseController@initiate')->name('apsc.course.payment')->middleware('auth');
-Route::post('apsc/course/payment/complete','Apsc\ApscCourseController@complete')->name('apsc.payment.complete')->middleware('auth');
+Route::get('apsc/course/payment/{course}', 'Apsc\ApscCourseController@initiate')->name('apsc.course.payment')->middleware('auth');
+Route::post('apsc/course/payment/complete', 'Apsc\ApscCourseController@complete')->name('apsc.payment.complete')->middleware('auth');
 Route::get('apsc/course/payment/show/{id}', 'OrderController@apsc_order_show')->name('apsc.order.show')->middleware('auth');;
-Route::get('apsc/course/payment/pending/{order_id}','Apsc\ApscCourseController@pendingComplete')->name('apsc.order.pending.payment')->middleware('auth');
+Route::get('apsc/course/payment/pending/{order_id}', 'Apsc\ApscCourseController@pendingComplete')->name('apsc.order.pending.payment')->middleware('auth');
 Route::delete('apsc/razor/delete/{id}', 'OrderController@apsc_courses_order_destroy')
     ->name('apsc.order.delete')->middleware('auth');
 
 // apsc bank payment
-Route::get('apsc/course/bank/payment/{id}','Apsc\ApscCourseController@bank')->name('apsc.bank.payment.course')->middleware('auth');;
-Route::post('apsc/course/bank/payment/store','Apsc\ApscCourseController@bank_store')->name('apsc.bank.payment.store')->middleware('auth');
+Route::get('apsc/course/bank/payment/{id}', 'Apsc\ApscCourseController@bank')->name('apsc.bank.payment.course')->middleware('auth');;
+Route::post('apsc/course/bank/payment/store', 'Apsc\ApscCourseController@bank_store')->name('apsc.bank.payment.store')->middleware('auth');
 
 //feedback
 Route::post('user/feedback', 'FeedbackController@store')->name('user.feedback.store');
@@ -2305,7 +2341,7 @@ Route::get('/advancepaper', function () {
 })->name('user.ias.advance.paper');
 
 Route::get('/advancetest/{course}', function ($course) {
-    return view('user.iasadvance.testmaterial',compact('course'));
+    return view('user.iasadvance.testmaterial', compact('course'));
 })->name('user.ias.advance.test');
 
 Route::get('/advanceplan', function () {
@@ -2332,7 +2368,7 @@ Route::get('/foundpaper', function () {
 })->name('user.ias.found.paper');
 
 Route::get('/foundtest/{course}', function ($course) {
-    return view('user.iasfound.testmaterial',compact('course'));
+    return view('user.iasfound.testmaterial', compact('course'));
 })->name('user.ias.found.test');
 
 Route::get('/foundplan', function () {
@@ -2358,7 +2394,7 @@ Route::get('/apsclivepaper', function () {
 })->name('user.apsc.paper');
 
 Route::get('/apsclivetest/{course}', function ($course) {
-    return view('user.apsclive.testmaterial',compact('course'));
+    return view('user.apsclive.testmaterial', compact('course'));
 })->name('user.apsc.test');
 
 Route::get('/apscliveplan', function () {
@@ -2449,8 +2485,8 @@ Route::get('user/result/{course}', 'TestController@result')->name('user.result.i
 
 // Study material routes
 Route::get('user/study/show/{id}', 'Study_material\StudyController@show')->name('user.study.show');
-Route::get('user/study/payment/{course}','Study_material\StudyController@initiate')->name('user.study.payment')->middleware('auth');
-Route::post('user/study/payment/complete','Study_material\StudyController@complete')->name('user.study.complete')->middleware('auth');
+Route::get('user/study/payment/{course}', 'Study_material\StudyController@initiate')->name('user.study.payment')->middleware('auth');
+Route::post('user/study/payment/complete', 'Study_material\StudyController@complete')->name('user.study.complete')->middleware('auth');
 Route::get('user/study/payment/show/{id}', 'Study_material\StudyController@study_order_show')->name('user.study.order.show')->middleware('auth');
 Route::get('user/study/razor/show/{id}', 'OrderController@study_show')->name('study.material.show')->middleware('auth');
 Route::get('user/study/razor/pending/{order_id}', 'Study_material\StudyController@pendingComplete')->name('user.study.pending.payment')->middleware('auth');
@@ -2458,8 +2494,8 @@ Route::delete('user/study/razor/delete/{id}', 'OrderController@study_material_or
     ->name('user.study.material.order.delete')->middleware('auth');
 
 // study material bank routes
-Route::get('user/study/bank/{course}','Study_material\StudyController@bank')->name('user.study.bank')->middleware('auth');
-Route::post('user/study/bank/store','Study_material\StudyController@bank_store')->name('user.study.bank.store')->middleware('auth');
+Route::get('user/study/bank/{course}', 'Study_material\StudyController@bank')->name('user.study.bank')->middleware('auth');
+Route::post('user/study/bank/store', 'Study_material\StudyController@bank_store')->name('user.study.bank.store')->middleware('auth');
 
 // study material invoice
 Route::get('user/study/razor/invoice/{id}', 'InvoiceController@study_razor')->name('user.study.razor.invoice');
@@ -2471,16 +2507,16 @@ Route::get('user/study/bank/invoice/{id}', 'InvoiceController@study_bank')->name
 Route::get('user/test/{course}', 'TestController@tests')->name('user.tests.index');
 Route::get('user/result/{course}', 'TestController@result')->name('user.result.index');
 
- //exam
+//exam
 Route::get('/resultsias', function () {
-    $results =\App\ShowResult::orderby('rank','ASC')->get();
-    $test_name=$results->pluck('test_name')->first();
-    $test_date=$results->pluck('date')->first();
-    $test_course=$results->pluck('course')->first();
-    return view('exam.result',compact('results','test_name','test_date','test_course'));
+    $results = \App\ShowResult::orderby('rank', 'ASC')->get();
+    $test_name = $results->pluck('test_name')->first();
+    $test_date = $results->pluck('date')->first();
+    $test_course = $results->pluck('course')->first();
+    return view('exam.result', compact('results', 'test_name', 'test_date', 'test_course'));
 })->name('exam.result');
-    
-    
+
+
 //STUDYPLAN currentaffairs
 
 Route::get('/apscstudymaterial', function () {
@@ -2500,7 +2536,7 @@ Route::get('/apscstudyplan', function () {
 })->name('user.study.material.apsc.study.plan');
 
 Route::get('/apscstudy/{course}', function ($course) {
-    return view('user.studymaterial.apscstudy.testmaterial',compact('course'));
+    return view('user.studymaterial.apscstudy.testmaterial', compact('course'));
 })->name('user.study.material.apsc.testmaterial');
 
 //apscrecorded currentaffairs
@@ -2573,7 +2609,7 @@ Route::get('/iasrecordedpaper', function () {
 })->name('user.ias.recorded.paper');
 
 Route::get('/iasrecordedtest/{course}', function ($course) {
-    return view('user.iasrecorded.testmaterial',compact('course'));
+    return view('user.iasrecorded.testmaterial', compact('course'));
 })->name('user.ias.recorded.test');
 
 Route::get('/iasrecordedplan', function () {
@@ -2599,7 +2635,7 @@ Route::get('/apscnewrecordedcurrentaffairs', function () {
 })->name('user.apsc.new.recorded.currentaffairs');
 
 Route::get('/apscnewrecordedtest/{course}', function ($course) {
-    return view('user.apscnewrecorded.testmaterial',compact('course'));
+    return view('user.apscnewrecorded.testmaterial', compact('course'));
 })->name('user.apsc.new.recorded.test');
 
 Route::get('/apscnewrecordedplan', function () {
@@ -2639,7 +2675,7 @@ Route::get('/iasstudymaterialplan', function () {
     return view('user.iasstudymaterial.plan');
 })->name('user.ias.study.material.plan');
 Route::get('/iasstudymaterial/{course}', function ($course) {
-    return view('user.iasstudymaterial.testmaterial',compact('course'));
+    return view('user.iasstudymaterial.testmaterial', compact('course'));
 })->name('user.ias.study.material.test');
 //ADVANCE 2022
 Route::get('/iasadvancedbatch2022classppt', function () {
@@ -2655,7 +2691,7 @@ Route::get('/advancedbatch2022paper', function () {
 })->name('user.ias.advance.batch.2022.paper');
 
 Route::get('/advancedbatch2022test/{course}', function ($course) {
-    return view('user.iasadvancedbatch2022.testmaterial',compact('course'));
+    return view('user.iasadvancedbatch2022.testmaterial', compact('course'));
 })->name('user.ias.advance.batch.2022.testmaterial');
 
 Route::get('/advancedbatch2022plan', function () {
@@ -2683,7 +2719,7 @@ Route::get('/apscadvancedbatch2022paper', function () {
 })->name('user.apsc.advanced.batch.2022.paper');
 
 Route::get('/apscadvancedbatch2022test/{course}', function ($course) {
-    return view('user.apscadvancedbatch2022.testmaterial',compact('course'));
+    return view('user.apscadvancedbatch2022.testmaterial', compact('course'));
 })->name('user.apsc.advanced.batch.2022.testmaterial');
 
 Route::get('/apscadvancedbatch2022plan', function () {
@@ -2736,31 +2772,31 @@ Route::get('/oldstudentsrecorded', function () {
 
 // new video
 Route::get('user/new/video/main/{course}', function ($course) {
-    $videos = \App\NewVideo::where('topic', 'Main')->where('course',$course)->get()->unique('sub_topic')->pluck('sub_topic');
+    $videos = \App\NewVideo::where('topic', 'Main')->where('course', $course)->get()->unique('sub_topic')->pluck('sub_topic');
     return view('user.new_videos.new_video_sub_main', compact('videos'));
 })->name('user.new.video.main.topic');
 Route::get('user/new/video/prelim/{course}', function ($course) {
-    $videos = \App\NewVideo::where('topic', 'Prelims')->where('course',$course)->get()->unique('sub_topic')->pluck('sub_topic');
+    $videos = \App\NewVideo::where('topic', 'Prelims')->where('course', $course)->get()->unique('sub_topic')->pluck('sub_topic');
     return view('user.new_videos.new_video_sub_prelims', compact('videos'));
 })->name('user.new.video.prelims.topic');
 
-Route::get('user/new/videomain/{sub_topic}', function ($sub_topic){
-    $videos=\App\NewVideo::where('topic','Main')->where('sub_topic',$sub_topic)->get();
-    return view('user.new_videos.new_video',compact('videos','sub_topic'));
+Route::get('user/new/videomain/{sub_topic}', function ($sub_topic) {
+    $videos = \App\NewVideo::where('topic', 'Main')->where('sub_topic', $sub_topic)->get();
+    return view('user.new_videos.new_video', compact('videos', 'sub_topic'));
 })->name('user.new.video.main.sub');
 
-Route::get('user/new/videoprelim/{sub_topic}', function ($sub_topic){
-    $videos=\App\NewVideo::where('topic','Prelims')->where('sub_topic',$sub_topic)->get();
-    return view('user.new_videos.new_video',compact('videos','sub_topic'));
+Route::get('user/new/videoprelim/{sub_topic}', function ($sub_topic) {
+    $videos = \App\NewVideo::where('topic', 'Prelims')->where('sub_topic', $sub_topic)->get();
+    return view('user.new_videos.new_video', compact('videos', 'sub_topic'));
 })->name('user.new.video.prelims.sub');
 
 Route::get('user/new/video/{course}', function ($course) {
-    return view('user.new_videos.new_video_index',compact('course'));
+    return view('user.new_videos.new_video_index', compact('course'));
 })->name('user.new.video');
 
 
 
-Route::get('user/new/video/play/{id}', function ($id){
+Route::get('user/new/video/play/{id}', function ($id) {
     $video = \App\NewVideo::findOrFail($id);
     return view('user.new_videos.free_play', compact('video'));
 })->name('user.new.video.play')->middleware('auth');
@@ -2899,7 +2935,7 @@ Route::get('free/new/main/{course}', function ($course) {
 
     // $coupon = \App\Coupon::where('email', Auth::user()->email)->get()->first();
 
-    return view('user.new_videos.free_video_sub_main', compact('videos','course'));
+    return view('user.new_videos.free_video_sub_main', compact('videos', 'course'));
 })->name('free.new.video.main.topic');
 
 // new course ias exam 2021
@@ -2907,26 +2943,32 @@ Route::get('ias/exam/show/{id}', 'Study_material\StudyController@showIasExam')->
 
 
 // user self create coupon routes
-Route::get('user/coupon/create',
-    [\App\Http\Controllers\UserController::class,'couponCreate'])
+Route::get(
+    'user/coupon/create',
+    [\App\Http\Controllers\UserController::class, 'couponCreate']
+)
     ->name('user.coupon.create');
 
-Route::post('user/coupon/store',
-    [\App\Http\Controllers\UserController::class,'couponStore'])
+Route::post(
+    'user/coupon/store',
+    [\App\Http\Controllers\UserController::class, 'couponStore']
+)
     ->name('user.coupon.store');
-    
-    
-    // request coupon
+
+
+// request coupon
 Route::post(
     'user/request/coupon/store',
-    [\App\Http\Controllers\RequestCouponController::class, 'store'])
+    [\App\Http\Controllers\RequestCouponController::class, 'store']
+)
     ->name('user.request.coupon.store');
 Route::get(
     'user/request/coupon/create',
-    [\App\Http\Controllers\RequestCouponController::class, 'create'])
+    [\App\Http\Controllers\RequestCouponController::class, 'create']
+)
     ->name('user.request.coupon.create');
-    
-    //foundation2023(b-2)
+
+//foundation2023(b-2)
 
 Route::get('/found2023(b-2)material', function () {
     return view('user.foundation2023(b-2).material');
@@ -2982,8 +3024,8 @@ Route::post(
     [\App\Http\Controllers\VideoRating::class, 'storeNew']
 )
     ->name('video.rating-new.store');
-    
-    
+
+
 
 //iasfoundation2023(batch-2)
 
@@ -3050,8 +3092,8 @@ Route::get(
 )->name('notifications.index');
 
 Route::get('/enroll', function () {
-        // do something and redirect
-        return redirect('home#ourcourses');
+    // do something and redirect
+    return redirect('home#ourcourses');
 })->name('enroll');
 
 //lifetimeaccessibleaccount
@@ -3150,7 +3192,7 @@ Route::middleware(['auth'])->group(function () {
         [\App\Http\Controllers\DailyNewsController::class, 'index']
     )->name('dailynews.index')->middleware('auth');
 
-     Route::get(
+    Route::get(
         '/assignments',
         [\App\Http\Controllers\AssignmentController::class, 'index']
     )->name('assignments.index');
@@ -3166,18 +3208,18 @@ Route::middleware(['auth'])->group(function () {
         '/assignment/store/',
         [\App\Http\Controllers\AssignmentController::class, 'store']
     )->name('assignment.store');
-    
+
     // classppt for ias target batch 2022
 
-Route::get('/iastargetbatch2022classppt', function () {
-    return view('user.iastargetbatch2022.classppt');
-})->name('user.ias.target.batch.2022.classppt');
+    Route::get('/iastargetbatch2022classppt', function () {
+        return view('user.iastargetbatch2022.classppt');
+    })->name('user.ias.target.batch.2022.classppt');
 
-// classppt for apsc target batch 2022
+    // classppt for apsc target batch 2022
 
-Route::get('/apsctargetbatch2022classppt', function () {
-    return view('user.apsctargetbatch2022.classppt');
-})->name('user.apsc.target.batch.2022.classppt');
+    Route::get('/apsctargetbatch2022classppt', function () {
+        return view('user.apsctargetbatch2022.classppt');
+    })->name('user.apsc.target.batch.2022.classppt');
 });
 
 // article current affairs
@@ -3370,7 +3412,7 @@ Route::get('/mark-calculate', function () {
 
 Route::post('/mark-calculate/data', [\App\Http\Controllers\CalculatorController::class, 'store'])
     ->name('calculation.store');
-    
+
 //apsc_mains_2021
 Route::get('/apsc_mains_2021material', function () {
     return view('user.apsc_mains_2021.material');
@@ -3433,10 +3475,10 @@ Route::get('/mains/materials', function () {
 })->name('apsc.mains.materials');
 
 
-Route::get('/export/details/upsc',[ExportController::class, 'upscExport'])->name('export.details.upsc');
-Route::get('/export/details/apsc',[ExportController::class, 'apscExport'])->name('export.details.apsc');
-Route::get('/export/details/study-material',[ExportController::class, 'studyMaterialExport'])->name('export.details.studyMaterial');
-Route::get('/export/details/recorded',[ExportController::class, 'recordedExport'])->name('export.details.recorded');
+Route::get('/export/details/upsc', [ExportController::class, 'upscExport'])->name('export.details.upsc');
+Route::get('/export/details/apsc', [ExportController::class, 'apscExport'])->name('export.details.apsc');
+Route::get('/export/details/study-material', [ExportController::class, 'studyMaterialExport'])->name('export.details.studyMaterial');
+Route::get('/export/details/recorded', [ExportController::class, 'recordedExport'])->name('export.details.recorded');
 
 
 //advanced_batch_2023
@@ -3526,32 +3568,41 @@ Route::get('/foundation_2024/ppt', function () {
 // APSC MAINS 2021
 
 Route::get('/apscmain2021_gs-1', function () {
-    return view('digipedia.apscmain2021_gs1');});
+    return view('digipedia.apscmain2021_gs1');
+});
 
 Route::get('/apscmain2021_gs-2', function () {
-    return view('digipedia.apscmain2021_gs2');});
-    
+    return view('digipedia.apscmain2021_gs2');
+});
+
 Route::get('/apscmain2021_gs-3', function () {
-    return view('digipedia.apscmain2021_gs3');});
-    
+    return view('digipedia.apscmain2021_gs3');
+});
+
 Route::get('/apscmain2021_gs-4', function () {
-    return view('digipedia.apscmain2021_gs4');});
-    
+    return view('digipedia.apscmain2021_gs4');
+});
+
 Route::get('/apscmain2021_gs-5', function () {
-    return view('digipedia.apscmain2021_gs5');});
-    
+    return view('digipedia.apscmain2021_gs5');
+});
+
 Route::get('/apscmain2021_geology', function () {
-    return view('digipedia.apscmain2021_geology');});
-    
+    return view('digipedia.apscmain2021_geology');
+});
+
 Route::get('/apscmain2021_gs4_day-1', function () {
-    return view('digipedia.apscmain2021_gs4_day-1');});
-    
+    return view('digipedia.apscmain2021_gs4_day-1');
+});
+
 Route::get('/security_gs3', function () {
-    return view('digipedia.security_gs3');});
-    
+    return view('digipedia.security_gs3');
+});
+
 Route::get('/apscmain2021_gs4_ethics', function () {
-    return view('digipedia.apscmain2021_gs4_ethics');});
-    
+    return view('digipedia.apscmain2021_gs4_ethics');
+});
+
 //offline_batch_2022_(batch-2)
 
 Route::get('/offline_batch_2022_(batch-2)material', function () {
@@ -3577,12 +3628,12 @@ Route::get('/apsc_mains_test_seriespaper/{course}', function ($course) {
 })->name('user.apsc.mains.test.series.paper');
 
 Route::get('/apsc_mains_test_seriesanswer/{course}', function ($course) {
-    return view('user.apsc_mains_test_series.answer',compact('course'));
+    return view('user.apsc_mains_test_series.answer', compact('course'));
 })->name('user.apsc.mains.test.series.answer');
 
 
 // result for user 
-Route::get('/user/result/cards/{course}', [ResultController::class,'index'])->name('user.result.cards');
+Route::get('/user/result/cards/{course}', [ResultController::class, 'index'])->name('user.result.cards');
 
 //revise_prelimsplan
 
@@ -3621,7 +3672,7 @@ Route::get('/ias_2022_revision_test', function () {
 
 Route::get('admin/IasMockTest/index',  [\App\Http\Controllers\AdminController\IasMockTest\IasMockTestController::class, 'index'])->name('admin.iasMockTest.index')
     ->middleware('auth', 'admin');
-    
+
 //iasfound2023(batch-2)
 
 Route::get('/iasfound2023(batch-2)ppt', function () {
@@ -3639,9 +3690,9 @@ Route::get('/apscfound2023(batch-2)ppt', function () {
 Route::post('user/pdf-view/index', [\App\Http\Controllers\UserController::class, 'view_pdf'])
     ->name('user.pdf-view.index')
     ->middleware('auth');
-    
-    
-    
+
+
+
 // apsc all user side
 Route::get('/apsc-all/pdf', function () {
     $datas = \App\ApscAll::latest()->get();
@@ -3767,7 +3818,7 @@ Route::get('/poll/{id}', [\App\Http\Controllers\Poll\PollController::class, 'sho
     ->name('poll.show');
 Route::post('/poll', [\App\Http\Controllers\Poll\PollController::class, 'store'])
     ->name('poll.store');
-    
+
 //APSC MAINS PYQ
 Route::get('/apsc/pyq', function () {
     return view('user.apsc_all.apscmainspyq');
@@ -3915,7 +3966,7 @@ Route::get('/apsc-prelims-pyq', function () {
 Route::get('/exam-registration', function () {
     return view('digipedia.exam');
 });
-  
+
 // exam registration
 
 Route::get('/scholarship-registration', function () {
@@ -3934,7 +3985,7 @@ Route::get('/apply-job/index', [\App\Http\Controllers\JobController::class, 'ind
     ->name('job.index');
 Route::post('/apply-job/store', [\App\Http\Controllers\JobController::class, 'store'])
     ->name('job.store');
-    
+
 //advanced csat gs 2
 
 //advanced_csat_gs2
@@ -4046,22 +4097,24 @@ Route::get('/faculty-poll/{id}', [\App\Http\Controllers\FacultyPoll\FacultyPollC
     ->name('faculty.poll.show');
 Route::post('/faculty-poll', [\App\Http\Controllers\FacultyPoll\FacultyPollController::class, 'store'])
     ->name('faculty.poll.store');
-    
+
 // Current Affair
 Route::get(
     '/current-affair/{type}',
     [\App\Http\Controllers\CurrentAffairController::class, 'index']
 )
     ->name('current.affair.index')->middleware('auth');
-Route::get('/current-affair/view/{current_affair}',
-    [\App\Http\Controllers\CurrentAffairController::class, 'show'])
-    ->name('current.affair.show')->middleware('auth');    
-    
-    
-    
-    
-    
-    
+Route::get(
+    '/current-affair/view/{current_affair}',
+    [\App\Http\Controllers\CurrentAffairController::class, 'show']
+)
+    ->name('current.affair.show')->middleware('auth');
+
+
+
+
+
+
 //test series quiz route
 Route::get('/testseriesquiz/{course}/{type}', [\App\Http\Controllers\TestSeriesQuiz\TestSeriesQuizController::class, 'index'])
     ->name('testseriesquiz.index')
@@ -4229,7 +4282,7 @@ Route::get('/acs+/classppt', function () {
 
 Route::get('/prelims-faq', [\App\Http\Controllers\PrelimsFaqController::class, 'index'])
     ->name('prelims.faq');
-    
+
 
 //Offline batch d-2023 batch-2
 Route::get('/offline_batch_(d-2023)_batch-2/plan', function () {
@@ -4948,9 +5001,9 @@ Route::post('/testseriesquizroll/question/submit', [\App\Http\Controllers\TestSe
 Route::get('/testseriesquizroll/result/view/{id}', [\App\Http\Controllers\TestSeriesQuizRoll\TestSeriesQuizRollController::class, 'result'])
     ->name('testseriesquizroll.result.view')
     ->middleware('auth');
-    
-    
-    //user mentor
+
+
+//user mentor
 Route::get('/user_mentor', [\App\Http\Controllers\PersonalMentorController::class, 'index'])
     ->name('user_mentor.index')
     ->middleware('auth');
@@ -4966,42 +5019,40 @@ Route::post('/user_mentor/store', [\App\Http\Controllers\PersonalMentorControlle
 Route::delete('/user_mentor/delete/{id}', [\App\Http\Controllers\PersonalMentorController::class, 'destroy'])
     ->name('user_mentor.destroy')
     ->middleware('auth');
-    
-    Route::get('/user/course/view/{course}/{type}', function ($course, $type) {
-          $sub_topics = [];
+
+Route::get('/user/course/view/{course}/{type}', function ($course, $type) {
+    $sub_topics = [];
     if ($type === 'UPSC') {
         $course = Course::find($course);
     } else   if ($type === 'APSC') {
         $course = ApscCourses::find($course);
-                $sub_topics = ClassVideo::where('course', $course->title)->where('type', '!=', 'NULL')->get()->unique('type')->pluck('type');
-
+        $sub_topics = ClassVideo::where('course', $course->title)->where('type', '!=', 'NULL')->get()->unique('type')->pluck('type');
     } else   if ($type === 'RECORDED') {
         $course = Recorded::find($course);
     } else if ($type === 'STUDY_MATERIAL') {
         $course = StudyMaterial::find($course);
     }
-       return view('user.courseView', compact('course', 'type', 'sub_topics'));
-
+    return view('user.courseView', compact('course', 'type', 'sub_topics'));
 })->name('user.course.view')
     ->middleware('auth');
-    
-    
-    Route::get('/free-trial-course', function () {
+
+
+Route::get('/free-trial-course', function () {
     return view('free_trial_course');
 })->name('free.trial.course');
 Route::post('/free-trial-course/store', [\App\Http\Controllers\FreeTrialCourseController::class, 'store'])
     ->name('free.trial.course.store');
-    
-    
+
+
 Route::post('/interviewPreparation/store', [\App\Http\Controllers\InterviewPreparationController::class, 'store'])
     ->name('interviewPreparation.store')->middleware('auth');
-    
-    
+
+
 Route::post('/acs-scholarship-mentoring/store', [\App\Http\Controllers\AcsScholarshipAndMentoringController::class, 'store'])
     ->name('acs.scholarship.mentoring.store');
-    
-    
-    
+
+
+
 /**
  * HDFC Payment Gateway Routes
  */
@@ -5040,3 +5091,16 @@ Route::post('/hdfc-payment/study-material/response', [\App\Http\Controllers\HDFC
     ->name('hdfc.payment.study-material.response');
 Route::get('/hdfc-payment/study-material/{course}', [\App\Http\Controllers\HDFCPaymentGateway\StudyMaterialPaymentController::class, 'initiate'])
     ->name('hdfc.payment.study-material.initiate');
+
+
+Route::get('/quiz/outside/{course}', [\App\Http\Controllers\Quiz\QuizController::class, 'index'])
+    ->name('quiz.outside.course.index');
+
+Route::get('/quiz/outside/questions/{id}/{course_name}', [\App\Http\Controllers\Quiz\QuizController::class, 'outsideCourseQuestions'])
+    ->name('quiz.outside.course.questions');
+
+Route::post('/quiz/outside/submit', [\App\Http\Controllers\Quiz\QuizController::class, 'submitOutsideCourse'])
+    ->name('quiz.outside.course.submit');
+
+Route::post('/quiz/outside/modal/submit', [\App\Http\Controllers\Quiz\QuizController::class, 'modalSubmit'])
+    ->name('quiz.outside.course.modal.submit');

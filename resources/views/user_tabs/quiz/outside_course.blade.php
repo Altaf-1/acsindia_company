@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="{{ asset('css/slick.css') }}">
     <!-- Font Awesome  -->
     <link rel="stylesheet" href="{{ asset('css/fontawesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/fontawesome.min.css') }}">
+    <script src='{{ asset('js/jquery-3.4.1.min.js') }}'></script>
 @endsection
 @section('styles')
     <style>
@@ -140,6 +142,10 @@
                                     <a href="/">Homepage</a></span>
                                 <span class="separator">&gt;</span>
                                 <span class="last-item">ONLINE TEST</span>
+                                <span class="separator">&gt;</span>
+                                <a href={{ route('quiz.outside.course.index', 'Outside Course') }}
+                                    class="text-white ">Outside
+                                    Course</a>
                             </div>
                         </div>
                     </div>
@@ -160,19 +166,8 @@
                                         <h4>Test: {{ $data->quiz->quiz_name }}</h4>
                                         <h4>Date: {{ $data->quiz->quiz_date }}</h4>
                                         <p class="text-dark">{{ $data->quiz->description }}</p>
-                                        @if ($course === 'Outside Course')
-                                            <a href="{{ route('quiz.outside.course.questions', [$data->quiz_id, $data->course_name]) }}"
-                                                class="btn color-two button text-white">Take Test</a>
-                                        @else
-                                            @if ($data->user_attempt_left($data->quiz->id))
-                                                <a href="{{ route('quiz.questions', [$data->quiz_id, $data->course_name]) }}"
-                                                    class="btn color-two button text-white">Take Test</a>
-                                            @else
-                                                No Attempt Left <br>
-                                                <a href="{{ route('quiz.result.view', ['id' => $data->quiz_id, 'user_id' => Auth::user()->id]) }}"
-                                                    class="btn color-two button text-white">View Result</a>
-                                            @endif
-                                        @endif
+                                        <a href="{{ route('quiz.outside.course.questions', [$data->quiz_id, $data->course_name]) }}"
+                                            class="btn color-two button text-white">Take Test</a>
                                     </div>
                                 </div>
                             </div>
@@ -185,6 +180,58 @@
                 <!-- .row end -->
             </div>
             <!-- .row end -->
+        </div>
+        @if (!Session::get('info'))
+            <script>
+                if (!localStorage.getItem("modalSet")) {
+                    $(document).ready(function() {
+                        $('#myModal').modal('show');
+                    })
+                }
+            </script>
+        @endif
+        <script>
+            function handleSubmit() {
+                localStorage.setItem("modalSet", true);
+                $('#registerModal').submit();
+            }
+        </script>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="disapproveModalLabel"
+            aria-hidden="true" data-keyboard="false" data-backdrop="static">
+            <div class="modal-dialog" role="document">
+                <form action="{{ route('quiz.outside.course.modal.submit') }}" method="post" id="modalSet"
+                    enctype="multipart/form-data">
+                    @csrf
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="disapproveModalLabel">Fill the Form</h5>
+                            {{-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button> --}}
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label for="name" class="col-form-label">Name</label>
+                                <input id="name" type="text" required class="form-control" name="name" />
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="col-form-label">Email</label>
+                                <input id="email" type="email" required class="form-control" name="email" />
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="col-form-label">Phone</label>
+                                <input id="phone" type="text" required class="form-control" name="phone" />
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn color-two button text-white " type="submit" onclick="handleSubmit()"><i
+                                        class="fas fa-user-edit"></i>Save</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </form>
+            </div>
         </div>
     </main>
 @endsection

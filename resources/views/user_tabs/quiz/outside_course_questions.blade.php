@@ -61,7 +61,7 @@
         @media (max-width: 576px) {
             .mobile {
                 justify-content: center;
-                 !important;
+                !important;
                 padding-top: 0;
                 padding-bottom: 30px;
 
@@ -71,12 +71,12 @@
         .buy-btn {
             background-color: white;
             color: #ff9933;
-             !important;
+            !important;
         }
 
         .txt-color {
             color: #ff9933;
-             !important;
+            !important;
         }
 
         .card:hover {
@@ -142,7 +142,9 @@
                                 <span class="first-item">
                                     <a href="/">Homepage</a></span>
                                 <span class="separator">&gt;</span>
-                                <span class="last-item">Quiz</span>
+                                <a href={{ route('quiz.outside.course.index', 'Outside Course') }}
+                                    class="text-white">Outside
+                                    Course</a></span>
                             </div>
                         </div>
                     </div>
@@ -150,7 +152,7 @@
             </div>
         </div>
         <input type="hidden" id="total_time" value="{{ $quiz->total_time }}" />
-    
+
 
         <script>
             var count = document.getElementById('total_time').value;
@@ -200,14 +202,14 @@
                 <tr>
                     <td class="bg-warning"> 1. When time is up quiz submitted automatically.</td>
                 </tr>
-            </table>   
+            </table>
             <div id="count"
-            style="border-top-left-radius:10px; border-bottom-left-radius:10px; background-color:black; padding:5px; padding-left:20px; padding-right:20px; z-index:999;font-size:24px; font-weight:bold;color:white; position:fixed;right:0;">
-        </div>
+                style="border-top-left-radius:10px; border-bottom-left-radius:10px; background-color:black; padding:5px; padding-left:20px; padding-right:20px; z-index:999;font-size:24px; font-weight:bold;color:white; position:fixed;right:0;">
+            </div>
             <hr>
             <!-- .row -->
             <div>
-                <form id="myForm" action="{{ route('quiz.question.submit') }}" method="POST">
+                <form id="myForm" action="{{ route('quiz.outside.course.submit') }}" method="POST">
                     @csrf
                     <input type="hidden" name="quiz_id" value="{{ $id }}">
                     <input type="hidden" name="course_name" value="{{ $course_name }}">
@@ -252,7 +254,6 @@
                         @endforeach
                         <div class="form-group mt-3 ml-3">
                             <button type="submit" class="btn btn-primary text-white">Submit</button>
-
                         </div>
                     </div>
                     <!-- .row end -->

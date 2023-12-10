@@ -21,15 +21,18 @@ Edit quiz
         @method('patch')
         <div class="form-group font-weight-bold">
             <label for="quiz_name">Name:</label>
-            <input type="quiz_name" style="border-radius: 20px;" class="form-control" value="{{$data->quiz_name}}" name="quiz_name" placeholder="Enter Name">
+            <input type="quiz_name" style="border-radius: 20px;" class="form-control" value="{{$data->quiz_name}}"
+                name="quiz_name" placeholder="Enter Name">
         </div>
         <div class="form-group font-weight-bold">
             <label for="quiz_date">Date:</label>
-            <input type="date" style="border-radius: 20px;" class="form-control" value="{{$data->quiz_date}}" name="quiz_date" placeholder="Enter date">
+            <input type="date" style="border-radius: 20px;" class="form-control" value="{{$data->quiz_date}}"
+                name="quiz_date" placeholder="Enter date">
         </div>
         <div class="form-group font-weight-bold">
             <label for="description">Description:</label>
-            <textarea name="description" id="" cols="30" class="form-control" rows="5" style="resize: none;">{{$data->description}}</textarea>
+            <textarea name="description" id="" cols="30" class="form-control" rows="5"
+                style="resize: none;">{{$data->description}}</textarea>
         </div>
         <div class="form-group font-weight-bold">
             <label for="Status">status:</label>
@@ -41,7 +44,8 @@ Edit quiz
         </div>
         <div class="form-group font-weight-bold">
             <label for="total_time">END Time:</label>
-            <input required type="time" style="border-radius: 20px;" class="form-control  col-3" name="total_time" value="{{$data->total_time}}">
+            <input type="time" style="border-radius: 20px;" class="form-control  col-3" name="total_time"
+                value="{{$data->total_time}}">
         </div>
         <br>
         <button class="btn button text-white" style="background: #fb770c" type="submit">Update</button>
@@ -52,8 +56,8 @@ Edit quiz
 @section('scripts')
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 <script>
-    $(document).ready(function() {
-        $('.js-example-basic-multiple').select2();
-    });
+$(document).ready(function() {
+    $('.js-example-basic-multiple').select2();
+});
 </script>
 @endsection

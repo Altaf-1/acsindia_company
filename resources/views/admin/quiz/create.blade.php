@@ -19,15 +19,18 @@ New Quiz
         @csrf
         <div class="form-group font-weight-bold">
             <label for="quiz_name">Name:</label>
-            <input required type="quiz_name" style="border-radius: 20px;" class="form-control" name="quiz_name" placeholder="Enter Name">
+            <input required type="quiz_name" style="border-radius: 20px;" class="form-control" name="quiz_name"
+                placeholder="Enter Name">
         </div>
         <div class="form-group font-weight-bold">
             <label for="quiz_date">Date:</label>
-            <input required type="date" style="border-radius: 20px;" class="form-control  col-3" name="quiz_date" placeholder="Enter date">
+            <input required type="date" style="border-radius: 20px;" class="form-control  col-3" name="quiz_date"
+                placeholder="Enter date">
         </div>
         <div class="form-group font-weight-bold">
             <label for="description">Description:</label>
-            <textarea name="description" class="form-control" placeholder="Enter description" style="border-radius: 20px; resize:none;" id="" cols="30" rows="5"></textarea>
+            <textarea name="description" class="form-control" placeholder="Enter description"
+                style="border-radius: 20px; resize:none;" id="" cols="30" rows="5"></textarea>
         </div>
         <div class="form-group font-weight-bold">
             <label for="Status">status:</label>
@@ -46,7 +49,7 @@ New Quiz
         </div>
         <div class="form-group font-weight-bold">
             <label for="total_time">END Time:</label>
-            <input required type="time" style="border-radius: 20px;" class="form-control  col-3" name="total_time" >
+            <input type="time" style="border-radius: 20px;" class="form-control  col-3" name="total_time">
         </div>
         <br>
         <button class="btn button text-white" style="background: #fb770c" type="submit">Add</button>

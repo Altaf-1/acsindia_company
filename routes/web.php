@@ -17,6 +17,7 @@ use App\Http\Controllers\ResultController;
 use App\TestSeriesAssign;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AdminController\HDFC\AdminHDFCOrdersController;
+use App\Http\Controllers\AdminController\OutsideCourse\OutsideCourseController;
 use App\Recorded;
 use App\StudyMaterial;
 /*
@@ -2199,6 +2200,9 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
         ->name('admin.hdfc-orders.index');
     Route::get('/hdfc/order/allow-course/{order_id}', [AdminHDFCOrdersController::class, 'allow_course'])
         ->name('admin.hdfc-orders.allow-course');
+
+    Route::get('/admin/outside/course', [OutsideCourseController::class, 'index'])
+        ->name('admin.outside.course.index');
 });
 
 

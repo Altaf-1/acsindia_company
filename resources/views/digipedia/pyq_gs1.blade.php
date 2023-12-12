@@ -257,6 +257,26 @@ Swal.fire({
                         </div>
                         <!-- end single features -->
                     </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <!-- 3 -->
+                        <div class="single-features-light text-center">
+                            <!-- single features -->
+                            <div>
+                                <i class="base-color fab fa-leanpub fa-3x"></i>
+                                <h4>2020</h4>
+                                <form action="{{route('user.pdf-view.index')}}" method="post">
+                                    @csrf
+                                    <input type="hidden" name="drive_link"
+                                        value="https://drive.google.com/file/d/1y4OF9Ii1D-3Cem7BbHU4FzPc6UrItSdy/">
+                                    <button type="submit" class="btn color-two button text-white">Download</button>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- end single features -->
+                    </div>
+
+
                     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                         <!-- 3 -->
                         <div class="single-features-light text-center">

@@ -270,17 +270,18 @@ Swal.fire({
                                     for="{{ $loop->index }}{{ $data->question->option4 }}">{{ $data->question->option4 }}</label>
                             </div>
                             <div class="form-group text-white p-2 bg-info mb-2">
-                                <label for="">Correct Answer :
+                                <label class="text-white" for="">Correct Answer :
                                     {{ $data->question->correct_option ?? '' }}
                                 </label>
                             </div>
                             <div class="form-group text-white p-2 bg-info mb-2">
-                                <label for="">Your Answer : {{ $data->answer ?? 'No Option Selected' }}
+                                <label class="text-white" for="">Your Answer :
+                                    {{ $data->answer ?? 'No Option Selected' }}
                                 </label>
                             </div>
                             <div
                                 class="form-group text-white p-2 {{ $data->answer == $data->question->correct_option ? 'bg-success' : 'bg-danger' }}">
-                                <label for="">
+                                <label class="text-white" for="">
                                     {{ $data->answer == $data->question->correct_option ? 'Correct' : 'Wrong' }}</label>
                             </div>
                             <div class="form-group p-2">

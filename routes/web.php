@@ -331,6 +331,18 @@ Route::get('/acsall', function () {
     return view('digipedia.acsall');
 });
 
+Route::get('/pyq_all', function () {
+    return view('digipedia.pyq_all');
+});
+
+Route::get('/upsc_pyq', function () {
+    return view('digipedia.upsc_pyq');
+});
+
+Route::get('/sample_material', function () {
+    return view('digipedia.sample_materialq');
+});
+
 Route::get('/prelims_important', function () {
     return view('digipedia.important');
 })->middleware('auth');

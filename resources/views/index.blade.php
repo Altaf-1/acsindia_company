@@ -347,51 +347,51 @@ Toast.fire({
         <div class="col-lg-6 mt-5">
             <div class="row">
                 <div class="col-lg-6">
-                    <div style="background-color: #e52e06;" class="rounded border text-white text-center pb-3">
+                    <div style="background-color: #134982;" class="rounded border text-white text-center pb-3">
                         <h2 class="text-white font-weight-bold">Probable Questions</h2>
                         <a class="button text-white p-2 rounded text-white mb-2" href="{{asset('/Probable_Question')}}"
-                            style="background-color: #230764; font-family: 'Righteous'; size: 22px"><span>Download
+                            style="background-color: #e52e06; font-family: 'Righteous'; size: 22px"><span>Download
                                 Now</span></a>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div style="background-color: #e52e06;" class="rounded border text-white text-center pb-3">
+                    <div style="background-color: #134982;" class="rounded border text-white text-center pb-3">
                         <h2 class="text-white font-weight-bold">Sample Material</h2>
                         <a class="button text-white p-2 rounded text-white mb-2" href="{{asset('/sample_material')}}"
-                            style="background-color: #230764; font-family: 'Righteous'; size: 22px"><span>Download
+                            style="background-color: #e52e06; font-family: 'Righteous'; size: 22px"><span>Download
                                 Now</span></a>
                     </div>
                 </div>
                 <div class="col-lg-6 mt-3">
-                    <div style="background-color: #e52e06;" class="rounded border text-white text-center pb-3">
+                    <div style="background-color: #134982;" class="rounded border text-white text-center pb-3">
                         <h3 style="font-size: 28px;" class="text-white font-weight-bold">Previous Year Question Papers
                         </h3>
-                        <a class="button text-white p-2 rounded text-white mb-2" href="{{asset('/sample_material')}}"
-                            style="background-color: #230764; font-family: 'Righteous'; size: 22px"><span>Download
+                        <a class="button text-white p-2 rounded text-white mb-2" href="{{asset('/pyq_all')}}"
+                            style="background-color: #e52e06; font-family: 'Righteous'; size: 22px"><span>Download
                                 Now</span></a>
                     </div>
                 </div>
                 <div class="col-lg-6 mt-3">
-                    <div style="background-color: #e52e06;" class="rounded border text-white text-center pb-3">
+                    <div style="background-color: #134982;" class="rounded border text-white text-center pb-3">
                         <h2 class="text-white font-weight-bold">Chapterwise Question & Answer</h2>
-                        <a class="button text-white p-2 rounded text-white mb-2" href="{{asset('/sample_material')}}"
-                            style="background-color: #230764; font-family: 'Righteous'; size: 22px"><span>Download
+                        <a class="button text-white p-2 rounded text-white mb-2" href="{{asset('/upsc_pyq')}}"
+                            style="background-color: #e52e06; font-family: 'Righteous'; size: 22px"><span>Download
                                 Now</span></a>
                     </div>
                 </div>
                 <div class="col-lg-6 mt-3">
-                    <div style="background-color: #e52e06;" class="rounded border text-white text-center pb-3">
+                    <div style="background-color: #134982;" class="rounded border text-white text-center pb-3">
                         <h3 class="text-white font-weight-bold">Daily Current Affairs</h3>
-                        <a class="button text-white p-2 rounded text-white mb-2" href="{{asset('/sample_material')}}"
-                            style="background-color: #230764; font-family: 'Righteous'; size: 22px"><span>Download
+                        <a class="button text-white p-2 rounded text-white mb-2" href="{{asset('/current_affairs_2023')}}"
+                            style="background-color: #e52e06; font-family: 'Righteous'; size: 22px"><span>Download
                                 Now</span></a>
                     </div>
                 </div>
                 <div class="col-lg-6 mt-3">
-                    <div style="background-color: #e52e06;" class="rounded border text-white text-center pb-3">
+                    <div style="background-color: #134982;" class="rounded border text-white text-center pb-3">
                         <h3 class="text-white font-weight-bold">Daily News Analysis Exam</h3>
                         <a class="button text-white p-2 rounded text-white mb-2" href="{{asset('/quiz/outside/Outside%20Course')}}"
-                            style="background-color: #230764; font-family: 'Righteous'; size: 22px"><span>Download
+                            style="background-color: #e52e06; font-family: 'Righteous'; size: 22px"><span>Download
                                 Now</span></a>
                     </div>
                 </div>

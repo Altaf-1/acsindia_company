@@ -239,62 +239,129 @@ Swal.fire({
     <section>
         <div class="rs-faq-part style1 md-pt-70 md-pb-70 mt-2">
             <div class="container-fluid m-2">
-                <div class="row">
-
-                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="row mt-5">
+                    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4">
                         <!-- 3 -->
-                        <div class="single-features-light text-center">
+                        <div class="single-features-light text-center bg-light">
                             <!-- single features -->
                             <div>
                                 <i class="base-color fab fa-leanpub fa-3x"></i>
-                                <h4>2020</h4>
+                                <h4>ECONOMY</h4>
                                 <form action="{{route('user.pdf-view.index')}}" method="post">
                                     @csrf
                                     <input type="hidden" name="drive_link"
-                                        value="https://drive.google.com/file/d/1bjwwR0RVD4-WNPfWUwgdaIw8HD0MwUpx/">
-                                    <button type="submit" class="btn color-two button text-white">Download</button>
-                                </form>
-                            </div>
-                        </div>
-                        <!-- end single features -->
-                    </div>
-
-                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                        <!-- 3 -->
-                        <div class="single-features-light text-center">
-                            <!-- single features -->
-                            <div>
-                                <i class="base-color fab fa-leanpub fa-3x"></i>
-                                <h4>2021</h4>
-                                <form action="{{route('user.pdf-view.index')}}" method="post">
-                                    @csrf
-                                    <input type="hidden" name="drive_link"
-                                        value="https://drive.google.com/file/d/1lTc8UmeR5zevR6exVUVc2jwj7Jbguunc/">
-                                    <button type="submit" class="btn color-two button text-white">Download</button>
-                                </form>
-                            </div>
-                        </div>
-                        <!-- end single features -->
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                        <!-- 3 -->
-                        <div class="single-features-light text-center">
-                            <!-- single features -->
-                            <div>
-                                <i class="base-color fab fa-leanpub fa-3x"></i>
-                                <h4>2022</h4>
-                                <form action="{{route('user.pdf-view.index')}}" method="post">
-                                    @csrf
-                                    <input type="hidden" name="drive_link"
-                                        value="https://drive.google.com/file/d/1cnzz1gTCQN6yzV7mBbn_TPizIaXmSdHf/">
+                                        value="https://drive.google.com/file/d/1aHfQ4Xli6FNDwkpxOmVjboKXv3gaEJ0p/">
                                     <button type="submit" class="btn color-two button text-white">Question
-                                        Paper</button>
+                                        paper</button>
                                 </form>
                                 <form action="{{route('user.pdf-view.index')}}" method="post">
                                     @csrf
                                     <input type="hidden" name="drive_link"
-                                        value="https://drive.google.com/file/d/1to-eBhHwG8wbuV9oHBrzOWKI1C4BLoC2/">
-                                    <button type="submit" class="btn color-two button text-white mt-3">Answer
+                                        value="https://drive.google.com/file/d/1RU5ZK4v-sAj7uD4FXHpBJsc3EgmlGtcI/">
+                                    <button type="submit" class="btn color-two button text-white mt-2">Answer
+                                        Key</button>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- end single features -->
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4">
+                        <!-- 3 -->
+                        <div class="single-features-light text-center bg-light">
+                            <!-- single features -->
+                            <div>
+                                <i class="base-color fab fa-leanpub fa-3x"></i>
+                                <h4>GEOGRAPHY</h4>
+                                <form action="{{route('user.pdf-view.index')}}" method="post">
+                                    @csrf
+                                    <input type="hidden" name="drive_link"
+                                        value="https://drive.google.com/file/d/1cdKQV5LLoAtXm6J2FZukcHnNHcUsLLPV/">
+                                    <button type="submit" class="btn color-two button text-white">Question
+                                        paper</button>
+                                </form>
+                                <form action="{{route('user.pdf-view.index')}}" method="post">
+                                    @csrf
+                                    <input type="hidden" name="drive_link"
+                                        value="https://drive.google.com/file/d/1dWSr8JrywE8lw3ge22asepz2OxpvU7Ei/">
+                                    <button type="submit" class="btn color-two button text-white mt-2">Answer
+                                        Key</button>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- end single features -->
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4">
+                        <!-- 3 -->
+                        <div class="single-features-light text-center bg-light">
+                            <!-- single features -->
+                            <div>
+                                <i class="base-color fab fa-leanpub fa-3x"></i>
+                                <h4>SCIENCE & TECH</h4>
+                                <form action="{{route('user.pdf-view.index')}}" method="post">
+                                    @csrf
+                                    <input type="hidden" name="drive_link"
+                                        value="https://drive.google.com/file/d/1ILXlKf9fn8caxEbsrB0Bc2y9UalJ9HrD/">
+                                    <button type="submit" class="btn mt-2 color-two button text-white">Question
+                                        paper</button>
+                                </form>
+                                <form action="{{route('user.pdf-view.index')}}" method="post">
+                                    @csrf
+                                    <input type="hidden" name="drive_link"
+                                        value="https://drive.google.com/file/d/1BRvtzTinCv0FDdDJQqXYMbCy0eRSLaEE/">
+                                    <button type="submit" class="btn color-two button text-white mt-2">Answer
+                                        Key</button>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- end single features -->
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4">
+                        <!-- 3 -->
+                        <div class="single-features-light text-center bg-light">
+                            <!-- single features -->
+                            <div>
+                                <i class="base-color fab fa-leanpub fa-3x"></i>
+                                <h4>POLITY</h4>
+                                <form action="{{route('user.pdf-view.index')}}" method="post">
+                                    @csrf
+                                    <input type="hidden" name="drive_link"
+                                        value="https://drive.google.com/file/d/1-lY9stvvRJhSJAA1NaXlsNHvZVJPIVPq/">
+                                    <button type="submit" class="btn color-two button text-white">Question
+                                        paper</button>
+                                </form>
+                                <form action="{{route('user.pdf-view.index')}}" method="post">
+                                    @csrf
+                                    <input type="hidden" name="drive_link"
+                                        value="https://drive.google.com/file/d/1UejD5fhIvzTPs1HSODIMLLefftE15Ot5/">
+                                    <button type="submit" class="mt-2 btn color-two button text-white">Answer
+                                        Key</button>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- end single features -->
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4">
+                        <!-- 3 -->
+                        <div class="single-features-light text-center bg-light">
+                            <!-- single features -->
+                            <div>
+                                <i class="base-color fab fa-leanpub fa-3x"></i>
+                                <h4>HISTORY</h4>
+                                <form action="{{route('user.pdf-view.index')}}" method="post">
+                                    @csrf
+                                    <input type="hidden" name="drive_link"
+                                        value="https://drive.google.com/file/d/1v4v05njE00lsSpiZ6IwAhhZWUaXeYDuc/">
+                                    <button type="submit" class="btn color-two button text-white">Question
+                                        paper</button>
+                                </form>
+                                <form action="{{route('user.pdf-view.index')}}" method="post">
+                                    @csrf
+                                    <input type="hidden" name="drive_link"
+                                        value="https://drive.google.com/file/d/1tDzdqy4WHl3BFm-PJV8SFa--agFUhCDE/">
+                                    <button type="submit" class="mt-2 btn color-two button text-white">Answer
                                         Key</button>
                                 </form>
                             </div>

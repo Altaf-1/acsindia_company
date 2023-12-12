@@ -237,66 +237,29 @@ Swal.fire({
 <main>
     <!-- why-us area start -->
     <section>
-        <div class="rs-faq-part style1 md-pt-70 md-pb-70 mt-2">
-            <div class="container-fluid m-2">
+        <div>
+            <div class="container mt-2">
                 <div class="row">
-
-                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-6">
                         <!-- 3 -->
-                        <div class="single-features-light text-center">
+                        <div class="single-features-light text-center bg-light">
                             <!-- single features -->
                             <div>
                                 <i class="base-color fab fa-leanpub fa-3x"></i>
-                                <h4>2020</h4>
-                                <form action="{{route('user.pdf-view.index')}}" method="post">
-                                    @csrf
-                                    <input type="hidden" name="drive_link"
-                                        value="https://drive.google.com/file/d/1bjwwR0RVD4-WNPfWUwgdaIw8HD0MwUpx/">
-                                    <button type="submit" class="btn color-two button text-white">Download</button>
-                                </form>
+                                <h4>UPSC</h4>
+                                <a href="upsc_pyq" class="btn color-two button text-white">Download</a>
                             </div>
                         </div>
                         <!-- end single features -->
                     </div>
-
-                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-6">
                         <!-- 3 -->
-                        <div class="single-features-light text-center">
+                        <div class="single-features-light text-center bg-light">
                             <!-- single features -->
                             <div>
                                 <i class="base-color fab fa-leanpub fa-3x"></i>
-                                <h4>2021</h4>
-                                <form action="{{route('user.pdf-view.index')}}" method="post">
-                                    @csrf
-                                    <input type="hidden" name="drive_link"
-                                        value="https://drive.google.com/file/d/1lTc8UmeR5zevR6exVUVc2jwj7Jbguunc/">
-                                    <button type="submit" class="btn color-two button text-white">Download</button>
-                                </form>
-                            </div>
-                        </div>
-                        <!-- end single features -->
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                        <!-- 3 -->
-                        <div class="single-features-light text-center">
-                            <!-- single features -->
-                            <div>
-                                <i class="base-color fab fa-leanpub fa-3x"></i>
-                                <h4>2022</h4>
-                                <form action="{{route('user.pdf-view.index')}}" method="post">
-                                    @csrf
-                                    <input type="hidden" name="drive_link"
-                                        value="https://drive.google.com/file/d/1cnzz1gTCQN6yzV7mBbn_TPizIaXmSdHf/">
-                                    <button type="submit" class="btn color-two button text-white">Question
-                                        Paper</button>
-                                </form>
-                                <form action="{{route('user.pdf-view.index')}}" method="post">
-                                    @csrf
-                                    <input type="hidden" name="drive_link"
-                                        value="https://drive.google.com/file/d/1to-eBhHwG8wbuV9oHBrzOWKI1C4BLoC2/">
-                                    <button type="submit" class="btn color-two button text-white mt-3">Answer
-                                        Key</button>
-                                </form>
+                                <h4>APSC</h4>
+                                <a href="/apsc_pyq" class="btn color-two button text-white">Download</a>
                             </div>
                         </div>
                         <!-- end single features -->

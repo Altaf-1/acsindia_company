@@ -70,6 +70,10 @@ Route::get('/demo2', function () {
     return view('demo2');
 });
 
+Route::get('/index_new', function () {
+    return view('index_new');
+});
+
 Route::get('/upsc_demo', function () {
     return view('upsc_demo');
 });
@@ -340,8 +344,8 @@ Route::get('/upsc_pyq', function () {
 });
 
 Route::get('/sample_material', function () {
-    return view('digipedia.sample_materialq');
-});
+    return view('digipedia.sample_material');
+})->middleware('auth');
 
 Route::get('/prelims_important', function () {
     return view('digipedia.important');
@@ -349,7 +353,7 @@ Route::get('/prelims_important', function () {
 
 Route::get('/Probable_Question', function () {
     return view('digipedia.probable');
-});
+})->middleware('auth');
 
 Route::get('/apsc_pyq', function () {
     return view('digipedia.pyq');

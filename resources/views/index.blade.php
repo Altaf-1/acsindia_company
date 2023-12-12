@@ -1,16 +1,8 @@
 @extends('layouts.main')
 @section('title')
-Academy of Civil Services | Best IAS Coaching in India
+Academy of Civil Services | Best APSC Coaching in ASSAM
 @endsection
 @section('links')
-<!-- meta tag -->
-<meta charset="utf-8">
-<title>Academy of Civil Services | Best IAS Coaching In INDIA</title>
-<meta name="description" content="">
-<!-- responsive tag -->
-<meta http-equiv="x-ua-compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Bootstrap  -->
 <!-- Bootstrap  -->
 <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
 <!-- Main Custom CSS -->
@@ -19,43 +11,24 @@ Academy of Civil Services | Best IAS Coaching in India
 <link rel="stylesheet" href="{{ asset('css/slick.css') }}">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script src="{{ asset('js/sweetalert2.min.js') }}"></script>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-411743661"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-
-function gtag() {
-    dataLayer.push(arguments);
-}
-gtag('js', new Date());
-gtag('config', 'AW-411743661');
-</script>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8391119276578244"
-    crossorigin="anonymous"></script>
-
-<script>
-gtag('config', 'AW-411743661/VaRACJu54csYEK3rqsQB', {
-    'phone_conversion_number': '06000505707'
-});
-</script>
-
 <!-- Font Awesome  -->
 <link rel="stylesheet" href="{{asset('css/fontawesome.min.css')}}">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script src="{{asset('js/sweetalert2.min.js')}}"></script>
-
-<!--- font style for brand -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-
-
 <!-- jQuery Fancybox  -->
 {{--    
 <link rel="stylesheet" href="{{asset('css/jquery.fancybox.css')}}">
 --}}
 <!-- Magnific Popup core CSS file -->
+
+<!--- font style for brand -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8391119276578244"
+    crossorigin="anonymous"></script>
+
+
 {{--    
 <link rel="stylesheet" href="{{asset('css/magnific-popup.css')}}">
 --}}
@@ -76,7 +49,6 @@ gtag('config', 'AW-411743661/VaRACJu54csYEK3rqsQB', {
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
 </script>
-
 <!-- owl.carousel css -->
 <link rel="stylesheet" type="text/css" href="{{ asset('css/hcss/owl.carousel.css') }}">
 <!-- slick css -->
@@ -85,7 +57,6 @@ gtag('config', 'AW-411743661/VaRACJu54csYEK3rqsQB', {
 <link rel="stylesheet" type="text/css" href="{{ asset('css/hcss/off-canvas.css') }}">
 <!-- linea-font css -->
 <link rel="stylesheet" type="text/css" href="{{ asset('css/hcss/linea-fonts.css') }}">
-
 <!-- magnific popup css -->
 <link rel="stylesheet" type="text/css" href="{{ asset('css/hcss/magnific-popup.css') }}">
 <!-- Main Menu css -->
@@ -97,36 +68,24 @@ gtag('config', 'AW-411743661/VaRACJu54csYEK3rqsQB', {
 <!-- This stylesheet dynamically changed from style.less -->
 <!-- responsive css -->
 <link rel="stylesheet" type="text/css" href="{{ asset('css/hcss/responsive.css') }}">
-
-
 <link rel="stylesheet" href="{{asset('css/ucss/open-iconic-bootstrap.min.css')}}">
-
 <link rel="stylesheet" href="{{asset('css/ucss/owl.carousel.min.css')}}">
 <link rel="stylesheet" href="{{asset('css/ucss/owl.theme.default.min.css')}}">
 <link rel="stylesheet" href="{{asset('css/ucss/magnific-popup.css')}}">
-
 <link rel="stylesheet" href="{{asset('css/ucss/aos.css')}}">
-
 <link rel="stylesheet" href="{{asset('css/ucss/ionicons.min.css')}}">
-
 <link rel="stylesheet" href="{{asset('css/ucss/icomoon.css')}}">
 <link href="{{asset('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap')}}"
     rel="stylesheet">
-
 <link rel="stylesheet" href="{{asset('css/ucss/open-iconic-bootstrap.min.css')}}">
-
 <link rel="stylesheet" href="{{asset('css/ucss/owl.carousel.min.css')}}">
 <link rel="stylesheet" href="{{asset('css/ucss/owl.theme.default.min.css')}}">
 <link rel="stylesheet" href="{{asset('css/ucss/magnific-popup.css')}}">
-
 <link rel="stylesheet" href="{{asset('css/ucss/aos.css')}}">
-
 <link rel="stylesheet" href="{{asset('css/ucss/ionicons.min.css')}}">
-
 <link rel="stylesheet" href="{{asset('css/ucss/flaticon.css')}}">
 <link rel="stylesheet" href="{{asset('css/ucss/icomoon.css')}}">
 <link rel="stylesheet" href="{{asset('css/ucss/style.css')}}">
-
 <link rel="stylesheet" type="text/css" href="{{ asset('css/kcss/bootstrap.min.css') }}" />
 <link rel="stylesheet" type="text/css" href="{{ asset('css/kcss/bootstrap.min.css') }}" />
 <link rel="stylesheet" type="text/css" href="{{ asset('css/kcss/chosen.min.css') }}" />
@@ -140,15 +99,102 @@ gtag('config', 'AW-411743661/VaRACJu54csYEK3rqsQB', {
 @endsection
 @section('styles')
 <style>
+.dropbtn {
+    color: black;
+    padding: 2px;
+    font-size: 16px;
+    line-height: 27px;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    margin-top: .5rem !important;
+    background-color: #134982;
+    color: white;
+    border-radius: 15px;
+    margin: 2px;
+}
+
+.shadow_1 {
+    box-shadow: 5px 10px #888888;
+}
+
+.shadow_2 {
+    box-shadow: 5px 5px #888888;
+}
+
+
+.fa-mob {
+    color: #e52e06;
+}
+
+.fa-phone {
+    color: white;
+    font-size: 32px;
+    padding-left: 20px;
+    padding-top: 35px;
+}
+
+.fa-envelope {
+    color: white;
+    font-size: 32px;
+    padding-left: 20px;
+    padding-top: 35px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #bf710a;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #bbb;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #bf710a;
+}
+
+@media only screen and (max-width: 1920px) {
+    .custom-slider {
+        height: 70%;
+    }
+}
+
+@media only screen and (max-width: 1044px) {
+    .custom-slider {
+        height: 70%;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .custom-slider {
+        height: 300px;
+    }
+}
+
 .whatsapp_float {
     position: fixed;
     bottom: 100px;
     right: 20px;
     z-index: 1000;
-}
-
-.fa-mob {
-    color: #e52e06;
 }
 
 .stu-review {
@@ -167,20 +213,6 @@ gtag('config', 'AW-411743661/VaRACJu54csYEK3rqsQB', {
 
 .rounded-circle {
     border-radius: 50% !important;
-}
-
-.fa-phone {
-    color: white;
-    font-size: 32px;
-    padding-left: 20px;
-    padding-top: 35px;
-}
-
-.fa-envelope {
-    color: white;
-    font-size: 32px;
-    padding-left: 20px;
-    padding-top: 35px;
 }
 
 img {
@@ -212,88 +244,17 @@ img {
 }
 
 .rs-faq-part.style1 .img-part {
-    background: "url({{ asset('comimages/apsc/center.png') }})";
+    background: url("{{asset('comimages/apsc/center.png')}}");
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 100%;
     min-height: 615px;
-
-}
-
-.dropbtn {
-    color: black;
-    padding: 2px;
-    font-size: 16px;
-    line-height: 27px;
-    padding-left: 1.5rem !important;
-    padding-right: 1.5rem !important;
-    margin-top: .5rem !important;
-    background-color: #134982;
-    color: white;
-    border-radius: 15px;
-    margin: 2px;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #bf710a;
-    min-width: 160px;
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.shadow_1 {
-    box-shadow: 5px 10px #888888;
-}
-
-.shadow_2 {
-    box-shadow: 5px 5px #888888;
-}
-
-.whatsapp_float {
-    position: fixed;
-    bottom: 150px;
-    right: 20px;
-    z-index: 1000;
-    border-radius: 45px;
-}
-
-.fa-phone-top {
-    color: black;
-    padding-left: 0px;
-    padding-top: 0px;
-    font-size: 20px;
-    color: #e52e06;
-}
-
-.dropdown-content a:hover {
-    background-color: #bbb;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown:hover .dropbtn {
-    background-color: #bf710a;
 }
 </style>
 @endsection
 @section('content')
-@if ($message = Session::get('success'))
+@if($message = Session::get('success'))
 <script>
 const Toast = Swal.mixin({
     toast: true,
@@ -309,212 +270,91 @@ const Toast = Swal.mixin({
 
 Toast.fire({
     icon: 'success',
-    title: '{{ $message }}'
+    title: '{{$message}}'
 })
 </script>
 @endif
 <!-- header area start -->
-<!--   <div class="whatsapp_float">-->
-<!--	<a href="https://wa.me/919085268769" target="_blank"><img src="{{asset('comimages/whatsapp.png')}}" width="60px" class="whatsapp_float_btn {{asset('comimages/uniweb/ab1.jpg')}}"/></a>-->
-<!--</div>-->
+<main>
+    <!--<div class="whatsapp_float">-->
+    <!--   <a href="https://wa.me/919085268769" target="_blank"><img src="{{asset('comimages/whatsapp.png')}}" width="80px" class="whatsapp_float_btn"/></a>-->
+    <!--</div>-->
 
-@section('new_navbar')
-@include('partials.new_navbar')
-@endsection
-<div class="header-mobile">
-    <!-- <div class="header-mobile-left">
+    @section('new_navbar')
+    @include('partials.new_navbar')
+    @endsection
+    <div class="header-mobile">
+        <!-- <div class="header-mobile-left">
             
         </div> -->
-    <div class="header-mobile-mid">
-        <div class="header-logo">
-            <a href="index.html"><img alt="Kobolg" src="{{asset('img/mob.jpg')}}" class="logo pl-3"></a>
+        <div class="header-mobile-mid">
+            <div class="header-logo">
+                <a href="index.html"><img alt="Kobolg" src="{{asset('img/mob.jpg')}}" class="logo pl-3"></a>
+            </div>
+        </div>
+        <div class="header-mobile-right pr-4">
+            <div class="block-menu-bar">
+                <a class="menu-bar menu-toggle" href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
         </div>
     </div>
-    <div class="header-mobile-right pr-4">
-        <div class="block-menu-bar">
-            <a class="menu-bar menu-toggle" href="#">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
-        </div>
-    </div>
-</div>
-<!-- img/1.webp -->
+    <!-- Main content Start -->
+    <div class="main-content">
 
-<div class="fullwidth-template mt-3">
-    <div class="slide-home-03">
-        <div class="response-product product-list-owl owl-slick equal-container better-height"
-            data-slick="{&quot;arrows&quot;:false,&quot;slidesMargin&quot;:0,&quot;dots&quot;:true,&quot;infinite&quot;:false,&quot;speed&quot;:300,&quot;slidesToShow&quot;:1,&quot;rows&quot;:1}"
-            data-responsive="[{&quot;breakpoint&quot;:480,&quot;settings&quot;:{&quot;slidesToShow&quot;:1,&quot;slidesMargin&quot;:&quot;0&quot;}},{&quot;breakpoint&quot;:768,&quot;settings&quot;:{&quot;slidesToShow&quot;:1,&quot;slidesMargin&quot;:&quot;0&quot;}},{&quot;breakpoint&quot;:992,&quot;settings&quot;:{&quot;slidesToShow&quot;:1,&quot;slidesMargin&quot;:&quot;0&quot;}},{&quot;breakpoint&quot;:1200,&quot;settings&quot;:{&quot;slidesToShow&quot;:1,&quot;slidesMargin&quot;:&quot;0&quot;}},{&quot;breakpoint&quot;:1500,&quot;settings&quot;:{&quot;slidesToShow&quot;:1,&quot;slidesMargin&quot;:&quot;0&quot;}}]">
-            <div class="slide-wrap">
-                <img src="{{asset('comimages/2023/head-crash.png')}}" alt="image">
-                <!--<img src="{{asset('adv/212.png')}}" alt="image">-->
-                <div class="slide-info">
-                    <div class="container">
-                        <div class="slide-inner">
-                            <h1 style="font-family: 'Righteous';">Target 2024</h1>
-                            <h5 class="mt-3">Online/Offline</h5>
-                            <h5><span><i class="fa fa-phone fa-phone-top"></i> </span> 6000505707</h5>
-                            <div class="dropup-center dropup mt-3">
-                                <button class="btn dropdown-toggle text-white"
-                                    style="background-color: #e52e06; font-family: 'Righteous';" type="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    JOIN NOW >
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="https://acsindiaias.com/apsc/course/54">Online
-                                            CLASS</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="https://acsindiaias.com/apsc/course/55">Offline
-                                            CLASS</a></li>
-                                </ul>
-                            </div>
-                            <!-- <a href="{{route('free.trial.course')}}" class="shadow_2 mt-3"
-                                style="background-color: #134982; font-family: 'Righteous';">JOIN CLASS</a> -->
-                            <!-- <a href="https://acsindiaias.com/recorded/course/ias-workshop" class="shadow_2 mt-3"
-                                style="background-color: #134982; font-family: 'Righteous';">IAS WORKSHOP</a><sup
-                                class="text-white bg-danger p-3 ml-2 rounded-circle vert-move">NEW</sup> -->
-                        </div>
+        <!-- Slider Section Start -->
+        <div class="">
+            <!-- Slider Section Start -->
+            <div id="carouselExampleIndicators" class="carousel slide mt-3" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active custom-slider">
+                        <a href="">
+                            <img class="d-block w-100 h-100" src="{{asset('comimages/2023/head/2.png')}}"
+                                alt="First slide">
+                        </a>
+                    </div>
+                    <div class="carousel-item custom-slider">
+                        <a href="">
+                            <img class="d-block w-100 h-100" src="{{asset('comimages/2023/apsc-1.webp')}}"
+                                alt="First slide">
+                        </a>
                     </div>
                 </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only" style="color:red;">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-            <div class="slide-wrap">
-                <img src="{{asset('comimages/2023/head-apsc.webp')}}" alt="image">
-                <div class="slide-info">
-                    <div class="container">
-                        <div class="slide-inner">
-                            <h1 style="font-family: 'Righteous';">APSC </h1>
-                            <h5>Online/Offline</h5>
-                            <h5>
-                                <spam><i class="fa fa-phone fa-phone-top"></i> </spam> 6000505707
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+            <!-- Slider Section End -->
         </div>
-    </div>
-    <div class="section-017 mt-4 pt-4">
-        <div class="row">
-            <div class="col-md-12 col-lg-4">
-                <div class="kobolg-banner style-08 left-center">
-                    <div class="banner-inner">
-                        <figure class="banner-thumb">
-                            <img src="{{asset('comimages/2023/4.webp')}}" class="attachment-full size-full" alt="img">
-                        </figure>
-                        <div class="banner-info " style="text-align: center;">
-                            <div class="banner-content">
-                                <div class="title-wrap">
-                                    <h6 class="title" style="font-weight: bold; font-family: 'Righteous';">UPSC </h6>
-                                    <br>
-                                    <h6 class="title" style="font-weight: bold; font-family: 'Righteous';">PREPARATION
-                                    </h6>
-                                </div>
-                                <div class="cate">
-                                    ONLINE / OFFLINE CLASSES
-                                </div>
-                                <div class="button-wrap">
-                                    <a class="button shadow_2" target="_self" href="{{asset('/upsc')}}"
-                                        style="background-color: #e52e06; font-family: 'Righteous';"><span>View
-                                            Details</span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-12 col-lg-4">
-                <div class="kobolg-banner style-09 left-center">
-                    <div class="banner-inner">
-                        <figure class="banner-thumb">
-                            <img src="{{asset('comimages/2023/2.webp')}}" class="attachment-full size-full" alt="img">
-                        </figure>
-                        <div class="banner-info " style="text-align: center;">
-                            <div class="banner-content">
-                                <div class="title-wrap">
-                                    <h6 class="title" style="font-weight: bold; font-family: 'Righteous';">APSC </h6>
-                                    <br>
-                                    <h6 class="title" style="font-weight: bold; font-family: 'Righteous';">PREPARATION
-                                    </h6>
-                                </div>
-                                <div class="cate">
-                                    ONLINE / OFFLINE CLASSES
-                                </div>
-                                <div class="button-wrap">
-                                    <a class="button shadow_2" target="_self" href="{{asset('/apsc')}}"
-                                        style="background-color: #e52e06; font-family: 'Righteous';"><span>View
-                                            Details</span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-12 col-lg-4">
-                <div class="kobolg-banner style-10 left-center">
-                    <div class="banner-inner">
-                        <figure class="banner-thumb">
-                            <img src="{{asset('comimages/2023/3.webp')}}" class="attachment-full size-full" alt="img">
-                        </figure>
-                        <div class="banner-info " style="text-align: center;">
-                            <div class="banner-content">
-                                <div class="title-wrap">
-                                    <h6 class="title" style="font-weight: bold; font-family: 'Righteous';">SELF </h6>
-                                    <br>
-                                    <h6 class="title" style="font-weight: bold; font-family: 'Righteous';">STUDY</h6>
-                                </div>
-                                <div class="cate">
-                                    RECORDED CLASSES
-                                </div>
-                                <div class="button-wrap">
-                                    <a class="button shadow_2" target="_self" href="{{asset('/self-study')}}"
-                                        style="background-color: #e52e06; font-family: 'Righteous';"><span>View
-                                            Details</span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <section>
-        <div class="rs-faq-part style1 md-pt-70 md-pb-70 mt-2">
+        <!-- About Section Start -->
+        <div class="rs-faq-part style1 pb-100 md-pt-70 md-pb-70 mt-2">
             <div class="container-fluid m-2">
                 <div class="row">
                     <div class="col-lg-6 padding-0 about-intro">
                         <div class="main-part">
+                            <div class="title mb-40 md-mb-15 mb-5">
+                                <h2 class="text-part text-white text-center mt-5"
+                                    style="background-color: #e52e06; font-family: 'Righteous';">OUR COURSE DETAILS</h2>
+                            </div>
                             <div class="row">
-                                <div class="col-lg-6 pt-5 col-sm-6 col-md-6 text-center justify-content-center">
+                                <div class="col-lg-6 col-sm-6 col-md-6 text-center justify-content-center">
                                     <img class="text-danger p-1 mb-4"
                                         style="width:110px; boder: 1px solid black; border-radius: 20px;"
                                         src="{{asset('comimages/icons/d5.png')}}">
                                     <!--<a href="https://acsindiaias.com/apsc/courses"><h3 style="background-color: #134982; font-family: 'Righteous';" class="d-flex flex-column btn text-white p-2">Online Courses</h3></i></a>-->
-                                    <div class="dropup-center dropup mt-3">
-                                        <button class="btn dropdown-toggle text-white "
-                                            style="background-color: #134982; font-family: 'Righteous';" type="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            Online Courses >
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item"
-                                                    href="https://acsindiaias.com/apsc/course/54">UPSC
-                                                    CLASS</a>
-                                            </li>
-                                            <li><a class="dropdown-item"
-                                                    href="https://acsindiaias.com/apsc/course/55">APSC
-                                                    CLASS</a></li>
-                                        </ul>
-                                    </div>
-                                    <!-- <a href="{{asset('/apsc/courses')}}"
-                                        class="shadow_1 d-flex flex-column btn dropdown-toggle text-white p-2 rounded-pill mb-2"
-                                        style="background-color: #134982; font-family: 'Righteous';"
-                                        data-bs-toggle="dropdown" aria-expanded="false">Online Courses</a> -->
+                                    <a href="{{asset('/apsc/courses')}}"
+                                        class="shadow_1 d-flex flex-column text-white p-2 rounded-pill mb-2"
+                                        style="background-color: #134982; font-family: 'Righteous';">Online Courses</a>
                                 </div>
-                                <div class="col-lg-6 pt-5 col-sm-6 col-md-6 text-center justify-content-center">
+                                <div class="col-lg-6 col-sm-6 col-md-6 text-center justify-content-center">
                                     <img class="text-danger p-1 mb-4"
                                         style="width:110px; boder: 1px solid black; border-radius: 20px;"
                                         src="{{asset('comimages/icons/d5.png')}}">
@@ -523,7 +363,16 @@ Toast.fire({
                                         class="shadow_1 d-flex flex-column text-white p-2 rounded-pill mb-2"
                                         style="background-color: #134982; font-family: 'Righteous';">Offline Courses</a>
                                 </div>
-                                <div class="col-lg-6 pt-5 col-sm-6 col-md-6 text-center justify-content-center">
+                                <div class="col-lg-6 col-sm-6 col-md-6 text-center justify-content-center">
+                                    <img class="text-danger p-1 mb-4"
+                                        style="width:110px; boder: 1px solid black; border-radius: 20px;"
+                                        src="{{asset('comimages/icons/d1.png')}}">
+                                    <!--<a href="https://acsindiaias.com/upsc_recorded_course"><h4 style="background-color: #134982; font-family: 'Righteous';" class="d-flex flex-column btn text-white p-2">Reorded Courses</h4></i></a>-->
+                                    <a href="{{asset('/upsc_recorded_course')}}"
+                                        class="shadow_1 d-flex flex-column text-white p-2 rounded-pill mb-2"
+                                        style="background-color: #134982; font-family: 'Righteous';">Reorded Courses</a>
+                                </div>
+                                <div class="col-lg-6 col-sm-6 col-md-6 text-center justify-content-center">
                                     <img class="text-danger p-1 mb-4"
                                         style="width:110px; boder: 1px solid black; border-radius: 20px;"
                                         src="{{asset('comimages/icons/d2.png')}}">
@@ -532,7 +381,7 @@ Toast.fire({
                                         class="shadow_1 d-flex flex-column text-white p-2 rounded-pill mb-2"
                                         style="background-color: #134982; font-family: 'Righteous';">Daily News</a>
                                 </div>
-                                <div class="col-lg-6 pt-5 col-sm-6 col-md-6 text-center justify-content-center">
+                                <div class="col-lg-6 col-sm-6 col-md-6 text-center justify-content-center">
                                     <img class="text-danger p-1 mb-4"
                                         style="width:110px; boder: 1px solid black; border-radius: 20px;"
                                         src="{{asset('comimages/icons/d4.png')}}">
@@ -541,283 +390,144 @@ Toast.fire({
                                         class="shadow_1 d-flex flex-column text-white p-2 rounded-pill mb-2"
                                         style="background-color: #134982; font-family: 'Righteous';">Current Affairs</a>
                                 </div>
+                                <div class="col-lg-6 col-sm-6 col-md-6 text-center justify-content-center">
+                                    <img class="text-danger p-1 mb-4"
+                                        style="width:130px; boder: 1px solid black; border-radius: 20px;"
+                                        src="{{asset('comimages/icons/cr.png')}}">
+                                    <!--<a href="https://acsindiaias.com/acsall"><h4 style="background-color: #134982; font-family: 'Righteous';" class="d-flex flex-column btn text-white p-2">ACS Degipedia</h4></i></a>-->
+                                    <a href="{{asset('/acsall')}}"
+                                        class="shadow_1 d-flex flex-column text-white p-2 rounded-pill mb-2"
+                                        style="background-color: #134982; font-family: 'Righteous';">ACS Degipedia</a>
+                                </div>
+
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6 padding-0">
-                        <div>
-                            <img src="comimages/2023/result.jpeg" class="img-fluid w-60" alt="Responsive image">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="gray-bg2">
-        <div class="container pb-5 pt-5">
-            <div class="row justify-content-center pb-3 pt-2 pb-2">
-                <div class="col-md-8 text-center heading-section">
-                    <h2 class="mb-4 text-uppercase" style="font-family: 'Righteous';">Upcoming Events</h2>
-                </div>
-
-            </div>
-            <div class="row">
-                <div class="col-lg-6 bg-light p-3">
-                    <div class="row ">
-                        <div class="col-lg-4">
-                            <img src="{{ asset('comimages/2023/e-1.webp') }}" alt="images">
-                        </div>
-                        <div class="col-lg-7">
-                            <div class="course-info">
-                                <h3 class="course-title">
-                                    <a href="/acs_seminar">
-                                        <h3 class="font-weight-bold" style="font-family: 'Righteous';">APSC/UPSC FREE
-                                            SEMINAR</h3>
-                                    </a>
-                                </h3>
-                                <div class="bottom-part">
-                                    <div class="info-meta">
-                                        <ul>
-                                            <li class="ratings">
-                                                <i class="font-weight-bold"> Offline Mode</i>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="btn-part">
-                                        <!-- /acs_seminar -->
-                                        <a href="" class="btn text-white font-weight-bold mb-4 shadow_2"
-                                            style="background-color: #e52e06;">UPCOMING<i
-                                                class="flaticon-right-arrow"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 bg-light p-3">
-                    <div class="row ">
-                        <div class="col-lg-4">
-                            <img src="{{ asset('comimages/2023/e-2.webp') }}" alt="images">
-                        </div>
-                        <div class="col-lg-7">
-                            <div class="course-info">
-                                <h3 class="course-title">
-                                    <a href="/acs_seminar">
-                                        <h3 class="font-weight-bold" style="font-family: 'Righteous';">APSC/UPSC FREE
-                                            WEBINAR</h3>
-                                    </a>
-                                </h3>
-                                <div class="bottom-part">
-                                    <div class="info-meta">
-                                        <ul>
-                                            <li class="ratings">
-                                                <i class="font-weight-bold"> Online Mode</i>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="btn-part">
-                                        <!-- /acs_webinar -->
-                                        <a href="" class="btn text-white font-weight-bold mb-4 shadow_2"
-                                            style="background-color: #e52e06;">UPCOMING<i
-                                                class="flaticon-right-arrow"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
-
-
-    <section class="ftco-section ftco-counter img pt-3" id="section-counter" data-stellar-background-ratio="0.5">
-        <div class="container pt-5">
-            <div class="row justify-content-center mb-5 pb-2 d-flex">
-                <div class="col-md-6 align-items-stretch d-flex">
-                    <div class="img img-video d-flex align-items-center"
-                        style="background-image: url({{asset('comimages/2023/ab1.webp')}});">
-                        <div class="video justify-content-center">
-                            <a href="https://youtu.be/sj7yyVqQvHc"
-                                class="icon-video d-flex justify-content-center align-items-center">
-                                <img src="{{ asset('comimages/icons/acslog.png') }}" style="width:220px" alt="images">
+                        <div class="img-part media-icon">
+                            <a class="popup-videos" href="https://www.youtube.com/watch?v=sj7yyVqQvHc">
+                                <i class="fa fa-play"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 heading-section heading-section-white pl-lg-5 pt-md-0 pt-1">
-                    <div class="py-md-5">
-                        <div class="heading-section heading-section-white mb-5">
-                            <h2 class="mb-4" style="font-family: 'Righteous';">Request For Counselling</h2>
-                        </div>
-                        <form method="get" action="{{route('query')}}" class="appointment-form">
-                            @csrf
-                            <div class="d-md-flex">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" type="text" name="name" id="contactName"
-                                        placeholder="First Name" title="Your Full Name" required />
-                                </div>
-                                <div class="form-group ml-md-4">
-                                    <input type="text" class="form-control" type="email" name="email" id="contactEmail"
-                                        placeholder="Last Name" title="Your Email" required />
-                                </div>
-                                <div class="form-group ml-md-4">
-                                    <input type="number" class="form-control" placeholder="Phone" name="phone"
-                                        id="contactSubject" required />
-                                </div>
-                            </div>
-
-                            <div class="d-md-flex">
-                                <div class="form-group">
-                                    <textarea name="message" id="message" cols="30" rows="2" class="form-control"
-                                        placeholder="Message" id="contactMessage" required></textarea>
-                                </div>
-                                <div class="form-group ml-md-4">
-                                    <input type="submit" value="Submit" class="btn py-7 px-7 shadow_2"
-                                        style="background-color: #e52e06; font-family: 'Righteous';">
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
             </div>
-            <div class="row d-md-flex align-items-center justify-content-center">
-                <div class="col-lg-12">
-                    <div class="row d-md-flex align-items-center">
-                        <div class="col-md d-flex justify-content-center counter-wrap ">
-                            <div class="block-18">
-                                <div class="text">
-                                    <strong class="number" data-number="6">0</strong>
-                                    <span style="font-family: 'Righteous';">Certified Teachers</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md d-flex justify-content-center counter-wrap ">
-                            <div class="block-18">
-                                <div class="text">
-                                    <strong class="number" data-number="13151">0</strong>
-                                    <span style="font-family: 'Righteous';">Students</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md d-flex justify-content-center counter-wrap ">
-                            <div class="block-18">
-                                <div class="text">
-                                    <strong class="number" data-number="10">0</strong>
-                                    <span style="font-family: 'Righteous';">Courses</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md d-flex justify-content-center counter-wrap ">
-                            <div class="block-18">
-                                <div class="text">
-                                    <strong class="number" data-number="18">0</strong>
-                                    <span style="font-family: 'Righteous';">Awards Won</span>
-                                </div>
-                            </div>
-                        </div>
+        </div>
+
+
+
+        <!-- Blog Section End -->
+
+        <!-- Blog Section Start -->
+        <div id="rank" class="rs-blog main-home md-pt-10 md-pb-70">
+            <div class="text-center mb-5">
+                <h1 class="text-white text-center pt-3 pb-3"
+                    style="background-color: #e52e06; font-family: 'Righteous';"> OUR APSC RESULTS</h1>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mt-3">
+                        <img src="{{asset('comimages/apsc/result_n.png')}}" style="height: 550px" class="img-fluid"
+                            alt="Responsive image">
+                    </div>
+                    <div class="col-lg-6 mt-3">
+                        <img src="{{asset('comimages/head/topm.png')}}" style="height: 550px" class="img-fluid"
+                            alt="Responsive image">
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-</div>
+        <!-- Blog Section End -->
 
-<section>
-    <div style="background-color: #cc3d1e">
-        <div class="row justify-content-center text-center text-white">
-            <div class="col-lg-8">
-                <div class="section-title with-p mb-0 p-4">
-                    <h2 class="mb-0" style="font-family: 'Righteous';">VISIT OUR INSTITUTE</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row pl-4 pr-4">
-            <div class="col-lg-6 col-sm-12">
-                <div>
-                    <p><iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.4851596283424!2d94.91970161425219!3d27.48528324182426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37409869cb35768d%3A0x491ce8fdcae8360a!2sAcademy%20Of%20Civil%20Services!5e0!3m2!1sen!2sin!4v1641360136814!5m2!1sen!2sin"
-                            width="900" height="400" style="border:2px solid black;" allowfullscreen=""
-                            loading="lazy"></iframe></p>
-                </div>
-            </div>
-            <div class="col-lg-6 col-sm-12">
-                <div>
-                    <p><iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14323.616872684346!2d91.77054733037403!3d26.167248685267065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375a598a126db899%3A0x33606f5c614c8f89!2sAcademy%20of%20Civil%20Services%2CGuwahati!5e0!3m2!1sen!2sin!4v1660107183985!5m2!1sen!2sin"
-                            width="900" height="400" style="border:2px solid black;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-        </div>
-        <div class="m-0">
-            <div class="row">
-                <div class="col-lg-3 col-sm-12">
-                    <div class="d-flex flex-row">
-                        <p><i class="fa fa-phone"></i></p>
-                        <!--<img class="secondary-color" style="width:70px; boder: 1px solid black; border-radius: 30%; padding-top: 10px;" src="{{asset('comimages/phone.gif')}}">-->
-                        <h3 style="padding-top: 25px; padding-left: 20px; color: #fff;">6000505707</h3>
+        <section class="gray-bg2">
+            <div class="container pb-4">
+                <div class="row justify-content-center pb-3 pt-5 pb-5">
+                    <div class="col-md-8 text-center heading-section">
+                        <h2 class="mb-4 text-uppercase text-white"
+                            style="background-color: #e52e06; font-family: 'Righteous';">Upcoming Events</h2>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-12">
-                    <div class="d-flex flex-row">
-                        <i class="fa-sharp fa-solid fa-envelope"></i>
-                        <!--<img class="secondary-color" style="width:70px; boder: 1px solid black; border-radius: 30%; padding-top: 10px;" src="{{asset('comimages/gmail.gif')}}">-->
-                        <h4 style="padding-top: 25px; padding-left: 20px; color: #fff;">acsindia.ias@gmail.com</h4>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-12">
-                    <div class="d-flex flex-row">
-                        <div class="d-flex flex-column">
-                            <h4 class="text-center underline"
-                                style="padding-top: 15px; padding-left: 30px; color: #fff;">
-                                <u>
-                                    <spam style="padding-right: 10px;"><i class="fa-solid fa-thumbtack"></i></spam>
-                                    DIBRUGARH CENTER
-                                </u>
-                            </h4>
-                            <h4 style="padding-left: 40px; color: #fff;">NALIAPOOL,DIBRUGARH</h4>
-                            <h4 style="padding-left: 40px; color: #fff;">Near Ganesh Mandir</h4>
-                            <h4 style=" padding-left: 40px; color: #fff;">District: Dibrugarh</h4>
-                            <h4 style=" padding-left: 40px; color: #fff;">PIN Code: 786001</h4>
-                            <h4 style=" padding-left: 40px; color: #fff;">State: Assam</h4>
+                <div class="row">
+                    <div class="col-lg-6 bg-light p-3">
+                        <div class="row ">
+                            <div class="col-lg-4">
+                                <img src="{{ asset('comimages/2023/e-1.webp') }}" alt="images">
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="course-info">
+                                    <h3 class="course-title">
+                                        <a href="{{asset('/acs_seminar')}}">
+                                            <h3 class="font-weight-bold" style="font-family: 'Righteous';">APSC/UPSC
+                                                FREE SEMINAR</h3>
+                                        </a>
+                                    </h3>
+                                    <div class="bottom-part">
+                                        <div class="info-meta">
+                                            <ul>
+                                                <li class="ratings">
+                                                    <i class="font-weight-bold"> Offline Mode</i>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="btn-part">
+                                            <a href="{{asset('/acs_webinar')}}"
+                                                class="btn text-white font-weight-bold mb-4"
+                                                style="background-color: #e52e06;">Apply Now<i
+                                                    class="flaticon-right-arrow"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-sm-12">
-                    <div class="d-flex flex-row">
-                        <div class="d-flex flex-column">
-                            <h4 class=" underline" style="padding-top: 15px; padding-left: 20px; color: #fff;">
-                                <u>
-                                    <spam style="padding-right: 10px;"><i class="fa-solid fa-thumbtack"></i></spam>
-                                    GUWAHATI CENTER
-                                </u>
-                            </h4>
-                            <h4 style="padding-left: 40px; color: #fff;">3rd floor, Chitrabon Enclave, R G BARUAH ROAD,
-                            </h4>
-                            <h4 style=" padding-left: 40px; color: #fff;">Near Gauhati Commerce College</h4>
-                            <h4 style=" padding-left: 40px; color: #fff;">PIN Code: 781003</h4>
-                            <h4 style=" padding-left: 40px; color: #fff;">State: Assam</h4>
+                    <div class="col-lg-6 bg-light p-3 ">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <img src="{{ asset('comimages/2023/e-2.webp') }}" alt="images">
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="course-info">
+                                    <h3 class="course-title">
+                                        <a href="/acs_seminar">
+                                            <h3 class="font-weight-bold" style="font-family: 'Righteous';">APSC/UPSC
+                                                FREE WEBINAR</h3>
+                                        </a>
+                                    </h3>
+                                    <div class="bottom-part">
+                                        <div class="info-meta">
+                                            <ul>
+                                                <li class="ratings">
+                                                    <i class="font-weight-bold"> Online Mode</i>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="btn-part">
+                                            <a href="/acs_seminar" class="btn text-white font-weight-bold mb-4"
+                                                style="background-color: #e52e06;">Apply Now<i
+                                                    class="flaticon-right-arrow"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+                    <div>
+                    </div>
+        </section>
 
-<main>
-
-    <a href="#" class="backtotop active">
-        <i class="fa fa-angle-up"></i>
-    </a>
+        <main>
+            @section('mob_navbar')
+            @include('partials.mob_navbar')
+            @endsection
+            <a href="#" class="backtotop active">
+                <i class="fa fa-angle-up"></i>
+            </a>
+        </main>
 </main>
 <!-- Modal -->
 @endsection
 @section('footer')
 @include('partials.footer')
-@endsection
-@section('mob_navbar')
-@include('partials.mob_navbar')
 @endsection
 @section('scripts')
 <script src="{{ asset('js/hjs/modernizr-2.8.3.min.js') }}"></script>

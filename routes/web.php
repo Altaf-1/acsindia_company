@@ -205,10 +205,6 @@ Route::get('/science', function () {
     return view('digipedia.self_study.science');
 });
 
-
-
-
-
 //apsc pages
 
 Route::get('/prelims_exam', function () {
@@ -246,8 +242,6 @@ Route::get('/apsc_probable_question', function () {
     return view('digipedia.apsc.probable_question', compact('datas'));
 });
 
-
-
 Route::get('/', function () {
     $events = Event::where('status', 1)->get();
     $courses = \App\Course::where('active', 1)->latest()->get();
@@ -257,31 +251,13 @@ Route::get('/', function () {
     return view('index', compact('events', 'courses', 'recorded_courses', 'user', 'apsc_interview_course'));
 })->name('root');
 
+Route::get('/get-user-coupon-page',[\App\Http\Controllers\UserCoupon::class, 'getCouponGeneratePage'])->name('get-user-coupon-page');
 
-
-Route::get(
-    '/get-user-coupon-page',
-    [\App\Http\Controllers\UserCoupon::class, 'getCouponGeneratePage']
-)
-    ->name('get-user-coupon-page');
-
-Route::post(
-    '/store-user-coupon',
-    [\App\Http\Controllers\UserCoupon::class, 'generateUserCoupon']
-)
-    ->name('store-user-coupon');
-
-
+Route::post('/store-user-coupon',[\App\Http\Controllers\UserCoupon::class, 'generateUserCoupon'])->name('store-user-coupon');
 
 Route::get('/onlinequiz', function () {
     return view('ability.onlinequiz');
 });
-
-
-
-
-
-
 Route::get('/indian_polityquiz', function () {
     return view('ability.indian_polityquiz');
 });
@@ -333,15 +309,15 @@ Route::get('/indian_polity', function () {
 
 Route::get('/acsall', function () {
     return view('digipedia.acsall');
-});
+})->middleware('auth');
 
 Route::get('/pyq_all', function () {
     return view('digipedia.pyq_all');
-});
+})->middleware('auth');
 
 Route::get('/upsc_pyq', function () {
     return view('digipedia.upsc_pyq');
-});
+})->middleware('auth');
 
 Route::get('/sample_material', function () {
     return view('digipedia.sample_material');
@@ -357,19 +333,19 @@ Route::get('/Probable_Question', function () {
 
 Route::get('/apsc_pyq', function () {
     return view('digipedia.pyq');
-});
+})->middleware('auth');
 
 Route::get('/pyq_gs1', function () {
     return view('digipedia.pyq_gs1');
-});
+})->middleware('auth');
 
 Route::get('/pyq_gs2', function () {
     return view('digipedia.pyq_gs2');
-});
+})->middleware('auth');
 
 Route::get('/apscall', function () {
     return view('digipedia.apscall');
-});
+})->middleware('auth');
 
 Route::get('/syllabus', function () {
     return view('digipedia.syllabus.syllabus');

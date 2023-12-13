@@ -344,7 +344,7 @@ Toast.fire({
 
 <div class="fullwidth-template mt-5">
     <div style="padding-top:40px;" class="row mt-3 ml-2 bg-light">
-        <div class="col-lg-6 mt-5">
+        <div class="col-lg-6 mt-3">
             <div class="row">
                 <div class="col-lg-6">
                     <div style="background-color: #134982;" class="rounded border text-white text-center pb-3">
@@ -394,6 +394,9 @@ Toast.fire({
                             style="background-color: #e52e06; font-family: 'Righteous'; size: 22px"><span>Download
                                 Now</span></a>
                     </div>
+                </div>
+                <div>
+                    <h2 class="p-2 text-white rounded text-center" style="background-color: #134982;">Contact Us: 6000505707</h2>
                 </div>
             </div>
         </div>

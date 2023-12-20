@@ -529,13 +529,13 @@ Toast.fire({
                         <a href="/quiz/outside/Outside%20Course" class="btn bg-white text-dark p-2 rounded font-weight-bold">Click For Test</a>
                     </div>
                     <div class="col-lg-3">
-                        <iframe width="370" height="235" src="https://www.youtube.com/embed/BnVe8s6XNPY?si=Ro1_7OybkqqmY0yR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe width="370" height="235" src="https://www.youtube.com/embed/LENdmJd4tRU?si=FByIPX-9af0aTs7M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                     <div class="col-lg-3">
-                        <iframe width="370" height="235" src="https://www.youtube.com/embed/OOJ5w1VxenQ?si=f8yvP_CQ3t01wIxv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe width="370" height="235" src="https://www.youtube.com/embed/Q8QcvNoILdI?si=riDwBvj7wstzCbq6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                     <div class="col-lg-3">
-                        <iframe width="370" height="235" src="https://www.youtube.com/embed/tR9pyQ-bFWA?si=oZggWB7nPb8--1i_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe width="370" height="235" src="https://www.youtube.com/embed/BnVe8s6XNPY?si=uW7btJMC2fdBJki7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -582,32 +582,33 @@ Toast.fire({
 
                 </div>
                 <div class="row">
-                    <div class="col-lg-6 bg-light p-3">
+                    <div class="col-lg-8 bg-light p-3">
                         <div class="row ">
                             <div class="col-lg-4">
-                                <img src="{{ asset('comimages/2023/e-1.webp') }}" alt="images">
+                                <img src="{{ asset('img/event_webinar.jpeg') }}" class="h-120" alt="images">
                             </div>
                             <div class="col-lg-7">
                                 <div class="course-info">
                                     <h3 class="course-title">
                                         <a href="/acs_seminar">
-                                            <h3 class="font-weight-bold" style="font-family: 'Righteous';">APSC/UPSC
+                                            <h3 class="font-weight-bold text-center" style="font-family: 'Righteous';">APSC/UPSC
                                                 FREE
-                                                SEMINAR</h3>
+                                                WEBINAR</h3>
                                         </a>
                                     </h3>
                                     <div class="bottom-part">
+                                        <h4 class="bg-danger p-2 rounded text-white text-center">7th January, Sunday</h4>
                                         <div class="info-meta">
                                             <ul>
                                                 <li class="ratings">
-                                                    <i class="font-weight-bold"> Offline Mode</i>
+                                                    <i class="font-weight-bold text-center"> Online Mode</i>
                                                 </li>
                                             </ul>
                                         </div>
                                         <div class="btn-part">
                                             <!-- /acs_seminar -->
-                                            <a href="" class="btn text-white font-weight-bold mb-4 shadow_2"
-                                                style="background-color: #e52e06;">UPCOMING<i
+                                            <a href="https://us06web.zoom.us/webinar/register/8917030053182/WN_1I8CtwzBS_yN2n7qh6DHDg" class="btn text-white text-center font-weight-bold mb-4 shadow_2"
+                                                style="background-color: #e52e06;">JOIN NOW<i
                                                     class="flaticon-right-arrow"></i></a>
                                         </div>
                                     </div>
@@ -615,7 +616,7 @@ Toast.fire({
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 bg-light p-3">
+                    <!-- <div class="col-lg-6 bg-light p-3">
                         <div class="row ">
                             <div class="col-lg-4">
                                 <img src="{{ asset('comimages/2023/e-2.webp') }}" alt="images">
@@ -638,7 +639,7 @@ Toast.fire({
                                             </ul>
                                         </div>
                                         <div class="btn-part">
-                                            <!-- /acs_webinar -->
+                                           
                                             <a href="" class="btn text-white font-weight-bold mb-4 shadow_2"
                                                 style="background-color: #e52e06;">UPCOMING<i
                                                     class="flaticon-right-arrow"></i></a>
@@ -647,7 +648,8 @@ Toast.fire({
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
+                     <!-- /acs_webinar -->
                 </div>
         </section>
 

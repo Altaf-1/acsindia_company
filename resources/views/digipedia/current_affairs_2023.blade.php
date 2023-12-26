@@ -76,13 +76,13 @@
             <div class="container">
                 <div class="row">
                     <div class="lernen_banner_title">
-                        <h1>Current Affairs 2023</h1>
+                        <h1>Current Affairs</h1>
                         <div class="lernen_breadcrumb">
                             <div class="breadcrumbs">
                                 <span class="first-item">
                                     <a href="/">Homepage</a></span>
                                 <span class="separator">&gt;</span>
-                                <span class="last-item">current affairs 2023</span>
+                                <span class="last-item">current affairs</span>
                             </div>
                         </div>
                     </div>
@@ -105,7 +105,7 @@
                                 <div>
                                     <!-- uses solid style -->
                                     <i class="base-color fas fa-book fa-3x"></i>
-                                    <h4>DAILY CURRENT AFFAIRS</h4>
+                                    <h4>MAINS ARTICLES</h4>
                                     <a href="{{asset('/current-affair/current_affair')}}"
                                         class=" btn color-two button text-white">OPEN</a>
                                 </div>

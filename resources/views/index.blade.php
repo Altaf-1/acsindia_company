@@ -364,7 +364,7 @@ Toast.fire({
                 </div>
                 <div class="col-lg-6 mt-3">
                     <div style="background-color: #134982;" class="rounded border text-white text-center pb-3">
-                        <h3 style="font-size: 28px;" class="text-white font-weight-bold">Previous Year Question Papers
+                        <h3 style="font-size: 28px;" class="text-white font-weight-bold">Previous Year Question Papers & Answer
                         </h3>
                         <a class="button text-white p-2 rounded text-white mb-2" href="{{asset('/pyq_all')}}"
                             style="background-color: #e52e06; font-family: 'Righteous'; size: 22px"><span>Download
@@ -373,9 +373,9 @@ Toast.fire({
                 </div>
                 <div class="col-lg-6 mt-3">
                     <div style="background-color: #134982;" class="rounded border text-white text-center pb-3">
-                        <h2 class="text-white font-weight-bold">Chapterwise Question & Answer</h2>
-                        <a class="button text-white p-2 rounded text-white mb-2" href="{{asset('/upsc_pyq')}}"
-                            style="background-color: #e52e06; font-family: 'Righteous'; size: 22px"><span>Download
+                        <h2 class="text-white font-weight-bold">Join Workshop</h2>
+                        <a class="button text-white p-2 mt-2 rounded text-white mb-2" href="https://acsindiaias.com/recorded/course/ias-workshop"
+                            style="background-color: #e52e06; font-family: 'Righteous'; size: 22px"><span>Enroll
                                 Now</span></a>
                     </div>
                 </div>
@@ -529,13 +529,13 @@ Toast.fire({
                         <a href="/quiz/outside/Outside%20Course" class="btn bg-white text-dark p-2 rounded font-weight-bold">Click For Test</a>
                     </div>
                     <div class="col-lg-3">
-                        <iframe width="370" height="235" src="https://www.youtube.com/embed/LENdmJd4tRU?si=FByIPX-9af0aTs7M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe width="370" height="235" src="https://www.youtube.com/embed/wQjplrRs7PQ?si=MaGibyHK7ttiIN2l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                     <div class="col-lg-3">
-                        <iframe width="370" height="235" src="https://www.youtube.com/embed/Q8QcvNoILdI?si=riDwBvj7wstzCbq6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe width="370" height="235" src="https://www.youtube.com/embed/JgIVCdd7ByM?si=CtXrYVAs55ghhGwq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                     <div class="col-lg-3">
-                        <iframe width="370" height="235" src="https://www.youtube.com/embed/BnVe8s6XNPY?si=uW7btJMC2fdBJki7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe width="370" height="235" src="https://www.youtube.com/embed/0KTSOJLe19c?si=rIcAo0IhFkj3WIMe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>

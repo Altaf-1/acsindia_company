@@ -22,7 +22,7 @@ class QuizController extends Controller
     {
         //get all the courses
         $datas = AssignQuiz::where('course_name', $course)->latest()->get();
-        if ($course === 'Outside Course') {
+        if ($course === 'Outside Course' || 'Free mock test') {
             return view('user_tabs.quiz.outside_course', compact('datas', 'course'));
         } else {
             return view('user_tabs.quiz.index', compact('datas', 'course'));

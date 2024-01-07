@@ -36,6 +36,8 @@
                             <th>Name</th>
                             <th>Email</th>
                             <th>Phone</th>
+                            <th>Course Taken</th>
+                            <th>Feedback</th>
                             <th>Created_at</th>
                         </tr>
                     </thead>
@@ -45,6 +47,44 @@
                                 <td>{{ $data->name }}</td>
                                 <td>{{ $data->email }}</td>
                                 <td>{{ $data->phone }}</td>
+                                <td>{{ $data->courseTaken($data->email) }}</td>
+                                <td>
+                                    @if (empty($data->feedback))
+                                        <button class="btn btn-primary" data-toggle="modal"
+                                            data-target="#feedbackModal{{ $data->id }}">
+                                            Add Feedback
+                                        </button>
+                                        <div class="modal fade" id="feedbackModal{{ $data->id }}" tabindex="-1"
+                                            role="dialog" aria-labelledby="feedbackModalLabel{{ $data->id }}"
+                                            aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="feedbackModalLabel{{ $data->id }}">
+                                                            Add Feedback</h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form action="{{ route('admin.outside.course.add_feedback') }}"
+                                                            method="POST">
+                                                            @csrf
+                                                            <input type="hidden" name="data_id"
+                                                                value="{{ $data->id }}">
+                                                            <textarea class="form-control" name="feedback_text" placeholder="Enter feedback"></textarea>
+                                                            <button type="submit"
+                                                                class="btn btn-primary mt-3">Submit</button>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    @else
+                                        {{ $data->feedback }}
+                                    @endif
+                                </td>
                                 <td>{{ $data->created_at }}</td>
                             </tr>
                         @empty

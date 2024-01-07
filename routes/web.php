@@ -251,9 +251,9 @@ Route::get('/', function () {
     return view('index', compact('events', 'courses', 'recorded_courses', 'user', 'apsc_interview_course'));
 })->name('root');
 
-Route::get('/get-user-coupon-page',[\App\Http\Controllers\UserCoupon::class, 'getCouponGeneratePage'])->name('get-user-coupon-page');
+Route::get('/get-user-coupon-page', [\App\Http\Controllers\UserCoupon::class, 'getCouponGeneratePage'])->name('get-user-coupon-page');
 
-Route::post('/store-user-coupon',[\App\Http\Controllers\UserCoupon::class, 'generateUserCoupon'])->name('store-user-coupon');
+Route::post('/store-user-coupon', [\App\Http\Controllers\UserCoupon::class, 'generateUserCoupon'])->name('store-user-coupon');
 
 Route::get('/onlinequiz', function () {
     return view('ability.onlinequiz');
@@ -2195,6 +2195,10 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
 
     Route::get('/admin/outside/course', [OutsideCourseController::class, 'index'])
         ->name('admin.outside.course.index');
+
+
+    Route::post('/admin/outside/course/add_feedback', [OutsideCourseController::class, 'addFeedback'])
+        ->name('admin.outside.course.add_feedback');
 });
 
 

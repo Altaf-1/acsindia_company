@@ -810,11 +810,6 @@
 
              @endif
 
-
-
-
-
-
              @if ($course->title == 'APSC 2023TEST SERIES')
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
                  <div class="single-features-light text-center">
@@ -917,6 +912,111 @@
                  </div>
              </div>
              @else
+
+             @if ($course->title == 'APSC TEST SERIES')
+             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
+                 <div class="single-features-light text-center">
+                     <div>
+                         <i class="base-color fas fa-book fa-3x"></i>
+                         <h4>APSC FULL TEST 2023 </h4>
+                         <a href="{{route('testseriesquiz.index', [$course->title ,"APSC"])}}"
+                             class=" btn color-two button text-white">VIEW</a>
+                     </div>
+                 </div>
+             </div>
+
+             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
+                 <!-- 2 -->
+                 <div class="single-features-light text-center">
+                     <!-- single features -->
+                     <div>
+                         <i class="base-color fas fa-book fa-3x"></i>
+                         <h4>ACS MATERIALS</h4>
+                         <a href="{{ route('user.apsc.2023.test.series.material') }}"
+                             class=" btn color-two button text-white">VIEW</a>
+                     </div>
+                 </div>
+                 <!-- end single features -->
+             </div>
+             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
+                 <div class="single-features-light text-center">
+                     <!-- single features -->
+                     <div>
+                         <i class="base-color fas fa-book fa-3x"></i>
+                         <h4>ASSAM TRIBUNE</h4>
+                         <a href="{{ route('apsc_all.pdfs') }}" class=" btn color-two button text-white">View</a>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
+                 <div class="single-features-light text-center">
+                     <div>
+                         <i class="base-color fas fa-book fa-3x"></i>
+                         <h4>ASSAM CURRENT AFFAIRS</h4>
+                         <a href="{{ route('user.mock.test.material') }}"
+                             class=" btn color-two button text-white">View</a>
+                     </div>
+                 </div>
+             </div>
+             <!-- APSC Prelims (PYQ) -->
+             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
+                 <div class="single-features-light text-center">
+                     <!-- single features -->
+                     <div>
+                         <i class="base-color fas fa-book fa-3x"></i>
+                         <h4>APSC PRELIMS (PYQ)</h4>
+                         <a href="{{ route('user.apsc.prelims.pyq') }}"
+                             class=" btn color-two button text-white">View</a>
+                     </div>
+                 </div>
+             </div>
+
+             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
+                 <div class="single-features-light text-center">
+                     <div>
+                         <i class="base-color fab fa-leanpub fa-3x"></i>
+                         <h4>100 important current affairs</h4>
+                         <a href="{{ asset('pdf/ACS Prelims Current Affairs 2022 (100).pdf') }}" target="_blank"
+                             class="btn color-two button text-white">VIEW</a>
+                     </div>
+                 </div>
+             </div>
+             <!-- REPORTS AND INDICES 2022 COMPILATION -->
+             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
+                 <div class="single-features-light text-center">
+                     <div>
+                         <i class="base-color fab fa-leanpub fa-3x"></i>
+                         <h4>REPORTS AND INDICES 2022 COMPILATION</h4>
+                         <a href="{{ asset('pdf/ACS Indices Reports Combilaions.pdf') }}" target="_blank"
+                             class="btn color-two button text-white">VIEW</a>
+                     </div>
+                 </div>
+             </div>
+             <!-- INTERNATIONAL ORGANIZATIONS/INSTITUTIONS/GROUPINGS IN NEWS -->
+             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
+                 <div class="single-features-light text-center">
+                     <div>
+                         <i class="base-color fab fa-leanpub fa-3x"></i>
+                         <h4>INTERNATIONAL ORGANIZATIONS/ INSTITUTIONS/ GROUPINGS IN NEWS</h4>
+                         <a href="{{ asset('pdf/ACSInternationalOrganizationCombilaions.pdf') }}" target="_blank"
+                             class="btn color-two button text-white">VIEW</a>
+                     </div>
+                 </div>
+             </div>
+             <!-- current affair question compilation -->
+             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
+                 <div class="single-features-light text-center">
+                     <div>
+                         <i class="base-color fab fa-leanpub fa-3x"></i>
+                         <h4>ACS CURRENT AFFAIRS QUESTIONS COMPILATION</h4>
+                         <a href="{{ asset('pdf/ACSPrelimsCurrentAffairsQuestionsCompilation22.pdf') }}" target="_blank"
+                             class="btn color-two button text-white">VIEW</a>
+                     </div>
+                 </div>
+             </div>
+             @else
+
+
              @if ($course->title != 'APSC ADVANCED CSAT (GS II)' && $course->title != 'APSC ADVANCED CSAT (GS II)')
 
              @endif

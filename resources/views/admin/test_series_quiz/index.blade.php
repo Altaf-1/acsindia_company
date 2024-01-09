@@ -48,10 +48,11 @@
                                 <td>{{ $data->quiz_name }}</td>
                                 <td><a href="{{ route('admin.testseriesquestion.index', $data->id) }}"
                                         class="btn btn-outline-primary">View</a></td>
-                                <td><a href="{{ asset('storage/' . $data->pdf) }}" target="_blank"
-                                        class="btn btn-outline-primary">View</a></td>
                                 <td><a href="{{ route('admin.testseriesquiz.assign', $data->id) }}"
                                         class="btn btn-outline-primary">Assign Courses</a></td>
+                                <td><a href="{{ asset('storage/' . $data->pdf) }}" target="_blank"
+                                        class="btn btn-outline-primary">View</a></td>
+                                
                                 <td><a class="btn btn-outline-success small"
                                         href="{{ route('admin.testseriesquiz.edit', $data->id) }}">Edit</a>
                                 </td>

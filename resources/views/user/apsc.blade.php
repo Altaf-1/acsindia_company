@@ -37,7 +37,8 @@
              $course->title != 'APSC BOOSTER COURSE (T)' &&
              $course->title != 'APSC BOOSTER COURSE (U)' &&
              $course->title != 'APSC BOOSTER COURSE (V)' &&
-             $course->title != 'APSC BOOSTER COURSE (W)')
+             $course->title != 'APSC BOOSTER COURSE (W)' &&
+             $course->title != 'APSC BOOSTER COURSE (X-evng)')
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
                  <div class="single-features-light text-center">
                      <div>
@@ -77,7 +78,8 @@
              $course->title != 'APSC BOOSTER COURSE (T)' &&
              $course->title != 'APSC BOOSTER COURSE (U)' &&
              $course->title != 'APSC BOOSTER COURSE (V)' &&
-             $course->title != 'APSC BOOSTER COURSE (W)')
+             $course->title != 'APSC BOOSTER COURSE (W)' &&
+             $course->title != 'APSC BOOSTER COURSE (X-evng)')
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
                  <div class="single-features-light text-center">
                      <div>
@@ -113,7 +115,8 @@
              $course->title != 'APSC BOOSTER COURSE (T)' &&
              $course->title != 'APSC BOOSTER COURSE (U)' &&
              $course->title != 'APSC BOOSTER COURSE (V)' &&
-             $course->title != 'APSC BOOSTER COURSE (W)')
+             $course->title != 'APSC BOOSTER COURSE (W)' &&
+             $course->title != 'APSC BOOSTER COURSE (X-evng)')
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
                  <div class="single-features-light text-center">
                      <div>
@@ -842,6 +845,10 @@
                              class=" btn color-two button text-white">VIEW</a>
                          @endif
                          @if ($course->title == 'Target 2024 (Online)')
+                         <a href="{{ route('user.new.video', $course->title) }}"
+                             class=" btn color-two button text-white">VIEW</a>
+                         @endif
+                         @if ($course->title == 'APSC BOOSTER COURSE (X-evng)')
                          <a href="{{ route('user.new.video', $course->title) }}"
                              class=" btn color-two button text-white">VIEW</a>
                          @endif

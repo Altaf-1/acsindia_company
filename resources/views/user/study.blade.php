@@ -1583,17 +1583,6 @@
                      <!-- single features -->
                      <div>
                          <i class="base-color fas fa-book fa-3x"></i>
-                         <h4>CLASS PPT</h4>
-                         <a href="{{ route('user.history.of.assam.classppt') }}"
-                             class=" btn color-two button text-white">View</a>
-                     </div>
-                 </div>
-             </div>
-             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
-                 <div class="single-features-light text-center">
-                     <!-- single features -->
-                     <div>
-                         <i class="base-color fas fa-book fa-3x"></i>
                          <h4>RECORDED CLASSES</h4>
                          <a href="{{ route('user.class.video.index', $course->title) }}"
                              class=" btn color-two button text-white">View</a>

@@ -163,20 +163,11 @@ Swal.fire({
                                     <!--<li><a href="{{asset('/course/ias-booster-course-n')}}"-->
                                     <!--        class=" btn color-two button text-white mb-3">25 SEP</a>-->
                                     <!--</li>-->
-                                    <li><a href="{{asset('/course/ias-booster-course-r')}}"
-                                            class=" btn color-two button text-white mb-3">22 NOV</a>
-                                    </li>
-                                    <li><a href="{{asset('/course/ias-booster-course-s')}}"
-                                            class=" btn color-two button text-white mb-3">27 NOV</a>
-                                    </li>
-                                    <li><a href="{{asset('/course/ias-booster-course-t')}}"
-                                            class=" btn color-two button text-white mb-3">18 DEC</a>
-                                    </li>
                                     <li><a href="{{asset('/course/ias-booster-course-u')}}"
-                                            class=" btn color-two button text-white mb-3">10 JAN</a>
+                                            class=" btn color-two button text-white mb-3">09 JAN</a>
                                     </li>
                                     <li><a href="{{asset('/course/ias-booster-course-v')}}"
-                                            class=" btn color-two button text-white mb-3">07 FEB</a>
+                                            class=" btn color-two button text-white mb-3">19 FEB</a>
                                     </li>
                                 </ul>
                             </div>
@@ -215,8 +206,8 @@ Swal.fire({
                             <div class="blog-content">
                                <h5 class="title text-center">---- SELECT DATE ----</h5>
                                 <ul class="themeioan_ul_icon justify-content-center text-center">
-                                   <li><a href="{{asset('/course/ias-booster-course-w')}}"
-                                           class=" btn color-two button text-white mb-3">26 DEC</a>
+                                   <li><a href="{{asset('/course/ias-booster-course-x-evng')}}"
+                                           class=" btn color-two button text-white mb-3">22 JAN</a>
                                    </li>
                                 </ul>
                             </div>

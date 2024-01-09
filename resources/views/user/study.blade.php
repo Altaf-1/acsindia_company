@@ -69,7 +69,7 @@
                  <div class="single-features-light text-center">
                      <div>
                          <i class="base-color fas fa-book fa-3x"></i>
-                         <h4>APSC TEST 2023</h4>
+                         <h4>APSC TEST</h4>
                          <a href="{{ route('online.quiz.index', $course->title) }}"
                              class=" btn color-two button text-white">VIEW</a>
                      </div>
@@ -816,7 +816,7 @@
                  <div class="single-features-light text-center">
                      <div>
                          <i class="base-color fas fa-book fa-3x"></i>
-                         <h4>APSC FULL TEST 2023 </h4>
+                         <h4>APSC FULL TEST</h4>
                          <a href="{{ route('testseriesquiz.index', [$course->title ,"APSC"]) }}"
                              class=" btn color-two button text-white">VIEW</a>
                      </div>

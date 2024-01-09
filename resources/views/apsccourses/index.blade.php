@@ -168,19 +168,11 @@ Swal.fire({
                                 <!--    <li><a href="{{asset('/apsc/course/38')}}" class=" btn color-two button text-white mb-3">25 SEP</a></li>-->
                                 <!--</ul>-->
                                 <ul class="themeioan_ul_icon justify-content-center text-center">
-                                    <li><a href="{{asset('/apsc/course/45')}}"
-                                            class=" btn color-two button text-white mb-3">22 NOV</a></li>
-                                    <li><a href="{{asset('/apsc/course/53')}}"
-                                            class=" btn color-two button text-white mb-3">27 NOV</a>
-                                    </li>
-                                    <li><a href="{{asset('/apsc/course/49')}}"
-                                            class=" btn color-two button text-white mb-3">18 DEC</a>
-                                    </li>
                                     <li><a href="{{asset('/apsc/course/50')}}"
                                             class=" btn color-two button text-white mb-3">10 JAN</a>
                                     </li>
                                     <li><a href="{{asset('/apsc/course/51')}}"
-                                            class=" btn color-two button text-white mb-3">07 FEB</a>
+                                            class=" btn color-two button text-white mb-3">19 FEB</a>
                                     </li>
                                 </ul>
                             </div>
@@ -238,8 +230,8 @@ Swal.fire({
                                 <ul class="themeioan_ul_icon justify-content-center text-center">
                                     <!--<li><a href="{{asset('/apsc/course/39')}}" class=" btn color-two button text-white mb-3">4 SEP</a></li>-->
 
-                                    <li><a href="{{asset('/apsc/course/52')}}"
-                                            class=" btn color-two button text-white mb-3">26 DEC</a>
+                                    <li><a href="{{asset('/apsc/course/56')}}"
+                                            class=" btn color-two button text-white mb-3">22 JAN</a>
                                     </li>
                                 </ul>
                             </div>

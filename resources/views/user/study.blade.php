@@ -14,7 +14,7 @@
              @if ($course->title != 'APSC ADVANCED CSAT (GS II)' &&
              $course->title != 'APSC STUDY MATERIAL' &&
              $course->title != 'APSC 2023TEST SERIES' &&
-             $course->title != 'APSC TEST SERIES' &&
+             $course->title != 'APSC 2023TEST SERIES' &&
              $course->title != 'HISTORY OF ASSAM' &&
              $course->title != 'APSC 2021 SUCCESS COURSE' &&
              $course->title != 'APSC CURRENT AFFAIRS' &&

@@ -1638,6 +1638,7 @@
              $course->title != 'APSC 2023 MAINS PREPARATION' &&
              $course->title != 'DAILY MAINS TEST' &&
              $course->title != 'DAILY MAINS TEST 2023' &&
+             $course->title != 'APSC TEST SERIES' &&
              $course->title != 'WRITE TO WIN' &&
              $course->title != 'WRITE TO WIN .')
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">

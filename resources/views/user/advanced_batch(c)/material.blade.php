@@ -111,7 +111,7 @@
                                         @csrf
                                         <input type="hidden"
                                                name="drive_link"
-                                               value="https://drive.google.com/file/d/1az4W67Uic2fAqa5Ez8O28GobhiTlg06h/">
+                                               value="https://drive.google.com/file/d/1zKJTRiLyt5OOtuXH9ybcs5mi6dfK8DH4/">
                                         <button type="submit" class="btn color-two button text-white">Download</button>
                                     </form>
                             </div>
@@ -138,7 +138,7 @@
                             <div>
                                 <i class="base-color fab fa-leanpub fa-3x"></i>
                                 <h4>Science & Technology</h4>
-                                <a href="{{asset('https://drive.google.com/file/d/1xTH5k0AepabDjvR1KTFGWScDrUcmfOv5/view?usp=sharing')}}" class=" btn color-two button text-white">DOWNLOAD</a>
+                                <a href="{{asset('https://drive.google.com/file/d/1zKJTRiLyt5OOtuXH9ybcs5mi6dfK8DH4/view?usp=sharing')}}" class=" btn color-two button text-white">DOWNLOAD</a>
                             </div>
                         </div>
                         <!-- end single features -->
@@ -155,7 +155,7 @@
                                         @csrf
                                         <input type="hidden"
                                                name="drive_link"
-                                               value="https://drive.google.com/file/d/1qQDkcaqmlap2G2tOElu2WnSN94kOzWUj/">
+                                               value="https://drive.google.com/file/d/1Z-sq3UW3ilI3pK7nSBRJ4x-r9AsWlysw/">
                                         <button type="submit" class="btn color-two button text-white">Download</button>
                                     </form>
                             </div>
@@ -175,7 +175,7 @@
                                         @csrf
                                         <input type="hidden"
                                                name="drive_link"
-                                               value="https://drive.google.com/file/d/1w6by9cIL2szbuzjcC8czHYH5OfTyoFcX/">
+                                               value="https://drive.google.com/file/d/1zPDXWb3jcDPX0HJ38qj35biRmuwFqq6n/">
                                         <button type="submit" class="btn color-two button text-white">Download</button>
                                     </form>
                             </div>

@@ -67,12 +67,12 @@
                             <!-- single features -->
                             <div>
                                 <i class="base-color fab fa-leanpub fa-3x"></i>
-                                <h4>ECONOMY</h4>
+                                <h4>Economy & Assam Economy</h4>
                                 <form action="{{route('user.pdf-view.index')}}" method="post">
                                         @csrf
                                         <input type="hidden"
                                                name="drive_link"
-                                               value="https://drive.google.com/file/d/1sDfXusCiC2zHwFnoeKhsu1WBCKNtZKZ0/">
+                                               value="https://drive.google.com/file/d/1J8sbHxCcabaKKFCzGCWZxz-v-m6zDqea/">
                                         <button type="submit" class="btn color-two button text-white">Download</button>
                                     </form>
                             </div>
@@ -90,7 +90,7 @@
                                         @csrf
                                         <input type="hidden"
                                                name="drive_link"
-                                               value="https://drive.google.com/file/d/1az4W67Uic2fAqa5Ez8O28GobhiTlg06h/">
+                                               value="https://drive.google.com/file/d/1zKJTRiLyt5OOtuXH9ybcs5mi6dfK8DH4/">
                                         <button type="submit" class="btn color-two button text-white">Download</button>
                                     </form>
                             </div>
@@ -123,12 +123,12 @@
                             <!-- single features -->
                             <div>
                                 <i class="base-color fab fa-leanpub fa-3x"></i>
-                                <h4>POLITY</h4>
+                                <h4>Indian and Assam Polity</h4>
                                <form action="{{route('user.pdf-view.index')}}" method="post">
                                         @csrf
                                         <input type="hidden"
                                                name="drive_link"
-                                               value="https://drive.google.com/file/d/1nAkGcNkCZ6nBoU1UaSEy3M7sK0txEroS/">
+                                               value="https://drive.google.com/file/d/1tYWNaAQqRkRDuBD6ti1Bv3aohaXgz5bN/">
                                         <button type="submit" class="btn color-two button text-white">Download</button>
                                     </form>
                             </div>
@@ -143,7 +143,7 @@
                             <div>
                                 <i class="base-color fab fa-leanpub fa-3x"></i>
                                 <h4>Science & Technology</h4>
-                                <a href="{{asset('https://drive.google.com/file/d/1xTH5k0AepabDjvR1KTFGWScDrUcmfOv5/view?usp=sharing')}}" class=" btn color-two button text-white">DOWNLOAD</a>
+                                <a href="{{asset('https://drive.google.com/file/d/1zKJTRiLyt5OOtuXH9ybcs5mi6dfK8DH4/view?usp=sharing')}}" class=" btn color-two button text-white">DOWNLOAD</a>
                             </div>
                         </div>
                         <!-- end single features -->
@@ -178,7 +178,7 @@
                                         @csrf
                                         <input type="hidden"
                                                name="drive_link"
-                                               value="https://drive.google.com/file/d/1w6by9cIL2szbuzjcC8czHYH5OfTyoFcX/">
+                                               value="https://drive.google.com/file/d/1zPDXWb3jcDPX0HJ38qj35biRmuwFqq6n/">
                                         <button type="submit" class="btn color-two button text-white">Download</button>
                                     </form>
                             </div>

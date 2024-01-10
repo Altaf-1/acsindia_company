@@ -90,7 +90,7 @@
                                         @csrf
                                         <input type="hidden"
                                                name="drive_link"
-                                               value="https://drive.google.com/file/d/1zKJTRiLyt5OOtuXH9ybcs5mi6dfK8DH4/">
+                                               value="https://drive.google.com/file/d/1RbVIS5wkR8BrT0dPgZxO5ELXEBn4qKc1/">
                                         <button type="submit" class="btn color-two button text-white">Download</button>
                                     </form>
                             </div>
@@ -159,7 +159,7 @@
                                         @csrf
                                         <input type="hidden"
                                                name="drive_link"
-                                               value="https://drive.google.com/file/d/1qQDkcaqmlap2G2tOElu2WnSN94kOzWUj/">
+                                               value="https://drive.google.com/file/d/1Z-sq3UW3ilI3pK7nSBRJ4x-r9AsWlysw/">
                                         <button type="submit" class="btn color-two button text-white">Download</button>
                                     </form>
                             </div>

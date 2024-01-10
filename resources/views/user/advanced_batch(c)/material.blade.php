@@ -111,7 +111,7 @@
                                         @csrf
                                         <input type="hidden"
                                                name="drive_link"
-                                               value="https://drive.google.com/file/d/1zKJTRiLyt5OOtuXH9ybcs5mi6dfK8DH4/">
+                                               value="https://drive.google.com/file/d/1RbVIS5wkR8BrT0dPgZxO5ELXEBn4qKc1/">
                                         <button type="submit" class="btn color-two button text-white">Download</button>
                                     </form>
                             </div>

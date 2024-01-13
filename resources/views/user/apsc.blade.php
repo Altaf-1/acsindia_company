@@ -361,7 +361,7 @@
              <!-- end single features -->
              <!--</div>-->
 
-              @if ($course->title != '90 DAYS BOOSTER COURSE')
+              @if ($course->title != 'APSC TEST SERIES 2024')
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-2">
                  <div class="single-features-light text-center">
                      <!-- single features -->

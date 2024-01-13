@@ -168,9 +168,9 @@ Swal.fire({
                             <div class="blog-content">
                                 <h3 class=" text-center"><strong> {{$course->title}}</strong></h3>
                                 <ul class="themeioan_ul_icon">
-                                    <li><i class="fas fa-check-circle"></i> {{$course->days}} coaching.</li>
+                                    <!-- <li><i class="fas fa-check-circle"></i> {{$course->days}} coaching.</li>
                                     <li><i class="fas fa-check-circle"></i> Daily {{$course->timing}} class.
-                                    </li>
+                                    </li> -->
                                     {!! $course->options !!}
                                     {{--                                        <li><i class="fas fa-check-circle"></i> Daily Q&A session.</li>--}}
                                     {{--                                        <li><i class="fas fa-check-circle"></i> PDF study materials.</li>--}}
@@ -195,14 +195,14 @@ Swal.fire({
                                                     name="course_type_id">
                                                 <input type="hidden" value="{{$course->id}}" name="course_id">
                                                 <div class="form-group font-weight-bold">
-                                                    <label for="course_1" class="text-white material-label">UPSC
+                                                    <!-- <label for="course_1" class="text-white material-label">UPSC
                                                         Material ( ₹ 2000 ):</label>
                                                     <input type="checkbox" class="check-form"
                                                         @if(\App\UserExtraMaterial::check_material_exists($course->course_id,
                                                     $course->id, 1))
                                                     checked
                                                     @endif
-                                                    name="course_1">
+                                                    name="course_1"> -->
 
                                                     <label for="course_1" class="text-white material-label">APSC
                                                         Material ( ₹ 2000 ):</label>
@@ -264,7 +264,7 @@ Swal.fire({
                                     <div class="col-sm-6  text-white mobile p-4 ">
                                         <div>
                                             <del>
-                                                <h5 class="text-danger">₹ 23,600</h5>
+                                                <h5 class="text-danger">₹ {{$course->sale + \App\UserExtraMaterial::get_total_amount($course->course_id, $course->id)}}</h5>
                                             </del>
                                             @if($coupon == null)
                                             <h4 class="text-white">Price
@@ -312,9 +312,6 @@ Swal.fire({
                                             }
                                             </script>
                                         </div>
-                                    </div>
-                                    <div class="container mt-2">
-                                        <h6 class="text-white">Please apply your coupon before buying the course.</h6>
                                     </div>
                                 </div>
                             </div>

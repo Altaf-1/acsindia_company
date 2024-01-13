@@ -437,8 +437,8 @@ Toast.fire({
             <div class="container">
                 <h1 class="bg-dark text-white text-center fw-bold">TARGET 2024</h1>
                  <div class="row">
-                    <div class="col-lg-6"><a href="https://acsindiaias.com/apsc/course/57"><img src="comimages/course/self.jpeg"></a></div>
-                    <div class="col-lg-6"><a href="https://acsindiaias.com/apsc/course/58"><img src="comimages/course/test.jpeg"></a></div>
+                    <div class="col-lg-6"><a href="https://acsindiaias.com/apsc/course/57"><img src="comimages/course/23.png"></a></div>
+                    <div class="col-lg-6"><a href="https://acsindiaias.com/apsc/course/58"><img src="comimages/course/TEST.png"></a></div>
                  </div>
             </div>
         </section>

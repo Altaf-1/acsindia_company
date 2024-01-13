@@ -302,10 +302,6 @@ Swal.fire({
                                             </script>
                                         </div>
                                     </div>
-                                    <div class="container mt-2">
-                                        <h6 class="text-white">Please apply your coupon before buying the
-                                            course.</h6>
-                                    </div>
                                 </div>
                             </div>
                         </article>

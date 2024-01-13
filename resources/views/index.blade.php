@@ -364,7 +364,8 @@ Toast.fire({
                 </div>
                 <div class="col-lg-6 mt-3">
                     <div style="background-color: #134982;" class="rounded border text-white text-center pb-3">
-                        <h3 style="font-size: 28px;" class="text-white font-weight-bold">Previous Year Question Papers & Answer
+                        <h3 style="font-size: 28px;" class="text-white font-weight-bold">Previous Year Question Papers &
+                            Answer
                         </h3>
                         <a class="button text-white p-2 rounded text-white mb-2" href="{{asset('/pyq_all')}}"
                             style="background-color: #e52e06; font-family: 'Righteous'; size: 22px"><span>Download
@@ -374,7 +375,8 @@ Toast.fire({
                 <div class="col-lg-6 mt-3">
                     <div style="background-color: #134982;" class="rounded border text-white text-center pb-3">
                         <h2 class="text-white font-weight-bold">Join Workshop</h2>
-                        <a class="button text-white p-2 mt-2 rounded text-white mb-2" href="https://acsindiaias.com/recorded/course/ias-workshop"
+                        <a class="button text-white p-2 mt-2 rounded text-white mb-2"
+                            href="https://acsindiaias.com/recorded/course/ias-workshop"
                             style="background-color: #e52e06; font-family: 'Righteous'; size: 22px"><span>Enroll
                                 Now</span></a>
                     </div>
@@ -382,7 +384,8 @@ Toast.fire({
                 <div class="col-lg-6 mt-3">
                     <div style="background-color: #134982;" class="rounded border text-white text-center pb-3">
                         <h3 class="text-white font-weight-bold">Daily Current Affairs</h3>
-                        <a class="button text-white p-2 rounded text-white mb-2" href="{{asset('/current_affairs_2023')}}"
+                        <a class="button text-white p-2 rounded text-white mb-2"
+                            href="{{asset('/current_affairs_2023')}}"
                             style="background-color: #e52e06; font-family: 'Righteous'; size: 22px"><span>Download
                                 Now</span></a>
                     </div>
@@ -390,19 +393,21 @@ Toast.fire({
                 <div class="col-lg-6 mt-3">
                     <div style="background-color: #134982;" class="rounded border text-white text-center pb-3">
                         <h3 class="text-white font-weight-bold">Daily News Analysis Exam</h3>
-                        <a class="button text-white p-2 rounded text-white mb-2" href="{{asset('/quiz/outside/Outside%20Course')}}"
+                        <a class="button text-white p-2 rounded text-white mb-2"
+                            href="{{asset('/quiz/outside/Outside%20Course')}}"
                             style="background-color: #e52e06; font-family: 'Righteous'; size: 22px"><span>Download
                                 Now</span></a>
                     </div>
                 </div>
                 <div>
-                    <h2 class="p-2 text-white rounded text-center" style="background-color: #134982;">Contact Us: 6000505707</h2>
+                    <h2 class="p-2 text-white rounded text-center" style="background-color: #134982;">Contact Us:
+                        6000505707</h2>
                 </div>
             </div>
         </div>
         <div class=" col-lg-6">
             <a onclick="modal()">
-                <img style="height: 500px;" src="img/online_course.png"/>
+                <img style="height: 500px;" src="img/online_course.png" />
             </a>
             <script>
             function modal() {
@@ -427,6 +432,17 @@ Toast.fire({
         </div>
     </div>
     <div>
+
+            <section>
+            <div class="container">
+                <h1 class="bg-dark text-white text-center fw-bold">TARGET 2024</h1>
+                 <div class="row">
+                    <div class="col-lg-6"><a href="https://acsindiaias.com/apsc/course/57"><img src="comimages/course/self.jpeg"></a></div>
+                    <div class="col-lg-6"><a href="https://acsindiaias.com/apsc/course/58"><img src="comimages/course/test.jpeg"></a></div>
+                 </div>
+            </div>
+        </section>
+
         <div class="section-017 mt-4 pt-4">
             <div class="row">
                 <div class="col-md-12 col-lg-4">
@@ -521,21 +537,35 @@ Toast.fire({
             </div>
         </div>
 
-        <section>
+         <section>
             <div class="container-fluid mt-5 mb-5">
                 <div class="row">
-                    <div class="col-lg-3 text-center p-2 pt-5 pb-5" style="background-color: #134982; font-family: 'Righteous';">
+                    <div class="col-lg-3 text-center p-2 pt-5 pb-5"
+                        style="background-color: #134982; font-family: 'Righteous';">
                         <h2 class="text-white">Daily News Analysis & Test</h2>
-                        <a href="/quiz/outside/Outside%20Course" class="btn bg-white text-dark p-2 rounded font-weight-bold">Click For Test</a>
+                        <a href="/quiz/outside/Outside%20Course"
+                            class="btn bg-white text-dark p-2 rounded font-weight-bold">Click For Test</a>
                     </div>
                     <div class="col-lg-3">
-                        <iframe width="370" height="235" src="https://www.youtube.com/embed/wQjplrRs7PQ?si=MaGibyHK7ttiIN2l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe width="370" height="235"
+                            src="https://www.youtube.com/embed/wQjplrRs7PQ?si=MaGibyHK7ttiIN2l"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
                     </div>
                     <div class="col-lg-3">
-                        <iframe width="370" height="235" src="https://www.youtube.com/embed/JgIVCdd7ByM?si=CtXrYVAs55ghhGwq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe width="370" height="235"
+                            src="https://www.youtube.com/embed/JgIVCdd7ByM?si=CtXrYVAs55ghhGwq"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
                     </div>
                     <div class="col-lg-3">
-                        <iframe width="370" height="235" src="https://www.youtube.com/embed/0KTSOJLe19c?si=rIcAo0IhFkj3WIMe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe width="370" height="235"
+                            src="https://www.youtube.com/embed/0KTSOJLe19c?si=rIcAo0IhFkj3WIMe"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -547,19 +577,36 @@ Toast.fire({
                     <div class="row">
                         <div class="col-lg-6 padding-0 about-intro">
                             <div class="main-part">
-                                <h3 class="p-3 text-center text-white rounded" style="background-color: #134982; font-family: 'Righteous';">Topper's talk</h3>
+                                <h3 class="p-3 text-center text-white rounded"
+                                    style="background-color: #134982; font-family: 'Righteous';">Topper's talk</h3>
                                 <div class="row">
                                     <div class="col-lg-6 pt-5 col-sm-6 col-md-6 text-center justify-content-center">
-                                        <iframe width="560" height="250" src="https://www.youtube.com/embed/uR0udaC3VDs?si=pxKbeE19I3stQEIC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                        <iframe width="560" height="250"
+                                            src="https://www.youtube.com/embed/uR0udaC3VDs?si=pxKbeE19I3stQEIC"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen></iframe>
                                     </div>
                                     <div class="col-lg-6 pt-5 col-sm-6 col-md-6 text-center justify-content-center">
-                                        <iframe width="560" height="250" src="https://www.youtube.com/embed/VFFSM2jcFu8?si=8XTzdumeeRNzl-dv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                        <iframe width="560" height="250"
+                                            src="https://www.youtube.com/embed/VFFSM2jcFu8?si=8XTzdumeeRNzl-dv"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen></iframe>
                                     </div>
                                     <div class="col-lg-6 pt-5 col-sm-6 col-md-6 text-center justify-content-center">
-                                        <iframe width="560" height="250" src="https://www.youtube.com/embed/118tVGOgM5A?si=LxW84yVty3ornh89" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                        <iframe width="560" height="250"
+                                            src="https://www.youtube.com/embed/118tVGOgM5A?si=LxW84yVty3ornh89"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen></iframe>
                                     </div>
                                     <div class="col-lg-6 pt-5 col-sm-6 col-md-6 text-center justify-content-center">
-                                        <iframe width="560" height="250" src="https://www.youtube.com/embed/lzmWZr3G9FQ?si=dqf_erkBx5dE9Inv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                        <iframe width="560" height="250"
+                                            src="https://www.youtube.com/embed/lzmWZr3G9FQ?si=dqf_erkBx5dE9Inv"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen></iframe>
                                     </div>
                                 </div>
                             </div>
@@ -591,13 +638,15 @@ Toast.fire({
                                 <div class="course-info">
                                     <h3 class="course-title">
                                         <a href="/acs_seminar">
-                                            <h3 class="font-weight-bold text-center" style="font-family: 'Righteous';">APSC/UPSC
+                                            <h3 class="font-weight-bold text-center" style="font-family: 'Righteous';">
+                                                APSC/UPSC
                                                 FREE
                                                 WEBINAR</h3>
                                         </a>
                                     </h3>
                                     <div class="bottom-part">
-                                        <h4 class="bg-danger p-2 rounded text-white text-center">7th January, Sunday</h4>
+                                        <h4 class="bg-danger p-2 rounded text-white text-center">7th January, Sunday
+                                        </h4>
                                         <div class="info-meta">
                                             <ul>
                                                 <li class="ratings">
@@ -607,7 +656,8 @@ Toast.fire({
                                         </div>
                                         <div class="btn-part">
                                             <!-- /acs_seminar -->
-                                            <a href="https://us06web.zoom.us/webinar/register/8917030053182/WN_1I8CtwzBS_yN2n7qh6DHDg" class="btn text-white text-center font-weight-bold mb-4 shadow_2"
+                                            <a href="https://us06web.zoom.us/webinar/register/8917030053182/WN_1I8CtwzBS_yN2n7qh6DHDg"
+                                                class="btn text-white text-center font-weight-bold mb-4 shadow_2"
                                                 style="background-color: #e52e06;">JOIN NOW<i
                                                     class="flaticon-right-arrow"></i></a>
                                         </div>
@@ -649,7 +699,7 @@ Toast.fire({
                             </div>
                         </div>
                     </div> -->
-                     <!-- /acs_webinar -->
+                    <!-- /acs_webinar -->
                 </div>
         </section>
 

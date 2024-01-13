@@ -712,8 +712,7 @@
              <!--@endif-->
 
              {{-- RECORDED CLASSES --}}
-             @if ($course->title != 'APSC 2023 INTERVIEW PREPARATION' && $course->title != 'APSC TEST SERIES 2024' &&
-             $course->title != 'APSC SELF STUDY COURSE')
+             @if ($course->title != 'APSC 2023 INTERVIEW PREPARATION' && $course->title != 'APSC TEST SERIES 2024')
 
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
                  <!-- 2 -->

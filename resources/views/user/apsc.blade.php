@@ -361,6 +361,7 @@
              <!-- end single features -->
              <!--</div>-->
 
+              @if ($course->title != '90 DAYS BOOSTER COURSE')
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-2">
                  <div class="single-features-light text-center">
                      <!-- single features -->
@@ -371,6 +372,7 @@
                      </div>
                  </div>
              </div>
+             @endif
 
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
                  <div class="single-features-light text-center">

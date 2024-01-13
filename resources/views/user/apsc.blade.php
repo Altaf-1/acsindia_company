@@ -197,6 +197,31 @@
              </div>
              @endif
 
+             
+             @if ($course->title == 'APSC TEST SERIES 2024')
+             <!--  Prelims (PYQ) -->
+             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-6 mt-3">
+                 <div class="single-features-light text-center">
+                     <div>
+                         <i class="base-color fas fa-book fa-3x"></i>
+                         <h4>APSC TEST SERIES</h4>
+                         <a href="{{ route('testseriesquiz.index', [$course->title ,"APSC"]) }}"
+                             class=" btn color-two button text-white">VIEW</a>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-6 mt-3">
+                 <div class="single-features-light text-center">
+                     <div>
+                         <i class="base-color fas fa-book fa-3x"></i>
+                         <h4>TIPS & TRICKS SESSION</h4>
+                         <a href="{{ route('user.class.video.index', "UPSC PRELIMS BOOSTER TEST SERIES") }}"
+                             class=" btn color-two button text-white">VIEW</a>
+                     </div>
+                 </div>
+             </div>
+             @endif
+
              {{-- DOWNLOAD --}}
              <!--<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">-->
              <!-- 2 -->

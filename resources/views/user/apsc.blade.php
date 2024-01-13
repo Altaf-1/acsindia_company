@@ -396,7 +396,8 @@
              $course->title != '90 DAYS BOOSTER COURSE (OFFLINE)' &&
              $course->title != '20 DAYS FREE BOOSTER COURSE' &&
              $course->title != 'APSC SELF STUDY COURSE' &&
-             $course->title != 'APSC 2023 INTERVIEW PREPARATION')
+             $course->title != 'APSC 2023 INTERVIEW PREPARATION' &&
+             $course->title != 'APSC TEST SERIES 2024')
 
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
                  <div class="single-features-light text-center">
@@ -1340,7 +1341,8 @@
              </div>
              @endif
              <!-- 100 current affairs -->
-             @if ($course->title != 'APSC 2023 INTERVIEW PREPARATION' && $course->title != 'APSC SELF STUDY COURSE')
+             @if ($course->title != 'APSC 2023 INTERVIEW PREPARATION' && $course->title != 'APSC SELF STUDY COURSE' &&
+             $course->title != 'APSC TEST SERIES 2024')
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
                  <div class="single-features-light text-center">
                      <div>
@@ -1387,7 +1389,8 @@
              <!--    </div>-->
              <!--</div>-->
              <!-- INTERNATIONAL ORGANIZATIONS/INSTITUTIONS/GROUPINGS IN NEWS -->
-             @if ($course->title != 'APSC 2023 INTERVIEW PREPARATION' && $course->title != 'APSC SELF STUDY COURSE')
+             @if ($course->title != 'APSC 2023 INTERVIEW PREPARATION' && $course->title != 'APSC SELF STUDY COURSE' &&
+             $course->title != 'APSC TEST SERIES 2024')
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
                  <div class="single-features-light text-center">
                      <div>

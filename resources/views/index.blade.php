@@ -346,7 +346,7 @@ Toast.fire({
     <div style="padding-top:40px;" class="row mt-3 ml-2 bg-light">
         <div class="col-lg-6 mt-3">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6 mt-3">
                     <div style="background-color: #134982;" class="rounded border text-white text-center pb-3">
                         <h2 class="text-white font-weight-bold">Probable Questions</h2>
                         <a class="button text-white p-2 rounded text-white mb-2" href="{{asset('/Probable_Question')}}"
@@ -354,7 +354,7 @@ Toast.fire({
                                 Now</span></a>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 mt-3">
                     <div style="background-color: #134982;" class="rounded border text-white text-center pb-3">
                         <h2 class="text-white font-weight-bold">Sample Material</h2>
                         <a class="button text-white p-2 rounded text-white mb-2" href="{{asset('/sample_material')}}"
@@ -437,8 +437,8 @@ Toast.fire({
             <div class="container">
                 <h1 class="bg-dark text-white text-center fw-bold">TARGET 2024</h1>
                  <div class="row">
-                    <div class="col-lg-6"><a href="https://acsindiaias.com/apsc/course/57"><img src="comimages/course/23.png"></a></div>
-                    <div class="col-lg-6"><a href="https://acsindiaias.com/apsc/course/58"><img src="comimages/course/TEST.png"></a></div>
+                    <div class="col-lg-6 pt-3"><a href="https://acsindiaias.com/apsc/course/57"><img src="comimages/course/23.png"></a></div>
+                    <div class="col-lg-6 pt-3"><a href="https://acsindiaias.com/apsc/course/58"><img src="comimages/course/TEST.png"></a></div>
                  </div>
             </div>
         </section>

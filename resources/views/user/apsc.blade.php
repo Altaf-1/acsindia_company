@@ -566,7 +566,7 @@
                      <div>
                          <i class="base-color fas fa-book fa-3x"></i>
                          <h4>TEST SERIES</h4>
-                         <a href="{{ route('testseriesquiz.index', [$course->title ,"APSC"]) }}"
+                         <a href="{{route('testseriesquiz.index',[$course->title ,"APSC"])}}"
                              class=" btn color-two button text-white">VIEW</a>
                      </div>
                  </div>

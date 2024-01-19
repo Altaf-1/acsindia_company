@@ -444,8 +444,8 @@ Toast.fire({
         </section>
 
         <div class="section-017 mt-4 pt-4">
-            <div class="row">
-                <div class="col-md-12 col-lg-4">
+            <div class="row justify-content-center">
+                <div class="col-md-12 col-lg-5">
                     <div class="kobolg-banner style-08 left-center">
                         <div class="banner-inner">
                             <figure class="banner-thumb">
@@ -475,7 +475,7 @@ Toast.fire({
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12 col-lg-4">
+                <div class="col-md-12 col-lg-5">
                     <div class="kobolg-banner style-09 left-center">
                         <div class="banner-inner">
                             <figure class="banner-thumb">
@@ -505,7 +505,7 @@ Toast.fire({
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12 col-lg-4">
+                <!-- <div class="col-md-12 col-lg-4">
                     <div class="kobolg-banner style-10 left-center">
                         <div class="banner-inner">
                             <figure class="banner-thumb">
@@ -533,7 +533,7 @@ Toast.fire({
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
 

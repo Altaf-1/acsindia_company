@@ -548,21 +548,21 @@ Toast.fire({
                     </div>
                     <div class="col-lg-3">
                         <iframe width="370" height="235"
-                            src="https://www.youtube.com/embed/wQjplrRs7PQ?si=MaGibyHK7ttiIN2l"
+                            src="https://www.youtube.com/embed/tkw4MRrykKo?si=ZzjIy7f6ZfuULSZ1"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen></iframe>
                     </div>
                     <div class="col-lg-3">
                         <iframe width="370" height="235"
-                            src="https://www.youtube.com/embed/JgIVCdd7ByM?si=CtXrYVAs55ghhGwq"
+                            src="https://www.youtube.com/embed/67KhRUJoa1Y?si=1UCGVsiHN7kGwe9l"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen></iframe>
                     </div>
                     <div class="col-lg-3">
                         <iframe width="370" height="235"
-                            src="https://www.youtube.com/embed/0KTSOJLe19c?si=rIcAo0IhFkj3WIMe"
+                            src="https://www.youtube.com/embed/uzwvoWru7mM?si=ut4L4ShL4EKZojic"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen></iframe>

@@ -407,7 +407,7 @@ Toast.fire({
         </div>
         <div class=" col-lg-6">
             <a onclick="modal()">
-                <img style="height: 500px;" src="img/online_course.png" />
+                <img style="height: 500px;" src="img/acv.png" />
             </a>
             <script>
             function modal() {

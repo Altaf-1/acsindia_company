@@ -406,7 +406,7 @@ Toast.fire({
             </div>
         </div>
         <div class=" col-lg-6">
-            <a onclick="modal()">
+            <a>
                 <img style="height: 500px;" src="img/acv.png" />
             </a>
             <script>
@@ -436,11 +436,18 @@ Toast.fire({
             <section>
             <div class="container">
                 <h1 class="bg-dark text-white text-center fw-bold">TARGET 2024</h1>
-                 <div class="row">
-                    <div class="col-lg-6 pt-3"><a href="https://acsindiaias.com/apsc/course/57"><img src="comimages/course/23.png"></a></div>
-                    <div class="col-lg-6 pt-3"><a href="https://acsindiaias.com/apsc/course/58"><img src="comimages/course/TEST.png"></a></div>
+                 <div class="">
+                    <div class="row p-2 align-item-center" style="background-color: #B0CAE6">
+
+                        <div class="col-lg-4"><a onclick="modal()">
+                <img src="img/online_course.png" style="height: 300px, width: 300px" />
+            </a></div>
+                    <div class="col-lg-4 pt-5"><a href="https://acsindiaias.com/apsc/course/57"><img src="comimages/course/23.png"></a></div>
+                    <div class="col-lg-4 pt-5"><a href="https://acsindiaias.com/apsc/course/58"><img src="comimages/course/TEST.png"></a></div>
                  </div>
-            </div>
+                    </div>
+                 </div>
+            
         </section>
 
         <div class="section-017 mt-4 pt-4">

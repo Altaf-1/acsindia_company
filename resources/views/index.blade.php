@@ -414,10 +414,10 @@ Toast.fire({
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="img/acv.png" class="d-block w-60 h-60" alt="...">
+      <img src="img/acv.png" style="height: 600px" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="img/acv1.jpeg" class="d-block w-100" alt="...">
+      <img src="img/acv1.jpeg" style="height: 600px" class="d-block w-100" alt="...">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

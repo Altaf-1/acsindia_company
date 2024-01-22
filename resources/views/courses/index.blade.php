@@ -207,7 +207,7 @@ Swal.fire({
                                <h5 class="title text-center">---- SELECT DATE ----</h5>
                                 <ul class="themeioan_ul_icon justify-content-center text-center">
                                    <li><a href="{{asset('/course/ias-booster-course-x-evng')}}"
-                                           class=" btn color-two button text-white mb-3">22 JAN</a>
+                                           class=" btn color-two button text-white mb-3">29 JAN</a>
                                    </li>
                                 </ul>
                             </div>

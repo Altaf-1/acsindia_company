@@ -405,30 +405,30 @@ Toast.fire({
                 </div>
             </div>
         </div>
-        <div class=" col-lg-6">
-            <a>
-                <img style="height: 500px;" src="img/acv.png" />
-            </a>
-            <script>
-            function modal() {
-                Swal.fire({
-                    title: 'Pay Using',
-                    html: '<div class="row justify-content-center">' +
-                        ' <div class="card col-5 m-2">' +
-                        '<a href="https://acsindiaias.com/apsc/course/54">\n' +
-                        '<img src="{{asset('img/Frame 23.png')}}" width="100%">\n' +
-                    ' </a>' +
-                    '</div>\n' +
-                    '<div class="card col-5 m-2">' +
-                    '<a href="https://acsindiaias.com/apsc/course/55">\n' +
-                    '  <img src="{{asset('img/Frame 24.png')}}" width="100%">\n' +
-                    '</a>' +
-                    '</div>' +
-                    '</div>',
-                    width: 800,
-                })
-            }
-            </script>
+        <div class="col-lg-6">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/acv.png" class="d-block w-60 h-60" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/acv1.jpeg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
         </div>
     </div>
     <div>
@@ -579,7 +579,7 @@ Toast.fire({
         </section>
 
         <section>
-            <div class="rs-faq-part style1 md-pt-10 md-pb-70 mt-2">
+            <div class="rs-faq-part style1 md-pt-10 md-pb-70 mt-2 bg-light">
                 <div class="container-fluid m-2">
                     <div class="row">
                         <div class="col-lg-6 padding-0 about-intro">
@@ -618,9 +618,9 @@ Toast.fire({
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 padding-0">
+                        <div class="col-lg-6 padding-0 bg-light">
                             <div>
-                                <img src="comimages/2023/result.jpeg" class="img-fluid w-60" alt="Responsive image">
+                                <img src="img/acv2.jpeg" class="img-fluid w-60 pt-3" alt="Responsive image">
                             </div>
                         </div>
                     </div>

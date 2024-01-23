@@ -434,16 +434,13 @@ Toast.fire({
     <div>
 
             <section>
-            <div class="container">
+            <div class="container-fluid">
                 <h1 class="bg-dark text-white text-center fw-bold">TARGET 2024</h1>
-                 <div class="">
-                    <div class="row p-2 align-item-center" style="background-color: #B0CAE6">
-
-                        <div class="col-lg-4"><a onclick="modal()">
-                <img src="img/online_course.png" style="height: 300px, width: 300px" />
-            </a></div>
-                    <div class="col-lg-4 pt-5"><a href="https://acsindiaias.com/apsc/course/57"><img src="comimages/course/23.png"></a></div>
-                    <div class="col-lg-4 pt-5"><a href="https://acsindiaias.com/apsc/course/58"><img src="comimages/course/TEST.png"></a></div>
+                <div class="row justify-content-center">
+                <div class="col-lg-3 pt-2"><a href="https://acsindiaias.com/apsc/course/54"><img src="comimages/course/online.png"></a></div>
+                <div class="col-lg-3 pt-2"><a href="https://acsindiaias.com/apsc/course/55"><img src="comimages/course/offline.png"></a></div>
+                <div class="col-lg-3 pt-2"><a href="https://acsindiaias.com/apsc/course/57"><img src="comimages/course/23.png"></a></div>
+                <div class="col-lg-3 pt-2"><a href="https://acsindiaias.com/apsc/course/58"><img src="comimages/course/TEST.png"></a></div>
                  </div>
                     </div>
                  </div>
@@ -639,7 +636,7 @@ Toast.fire({
                     <div class="col-lg-8 bg-light p-3">
                         <div class="row ">
                             <div class="col-lg-4">
-                                <img src="{{ asset('img/event_webinar.jpeg') }}" class="h-120" alt="images">
+                                <img src="{{ asset('img/Dibrugarh.png') }}" class="h-120" alt="images">
                             </div>
                             <div class="col-lg-7">
                                 <div class="course-info">
@@ -652,7 +649,7 @@ Toast.fire({
                                         </a>
                                     </h3>
                                     <div class="bottom-part">
-                                        <h4 class="bg-danger p-2 rounded text-white text-center">7th January, Sunday
+                                        <h4 class="bg-danger p-2 rounded text-white text-center">26th January, Sunday
                                         </h4>
                                         <div class="info-meta">
                                             <ul>
@@ -663,7 +660,7 @@ Toast.fire({
                                         </div>
                                         <div class="btn-part">
                                             <!-- /acs_seminar -->
-                                            <a href="https://us06web.zoom.us/webinar/register/8917030053182/WN_1I8CtwzBS_yN2n7qh6DHDg"
+                                            <a href="https://us06web.zoom.us/webinar/register/WN_5R32eL6_RyiOiGEnfRSN4w"
                                                 class="btn text-white text-center font-weight-bold mb-4 shadow_2"
                                                 style="background-color: #e52e06;">JOIN NOW<i
                                                     class="flaticon-right-arrow"></i></a>

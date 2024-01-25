@@ -417,6 +417,9 @@ Toast.fire({
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
+                        <img src="img/rep.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
                         <img src="img/acv3.png" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">

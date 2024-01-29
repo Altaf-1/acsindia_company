@@ -416,9 +416,6 @@ Toast.fire({
                         aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="img/rep.png" class="d-block w-100" alt="...">
-                    </div>
                     <div class="carousel-item">
                         <img src="img/acv3.png" class="d-block w-100" alt="...">
                     </div>
@@ -593,6 +590,13 @@ Toast.fire({
                             <div class="row">
                                 <div class="col-lg-6 pt-5 col-sm-6 col-md-6 text-center justify-content-center">
                                     <iframe width="560" height="250"
+                                        src="https://www.youtube.com/embed/i5Rfc6ofowM?si=4zLCJUrH1FjLPuQ8"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen></iframe>
+                                </div>
+                                <div class="col-lg-6 pt-5 col-sm-6 col-md-6 text-center justify-content-center">
+                                    <iframe width="560" height="250"
                                         src="https://www.youtube.com/embed/y-GtGq3PqsU?si=DaG4IQ3Zl8Fytz11"
                                         title="YouTube video player" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -612,13 +616,7 @@ Toast.fire({
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         allowfullscreen></iframe>
                                 </div>
-                                <div class="col-lg-6 pt-5 col-sm-6 col-md-6 text-center justify-content-center">
-                                    <iframe width="560" height="250"
-                                        src="https://www.youtube.com/embed/YXvNXr1W2Q4?si=pQgwCis1QDkJaJrS"
-                                        title="YouTube video player" frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                        allowfullscreen></iframe>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>

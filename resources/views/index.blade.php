@@ -416,10 +416,10 @@ Toast.fire({
                         aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
-                    <div class="carousel-item">
+                    <div class="carousel-item ">
                         <img src="img/acv3.png" class="d-block w-100" alt="...">
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item active">
                         <img src="img/acv1.jpeg" class="d-block w-100" alt="...">
                     </div>
                 </div>

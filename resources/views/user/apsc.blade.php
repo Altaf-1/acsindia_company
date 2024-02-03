@@ -40,7 +40,9 @@
              $course->title != 'APSC BOOSTER COURSE (W)' &&
              $course->title != 'APSC SELF STUDY COURSE' &&
              $course->title != 'APSC TEST SERIES 2024' &&
-             $course->title != 'APSC BOOSTER COURSE (X-evng)')
+             $course->title != 'APSC BOOSTER COURSE (X-evng)'&&
+             $course->title != 'Target 2024 (Online)' &&
+             $course->title != 'Target 2024 (Offline)')
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
                  <div class="single-features-light text-center">
                      <div>
@@ -88,7 +90,7 @@
                  <div class="single-features-light text-center">
                      <div>
                          <i class="base-color fas fa-book fa-3x"></i>
-                         <h4>APSC FULL TEST 2023 </h4>
+                         <h4>APSC FULL TEST SERIES</h4>
                          <a href="{{ route('testseriesquiz.index', [$course->title ,"APSC"]) }}"
                              class=" btn color-two button text-white">VIEW</a>
                      </div>
@@ -122,7 +124,9 @@
              $course->title != 'APSC BOOSTER COURSE (W)' &&
              $course->title != 'APSC SELF STUDY COURSE' &&
              $course->title != 'APSC TEST SERIES 2024' &&
-             $course->title != 'APSC BOOSTER COURSE (X-evng)')
+             $course->title != 'APSC BOOSTER COURSE (X-evng)'&&
+             $course->title != 'Target 2024 (Online)' &&
+             $course->title != 'Target 2024 (Offline)')
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
                  <div class="single-features-light text-center">
                      <div>

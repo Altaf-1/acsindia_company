@@ -187,7 +187,7 @@ Swal.fire({
                                 <div class="row course-end mt-1">
                                     <div class="col-sm-6 p-2 d-flex justify-content-center">
                                         <div class="container mt-2">
-                                            <h5 class="text-white">Extra Materials</h5>
+                                            <h5 class="text-white">Extra Hardcopy Materials</h5>
                                             <form action="{{route('user.extra_material.add_remove_material')}}"
                                                 method="POST">
                                                 @csrf

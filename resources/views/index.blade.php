@@ -21,7 +21,7 @@ Academy of Civil Services | Best IAS Coaching in India
 <script src="{{ asset('js/sweetalert2.min.js') }}"></script>
 
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-411743661"></script>
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=AW-411743661"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 
@@ -38,7 +38,7 @@ gtag('config', 'AW-411743661');
 gtag('config', 'AW-411743661/VaRACJu54csYEK3rqsQB', {
     'phone_conversion_number': '06000505707'
 });
-</script>
+</script> -->
 
 <!-- Font Awesome  -->
 <link rel="stylesheet" href="{{asset('css/fontawesome.min.css')}}">

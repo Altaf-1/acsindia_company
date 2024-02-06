@@ -118,7 +118,7 @@
                                 <!-- uses solid style -->
                                 <i class="base-color fas fa-book fa-3x"></i>
                                 <h4>ECOLOGY AND ENVIRONMENT</h4>
-                                <a href="https://drive.google.com/file/d/1J0Wm_-w6eoTW94esrEfK1LY-6igknqXk/view?usp=sharing" class=" btn color-two button text-white">DOWNLOAD</a>
+                                <a href="https://drive.google.com/file/d/1CW2iJuY8gXVxVmuGVyMm3HbB0FUoTV5S/view?usp=sharing" class=" btn color-two button text-white">DOWNLOAD</a>
                             </div>
                         </div>
                         <!-- end single features -->
@@ -146,7 +146,7 @@
                                 <!-- uses solid style -->
                                 <i class="base-color fas fa-book fa-3x"></i>
                                 <h4>SCIENCE & TECH</h4>
-                                <a href="https://drive.google.com/file/d/1-2Qkj_upiOYwrrwKfve1Ck8HFXPErJQ8/view?usp=sharing" class=" btn color-two button text-white">DOWNLOAD</a>
+                                <a href="https://drive.google.com/file/d/1ufiYoA6Vk61V-Ed-A3qT2-ZPtadqo04f/view?usp=sharing" class=" btn color-two button text-white">DOWNLOAD</a>
                             </div>
                         </div>
                         <!-- end single features -->
@@ -199,7 +199,7 @@
                             <div>
                                 <i class="base-color fas fa-book fa-3x"></i>
                                 <h4>Polity</h4>
-                                <a href="https://drive.google.com/file/d/1a7PN6MrqBdKgfGSSnx6q54lcFaOTxgBL/view?usp=sharing" class=" btn color-two button text-white">DOWNLOAD</a>
+                                <a href="https://drive.google.com/file/d/17DLx1QSPtRiDX_3gplluNiDg3ddrvrkG/view?usp=sharing" class=" btn color-two button text-white">DOWNLOAD</a>
                             </div>
                         </div>
                         <!-- end single features -->

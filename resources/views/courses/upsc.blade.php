@@ -172,7 +172,6 @@ Swal.fire({
                                     </li>
                                     <li><i class="fas fa-check-circle"></i> Daily Q&A session.</li>
                                     <li><i class="fas fa-check-circle"></i> PDF Study Materials & Study Plans.</li>
-                                    <li><i class="fas fa-check-circle"></i> Free Hardcopies Of Study Materials.</li>
                                     <li><i class="fas fa-check-circle"></i> Prelims Model Test Series.</li>
                                     <li><i class="fas fa-check-circle"></i> Current affairs updates.</li>
                                 </ul>
@@ -217,7 +216,7 @@ Swal.fire({
                                     <!--</div>-->
                                     <div class="col-sm-6 p-2 d-flex justify-content-center">
                                         <div class="container mt-2">
-                                            <h5 class="text-white">Extra Materials</h5>
+                                            <h5 class="text-white">Extra Hardcopy Materials</h5>
                                             <form action="{{route('user.extra_material.add_remove_material')}}"
                                                 method="POST">
                                                 @csrf

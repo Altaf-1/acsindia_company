@@ -11,7 +11,6 @@ Academy of Civil Services | Best IAS Coaching in India
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Bootstrap  -->
-<!-- Bootstrap  -->
 <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
 <!-- Main Custom CSS -->
 <link rel="stylesheet" href="{{ asset('css/main.css') }}">

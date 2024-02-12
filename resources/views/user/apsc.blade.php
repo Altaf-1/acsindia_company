@@ -142,7 +142,7 @@
 
              @if ($course->title == 'Target 2024 (Offline)')
              <!--  Prelims (PYQ) -->
-             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-6 mt-3">
+             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
                  <div class="single-features-light text-center">
                      <div>
                          <i class="base-color fas fa-book fa-3x"></i>
@@ -166,7 +166,7 @@
 
              @if ($course->title == 'Target 2024 (Online)')
              <!--  Prelims (PYQ) -->
-             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-6 mt-3">
+             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
                  <div class="single-features-light text-center">
                      <div>
                          <i class="base-color fas fa-book fa-3x"></i>
@@ -263,7 +263,7 @@
 
              @if ($course->title == 'APSC TEST SERIES 2024')
              <!--  Prelims (PYQ) -->
-             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-6 mt-3">
+             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
                  <div class="single-features-light text-center">
                      <div>
                          <i class="base-color fas fa-book fa-3x"></i>

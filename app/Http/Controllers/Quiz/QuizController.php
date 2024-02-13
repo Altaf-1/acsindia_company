@@ -22,7 +22,7 @@ class QuizController extends Controller
     {
         //get all the courses
         $datas = AssignQuiz::where('course_name', $course)->latest()->get();
-        if ($course === 'Outside Course' || 'Free mock test') {
+        if ($course === 'Outside Course' || 'Free mock test' || 'Probable Question') {
             return view('user_tabs.quiz.outside_course', compact('datas', 'course'));
         } else {
             return view('user_tabs.quiz.index', compact('datas', 'course'));
@@ -116,6 +116,7 @@ class QuizController extends Controller
     {
         $quiz = Quiz::find($request->quiz_id);
         $questions = $quiz->questions;
+        $course_name = $request->course_name;
         $correct_answers = 0;
         $wrong_answers = 0;
         $index = 0;
@@ -156,7 +157,7 @@ class QuizController extends Controller
         $result['correct_answers'] = $correct_answers;
         $result['wrong_answers'] = $wrong_answers;
         $result['total_mark'] = $total;
-        return view('user_tabs.quiz.outside_course_result', compact('datas', 'result'))
+        return view('user_tabs.quiz.outside_course_result', compact('datas', 'result', 'course_name'))
             ->with('success', 'Quiz Submitted Successfully');
     }
 

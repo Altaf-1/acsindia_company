@@ -18,6 +18,7 @@
             <div class="form-group font-weight-bold">
                 <label for="Status">Course:</label>
                 <select id="status" class="form-control" name="course_name" required>
+                    <option selected value="Probable Question">Probable Question</option>
                     <option selected value="Outside Course">Outside Course</option>
                     <option selected value="Free mock test">Free mock test</option>
                     @foreach ($apscs as $apsc)

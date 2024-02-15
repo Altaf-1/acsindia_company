@@ -5105,5 +5105,5 @@ Route::post('/quiz-result/submit', [\App\Http\Controllers\Quiz\QuizController::c
 Route::post('/quiz/outside/modal/submit', [\App\Http\Controllers\Quiz\QuizController::class, 'modalSubmit'])
     ->name('quiz.outside.course.modal.submit');
 
-Route::get('/quiz/{course}', [\App\Http\Controllers\Quiz\QuizController::class, 'index'])
+Route::get('/quizs/{course}', [\App\Http\Controllers\Quiz\QuizController::class, 'index'])
     ->name('quiz.probable.course.index');

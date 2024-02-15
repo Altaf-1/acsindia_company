@@ -287,7 +287,7 @@
                      <div>
                          <i class="base-color fas fa-book fa-3x"></i>
                          <h4>APSC FULL TEST SERIES</h4>
-                         <a href="{{ route('online.quiz.index', $course->title) }}"
+                         <a href="{{ route('quiz.index', $course->title) }}"
                              class=" btn color-two button text-white">VIEW</a>
                      </div>
                  </div>

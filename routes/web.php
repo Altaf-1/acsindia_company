@@ -5099,8 +5099,11 @@ Route::get('/quiz/outside/{course}', [\App\Http\Controllers\Quiz\QuizController:
 Route::get('/quiz/outside/questions/{id}/{course_name}', [\App\Http\Controllers\Quiz\QuizController::class, 'outsideCourseQuestions'])
     ->name('quiz.outside.course.questions');
 
-Route::post('/quiz/outside/submit', [\App\Http\Controllers\Quiz\QuizController::class, 'submitOutsideCourse'])
+Route::post('/quiz-result/submit', [\App\Http\Controllers\Quiz\QuizController::class, 'submitOutsideCourse'])
     ->name('quiz.outside.course.submit');
 
 Route::post('/quiz/outside/modal/submit', [\App\Http\Controllers\Quiz\QuizController::class, 'modalSubmit'])
     ->name('quiz.outside.course.modal.submit');
+
+Route::get('/quizs/{course}', [\App\Http\Controllers\Quiz\QuizController::class, 'index'])
+    ->name('quiz.probable.course.index');

@@ -142,9 +142,8 @@
                                 <span class="first-item">
                                     <a href="/">Homepage</a></span>
                                 <span class="separator">&gt;</span>
-                                <a href={{ route('quiz.outside.course.index', 'Outside Course') }}
-                                    class="text-white">Outside
-                                    Course</a></span>
+                                <a href={{ route('quiz.outside.course.index', $course_name) }}
+                                    class="text-white">{{ $course_name }}</a></span>
                             </div>
                         </div>
                     </div>

@@ -653,7 +653,7 @@ Toast.fire({
                                     </a>
                                 </h3>
                                 <div class="bottom-part">
-                                    <h4 class="bg-danger p-2 rounded text-white text-center">26th January, Sunday
+                                    <h4 class="bg-danger p-2 rounded text-white text-center">25th FEB, Sunday
                                     </h4>
                                     <div class="info-meta">
                                         <ul>
@@ -664,7 +664,7 @@ Toast.fire({
                                     </div>
                                     <div class="btn-part">
                                         <!-- /acs_seminar -->
-                                        <a href="https://us06web.zoom.us/webinar/register/WN_5R32eL6_RyiOiGEnfRSN4w"
+                                        <a href="https://us06web.zoom.us/webinar/register/WN_OvK_RmhwT12SDAbJWTJ3kg"
                                             class="btn text-white text-center font-weight-bold mb-4 shadow_2"
                                             style="background-color: #e52e06;">JOIN NOW<i
                                                 class="flaticon-right-arrow"></i></a>

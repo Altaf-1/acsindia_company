@@ -166,7 +166,7 @@ Swal.fire({
                                     <li><a href="{{asset('/course/ias-booster-course-u')}}"
                                             class=" btn color-two button text-white mb-3">09 JAN</a>
                                     </li>
-                                    <li><a href="{{asset('/course/APSC FEB 2024 COURSE (MRNG)')}}"
+                                    <li><a href="{{asset('/course/APSC-FEB-2024-COURSE-(MRNG)')}}"
                                             class=" btn color-two button text-white mb-3">19 FEB</a>
                                     </li>
                                 </ul>

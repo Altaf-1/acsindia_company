@@ -166,7 +166,7 @@ Swal.fire({
                                     <li><a href="{{asset('/course/ias-booster-course-u')}}"
                                             class=" btn color-two button text-white mb-3">09 JAN</a>
                                     </li>
-                                    <li><a href="{{asset('/course/ias-booster-course-v')}}"
+                                    <li><a href="{{asset('/course/APSC FEB 2024 COURSE (MRNG)')}}"
                                             class=" btn color-two button text-white mb-3">19 FEB</a>
                                     </li>
                                 </ul>
@@ -197,8 +197,8 @@ Swal.fire({
                 <!--    </div>-->
                 <!--</div>-->
 
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 p-0 course-animation mb20">
-                <div class="themeioan_course">
+                <!-- <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 p-0 course-animation mb20"> -->
+                <!-- <div class="themeioan_course">
                         <article>
                             <div class="blog-photo ">
                                <img class="img-fluid course-img" src="{{asset('cor/main/5.png')}}" alt="">
@@ -213,7 +213,7 @@ Swal.fire({
                             </div>
                         </article>
                     </div>
-                </div>
+                </div> -->
 
                 <!--<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 p-0 course-animation mb20">-->
                 <!--    <div class="themeioan_course">-->

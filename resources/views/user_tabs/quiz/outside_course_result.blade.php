@@ -155,7 +155,7 @@
         </div>
         @if ($course_name == 'Probable Question')
             <div class="text-center pt-3">
-                <a href="" class=" text-dark border text-center font-weight-bold">Enroll our latest Test Series for Target 2024 prelims   <span class="bg-danger text-white p-2 rounded">Click Here</span></a>
+                <a href="" class=" text-dark border text-center font-weight-bold"><h3>Enroll our latest Test Series for Target 2024 prelims</h3>   <span class="bg-danger text-white p-2 rounded">Click Here</span></a>
         </div>
         @endif
     </div>

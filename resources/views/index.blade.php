@@ -349,8 +349,7 @@ Toast.fire({
                     <div style="background-color: #134982;" class="rounded border text-white text-center pb-3">
                         <h2 class="text-white font-weight-bold">TEST SERIES (Free Trial)</h2>
                         <a class="button text-white p-2 rounded text-white mb-2" href="/quizs/Probable Question"
-                            style="background-color: #e52e06; font-family: 'Righteous'; size: 22px"><span>Download
-                                Now</span></a>
+                            style="background-color: #e52e06; font-family: 'Righteous'; size: 22px"><span>View</span></a>
                     </div>
                 </div>
                 <div class="col-lg-6 mt-3">

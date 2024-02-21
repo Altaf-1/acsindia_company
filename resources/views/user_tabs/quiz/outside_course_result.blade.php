@@ -155,7 +155,7 @@
         </div>
         @if ($course_name == 'Probable Question')
             <div class="text-center pt-3 pb-3 bg-dark">
-                <h3 class="text-white">Enroll our latest Test Series for 2024 prelims</h3>
+                <h3 class="text-white mb-2 pb-2">Enroll our latest Test Series for 2024 Prelims</h3>
                 <a href="https://acsindiaias.com/apsc/course/58" class="bg-danger text-white p-2 rounded mt-2">Click Here</a>
         </div>
         @endif

@@ -142,9 +142,6 @@
                                     <a href="/">Homepage</a></span>
                                 <span class="separator">&gt;</span>
                                 <span class="last-item">ONLINE TEST</span>
-                                <span class="separator">&gt;</span>
-                                <a href={{ route('quiz.outside.course.index', $course) }}
-                                    class="text-white">{{ $course }}</a></span>
                             </div>
                         </div>
                     </div>

@@ -153,6 +153,12 @@
                 </div>
             </div>
         </div>
+        @if ($course_name == 'Probable Question')
+            <div class="text-center pt-3">
+                <a href="" class=" btn color-two button text-white text-center font-weight-bold">Visit our latest Test Series for Target 2024 prelims</a>
+        </div>
+        @endif
+    </div>
         <!-- end breadcrumb banner content area start -->
         <div class="container-fluid mt-5">
             <!-- .row -->

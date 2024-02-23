@@ -121,7 +121,7 @@ td {
         </table>
 
     </div>
-    <div class="pt-5">
+    <div>
         <div class="d-flex justify-content-around">
             <img class="p-4" style="width:450px;height:250px" src="{{asset('img/sign.jpg')}}">
             <img class="p-4" style="width:auto;height:250px" src="{{asset('img/seal.jpg')}}">

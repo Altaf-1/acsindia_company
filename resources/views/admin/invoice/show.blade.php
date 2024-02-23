@@ -300,7 +300,7 @@
         <tr>
             <td colspan="10">
                 <input type="hidden" id="amount_value" value="10000">
-                <h5 class="header-main p-5 text-uppercase" id="amount">
+                <h5 class="header-main p-5 text-uppercase" id="amount"> 
 
                 </h5>
             </td>

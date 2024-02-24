@@ -104,7 +104,7 @@
                             <div>
                                 <i class="base-color fas fa-book fa-3x"></i>
                                 <h4>Indian Economy</h4>
-                                <a href="https://drive.google.com/file/d/11djMfPMDiYyFxIPKmCFOqd5jAdUV-Vpl/view?usp=sharing" class=" btn color-two button text-white">DOWNLOAD</a>
+                                <a href="https://drive.google.com/file/d/1BPom_A0ZWGohFXxrodDhlLirh_-apBQP/view?usp=sharing" class=" btn color-two button text-white">DOWNLOAD</a>
                             </div>
                         </div>
                         <!-- end single features -->

@@ -25,6 +25,15 @@ use Illuminate\Support\Str;
 
 class APSCPaymentController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->url = config('services.hdfc.url');
+        $this->access_code = config('services.hdfc.access_code');
+        $this->merchant_id_apsc = config('services.hdfc.merchant_id_apsc');
+        $this->working_key_apsc = config('services.hdfc.working_key_apsc');
+    }
+
     //
     /**
      * @param Request $request
@@ -122,7 +131,7 @@ class APSCPaymentController extends Controller
         $data['amount'] = $total_amount;
         $data['currency'] = 'INR';
         $data['order_id'] = $orderId;
-        $data['merchant_id'] = '2632875';
+        $data['merchant_id'] = $this->merchant_id_apsc;
         $data['redirect_url'] = route('hdfc.payment.apsc.response');
         $data['cancel_url'] = route('hdfc.payment.apsc.response');
         $data['language'] = 'en';
@@ -152,15 +161,14 @@ class APSCPaymentController extends Controller
         $data['promo_code'] = '';
         $data['customer_identifier'] = '';
 
-        $merchant_data = '2632875';
-        $working_key = config('services.hdfc.working_key');
-        $access_code = config('services.hdfc.access_code');
+        $working_key = $this->working_key_apsc;
+        $access_code = $this->access_code;
 
         $merchant_data = http_build_query($data, '', '&');
 
         $encrypted_data = HDFCPaymentGateway::encrypt($merchant_data, $working_key); // Method for encrypting the data.
 
-        $testUrl = 'https://test.ccavenue.com/transaction/transaction.do?command=initiateTransaction';
+        $testUrl = $this->url;
 
         return view('HDFC_payment_gateway.checkout',
             compact('encrypted_data', 'access_code', 'total_amount', 'testUrl', 'course'));
@@ -212,15 +220,14 @@ class APSCPaymentController extends Controller
         $data['promo_code'] = '';
         $data['customer_identifier'] = '';
 
-        $merchant_data = '2632875';
-        $working_key = config('services.hdfc.working_key');
-        $access_code = config('services.hdfc.access_code');
+        $working_key = $this->working_key_apsc;
+        $access_code = $this->access_code;
 
         $merchant_data = http_build_query($data, '', '&');
 
         $encrypted_data = HDFCPaymentGateway::encrypt($merchant_data, $working_key); // Method for encrypting the data.
 
-        $testUrl = 'https://test.ccavenue.com/transaction/transaction.do?command=initiateTransaction';
+        $testUrl = $this->url;
 
         return view('HDFC_payment_gateway.checkout',
             compact('encrypted_data', 'access_code', 'total_amount', 'testUrl', 'course'));
@@ -237,7 +244,7 @@ class APSCPaymentController extends Controller
 
             DB::beginTransaction();
 
-            $workingKey = config('services.hdfc.working_key');
+            $workingKey = $this->working_key_apsc;
             $encResponse = $request->encResp;
             $rcvdString = HDFCPaymentGateway::decrypt($encResponse, $workingKey);
             $order_status = "";

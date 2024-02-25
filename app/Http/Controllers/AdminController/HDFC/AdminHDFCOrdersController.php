@@ -85,11 +85,11 @@ class AdminHDFCOrdersController extends Controller
 
         # make guzzle request
         $client = new \GuzzleHttp\Client();
-        $response = $client->post('https://apitest.ccavenue.com/apis/servlet/DoWebTrans?' . $final_data, [
+        $response = $client->post('https://api.ccavenue.com/apis/servlet/DoWebTrans?' . $final_data, [
             'headers' => [
                 'Content-Type' => 'application/json',
             ],
-            'verify' => false, // This disables SSL certificate verification. Be cautious in production.
+            'verify' => true, // This disables SSL certificate verification. Be cautious in production.
         ]);
 
         $result = $response->getBody()->getContents();
@@ -108,7 +108,7 @@ class AdminHDFCOrdersController extends Controller
         }
 
         $obj = json_decode($status);
-        
+
         $orderStatus = $obj->Order_Status_Result->order_status;
 
         if ($orderStatus == 'Shipped') {
@@ -136,7 +136,8 @@ class AdminHDFCOrdersController extends Controller
                     'status' => 1]);
 
                 $user->courses()->attach($order->course_id);
-            } elseif ($order->course_type == 'apsc') {
+            }
+            elseif ($order->course_type == 'apsc') {
 
                 $course = ApscCourses::findOrFail($order->apsc_course_id);
 
@@ -158,13 +159,15 @@ class AdminHDFCOrdersController extends Controller
                     'status' => 1]);
 
                 $user->apsc_courses()->attach($order->apsc_course_id);
-            } elseif ($order->course_type == 'study') {
+            }
+            elseif ($order->course_type == 'study') {
 
                 StudyRazor::where('id', $order->id)->update(['payment_id' => $paymentId,
                     'status' => 1]);
 
                 $user->study_materials()->attach($order->study_material_id);
-            } elseif ($order->course_type == 'recorded') {
+            }
+            elseif ($order->course_type == 'recorded') {
 
                 RecordedRazor::where('id', $order->id)->update(['payment_id' => $paymentId,
                     'status' => 1]);

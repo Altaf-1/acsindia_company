@@ -143,6 +143,31 @@
              </div>
              @endif
 
+             @if ($course->title == 'GHY OFFLINE (M)')
+             <!--  Prelims (PYQ) -->
+             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
+                 <div class="single-features-light text-center">
+                     <div>
+                         <i class="base-color fas fa-book fa-3x"></i>
+                         <h4>APSC PRACTICE TEST SERIES</h4>
+                         <a href="{{ route('testseriesquiz.index', [$course->title ,"APSC"]) }}"
+                             class=" btn color-two button text-white">VIEW</a>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
+                 <div class="single-features-light text-center">
+                     <div>
+                         <i class="base-color fas fa-book fa-3x"></i>
+                         <h4>APSC FULL TEST SERIES</h4>
+                         <a href="{{ route('quiz.index', $course->title) }}"
+                             class=" btn color-two button text-white">VIEW</a>
+                     </div>
+                 </div>
+             </div>
+              
+             @endif
+
              @if ($course->title == 'Target 2024 (Offline)')
              <!--  Prelims (PYQ) -->
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">

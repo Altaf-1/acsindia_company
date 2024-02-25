@@ -237,11 +237,11 @@
                                                                 '<div class="card col-5 m-2"><a href="{{route('recorded.payment', $course->slug)}}">\n' +
                                                                 '  <img src="{{asset('comimages/payment/razorpay.webp')}}" width="100%">\n' +
                                                                 ' </a></div>' +
-                                                                // '<div class="card col-5 m-2 p-5">' +
-                                                                // '<a href="{{route('hdfc.payment.recorded.initiate', $course->slug)}}">\n' +
-                                                                // '  <img src="{{asset('comimages/payment/hdfc.png')}}" width="100%">\n' +
-                                                                // '</a>' +
-                                                                // '</div>' +
+                                                                '<div class="card col-5 m-2 p-5">' +
+                                                                '<a href="{{route('hdfc.payment.recorded.initiate', $course->slug)}}">\n' +
+                                                                '  <img src="{{asset('comimages/payment/hdfc.png')}}" width="100%">\n' +
+                                                                '</a>' +
+                                                                '</div>' +
                                                                 '</div>',
                                                             width: 800,
                                                         })

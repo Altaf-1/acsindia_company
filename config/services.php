@@ -30,8 +30,16 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
     'hdfc' => [
-        'working_key' => env('HDFC_WORKING_KEY'),
+        'url' => env('HDFC_URL'),
         'access_code' => env('HDFC_ACCESS_CODE'),
+        'merchant_id_upsc' => env('HDFC_MERCHANT_ID_UPSC'),
+        'working_key_upsc' => env('HDFC_WORKING_KEY_UPSC'),
+        'merchant_id_apsc' => env('HDFC_MERCHANT_ID_APSC'),
+        'working_key_apsc' => env('HDFC_WORKING_KEY_APSC'),
+        'merchant_id_study' => env('HDFC_MERCHANT_ID_STUDY'),
+        'working_key_study' => env('HDFC_WORKING_KEY_STUDY'),
+        'merchant_id_recorded' => env('HDFC_MERCHANT_ID_RECORDED'),
+        'working_key_recorded' => env('HDFC_WORKING_KEY_RECORDED'),
     ]
 
 ];

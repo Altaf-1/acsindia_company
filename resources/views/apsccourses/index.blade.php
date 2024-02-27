@@ -168,11 +168,8 @@ Swal.fire({
                                 <!--    <li><a href="{{asset('/apsc/course/38')}}" class=" btn color-two button text-white mb-3">25 SEP</a></li>-->
                                 <!--</ul>-->
                                 <ul class="themeioan_ul_icon justify-content-center text-center">
-                                    <li><a href="{{asset('/apsc/course/50')}}"
-                                            class=" btn color-two button text-white mb-3">10 JAN</a>
-                                    </li>
-                                    <li><a href="{{asset('/apsc/course/51')}}"
-                                            class=" btn color-two button text-white mb-3">19 FEB</a>
+                                    <li><a href="{{asset('/apsc/course/60')}}"
+                                            class=" btn color-two button text-white mb-3">14 MARCH</a>
                                     </li>
                                 </ul>
                             </div>
@@ -231,7 +228,7 @@ Swal.fire({
                                     <!--<li><a href="{{asset('/apsc/course/39')}}" class=" btn color-two button text-white mb-3">4 SEP</a></li>-->
 
                                     <li><a href="{{asset('/apsc/course/59')}}"
-                                            class=" btn color-two button text-white mb-3">28 FEB</a>
+                                            class=" btn color-two button text-white mb-3">4 MARCH</a>
                                     </li>
                                 </ul>
                             </div>

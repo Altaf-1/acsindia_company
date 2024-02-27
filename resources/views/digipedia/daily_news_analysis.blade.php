@@ -76,13 +76,13 @@
             <div class="container">
                 <div class="row">
                     <div class="lernen_banner_title">
-                        <h1>Current Affairs 2023</h1>
+                        <h1>Current Affairs 2024</h1>
                         <div class="lernen_breadcrumb">
                             <div class="breadcrumbs">
                                 <span class="first-item">
                                     <a href="/">Homepage</a></span>
                                 <span class="separator">&gt;</span>
-                                <span class="last-item">current affairs 2023</span>
+                                <span class="last-item">current affairs 2024</span>
                             </div>
                         </div>
                     </div>

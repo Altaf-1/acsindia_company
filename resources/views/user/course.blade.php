@@ -82,7 +82,7 @@
                  <div class="single-features-light text-center">
                      <div>
                          <i class="base-color fab fa-leanpub fa-3x"></i>
-                         <h4>Current Affairs 2023</h4>
+                         <h4>Current Affairs</h4>
                          <a href="{{asset('/current_affairs_2023')}}" target="_blank"
                              class="btn color-two button text-white">VIEW</a>
                      </div>

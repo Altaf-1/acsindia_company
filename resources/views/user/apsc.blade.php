@@ -37,7 +37,7 @@
              $course->title != 'APSC BOOSTER COURSE (T)' &&
              $course->title != 'APSC BOOSTER COURSE (U)' &&
              $course->title != 'APSC FEB 2024 COURSE (MRNG)'&&
-             $course->title != 'APSC FEB 2024 COURSE (Evng)'  &&
+             $course->title != 'APSC FEB 2024 COURSE (Evng)' &&
              $course->title != 'APSC BOOSTER COURSE (W)' &&
              $course->title != 'APSC SELF STUDY COURSE' &&
              $course->title != 'APSC TEST SERIES 2024' &&
@@ -165,7 +165,7 @@
                      </div>
                  </div>
              </div>
-              
+
              @endif
 
              @if ($course->title == 'Target 2024 (Offline)')
@@ -190,7 +190,7 @@
                      </div>
                  </div>
              </div>
-              
+
              @endif
 
              @if ($course->title == 'Target 2024 (Online)')
@@ -215,7 +215,7 @@
                      </div>
                  </div>
              </div>
-             
+
              @endif
 
 
@@ -307,7 +307,7 @@
                      </div>
                  </div>
              </div>
-              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
+             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
                  <div class="single-features-light text-center">
                      <div>
                          <i class="base-color fas fa-book fa-3x"></i>
@@ -464,7 +464,7 @@
              <!-- end single features -->
              <!--</div>-->
 
-             @if ($course->title != 'APSC TEST SERIES 2024' && 
+             @if ($course->title != 'APSC TEST SERIES 2024' &&
              $course->title != 'APSC SELF STUDY COURSE' &&
              $course->title != 'Target 2024 (Online)' &&
              $course->title != 'Target 2024 (Offline)')
@@ -472,7 +472,7 @@
                  <div class="single-features-light text-center">
                      <div>
                          <i class="base-color fab fa-leanpub fa-3x"></i>
-                         <h4>Current Affairs 2023</h4>
+                         <h4>Current Affairs</h4>
                          <a href="https://acsindiaias.com/current_affairs_2023" target="_blank"
                              class="btn color-two button text-white">VIEW</a>
                      </div>

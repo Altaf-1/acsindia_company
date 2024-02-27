@@ -76,7 +76,7 @@
             <div class="container">
                 <div class="row">
                     <div class="lernen_banner_title">
-                        <h1>ACS WISDOM 2023</h1>
+                        <h1>ACS WISDOM 2024</h1>
                         <div class="lernen_breadcrumb">
                             <div class="breadcrumbs">
                                 <span class="first-item">
@@ -118,8 +118,21 @@
                             <div>
                                 <!-- uses solid style -->
                                 <i class="base-color fas fa-book fa-3x"></i>
+                                <h4>POLITY</h4>
+                                <a href="https://drive.google.com/file/d/1tcPoadn_ueJhCcZdWIMckPCh558anZhj/view?usp=sharing" class=" btn color-two button text-white">OPEN</a>
+                            </div>
+                        </div>
+                        <!-- end single features -->
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4">
+                        <!-- 1 -->
+                        <div class="single-features-light text-center bg-light">
+                            <!-- single features -->
+                            <div>
+                                <!-- uses solid style -->
+                                <i class="base-color fas fa-book fa-3x"></i>
                                 <h4>SCIENCE & TECHNOLOGY</h4>
-                                <a href="https://drive.google.com/file/d/14VbbNr4TZRTRmQ4q7VRzYDR8sN3HPnU1/view?usp=sharing" class=" btn color-two button text-white">OPEN</a>
+                                <a href="https://drive.google.com/file/d/1qbNxWKsRXqtBskGn-qVMW9LZS-fnb-jE/view?usp=sharing" class=" btn color-two button text-white">OPEN</a>
                             </div>
                         </div>
                         <!-- end single features -->

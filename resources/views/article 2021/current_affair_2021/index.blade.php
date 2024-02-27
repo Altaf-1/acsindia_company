@@ -22,13 +22,13 @@
     <!-- Magnific Popup core CSS file -->
     <link rel="stylesheet" href="{{asset('css/magnific-popup.css')}}">
     <style type="text/css">
-        .bg-courses {
-            background-image: url('{{asset('comimages/corbg.webp')}}');
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
+    .bg-courses {
+        background-image: url('{{asset('comimages/corbg.webp')}}');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     </style>
 </head>
 
@@ -78,17 +78,17 @@
                     <div class="lernen_banner_title">
                         <h1>
                             @if($type == 'current_affair')
-                            CURRENT AFFAIRS 2023
+                            CURRENT AFFAIRS 2024
                             @elseif($type == 'article')
-                            ARTICLES 2023
+                            ARTICLES 2024
                             @elseif($type == 'assam_current_affair')
-                            ASSAM CURRENT AFFAIRS 2023
+                            ASSAM CURRENT AFFAIRS 2024
                             @endif
                         </h1>
                         <div class="lernen_breadcrumb">
                             <div class="breadcrumbs">
                                 <span class="first-item">
-									<a href="/">Homepage</a></span>
+                                    <a href="/">Homepage</a></span>
                                 <span class="separator">&gt;</span>
                                 <span class="last-item">Current Affairs</span>
                             </div>
@@ -98,15 +98,15 @@
             </div>
         </div>
         <section id="event">
-            <div id="events" class="wrap-bg pt-0 pb-3"
-                 style="background-image: url({{asset('')}});">
+            <div id="events" class="wrap-bg pt-0 pb-3" style="background-image: url({{asset('')}});">
 
                 <div class="row justify-content-center text-center container-fluid pt-5">
                     <div class="col-lg-12">
                         <form action="{{route('current.affair.index', $type )}}" method="GET">
                             @csrf
                             <div class="form-group">
-                                <input type="search" class="form-control w-25" name="current_affair" style="margin: auto"/>
+                                <input type="search" class="form-control w-25" name="current_affair"
+                                    style="margin: auto" />
                             </div>
                             <button type="submit" class="btn btn-primary text-white mb-5">Search</button>
                         </form>
@@ -123,8 +123,8 @@
                                         <!-- single event start -->
                                         <div class="event-photo bg-secondary">
 
-                                            <img src="{{asset('storage/' . $current_affair->image)}}" style="height: 300px"
-                                                 alt={{$current_affair->title}}"">
+                                            <img src="{{asset('storage/' . $current_affair->image)}}"
+                                                style="height: 300px" alt={{$current_affair->title}}"">
                                         </div>
                                         <div class="event-content bg-secondary ">
                                             <h5 class="title text-uppercase text-white">
@@ -133,9 +133,8 @@
 
                                             <div class="btn-section mt-4">
                                                 <a href="{{route('current.affair.show',$current_affair->id)}}"
-                                                   class="color-two btn-custom smooth-scroll">READ
-                                                    <i
-                                                        class="fas fa-arrow-right"></i></a>
+                                                    class="color-two btn-custom smooth-scroll">READ
+                                                    <i class="fas fa-arrow-right"></i></a>
                                             </div>
                                         </div>
                                     </article>
@@ -145,10 +144,10 @@
                             @endforeach
 
                         </div>
-                   </div>
-                            <!-- .row end -->
-                        </div>
                     </div>
+                    <!-- .row end -->
+                </div>
+            </div>
         </section>
     </main>
     <!-- #footer area start -->
@@ -166,10 +165,13 @@
                             <p>Join with us on social media</p>
                         </div>
                         <div class="icon-round-white footer-social mt-25">
-                            <a href="https://www.facebook.com/acs.dibrugarh" title="Facebook" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.facebook.com/acs.dibrugarh" title="Facebook" target="_blank"><i
+                                    class="fab fa-facebook"></i></a>
                             <!-- <a href="" title="Twitter"><i class="fab fa-twitter"></i></a> -->
-                            <a href="https://www.instagram.com/academyofcivilservices" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-                            <a href="https://www.google.com/search?q=academic+of+civil+services&oq=ac&aqs=chrome.1.69i60j69i59j69i57j35i39j69i60l3j69i61.1534j0j7&sourceid=chrome&ie=UTF-8" target="_blank" title="Google+"><i class="fab fa-google-plus"></i></a>
+                            <a href="https://www.instagram.com/academyofcivilservices" title="Instagram"
+                                target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.google.com/search?q=academic+of+civil+services&oq=ac&aqs=chrome.1.69i60j69i59j69i57j35i39j69i60l3j69i61.1534j0j7&sourceid=chrome&ie=UTF-8"
+                                target="_blank" title="Google+"><i class="fab fa-google-plus"></i></a>
                         </div>
                     </div>
                     <!-- footer widget -->

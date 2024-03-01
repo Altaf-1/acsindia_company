@@ -22,13 +22,6 @@ Academy of Civil Services | Best IAS Coaching in India
 <!-- Magnific Popup core CSS file -->
 
 <!--- font style for brand -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8391119276578244"
-    crossorigin="anonymous"></script>
-
-
 {{--    
 <link rel="stylesheet" href="{{asset('css/magnific-popup.css')}}">
 --}}
@@ -712,7 +705,7 @@ Toast.fire({
 <script src="{{ asset('js/hjs/jquery.magnific-popup.min.js') }}"></script>
 <!-- tilt js -->
 <script src="{{ asset('js/hjs/tilt.jquery.min.js') }}"></script>
-<!-- plugins js -->
+<!-- plugins js --> 
 <script src="{{ asset('js/hjs/plugins.js') }}"></script>
 <!-- contact form js -->
 <script src="{{ asset('js/hjs/contact.form.js') }}"></script>

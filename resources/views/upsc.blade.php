@@ -298,7 +298,7 @@ Toast.fire({
         <div class="carousel-inner">
             <div class="carousel-item active custom-slider">
                 <a href="">
-                    <img class="d-block w-100 h-100" src="{{asset('comimages/2023/head/23.png')}}" alt="First slide">
+                    <img class="d-block w-100 h-100" src="{{asset('comimages/2023/head/header/1.png')}}" alt="First slide">
                 </a>
             </div>
             <div class="carousel-item custom-slider">

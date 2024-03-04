@@ -135,7 +135,7 @@
                         </div>
                         <!-- end single features -->
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-4">
+                    <div class="col-xs-12 col-sm-12 col-md-4 mt-2">
                         <!-- 1 -->
                         <div class="single-features-light text-center bg-light">
                             <!-- single features -->
@@ -149,7 +149,7 @@
                         <!-- end single features -->
                     </div>
                     
-                     <div class="col-xs-12 col-sm-12 col-md-4">
+                     <div class="col-xs-12 col-sm-12 col-md-4 mt-2">
                         <!-- 1 -->
                         <div class="single-features-light text-center bg-light">
                             <!-- single features -->

@@ -97,20 +97,6 @@
                 <!-- .row -->
                 <div class="container justify-content-center">
                 <div class="row justify-content-center">
-                    
-                    <div class="col-xs-12 col-sm-12 col-md-4">
-                        <!-- 1 -->
-                        <div class="single-features-light text-center bg-light">
-                            <!-- single features -->
-                            <div>
-                                <!-- uses solid style -->
-                                <i class="base-color fas fa-book fa-3x"></i>
-                                <h4>PRELIMS EXCLUSIVE</h4>
-                                <a href="https://drive.google.com/file/d/1E-Bn-ERnO8ux8vHXi-RdCjo5dNIJrWOP/view?usp=sharing" class=" btn color-two button text-white">OPEN</a>
-                            </div>
-                        </div>
-                        <!-- end single features -->
-                    </div>
                     <div class="col-xs-12 col-sm-12 col-md-4">
                         <!-- 1 -->
                         <div class="single-features-light text-center bg-light">
@@ -137,29 +123,14 @@
                         </div>
                         <!-- end single features -->
                     </div>
-                    
-                    <div class="col-xs-12 col-sm-12 col-md-4">
-                        <!-- 1 -->
-                        <div class="single-features-light text-center bg-light">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                        <!-- 3 -->
+                        <div class="single-features-light text-center">
                             <!-- single features -->
                             <div>
-                                <!-- uses solid style -->
-                                <i class="base-color fas fa-book fa-3x"></i>
-                                <h4>ECONOMY</h4>
-                                <a href="https://drive.google.com/file/d/1AVcLozOf7LQHjGRk21S4NZ35HOCqTPtv/view?usp=sharing" class=" btn color-two button text-white">OPEN</a>
-                            </div>
-                        </div>
-                        <!-- end single features -->
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-4">
-                        <!-- 1 -->
-                        <div class="single-features-light text-center bg-light">
-                            <!-- single features -->
-                            <div>
-                                <!-- uses solid style -->
-                                <i class="base-color fas fa-book fa-3x"></i>
-                                <h4>ECOLOGY & ENVIROMENT</h4>
-                                <a href="https://drive.google.com/file/d/19IQUM4-9lIHyqTd-kTDMyVrSB8RPUhqG/view?usp=sharing" class=" btn color-two button text-white">OPEN</a>
+                                <i class="base-color fab fa-leanpub fa-3x"></i>
+                                <h4>ASSAM CURRENT AFFAIRS</h4>
+                                <a href="{{asset('https://drive.google.com/file/d/11H1LJgMOpVkcAuvr33QIn69DVbwmN48u/view?usp=sharing')}}" class=" btn color-two button text-white">DOWNLOAD</a>
                             </div>
                         </div>
                         <!-- end single features -->

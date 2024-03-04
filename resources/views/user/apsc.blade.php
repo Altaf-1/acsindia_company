@@ -37,7 +37,7 @@
              $course->title != 'APSC BOOSTER COURSE (T)' &&
              $course->title != 'APSC BOOSTER COURSE (U)' &&
              $course->title != 'APSC FEB 2024 COURSE (MRNG)'&&
-             $course->title != 'APSC FEB 2024 COURSE (Evng)' &&
+             $course->title != 'APSC MAR 2024 COURSE (Evng)' &&
              $course->title != 'APSC BOOSTER COURSE (W)' &&
              $course->title != 'APSC SELF STUDY COURSE' &&
              $course->title != 'APSC TEST SERIES 2024' &&
@@ -83,7 +83,7 @@
              $course->title != 'APSC BOOSTER COURSE (T)' &&
              $course->title != 'APSC BOOSTER COURSE (U)' &&
              $course->title != 'APSC FEB 2024 COURSE (MRNG)'&&
-             $course->title != 'APSC FEB 2024 COURSE (Evng)' &&
+             $course->title != 'APSC MAR 2024 COURSE (Evng)' &&
              $course->title != 'APSC SELF STUDY COURSE' &&
              $course->title != 'APSC BOOSTER COURSE (W)' &&
              $course->title != 'APSC TEST SERIES 2024' &&
@@ -124,7 +124,7 @@
              $course->title != 'APSC BOOSTER COURSE (T)' &&
              $course->title != 'APSC BOOSTER COURSE (U)' &&
              $course->title != 'APSC FEB 2024 COURSE (MRNG)'&&
-             $course->title != 'APSC FEB 2024 COURSE (Evng)' &&
+             $course->title != 'APSC MAR 2024 COURSE (Evng)' &&
              $course->title != 'APSC BOOSTER COURSE (W)' &&
              $course->title != 'APSC SELF STUDY COURSE' &&
              $course->title != 'APSC TEST SERIES 2024' &&
@@ -1009,7 +1009,7 @@
                          <a href="{{ route('user.new.video', $course->title) }}"
                              class=" btn color-two button text-white">VIEW</a>
                          @endif
-                         @if ($course->title == 'APSC FEB 2024 COURSE (Evng)')
+                         @if ($course->title == 'APSC MAR 2024 COURSE (Evng)')
                          <a href="{{ route('user.new.video', $course->title) }}"
                              class=" btn color-two button text-white">VIEW</a>
                          @endif

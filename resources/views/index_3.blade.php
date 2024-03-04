@@ -268,13 +268,11 @@ Toast.fire({
     <!--<div class="whatsapp_float">-->
     <!--   <a href="https://wa.me/919085268769" target="_blank"><img src="{{asset('comimages/whatsapp.png')}}" width="80px" class="whatsapp_float_btn"/></a>-->
     <!--</div>-->
-
     @section('new_navbar')
     @include('partials.new_navbar')
     @endsection
     <div class="header-mobile">
-        <!-- <div class="header-mobile-left">
-            
+        <!-- <div class="header-mobile-left">           
         </div> -->
         <div class="header-mobile-mid">
             <div class="header-logo">
@@ -293,7 +291,6 @@ Toast.fire({
     </div>
     <!-- Main content Start -->
     <div class="main-content">
-
         <!-- Slider Section Start -->
         <div class="">
             <!-- Slider Section Start -->
@@ -402,11 +399,7 @@ Toast.fire({
                 </div>
             </div>
         </div>
-
-
-
-        <!-- Blog Section End -->
-
+        <!-- Blog Section End --> 
         <!-- Blog Section Start -->
         <div id="rank" class="rs-blog main-home md-pt-10 md-pb-70">
             <div class="text-center mb-5">
@@ -550,7 +543,6 @@ Toast.fire({
 <script src="{{ asset('js/hjs/skill.bars.jquery.js') }}"></script>
 <script src="{{ asset('js/hjs/jquery.counterup.min.js') }}"></script>
 <!-- counter top js -->
-
 <!-- video js -->
 <script src="{{ asset('js/hjs/jquery.mb.YTPlayer.min.js') }}"></script>
 <!-- magnific popup js -->
@@ -575,7 +567,6 @@ Toast.fire({
 <script src="{{ asset('js/kjs/jquery-ui.min.js') }}"></script>
 <script src="{{ asset('js/kjs/mobilemenu.js') }}"></script>
 <script src="{{ asset('js/kjs/functions.js') }}"></script>
-
 <script src="{{asset('js/ujs/jquery.min.js')}}"></script>
 <script src="{{asset('js/ujs/jquery-migrate-3.0.1.min.js')}}"></script>
 <script src="{{asset('js/ujs/popper.min.js')}}"></script>

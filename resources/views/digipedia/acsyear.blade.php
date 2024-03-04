@@ -123,9 +123,9 @@
                         </div>
                         <!-- end single features -->
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                         <!-- 3 -->
-                        <div class="single-features-light text-center">
+                        <div class="single-features-light text-center bg-light">
                             <!-- single features -->
                             <div>
                                 <i class="base-color fab fa-leanpub fa-3x"></i>

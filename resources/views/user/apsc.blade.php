@@ -13,6 +13,17 @@
 
          <div class="row ml-2 mr-2">
 
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
+                 <div class="single-features-light text-center">
+                     <div>
+                         <i class="base-color fas fa-book fa-3x"></i>
+                         <h4>CURRENT AFFAIRS 2024</h4>
+                         <a href="https://acsindiaias.com/acsyear"
+                             class=" btn color-two button text-white">VIEW</a>
+                     </div>
+                 </div>
+            </div>
+
              @if ($course->title != 'APSC BOOSTER COURSE (G)' &&
              $course->title != 'APSC BOOSTER COURSE (H)' &&
              $course->title != 'APSC BOOSTER COURSE (I)' &&

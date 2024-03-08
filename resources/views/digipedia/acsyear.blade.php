@@ -117,6 +117,19 @@
                             <div>
                                 <!-- uses solid style -->
                                 <i class="base-color fas fa-book fa-3x"></i>
+                                <h4>ECONOMY</h4>
+                                <a href="https://drive.google.com/file/d/1awKqnNvZMwe_QoXCuoqFaJQMYiYvTb2x/view?usp=sharing" class=" btn color-two button text-white">OPEN</a>
+                            </div>
+                        </div>
+                        <!-- end single features -->
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4">
+                        <!-- 1 -->
+                        <div class="single-features-light text-center bg-light">
+                            <!-- single features -->
+                            <div>
+                                <!-- uses solid style -->
+                                <i class="base-color fas fa-book fa-3x"></i>
                                 <h4>SCIENCE & TECHNOLOGY</h4>
                                 <a href="https://drive.google.com/file/d/1qbNxWKsRXqtBskGn-qVMW9LZS-fnb-jE/view?usp=sharing" class=" btn color-two button text-white">OPEN</a>
                             </div>

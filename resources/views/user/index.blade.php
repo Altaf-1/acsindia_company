@@ -5,12 +5,10 @@
 @section('links')
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <!-- main css -->
-
     <link rel="stylesheet" href="{{ asset('css/userprofile.css') }}">
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
     <link rel="stylesheet" href="{{ asset('css/fontawesome.min.css') }}">
 @endsection
-
 
 @section('styles')
     <style>
@@ -179,11 +177,6 @@
                             Task Complete
                         </a>
                     </div>
-                    <!--<div class="col-lg-3 col-sm-6">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <a href="{{ route('admin.admin-coupon.create') }}" style="background-color: white" class="btn  button mb-2"><i class="fas fa-user-edit"></i>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            Coupon
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </div>-->
                     <div class="col-lg-3 col-sm-6">
                         <a href="{{ route('user.daily-task.index') }}" style="background-color: white"
                             class="btn  button mb-2"><i class="fas fa-user-edit"></i>
@@ -201,10 +194,6 @@
             </section>
         </section>
     @endif
-
-
-
-
     <!--courses -->
     <section class="">
         <div class="wrap-bg ">

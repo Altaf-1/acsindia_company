@@ -99,6 +99,7 @@
              $course->title != 'APSC BOOSTER COURSE (W)' &&
              $course->title != 'APSC TEST SERIES 2024' &&
              $course->title != 'Target 2024 (Offline)' &&
+             $course->title != 'Target 2024 (Online)' &&
              $course->title != 'APSC BOOSTER COURSE (X-evng)')
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
                  <div class="single-features-light text-center">

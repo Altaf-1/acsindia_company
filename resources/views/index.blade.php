@@ -639,7 +639,7 @@ Toast.fire({
                 <div class="col-lg-8 bg-light p-3">
                     <div class="row ">
                         <div class="col-lg-4">
-                            <img src="{{ asset('img/Dibrugarh.png') }}" class="h-120" alt="images">
+                            <img src="{{ asset('comimages/2023/e-2.webp') }}" class="h-120" alt="images">
                         </div>
                         <div class="col-lg-7">
                             <div class="course-info">
@@ -652,7 +652,7 @@ Toast.fire({
                                     </a>
                                 </h3>
                                 <div class="bottom-part">
-                                    <h4 class="bg-danger p-2 rounded text-white text-center">25th FEB, Sunday
+                                    <h4 class="bg-danger p-2 rounded text-white text-center">30 Mar, Saturday
                                     </h4>
                                     <div class="info-meta">
                                         <ul>
@@ -663,7 +663,7 @@ Toast.fire({
                                     </div>
                                     <div class="btn-part">
                                         <!-- /acs_seminar -->
-                                        <a href="https://us06web.zoom.us/webinar/register/WN_OvK_RmhwT12SDAbJWTJ3kg"
+                                        <a href="https://us06web.zoom.us/meeting/register/tZ0uceCrpjIuG9aKsekFldjwaA26veACe8Uq"
                                             class="btn text-white text-center font-weight-bold mb-4 shadow_2"
                                             style="background-color: #e52e06;">JOIN NOW<i
                                                 class="flaticon-right-arrow"></i></a>
@@ -812,34 +812,26 @@ Toast.fire({
                 </div>
             </div>
         </div>
-        <div class="row pl-4 pr-4">
-            <div class="col-lg-6 col-sm-12">
+        <div class="row pl-4 pr-4 justify-content-center">
+            <div class="col-lg-10 col-sm-12">
                 <div>
                     <p><iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.4851596283424!2d94.91970161425219!3d27.48528324182426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37409869cb35768d%3A0x491ce8fdcae8360a!2sAcademy%20Of%20Civil%20Services!5e0!3m2!1sen!2sin!4v1641360136814!5m2!1sen!2sin"
-                            width="900" height="400" style="border:2px solid black;" allowfullscreen=""
+                            width="1200" height="400" style="border:2px solid black;" allowfullscreen=""
                             loading="lazy"></iframe></p>
                 </div>
             </div>
-            <div class="col-lg-6 col-sm-12">
-                <div>
-                    <p><iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14323.616872684346!2d91.77054733037403!3d26.167248685267065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375a598a126db899%3A0x33606f5c614c8f89!2sAcademy%20of%20Civil%20Services%2CGuwahati!5e0!3m2!1sen!2sin!4v1660107183985!5m2!1sen!2sin"
-                            width="900" height="400" style="border:2px solid black;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
         </div>
-        <div class="m-0">
+        <div class="m-0 container">
             <div class="row">
-                <div class="col-lg-3 col-sm-12">
+                <div class="col-lg-4 col-sm-12">
                     <div class="d-flex flex-row">
                         <p><i class="fa fa-phone"></i></p>
                         <!--<img class="secondary-color" style="width:70px; boder: 1px solid black; border-radius: 30%; padding-top: 10px;" src="{{asset('comimages/phone.gif')}}">-->
                         <h3 style="padding-top: 25px; padding-left: 20px; color: #fff;">6000505707</h3>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-12">
+                <div class="col-lg-4 col-sm-12">
                     <div class="d-flex flex-row">
                         <i class="fa-sharp fa-solid fa-envelope"></i>
                         <!--<img class="secondary-color" style="width:70px; boder: 1px solid black; border-radius: 30%; padding-top: 10px;" src="{{asset('comimages/gmail.gif')}}">-->
@@ -847,7 +839,7 @@ Toast.fire({
                         </h4>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-12">
+                <div class="col-lg-4 col-sm-12">
                     <div class="d-flex flex-row">
                         <div class="d-flex flex-column">
                             <h4 class="text-center underline"
@@ -866,26 +858,7 @@ Toast.fire({
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-12">
-                    <div class="d-flex flex-row">
-                        <div class="d-flex flex-column">
-                            <h4 class=" underline" style="padding-top: 15px; padding-left: 20px; color: #fff;">
-                                <u>
-                                    <spam style="padding-right: 10px;"><i class="fa-solid fa-thumbtack"></i>
-                                    </spam>
-                                    GUWAHATI CENTER
-                                </u>
-                            </h4>
-                            <h4 style="padding-left: 40px; color: #fff;">3rd floor, Chitrabon Enclave, R G
-                                BARUAH
-                                ROAD,
-                            </h4>
-                            <h4 style=" padding-left: 40px; color: #fff;">Near Gauhati Commerce College</h4>
-                            <h4 style=" padding-left: 40px; color: #fff;">PIN Code: 781003</h4>
-                            <h4 style=" padding-left: 40px; color: #fff;">State: Assam</h4>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </div>

@@ -104,6 +104,19 @@
                             <div>
                                 <!-- uses solid style -->
                                 <i class="base-color fas fa-book fa-3x"></i>
+                                <h4>GEOGRAPHY</h4>
+                                <a href="https://drive.google.com/file/d/1PhKqZCCRc-UuRVU6Njmtc_bXrJXomLEZ/view?usp=sharing" class=" btn color-two button text-white">OPEN</a>
+                            </div>
+                        </div>
+                        <!-- end single features -->
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4">
+                        <!-- 1 -->
+                        <div class="single-features-light text-center bg-light">
+                            <!-- single features -->
+                            <div>
+                                <!-- uses solid style -->
+                                <i class="base-color fas fa-book fa-3x"></i>
                                 <h4>POLITY</h4>
                                 <a href="https://drive.google.com/file/d/1tcPoadn_ueJhCcZdWIMckPCh558anZhj/view?usp=sharing" class=" btn color-two button text-white">OPEN</a>
                             </div>
@@ -123,7 +136,7 @@
                         </div>
                         <!-- end single features -->
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-4">
+                    <div class="col-xs-12 col-sm-12 col-md-4 mt-2">
                         <!-- 1 -->
                         <div class="single-features-light text-center bg-light">
                             <!-- single features -->
@@ -136,7 +149,7 @@
                         </div>
                         <!-- end single features -->
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-2">
                         <!-- 3 -->
                         <div class="single-features-light text-center bg-light">
                             <!-- single features -->

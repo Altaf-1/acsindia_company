@@ -4973,7 +4973,7 @@ Route::post(
     [\App\Http\Controllers\OfflineExamRegistartionController::class, 'store']
 )->name('offline.exam.register.store');
 
-
+ 
 
 
 //test series quiz roll route

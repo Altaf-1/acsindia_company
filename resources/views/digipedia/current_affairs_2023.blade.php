@@ -133,7 +133,8 @@
                                 <div>
                                     <!-- uses solid style -->
                                     <i class="base-color fas fa-book fa-3x"></i>
-                                    <h4>SUBJECTWISE COMPILATION</h4>
+                                    <h4>YEARLY COMPILATION</h4>
+                                    <h6>SUBJECTWISE</h6>
                                     <a href="{{asset('/acsyear')}}" class=" btn color-two button text-white">OPEN</a>
                                 </div>
                             </div>

@@ -13,12 +13,7 @@
                             <h6 class="text-white">District: Dibrugarh</h6>
                             <h6 class="text-white">PIN Code: 786001</h6>
                             <h6 class="text-white">State: Assam</h6>
-                            
-                            <div class="sigle-address">
-                                
-                        
-                            <a href="https://goo.gl/maps/rDjX1j7m524YphLE6" class="btn button text-white mt-3" role="button" target="_blank" style="background-color: #e52e06;">Guwahati location</a>
-                            
+                            <div class="sigle-address">                            
                             <a href="https://www.google.com/maps/place/Academy+Of+Civil+Services/@27.4852785,94.9197016,17z/data=!3m1!4b1!4m5!3m4!1s0x37409869cb35768d:0x491ce8fdcae8360a!8m2!3d27.4852785!4d94.9218903" class="btn button text-white mt-3" role="button" target="_blank" style="background-color: #e52e06;">Dibrugarh location</a>
                             
                         </div>

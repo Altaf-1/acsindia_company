@@ -290,7 +290,7 @@ Toast.fire({
                     <span></span>
                     <span></span>
                     <span></span>
-                </a>
+                </a> 
             </div>
         </div>
     </div>
@@ -433,78 +433,53 @@ Toast.fire({
     <!-- About Section End -->
     <div>
         <section class="gray-bg2">
-            <div class="container pb-4">
-                <div class="row justify-content-center pb-3 pt-2 pb-2">
-                    <div class="col-md-8 text-center heading-section">
-                        <h2 class="mb-4 text-uppercase pt-5" style="font-family: 'Righteous';">Upcoming Events</h2>
+        <div class="container pb-5 pt-5">
+            <div class="row justify-content-center pb-3 pt-2 pb-2">
+                <div class="col-md-8 text-center heading-section">
+                    <h2 class="mb-4 text-uppercase" style="font-family: 'Righteous';">Upcoming Events</h2>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-lg-6 bg-light p-3">
+                    <div class="row ">
+                        <div class="col-lg-4">
+                            <img src="{{ asset('comimages/2023/e-2.webp') }}" class="h-120" alt="images">
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="course-info">
+                                <h3 class="course-title">
+                                    <a href="/acs_seminar">
+                                        <h3 class="font-weight-bold text-center" style="font-family: 'Righteous';">
+                                            UPSC
+                                            FREE
+                                            WEBINAR</h3>
+                                    </a>
+                                </h3>
+                                <div class="bottom-part">
+                                    <h4 class="bg-danger p-2 rounded text-white text-center">30 Mar, Saturday
+                                    </h4>
+                                    <div class="info-meta">
+                                        <ul>
+                                            <li class="ratings">
+                                                <i class="font-weight-bold text-center"> Online Mode</i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-part">
+                                        <!-- /acs_seminar -->
+                                        <a href="https://us06web.zoom.us/meeting/register/tZ0uceCrpjIuG9aKsekFldjwaA26veACe8Uq"
+                                            class="btn text-white text-center font-weight-bold mb-4 shadow_2"
+                                            style="background-color: #e52e06;">JOIN NOW<i
+                                                class="flaticon-right-arrow"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-6 bg-light p-3">
-                        <div class="row ">
-                            <div class="col-lg-4">
-                                <img src="{{ asset('comimages/2023/e-1.webp') }}" alt="images">
-                            </div>
-                            <div class="col-lg-7">
-                                <div class="course-info">
-                                    <h3 class="course-title">
-                                        <a href="/acs_seminar">
-                                            <h3 class="font-weight-bold" style="font-family: 'Righteous';">APSC/UPSC
-                                                FREE SEMINAR</h3>
-                                        </a>
-                                    </h3>
-                                    <div class="bottom-part">
-                                        <div class="info-meta">
-                                            <ul>
-                                                <li class="ratings">
-                                                    <i class="font-weight-bold"> Offline Mode</i>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="btn-part">
-                                            <a href="/acs_seminar" class="btn text-white font-weight-bold mb-4"
-                                                style="background-color: #e52e06;">Apply Now<i
-                                                    class="flaticon-right-arrow"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 bg-light p-3 ">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <img src="{{ asset('comimages/2023/e-2.webp') }}" alt="images">
-                            </div>
-                            <div class="col-lg-7">
-                                <div class="course-info">
-                                    <h3 class="course-title">
-                                        <a href="/acs_seminar">
-                                            <h3 class="font-weight-bold" style="font-family: 'Righteous';">APSC/UPSC
-                                                FREE WEBINAR</h3>
-                                        </a>
-                                    </h3>
-                                    <div class="bottom-part">
-                                        <div class="info-meta">
-                                            <ul>
-                                                <li class="ratings">
-                                                    <i class="font-weight-bold"> Online Mode</i>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="btn-part">
-                                            <a href="/acs_seminar" class="btn text-white font-weight-bold mb-4"
-                                                style="background-color: #e52e06;">Apply Now<i
-                                                    class="flaticon-right-arrow"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                    </div>
-        </section>
+            </div>
+    </section>
         <!-- End APSC Section -->
 
         <!--contact-->

@@ -177,7 +177,7 @@
         <div class="container-fluid mt-5">
             <!-- .row -->
             <div>
-                <h3 class="bg-danger text-white pb-2 mb-2">The Link will be activated on Monday, March 18 at 2 PM</h3>
+                <h3 class="bg-danger text-white pb-2 mb-2 text-center">The Link will be activated on Monday, March 18 at 2 PM</h3>
                 <div class="row ml-2 mr-2 pb-4 justify-content-center">
                     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 mb-4 ">
                         <div class="single-features-light text-center bg-light">

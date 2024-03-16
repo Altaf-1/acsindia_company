@@ -298,6 +298,12 @@ Toast.fire({
                 <div class="carousel-inner">
                     <div class="carousel-item active custom-slider">
                         <a href="">
+                            <img class="d-block w-100 h-100" src="{{asset('comimages/2024/long2.png')}}"
+                                alt="First slide">
+                        </a>
+                    </div>
+                    <div class="carousel-item custom-slider">
+                        <a href="">
                             <img class="d-block w-100 h-100" src="{{asset('comimages/2023/head/header/2.png')}}"
                                 alt="First slide">
                         </a>
@@ -324,14 +330,14 @@ Toast.fire({
         <div class="rs-faq-part style1 pb-100 md-pt-70 md-pb-70 mt-2">
             <div class="container-fluid m-2">
                 <div class="row">
-                    <div class="col-lg-6 padding-0 about-intro">
+                    <div class="col-lg-12 padding-0 about-intro">
                         <div class="main-part">
                             <div class="title mb-40 md-mb-15 mb-5">
                                 <h2 class="text-part text-white text-center mt-5"
                                     style="background-color: #e52e06; font-family: 'Righteous';">OUR COURSE DETAILS</h2>
                             </div>
                             <div class="row">
-                                <div class="col-lg-6 col-sm-6 col-md-6 text-center justify-content-center">
+                                <div class="col-lg-4 col-sm-6 col-md-6 text-center justify-content-center">
                                     <img class="text-danger p-1 mb-4"
                                         style="width:110px; boder: 1px solid black; border-radius: 20px;"
                                         src="{{asset('comimages/icons/d5.png')}}">
@@ -340,7 +346,7 @@ Toast.fire({
                                         class="shadow_1 d-flex flex-column text-white p-2 rounded-pill mb-2"
                                         style="background-color: #134982; font-family: 'Righteous';">Online Courses</a>
                                 </div>
-                                <div class="col-lg-6 col-sm-6 col-md-6 text-center justify-content-center">
+                                <div class="col-lg-4 col-sm-6 col-md-6 text-center justify-content-center">
                                     <img class="text-danger p-1 mb-4"
                                         style="width:110px; boder: 1px solid black; border-radius: 20px;"
                                         src="{{asset('comimages/icons/d5.png')}}">
@@ -349,7 +355,7 @@ Toast.fire({
                                         class="shadow_1 d-flex flex-column text-white p-2 rounded-pill mb-2"
                                         style="background-color: #134982; font-family: 'Righteous';">Offline Courses</a>
                                 </div>
-                                <div class="col-lg-6 col-sm-6 col-md-6 text-center justify-content-center">
+                                <div class="col-lg-4 col-sm-6 col-md-6 text-center justify-content-center">
                                     <img class="text-danger p-1 mb-4"
                                         style="width:110px; boder: 1px solid black; border-radius: 20px;"
                                         src="{{asset('comimages/icons/d1.png')}}">
@@ -358,7 +364,7 @@ Toast.fire({
                                         class="shadow_1 d-flex flex-column text-white p-2 rounded-pill mb-2"
                                         style="background-color: #134982; font-family: 'Righteous';">Reorded Courses</a>
                                 </div>
-                                <div class="col-lg-6 col-sm-6 col-md-6 text-center justify-content-center">
+                                <div class="col-lg-4 col-sm-6 col-md-6 text-center justify-content-center">
                                     <img class="text-danger p-1 mb-4"
                                         style="width:110px; boder: 1px solid black; border-radius: 20px;"
                                         src="{{asset('comimages/icons/d2.png')}}">
@@ -367,7 +373,7 @@ Toast.fire({
                                         class="shadow_1 d-flex flex-column text-white p-2 rounded-pill mb-2"
                                         style="background-color: #134982; font-family: 'Righteous';">Daily News</a>
                                 </div>
-                                <div class="col-lg-6 col-sm-6 col-md-6 text-center justify-content-center">
+                                <div class="col-lg-4 col-sm-6 col-md-6 text-center justify-content-center">
                                     <img class="text-danger p-1 mb-4"
                                         style="width:110px; boder: 1px solid black; border-radius: 20px;"
                                         src="{{asset('comimages/icons/d4.png')}}">
@@ -376,7 +382,7 @@ Toast.fire({
                                         class="shadow_1 d-flex flex-column text-white p-2 rounded-pill mb-2"
                                         style="background-color: #134982; font-family: 'Righteous';">Current Affairs</a>
                                 </div>
-                                <div class="col-lg-6 col-sm-6 col-md-6 text-center justify-content-center">
+                                <div class="col-lg-4 col-sm-6 col-md-6 text-center justify-content-center">
                                     <img class="text-danger p-1 mb-4"
                                         style="width:130px; boder: 1px solid black; border-radius: 20px;"
                                         src="{{asset('comimages/icons/cr.png')}}">
@@ -387,13 +393,6 @@ Toast.fire({
                                 </div>
 
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 padding-0">
-                        <div class="img-part media-icon">
-                            <a class="popup-videos" href="https://www.youtube.com/watch?v=sj7yyVqQvHc">
-                                <i class="fa fa-play"></i>
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -422,80 +421,90 @@ Toast.fire({
         <!-- Blog Section End -->
 
         <section class="gray-bg2">
-            <div class="container pb-4">
-                <div class="row justify-content-center pb-3 pt-5 pb-5">
-                    <div class="col-md-8 text-center heading-section">
-                        <h2 class="mb-4 text-uppercase text-white"
-                            style="background-color: #e52e06; font-family: 'Righteous';">Upcoming Events</h2>
+        <div class="container pb-5 pt-5">
+            <div class="row justify-content-center pb-3 pt-2 pb-2">
+                <div class="col-md-8 text-center heading-section">
+                    <h2 class="mb-4 text-uppercase bg-dark text-white" style="font-family: 'Righteous';">Upcoming Events</h2>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-lg-6 bg-light p-3">
+                    <div class="row ">
+                        <div class="col-lg-4">
+                            <img src="{{ asset('comimages/2023/e-2.webp') }}" class="h-120" alt="images">
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="course-info">
+                                <h3 class="course-title">
+                                    <a href="/acs_seminar">
+                                        <h3 class="font-weight-bold text-center" style="font-family: 'Righteous';">
+                                            UPSC
+                                            FREE
+                                            WEBINAR</h3>
+                                    </a>
+                                </h3>
+                                <div class="bottom-part">
+                                    <h4 class="bg-danger p-2 rounded text-white text-center">30 Mar, Saturday
+                                    </h4>
+                                    <div class="info-meta">
+                                        <ul>
+                                            <li class="ratings">
+                                                <i class="font-weight-bold text-center"> Online Mode</i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-part">
+                                        <!-- /acs_seminar -->
+                                        <a href="https://us06web.zoom.us/meeting/register/tZ0uceCrpjIuG9aKsekFldjwaA26veACe8Uq"
+                                            class="btn text-white text-center font-weight-bold mb-4 shadow_2"
+                                            style="background-color: #e52e06;">JOIN NOW<i
+                                                class="flaticon-right-arrow"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-6 bg-light p-3">
-                        <div class="row ">
-                            <div class="col-lg-4">
-                                <img src="{{ asset('comimages/2023/e-1.webp') }}" alt="images">
-                            </div>
-                            <div class="col-lg-7">
-                                <div class="course-info">
-                                    <h3 class="course-title">
-                                        <a href="{{asset('/acs_seminar')}}">
-                                            <h3 class="font-weight-bold" style="font-family: 'Righteous';">APSC/UPSC
-                                                FREE SEMINAR</h3>
-                                        </a>
-                                    </h3>
-                                    <div class="bottom-part">
-                                        <div class="info-meta">
-                                            <ul>
-                                                <li class="ratings">
-                                                    <i class="font-weight-bold"> Offline Mode</i>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="btn-part">
-                                            <a href="{{asset('/acs_webinar')}}"
-                                                class="btn text-white font-weight-bold mb-4"
-                                                style="background-color: #e52e06;">Apply Now<i
-                                                    class="flaticon-right-arrow"></i></a>
-                                        </div>
+                <div class="col-lg-6 bg-light p-3">
+                    <div class="row ">
+                        <div class="col-lg-4">
+                            <img src="{{ asset('comimages/2023/e-2.webp') }}" class="h-120" alt="images">
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="course-info">
+                                <h3 class="course-title">
+                                    <a href="/acs_seminar">
+                                        <h3 class="font-weight-bold text-center" style="font-family: 'Righteous';">
+                                            APSC
+                                            FREE
+                                            WEBINAR</h3>
+                                    </a>
+                                </h3>
+                                <div class="bottom-part">
+                                    <h4 class="bg-danger p-2 rounded text-white text-center">23 Mar, Saturday
+                                    </h4>
+                                    <div class="info-meta">
+                                        <ul>
+                                            <li class="ratings">
+                                                <i class="font-weight-bold text-center"> Online Mode</i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-part">
+                                        <!-- /acs_seminar -->
+                                        <a href="https://us06web.zoom.us/meeting/register/tZctceupqDMvHtARsaQB7w8c-aI71y0jzcpM"
+                                            class="btn text-white text-center font-weight-bold mb-4 shadow_2"
+                                            style="background-color: #e52e06;">JOIN NOW<i
+                                                class="flaticon-right-arrow"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 bg-light p-3 ">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <img src="{{ asset('comimages/2023/e-2.webp') }}" alt="images">
-                            </div>
-                            <div class="col-lg-7">
-                                <div class="course-info">
-                                    <h3 class="course-title">
-                                        <a href="/acs_seminar">
-                                            <h3 class="font-weight-bold" style="font-family: 'Righteous';">APSC/UPSC
-                                                FREE WEBINAR</h3>
-                                        </a>
-                                    </h3>
-                                    <div class="bottom-part">
-                                        <div class="info-meta">
-                                            <ul>
-                                                <li class="ratings">
-                                                    <i class="font-weight-bold"> Online Mode</i>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="btn-part">
-                                            <a href="/acs_seminar" class="btn text-white font-weight-bold mb-4"
-                                                style="background-color: #e52e06;">Apply Now<i
-                                                    class="flaticon-right-arrow"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                    </div>
-        </section>
+                </div>
+            </div>
+    </section>
 
         <main>
             @section('mob_navbar')

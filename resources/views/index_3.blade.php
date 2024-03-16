@@ -405,14 +405,18 @@ Toast.fire({
                 <h1 class="text-white text-center pt-3 pb-3"
                     style="background-color: #e52e06; font-family: 'Righteous';"> OUR APSC RESULTS</h1>
             </div>
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-6 mt-3">
+                    <div class="col-lg-4 mt-3">
                         <img src="{{asset('comimages/apsc/result_n.png')}}" style="height: 550px" class="img-fluid"
                             alt="Responsive image">
                     </div>
-                    <div class="col-lg-6 mt-3">
+                    <div class="col-lg-4 mt-3">
                         <img src="{{asset('comimages/head/topm.png')}}" style="height: 550px" class="img-fluid"
+                            alt="Responsive image">
+                    </div>
+                    <div class="col-lg-4 mt-3">
+                        <img src="{{asset('comimages/2024/small.webp')}}" style="height: 550px" class="img-fluid"
                             alt="Responsive image">
                     </div>
                 </div>

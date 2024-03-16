@@ -185,8 +185,8 @@
                                 <i class="base-color fab fa-leanpub fa-3x"></i>
                                 <h4>GS 1</h4>
                                 <!--{{ route('testseriesquizroll.show', 'Paper 1') }}-->
-                                <a href="{{ route('testseriesquizroll.show', 'Paper 1') }}"
-                                    class="btn color-two button text-white">OPEN</a>
+                                <a href=""
+                                    class="btn color-two button text-white">LOCK</a>
                                 <br>
                             </div>
                         </div>

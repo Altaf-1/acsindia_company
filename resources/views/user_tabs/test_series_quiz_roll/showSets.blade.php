@@ -154,32 +154,10 @@
                     <div class="single-features-light text-center bg-light">
                         <div>
                             <i class="base-color fab fa-leanpub fa-3x"></i>
-                            <h4>SET C</h4>
-                            <a href="{{ route('testseriesquizroll.showQuiz', [$type, 'SET C']) }}"
-                                class="btn color-two button text-white">VIEW</a>
-                            <br>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 mb-4 ">
-                    <div class="single-features-light text-center bg-light">
-                        <div>
-                            <i class="base-color fab fa-leanpub fa-3x"></i>
-                            <h4>SET D</h4>
-                            <a href="{{ route('testseriesquizroll.showQuiz', [$type, 'SET D']) }}"
-                                class="btn color-two button text-white">VIEW</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 mb-4 ">
-                    <div class="single-features-light text-center bg-light">
-                        <div>
-                            <i class="base-color fab fa-leanpub fa-3x"></i>
                             <h4>SET A</h4>
                             <!--{{ route('testseriesquizroll.showQuiz', [$type, 'SET A']) }}-->
-                            <a href="route('testseriesquizroll.showQuiz', [$type, 'SET A'])"
-                                    class="btn color-two button text-white">VIEW</a>
-                            <!-- <button type="button" class="btn btn-secondary btn-lg" disabled>LOCK</button> -->
+                            
+                            <button type="button" class="btn btn-secondary btn-lg" disabled>LOCK</button>
                         </div>
                     </div>
                 </div>
@@ -195,6 +173,26 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 mb-4 ">
+                    <div class="single-features-light text-center bg-light">
+                        <div>
+                            <i class="base-color fab fa-leanpub fa-3x"></i>
+                            <h4>SET C</h4>
+                            <button type="button" class="btn btn-secondary btn-lg" disabled>LOCK</button>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 mb-4 ">
+                    <div class="single-features-light text-center bg-light">
+                        <div>
+                            <i class="base-color fab fa-leanpub fa-3x"></i>
+                            <h4>SET D</h4>
+                            <button type="button" class="btn btn-secondary btn-lg" disabled>LOCK</button>
+                        </div>
+                    </div>
+                </div>
+                
                 
                 
             </div>

@@ -177,7 +177,9 @@
                             <i class="base-color fab fa-leanpub fa-3x"></i>
                             <h4>SET A</h4>
                             <!--{{ route('testseriesquizroll.showQuiz', [$type, 'SET A']) }}-->
-                            <button type="button" class="btn btn-secondary btn-lg" disabled>LOCK</button>
+                            <a href="route('testseriesquizroll.showQuiz', [$type, 'SET A'])"
+                                    class="btn color-two button text-white">VIEW</a>
+                            <!-- <button type="button" class="btn btn-secondary btn-lg" disabled>LOCK</button> -->
                         </div>
                     </div>
                 </div>
@@ -187,7 +189,9 @@
                             <i class="base-color fab fa-leanpub fa-3x"></i>
                             <h4>SET B</h4>
                             <!--{{ route('testseriesquizroll.showQuiz', [$type, 'SET B']) }}-->
-                            <button type="button" class="btn btn-secondary btn-lg" disabled>LOCK</button>
+                            <a href="route('testseriesquizroll.showQuiz', [$type, 'SET B'])"
+                                    class="btn color-two button text-white">VIEW</a>
+                            <!-- <button type="button" class="btn btn-secondary btn-lg" disabled>LOCK</button> -->
                         </div>
                     </div>
                 </div>

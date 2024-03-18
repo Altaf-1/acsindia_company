@@ -189,7 +189,7 @@
                             <i class="base-color fab fa-leanpub fa-3x"></i>
                             <h4>SET B</h4>
                             <!--{{ route('testseriesquizroll.showQuiz', [$type, 'SET B']) }}-->
-                            <a href="route('testseriesquizroll.showQuiz', [$type, 'SET B'])"
+                            <a href="{{route('testseriesquizroll.showQuiz', [$type, 'SET B'])}}"
                                     class="btn color-two button text-white">VIEW</a>
                             <!-- <button type="button" class="btn btn-secondary btn-lg" disabled>LOCK</button> -->
                         </div>

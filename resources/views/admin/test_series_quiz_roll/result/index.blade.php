@@ -50,6 +50,7 @@
                             <tr>
                                 <td>{{ $data->user->name }}</td>
                                 <td>{{ $data->user->email }}</td>
+                                <td>{{ $data->user->phone }}</td>
                                 <td>{{ 'ACS-' . $data->user->id }}</td>
                                 <td>{{$data->user->roll_no }}</td>
                                 <td>{{ $data->test_series_quiz_roll->quiz_name }}</td>

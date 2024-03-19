@@ -35,6 +35,7 @@
                         <tr>
                             <th>Student</th>
                             <th>Email</th>
+                            <th>Phone</th>
                             <th>UIN</th>
                             <th>Roll number</th>
                             <th>Quiz</th>

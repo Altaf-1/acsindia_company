@@ -169,7 +169,7 @@ Swal.fire({
                                 <!--</ul>-->
                                 <ul class="themeioan_ul_icon justify-content-center text-center">
                                     <li><a href="{{asset('/apsc/course/60')}}"
-                                            class=" btn color-two button text-white mb-3">14 MARCH</a>
+                                            class=" btn color-two button text-white mb-3">25 MARCH</a>
                                     </li>
                                 </ul>
                             </div>

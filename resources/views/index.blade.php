@@ -414,14 +414,19 @@ Toast.fire({
                         aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
+                    <a href="https://acsindiaias.com/apsc/course/61">
+                        <div class="carousel-item active">
+                        <img src="img/main.png" class="d-block w-100" alt="...">
+                    </div>
+                    </a>
                     <div class="carousel-item ">
                         <img src="img/acv3.png" class="d-block w-100" alt="...">
                     </div>
-                    <div class="carousel-item active">
+                    <div class="carousel-item ">
                         <img src="img/acv1.jpeg" class="d-block w-100" alt="...">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
@@ -430,13 +435,13 @@ Toast.fire({
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
-                </button>
+                </button> -->
             </div>
         </div>
     </div>
     <div>
 
-        <section>
+        <!-- <section>
             <div class="container-fluid">
                 <h1 class="bg-dark text-white text-center fw-bold">TARGET 2024</h1>
                 <div class="row justify-content-center">
@@ -452,9 +457,9 @@ Toast.fire({
             </div>
     </div>
 
-    </section>
-
-    <div class="section-017 mt-4 pt-4">
+    </section> -->
+    <h1 class="bg-dark text-white text-center fw-bold pt-2 pb-2">Online/Offline Classes</h1>
+    <div class="section-017 mt-2 pt-2">
         <div class="row justify-content-center">
             <div class="col-md-12 col-lg-5">
                 <div class="kobolg-banner style-08 left-center">

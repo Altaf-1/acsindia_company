@@ -228,58 +228,55 @@ Swal.fire({
 
                                         </div>
                                     </div>
-                                    <!--<div class="col-sm-6 p-4 d-flex justify-content-center">-->
-                                    <!--    @if ($course->use_coupon && $coupon == null)-->
-                                    <!--verify coupon for the user-->
-                                    <!--    <form action="{{route('user.coupon.verify')}}" method="GET">-->
-                                    <!--        @csrf-->
-                                    <!--        <input type="hidden" value="{{$course->id}}" name="course">-->
-                                    <!--        <div class="form-group font-weight-bold">-->
-                                    <!--            <label for="coupon_code " class="text-white">Enter Coupon:</label>-->
-                                    <!--            <input type="text" style=" margin-bottom:20px;border-radius: 20px;"-->
-                                    <!--                   class="form-control" name="code" placeholder="Enter code">-->
-                                    <!--            <button class="btn buy-btn" type="submit">Check</button>-->
-                                    <!--            <h6 class="pt-4 text-white">GSTIN: 18ABLFA1515G1ZO</h6>-->
-                                    <!--        </div>-->
-                                    <!--    </form>-->
-                                    <!--verify coupon form end-->
-                                    <!--    @elseif($coupon->applied == 0)-->
-                                    <!--        <form action="{{route('user.coupon.verify')}}" method="GET">-->
-                                    <!--            @csrf-->
-                                    <!--            <input type="hidden" value="{{$course->id}}" name="course">-->
-                                    <!--            <div class="form-group font-weight-bold">-->
-                                    <!--                <label for="coupon_code " class="text-white">Enter Coupon:</label>-->
-                                    <!--                <input type="text" style=" margin-bottom:20px;border-radius: 20px;"-->
-                                    <!--                       class="form-control" name="code" placeholder="Enter code">-->
-                                    <!--                <button class="btn buy-btn" type="submit">Check</button>-->
-                                    <!--                <h6 class="pt-4 text-white">GSTIN: 18ABLFA1515G1ZO</h6>-->
-                                    <!--            </div>-->
-                                    <!--        </form>-->
-                                    <!--verify coupon form end-->
-                                    <!--    @elseif($coupon->applied == 1)-->
-                                    <!--        <h6 class="btn buy-btn button mt-4"><strong>{{$coupon->coupon_code}}</strong> Coupon is Applied</h6>-->
-                                    <!--    @endif-->
+                                    <div class="col-sm-6 p-4 d-flex justify-content-center">
+                                    @if ($course->use_coupon && $coupon == null)
+                                       <form action="{{route('user.coupon.verify')}}" method="GET">
+                                        @csrf
+                                        <input type="hidden" value="{{$course->id}}" name="course">
+                                        <div class="form-group font-weight-bold">
+                                               <label for="coupon_code " class="text-white">Enter Coupon:</label>
+                                            <input type="text" style=" margin-bottom:20px;border-radius: 20px;"
+                                                      class="form-control" name="code" placeholder="Enter code">
+                                            <button class="btn buy-btn" type="submit">Check</button>
+                                        </div>
+                                    </form>
+                                        @elseif($coupon->applied == 0)
+                                            <form action="{{route('user.coupon.verify')}}" method="GET">
+                                                @csrf
+                                                <input type="hidden" value="{{$course->id}}" name="course">
+                                                <div class="form-group font-weight-bold">
+                                                    <label for="coupon_code " class="text-white">Enter Coupon:</label>
+                                                    <input type="text" style=" margin-bottom:20px;border-radius: 20px;"
+                                                           class="form-control" name="code" placeholder="Enter code">
+                                                    <button class="btn buy-btn" type="submit">Check</button>
+                                                    <h6 class="pt-4 text-white">GSTIN: 18ABLFA1515G1ZO</h6>
+                                                </div>
+                                            </form>
+                                        @elseif($coupon->applied == 1)
+                                            <h6 class="btn buy-btn button mt-4"><strong>{{$coupon->coupon_code}}</strong> Coupon is Applied</h6>
+                                        @endif
 
-                                    <!--</div>-->
-                                    <div class="col-sm-6  text-white mobile p-4 ">
+                                    </div>
+                                    <hr width="100%;" color="white" size="5">
+                                    <div class="col-sm-9 text-center text-white mobile p-4 ">
                                         <div>
-                                            <del>
-                                                <h5 class="text-danger">₹ {{$course->sale + \App\UserExtraMaterial::get_total_amount($course->course_id, $course->id)}}</h5>
-                                            </del>
+                                            <!-- <del>
+                                                <h5 class="text-danger text-center">₹ {{$course->price + \App\UserExtraMaterial::get_total_amount($course->course_id, $course->id)}}</h5>
+                                            </del> -->
                                             @if($coupon == null)
-                                            <h4 class="text-white">Price
+                                            <h4 class="text-white text-center">Original Price
                                                 : ₹
                                                 {{$course->price + \App\UserExtraMaterial::get_total_amount($course->course_id, $course->id)}}
                                             </h4>
                                             @elseif($coupon->applied == 1)
-                                            <h4 class="text-white">Price
+                                            <h4 class="text-white text-center">Price
                                                 : ₹
                                                 {{$course->sale + \App\UserExtraMaterial::get_total_amount($course->course_id, $course->id)}}
                                             </h4>
                                             @else
-                                            <h4 class="text-white">Price
+                                            <h4 class="text-white text-center">Original Price
                                                 : ₹
-                                                {{$course->price + \App\UserExtraMaterial::get_total_amount($course->course_id, $course->id)}}
+                                                {{$course->sale + \App\UserExtraMaterial::get_total_amount($course->course_id, $course->id)}}
                                             </h4>
                                             @endif
                                             {{--href="{{route('payment.course', $course->slug)}}"--}}

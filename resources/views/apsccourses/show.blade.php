@@ -249,7 +249,7 @@ Swal.fire({
                                                     <input type="text" style=" margin-bottom:20px;border-radius: 20px;"
                                                            class="form-control" name="code" placeholder="Enter code">
                                                     <button class="btn buy-btn" type="submit">Check</button>
-                                                    <h6 class="pt-4 text-white">GSTIN: 18ABLFA1515G1ZO</h6>
+                                                    
                                                 </div>
                                             </form>
                                         @elseif($coupon->applied == 1)

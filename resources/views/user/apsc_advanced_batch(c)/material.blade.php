@@ -240,8 +240,65 @@
                     </div>
                 
                 </div>
+                <!-- .row end -->   
+            </div>
                 <!-- .row end -->
             </div>
+            <h2 class="bg-dark text-white text-center mb-3 mt-3">MAINS MATERIALS</h2>
+            <div class="container">
+                <!-- .row -->
+                <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                        <!-- 3 -->
+                        <div class="single-features-light text-center">
+                            <!-- single features -->
+                            <div>
+                                <i class="base-color fab fa-leanpub fa-3x"></i>
+                                <h4>GS-I</h4>
+                                        <a href="https://acsindiaias.com/mains_2023/material1" class="btn color-two button text-white">Download</a>
+                            </div>
+                        </div>
+                        <!-- end single features -->
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                        <!-- 3 -->
+                        <div class="single-features-light text-center">
+                            <!-- single features -->
+                            <div>
+                                <i class="base-color fab fa-leanpub fa-3x"></i>
+                                <h4>GS-II</h4>
+                                        <a href="https://acsindiaias.com/mains_2023/material2" class="btn color-two button text-white">Download</a>
+                            </div>
+                        </div>
+                        <!-- end single features -->
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                        <!-- 3 -->
+                        <div class="single-features-light text-center">
+                            <!-- single features -->
+                            <div>
+                                <i class="base-color fab fa-leanpub fa-3x"></i>
+                                <h4>GS-III</h4>
+                                        <a href="https://acsindiaias.com/mains_2023/material3" class="btn color-two button text-white">Download</a>
+                            </div>
+                        </div>
+                        <!-- end single features -->
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                        <!-- 3 -->
+                        <div class="single-features-light text-center">
+                            <!-- single features -->
+                            <div>
+                                <i class="base-color fab fa-leanpub fa-3x"></i>
+                                <h4>GS-IV</h4>
+                                        <a href="https://acsindiaias.com/mains_2023/material4" class="btn color-two button text-white">Download</a>
+                            </div>
+                        </div>
+                        <!-- end single features -->
+                    </div>
+
+                </div>
                 <!-- .row end -->
             </div>
             <!-- .container end -->

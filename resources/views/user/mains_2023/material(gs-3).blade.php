@@ -69,7 +69,7 @@
                             <div>
                                 <i class="base-color fab fa-leanpub fa-3x"></i>
                                 <h4>ECONOMY</h4>
-                                <a href="{{asset('https://drive.google.com/file/d/1sv5NdhN3VOycYj5JBYoDQOYcfBO2-Bra/view?usp=sharing')}}" class=" btn color-two button text-white">DOWNLOAD</a>
+                                <a href="{{asset('https://drive.google.com/file/d/14gG35qfbPHwFZQYHPBPsieVPrK-BpUSI/view?usp=sharing')}}" class=" btn color-two button text-white">DOWNLOAD</a>
                             </div>
                         </div>
                         <!-- end single features -->

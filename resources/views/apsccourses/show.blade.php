@@ -276,7 +276,7 @@ Swal.fire({
                                             @else
                                             <h4 class="text-white text-center">Original Price
                                                 : ₹
-                                                {{$course->sale + \App\UserExtraMaterial::get_total_amount($course->course_id, $course->id)}}
+                                                {{$course->price + \App\UserExtraMaterial::get_total_amount($course->course_id, $course->id)}}
                                             </h4>
                                             @endif
                                             {{--href="{{route('payment.course', $course->slug)}}"--}}

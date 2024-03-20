@@ -416,7 +416,7 @@ Toast.fire({
                 <div class="carousel-inner">
                     <a href="https://acsindiaias.com/apsc/course/61">
                         <div class="carousel-item active">
-                        <img src="img/main.png" class="d-block w-100" alt="...">
+                        <img src="img/main1.png" class="d-block w-100" alt="...">
                     </div>
                     </a>
                     <div class="carousel-item ">

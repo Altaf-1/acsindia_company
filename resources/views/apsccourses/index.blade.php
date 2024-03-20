@@ -236,7 +236,7 @@ Swal.fire({
                     </div>
                 </div>
 
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 p-0 course-animation mb20">
+                <!-- <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 p-0 course-animation mb20">
                     <div class="themeioan_course">
                         <article>
                             <div class="blog-photo ">
@@ -244,7 +244,7 @@ Swal.fire({
                             </div>
                             <div class="blog-content">
                                 <h4 class="title text-center text-danger">---- 50% OFF ----</h4>
-                                <!--<p class="text-primary display-4 text-center" id="demo"></p>-->
+                                
                                 <ul class="themeioan_ul_icon justify-content-center text-center">
                                     <li><a href="{{asset('/user/study/show/34')}}"
                                             class=" btn color-two button text-white mb-3">Enroll Now</a></li>
@@ -252,7 +252,7 @@ Swal.fire({
                             </div>
                         </article>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>

@@ -54,7 +54,8 @@
              $course->title != 'APSC TEST SERIES 2024' &&
              $course->title != 'APSC BOOSTER COURSE (X-evng)'&&
              $course->title != 'Target 2024 (Online)' &&
-             $course->title != 'Target 2024 (Offline)')
+             $course->title != 'Target 2024 (Offline)' &&
+             $course->title != 'APSC 2024 MAINS PREPARATION')
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
                  <div class="single-features-light text-center">
                      <div>
@@ -99,6 +100,7 @@
              $course->title != 'APSC BOOSTER COURSE (W)' &&
              $course->title != 'APSC TEST SERIES 2024' &&
              $course->title != 'Target 2024 (Offline)' &&
+             $course->title != 'APSC 2024 MAINS PREPARATION' &&
              $course->title != 'Target 2024 (Online)' &&
              $course->title != 'APSC BOOSTER COURSE (X-evng)')
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
@@ -140,6 +142,7 @@
              $course->title != 'APSC BOOSTER COURSE (W)' &&
              $course->title != 'APSC SELF STUDY COURSE' &&
              $course->title != 'APSC TEST SERIES 2024' &&
+             $course->title != 'APSC 2024 MAINS PREPARATION' &&
              $course->title != 'APSC BOOSTER COURSE (X-evng)'&&
              $course->title != 'Target 2024 (Online)' &&
              $course->title != 'Target 2024 (Offline)')
@@ -252,6 +255,7 @@
              $course->title != 'APSC SELF STUDY COURSE' &&
              $course->title != 'Target 2024 (Online)' &&
              $course->title != 'Target 2024 (Offline)' &&
+             $course->title != 'APSC 2024 MAINS PREPARATION' &&
              $course->title != 'DEMO OFFLINE COURSE')
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
                  <div class="single-features-light text-center">
@@ -267,6 +271,7 @@
              && $course->title != 'APSC SELF STUDY COURSE' &&
              $course->title != 'Target 2024 (Online)' &&
              $course->title != 'Target 2024 (Offline)' &&
+             $course->title != 'APSC 2024 MAINS PREPARATION' &&
              $course->title != 'DEMO OFFLINE COURSE')
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
                  <div class="single-features-light text-center">
@@ -281,7 +286,7 @@
              @endif
 
 
-             @if ($course->title != 'APSC 2023 INTERVIEW PREPARATION' && $course->title != 'APSC SELF STUDY COURSE' &&
+             @if ($course->title != 'APSC 2023 INTERVIEW PREPARATION' && $course->title != 'APSC SELF STUDY COURSE' && $course->title != 'APSC 2024 MAINS PREPARATION' &&
              $course->title != 'APSC TEST SERIES 2024')
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
                  <div class="single-features-light text-center">
@@ -592,7 +597,7 @@
 
              @if ($course->title != 'APSC TEST SERIES 2024' &&
              $course->title != 'APSC SELF STUDY COURSE' &&
-             $course->title != 'Target 2024 (Online)' &&
+             $course->title != 'Target 2024 (Online)' && $course->title != 'APSC 2024 MAINS PREPARATION' &&
              $course->title != 'Target 2024 (Offline)')
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
                  <div class="single-features-light text-center">
@@ -612,7 +617,7 @@
              $course->title != '90 DAYS BOOSTER COURSE (OFFLINE)' &&
              $course->title != '20 DAYS FREE BOOSTER COURSE' &&
              $course->title != 'APSC SELF STUDY COURSE' &&
-             $course->title != 'APSC 2023 INTERVIEW PREPARATION' &&
+             $course->title != 'APSC 2023 INTERVIEW PREPARATION' && $course->title != 'APSC 2024 MAINS PREPARATION' &&
              $course->title != 'APSC TEST SERIES 2024')
 
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
@@ -753,7 +758,7 @@
              <!-- end single features -->
              <!--</div>-->
              @elseif ($course->title != 'APSC 2023 INTERVIEW PREPARATION' && $course->title != 'APSC TEST SERIES 2024'
-             && $course->title != 'APSC SELF STUDY COURSE')
+             && $course->title != 'APSC 2024 MAINS PREPARATION' && $course->title != 'APSC SELF STUDY COURSE')
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
                  <div class="single-features-light text-center">
                      <div>
@@ -929,7 +934,7 @@
              <!--@endif-->
 
              {{-- RECORDED CLASSES --}}
-             @if ($course->title != 'APSC 2023 INTERVIEW PREPARATION' && $course->title != 'APSC TEST SERIES 2024')
+             @if ($course->title != 'APSC 2023 INTERVIEW PREPARATION' && $course->title != 'APSC 2024 MAINS PREPARATION' && $course->title != 'APSC TEST SERIES 2024')
 
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
                  <!-- 2 -->
@@ -1144,7 +1149,7 @@
                  <!-- end single features  -->
              </div>
              @endif
-             @if ($course->title != 'APSC 2023 INTERVIEW PREPARATION' && $course->title != 'APSC TEST SERIES 2024' &&
+             @if ($course->title != 'APSC 2023 INTERVIEW PREPARATION' && $course->title != 'APSC 2024 MAINS PREPARATION' && $course->title != 'APSC TEST SERIES 2024' &&
              $course->title != 'APSC SELF STUDY COURSE')
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
                  <div class="single-features-light text-center">
@@ -1160,7 +1165,7 @@
              @endif
 
              @if ($course->title != '90 DAYS BOOSTER COURSE' && $course->title != '20 DAYS FREE BOOSTER COURSE' &&
-             $course->title != 'APSC TEST SERIES 2024' &&
+             $course->title != 'APSC TEST SERIES 2024' && $course->title != 'APSC 2024 MAINS PREPARATION' &&
              $course->title != 'APSC 2023 INTERVIEW PREPARATION' && $course->title != 'APSC SELF STUDY COURSE')
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
                  <div class="single-features-light text-center">
@@ -1543,7 +1548,7 @@
              <!-- APSC MAINS PYQ -->
              @if ($course->title !== '90 DAYS BOOSTER COURSE (OFFLINE)' && $course->title != 'APSC TEST SERIES 2024' &&
              $course->title != 'APSC 2023 INTERVIEW
-             PREPARATION' && $course->title != 'APSC SELF STUDY COURSE')
+             PREPARATION' && $course->title != 'APSC 2024 MAINS PREPARATION' && $course->title != 'APSC SELF STUDY COURSE')
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
                  <div class="single-features-light text-center">
                      <!-- single features -->
@@ -1561,7 +1566,7 @@
              </div>
              @endif
              <!-- 100 current affairs -->
-             @if ($course->title != 'APSC 2023 INTERVIEW PREPARATION' && $course->title != 'APSC SELF STUDY COURSE' &&
+             @if ($course->title != 'APSC 2023 INTERVIEW PREPARATION' && $course->title != 'APSC 2024 MAINS PREPARATION' && $course->title != 'APSC SELF STUDY COURSE' &&
              $course->title != 'APSC TEST SERIES 2024')
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
                  <div class="single-features-light text-center">
@@ -1609,7 +1614,7 @@
              <!--    </div>-->
              <!--</div>-->
              <!-- INTERNATIONAL ORGANIZATIONS/INSTITUTIONS/GROUPINGS IN NEWS -->
-             @if ($course->title != 'APSC 2023 INTERVIEW PREPARATION' && $course->title != 'APSC SELF STUDY COURSE' &&
+             @if ($course->title != 'APSC 2023 INTERVIEW PREPARATION' && $course->title != 'APSC 2024 MAINS PREPARATION' && $course->title != 'APSC SELF STUDY COURSE' &&
              $course->title != 'APSC TEST SERIES 2024')
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
                  <div class="single-features-light text-center">
@@ -1639,7 +1644,7 @@
 
 
              {{-- visible in all course --}}
-             @if ($course->title != 'APSC 2023 INTERVIEW PREPARATION' && $course->title != 'APSC SELF STUDY COURSE' &&
+             @if ($course->title != 'APSC 2023 INTERVIEW PREPARATION' && $course->title != 'APSC 2024 MAINS PREPARATION' && $course->title != 'APSC SELF STUDY COURSE' &&
              $course->title != 'APSC TEST SERIES 2024')
 
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">

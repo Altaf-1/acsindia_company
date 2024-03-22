@@ -236,7 +236,7 @@ Swal.fire({
                     </div>
                 </div>
 
-                <!-- <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 p-0 course-animation mb20">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 p-0 course-animation mb20">
                     <div class="themeioan_course">
                         <article>
                             <div class="blog-photo ">
@@ -252,7 +252,7 @@ Swal.fire({
                             </div>
                         </article>
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
     </div>

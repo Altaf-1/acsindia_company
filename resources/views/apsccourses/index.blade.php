@@ -243,8 +243,6 @@ Swal.fire({
                                 <img class="img-fluid course-img" src="{{asset('cor/write.png')}}" alt="">
                             </div>
                             <div class="blog-content">
-                                <h4 class="title text-center text-danger">---- 50% OFF ----</h4>
-                                
                                 <ul class="themeioan_ul_icon justify-content-center text-center">
                                     <li><a href="{{asset('/user/study/show/34')}}"
                                             class=" btn color-two button text-white mb-3">Enroll Now</a></li>

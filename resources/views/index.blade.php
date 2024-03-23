@@ -467,7 +467,7 @@ Toast.fire({
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
             </div>
-            <div class="col-lg-4">
+            <div id="mains" class="col-lg-4">
                     <div>
                         <h1 class="fw-bold text-white pb-5 pt-5">APSC 2024 MAINS PREPARATION</h1>
                         <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUqb984n-rLWfoBzWpux1uah8QTiziYJj-Qgmt6g9_rb-rEw/viewform?usp=sharing" class="bg-danger text-white fw-bold text-center p-4 rounded">Click Here For More Information</a>

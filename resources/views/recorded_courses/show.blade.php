@@ -217,7 +217,7 @@
                                                     <h4 class="text-white">Total course fee : ₹ {{$course->price}}</h4>
                                                     <h4 class="text-white">Seat booking price : ₹ {{$course->sale}}</h4>
                                                     @else
-                                                        <h4 class="text-white">Total course fee : ₹ {{$course->sale}}</h4>
+                                                        <h4 class="text-white">Course fee : ₹ {{$course->sale}}</h4>
                                                     @endif
                                                 @else
                                                     <h4 class="text-white">Price : ₹ {{$course->price}}</h4>

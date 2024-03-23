@@ -172,10 +172,10 @@
                                     </ul>
                                     <hr>
                                     <div class="row course-end pb-2">
-                                        <div class="col-sm-6 p-4 d-flex justify-content-center">
+                                        <!-- <div class="col-sm-6 p-4 d-flex justify-content-center">
 
                                             @if ($course->use_coupon && $coupon == null)
-                                                <!--verify coupon for the user-->
+                                                
                                                 <form action="{{route('user.coupon.verify')}}" method="GET">
                                                     @csrf
                                                     <input type="hidden" value="{{$course->id}}" name="course">
@@ -187,7 +187,7 @@
                                                         <h6 class="pt-4 text-white">GSTIN: 18ABLFA1515G1ZO</h6>
                                                     </div>
                                                 </form>
-                                                <!--verify coupon form end-->
+                                            
                                             @elseif($coupon && $coupon->applied == 0)
                                                 <form action="{{route('user.coupon.verify')}}" method="GET">
                                                     @csrf
@@ -200,14 +200,14 @@
                                                         <h6 class="pt-4 text-white">GSTIN: 18ABLFA1515G1ZO</h6>
                                                     </div>
                                                 </form>
-                                                <!--verify coupon form end-->
+                                              
 
                                             @elseif($coupon && $coupon->applied == 1)
                                                 <h6 class="btn buy-btn button mt-4">
                                                     <strong>{{$coupon->coupon_code}}</strong> Coupon is Applied</h6>
                                             @endif
 
-                                        </div>
+                                        </div> -->
                                         <div class="col-sm-6  text-white mobile p-4">
                                             <div>
                                                 @if($coupon == null)

@@ -458,6 +458,24 @@ Toast.fire({
     </div>
 
     </section> -->
+    <section>
+        <div class="container pt-3 pb-3" style="background-color: #134982;">
+            <div class="row">
+            <div class="col-lg-8">
+                <iframe width="670" height="305" src="https://www.youtube.com/embed/d3rBwk7N8TQ?si=HaENe0vNAipH_2oL"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+            </div>
+            <div class="col-lg-4">
+                    <div>
+                        <h1 class="fw-bold text-white pb-5 pt-5">APSC 2024 MAINS PREPARATION</h1>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUqb984n-rLWfoBzWpux1uah8QTiziYJj-Qgmt6g9_rb-rEw/viewform?usp=sharing" class="bg-danger text-white fw-bold text-center p-4 rounded">Click Here For More Information</a>
+                </div>
+            </div>
+</div>
+        </div>
+</section>
     <h1 class="bg-dark text-white text-center fw-bold pt-2 pb-2">Online/Offline Classes</h1>
     <div class="section-017 mt-2 pt-2">
         <div class="row justify-content-center">

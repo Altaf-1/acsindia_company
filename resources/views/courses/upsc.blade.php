@@ -180,40 +180,40 @@ Swal.fire({
 
                                 </div>
                                 <div class="row course-end pb-2 mt-1">
-                                    <!--<div class="col-sm-6 p-4 d-flex justify-content-center">-->
+                                    <div class="col-sm-6 p-4 d-flex justify-content-center">
 
-                                    <!--    @if ($course->use_coupon && $coupon == null)-->
+                                    @if ($course->use_coupon && $coupon == null)
                                     <!--verify coupon for the user-->
-                                    <!--        <form action="{{route('user.coupon.verify')}}" method="GET">-->
-                                    <!--            @csrf-->
-                                    <!--            <input type="hidden" value="{{$course->id}}" name="course">-->
-                                    <!--            <div class="form-group font-weight-bold">-->
-                                    <!--                <label for="coupon_code " class="text-white">Enter Coupon:</label>-->
-                                    <!--                <input type="text" style=" margin-bottom:20px;border-radius: 20px;"-->
-                                    <!--                       class="form-control" name="code" placeholder="Enter code">-->
-                                    <!--                <button class="btn buy-btn" type="submit">Check</button>-->
-                                    <!--                <h6 class="pt-4 text-white">GSTIN: 18ABLFA1515G1ZO</h6>-->
-                                    <!--            </div>-->
-                                    <!--        </form>-->
+                                           <form action="{{route('user.coupon.verify')}}" method="GET">
+                                               @csrf
+                                               <input type="hidden" value="{{$course->id}}" name="course">
+                                               <div class="form-group font-weight-bold">
+                                                   <label for="coupon_code " class="text-white">Enter Coupon:</label>
+                                                   <input type="text" style=" margin-bottom:20px;border-radius: 20px;"
+                                                          class="form-control" name="code" placeholder="Enter code">
+                                                   <button class="btn buy-btn" type="submit">Check</button>
+                                                   <h6 class="pt-4 text-white">GSTIN: 18ABLFA1515G1ZO</h6>
+                                               </div>
+                                           </form>
                                     <!--verify coupon form end-->
-                                    <!--    @elseif($coupon->applied == 0)-->
-                                    <!--        <form action="{{route('user.coupon.verify')}}" method="GET">-->
-                                    <!--            @csrf-->
-                                    <!--            <input type="hidden" value="{{$course->id}}" name="course">-->
-                                    <!--            <div class="form-group font-weight-bold">-->
-                                    <!--                <label for="coupon_code " class="text-white">Enter Coupon:</label>-->
-                                    <!--                <input type="text" style=" margin-bottom:20px;border-radius: 20px;"-->
-                                    <!--                       class="form-control" name="code" placeholder="Enter code">-->
-                                    <!--                <button class="btn buy-btn" type="submit">Check</button>-->
-                                    <!--                <h6 class="pt-4 text-white">GSTIN: 18ABLFA1515G1ZO</h6>-->
-                                    <!--            </div>-->
-                                    <!--        </form>-->
+                                       @elseif($coupon->applied == 0)
+                                           <form action="{{route('user.coupon.verify')}}" method="GET">
+                                               @csrf
+                                               <input type="hidden" value="{{$course->id}}" name="course">
+                                               <div class="form-group font-weight-bold">
+                                                   <label for="coupon_code " class="text-white">Enter Coupon:</label>
+                                                   <input type="text" style=" margin-bottom:20px;border-radius: 20px;"
+                                                          class="form-control" name="code" placeholder="Enter code">
+                                                   <button class="btn buy-btn" type="submit">Check</button>
+                                                   <h6 class="pt-4 text-white">GSTIN: 18ABLFA1515G1ZO</h6>
+                                               </div>
+                                           </form>
                                     <!--verify coupon form end-->
-                                    <!--    @elseif($coupon->applied == 1)-->
-                                    <!--        <h6 class="btn buy-btn button mt-4"><strong>{{$coupon->coupon_code}}</strong> Coupon is Applied</h6>-->
-                                    <!--    @endif-->
+                                       @elseif($coupon->applied == 1)
+                                           <h6 class="btn buy-btn button mt-4"><strong>{{$coupon->coupon_code}}</strong> Coupon is Applied</h6>
+                                       @endif
 
-                                    <!--</div>-->
+                                </div>
                                     <div class="col-sm-6 p-2 d-flex justify-content-center">
                                         <div class="container mt-2">
                                             <h5 class="text-white">Extra Hardcopy Materials</h5>
@@ -248,11 +248,12 @@ Swal.fire({
 
                                         </div>
                                     </div>
-                                    <div class="col-sm-6  text-white mobile p-4 ">
+                                    <hr width="100%;" color="white" size="5">
+                                    <div class="col-sm-6 text-center text-white mobile p-4 ">
                                         <div>
-                                            <del>
+                                            <!-- <del>
                                                 <h5 class="text-danger">₹ 23,600</h5>
-                                            </del>
+                                            </del> -->
                                             @if($coupon == null)
                                             <h4 class="text-white">Price
                                                 : ₹

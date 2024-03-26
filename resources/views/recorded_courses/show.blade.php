@@ -157,10 +157,10 @@
                 <!-- .row -->
                 <div class="row p-0 pt-5">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 course-single p-0 mb20">
-                        <!-- 1 -->
+                        <!--single course  -->
                         <div class="themeioan_course" style="max-width: 600px;">
                             <article>
-                                <!-- single course -->
+                                <!-- single course remove 1/2-->
                                 <div class="blog-photo">
                                     <img class="course-img" src="{{asset('storage/'.$course->image)}}" alt="">
                                 </div>

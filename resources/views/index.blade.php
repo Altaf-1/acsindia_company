@@ -345,17 +345,20 @@ Toast.fire({
     <div style="padding-top:40px;" class="row mt-3 ml-2 bg-light">
         <div class="col-lg-6 mt-3">
             <div class="row">
-                <div class="col-lg-6 mt-3">
-                    <div style="background-color: #134982;" class="rounded border text-white text-center pb-3">
-                        <h2 class="text-white font-weight-bold">TEST SERIES (Free Trial)</h2>
-                        <a class="button text-white p-2 rounded text-white mb-2" href="/quizs/Probable Question"
-                            style="background-color: #e52e06; font-family: 'Righteous'; size: 22px"><span>Click Here</span></a>
-                    </div>
-                </div>
+                
                 <div class="col-lg-6 mt-3">
                     <div style="background-color: #134982;" class="rounded border text-white text-center pb-3">
                         <h2 class="text-white font-weight-bold">Sample Material</h2>
                         <a class="button text-white p-2 rounded text-white mb-2" href="{{asset('/sample_material')}}"
+                            style="background-color: #e52e06; font-family: 'Righteous'; size: 22px"><span>Download
+                                Now</span></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-3">
+                    <div style="background-color: #134982;" class="rounded border text-white text-center pb-3">
+                        <h2 class="text-white font-weight-bold">Toppers Notes</h2>
+                        <a class="button text-white p-2 mt-2 rounded text-white mb-2"
+                            href="{{ route('user.mains.2023.material.topper_answer') }}"
                             style="background-color: #e52e06; font-family: 'Righteous'; size: 22px"><span>Download
                                 Now</span></a>
                     </div>
@@ -372,13 +375,12 @@ Toast.fire({
                 </div>
                 <div class="col-lg-6 mt-3">
                     <div style="background-color: #134982;" class="rounded border text-white text-center pb-3">
-                        <h2 class="text-white font-weight-bold">Toppers Notes</h2>
-                        <a class="button text-white p-2 mt-2 rounded text-white mb-2"
-                            href="{{ route('user.mains.2023.material.topper_answer') }}"
-                            style="background-color: #e52e06; font-family: 'Righteous'; size: 22px"><span>Download
-                                Now</span></a>
+                        <h2 class="text-white font-weight-bold">TEST SERIES (Free Trial)</h2>
+                        <a class="button text-white p-2 rounded text-white mb-2" href="/quizs/Probable Question"
+                            style="background-color: #e52e06; font-family: 'Righteous'; size: 22px"><span>Click Here</span></a>
                     </div>
                 </div>
+                
                 <div class="col-lg-6 mt-3">
                     <div style="background-color: #134982;" class="rounded border text-white text-center pb-3">
                         <h3 class="text-white font-weight-bold">Daily Current Affairs</h3>

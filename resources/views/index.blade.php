@@ -372,10 +372,10 @@ Toast.fire({
                 </div>
                 <div class="col-lg-6 mt-3">
                     <div style="background-color: #134982;" class="rounded border text-white text-center pb-3">
-                        <h2 class="text-white font-weight-bold">Join Workshop</h2>
+                        <h2 class="text-white font-weight-bold">Toppers Notes</h2>
                         <a class="button text-white p-2 mt-2 rounded text-white mb-2"
-                            href="https://acsindiaias.com/recorded/course/ias-workshop"
-                            style="background-color: #e52e06; font-family: 'Righteous'; size: 22px"><span>Enroll
+                            href="{{ route('user.mains.2023.material.topper_answer') }}"
+                            style="background-color: #e52e06; font-family: 'Righteous'; size: 22px"><span>Download
                                 Now</span></a>
                     </div>
                 </div>

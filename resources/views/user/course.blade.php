@@ -30,6 +30,7 @@
              $course->title != 'IAS BOOSTER COURSE (U)' &&
              $course->title != 'IAS FEB 2024 COURSE (MRNG)' &&
              $course->title != 'IAS BOOSTER COURSE (W)' &&
+             $course->title != 'IAS MARCH 2024 COURSE (MRNG)' &&
              $course->title != 'IAS BOOSTER COURSE (X-evng)')
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
                  <div class="single-features-light text-center">
@@ -528,6 +529,10 @@
                              class=" btn color-two button text-white">VIEW</a>
                          @endif
                          @if ($course->title == 'IAS BOOSTER COURSE (X-evng)')
+                         <a href="{{ route('user.new.video', $course->title) }}"
+                             class=" btn color-two button text-white">VIEW</a>
+                         @endif
+                         @if ($course->title == 'IAS MARCH 2024 COURSE (MRNG)')
                          <a href="{{ route('user.new.video', $course->title) }}"
                              class=" btn color-two button text-white">VIEW</a>
                          @endif

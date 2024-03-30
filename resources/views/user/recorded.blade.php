@@ -75,6 +75,81 @@
 
              @endif
 
+             @if ($course->title == 'UPSC MAINS PREPARATION')
+             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
+                 <div class="single-features-light text-center">
+                     <div>
+                         <i class="base-color fas fa-book fa-3x"></i>
+                         <h4>MAINS MATERIALS</h4>
+                         <h4>GS-I</h4>
+                         <a href="{{ route('user.mains.2023.material.(gs-1)') }}"
+                             class=" btn color-two button text-white">VIEW</a>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
+                 <div class="single-features-light text-center">
+                     <div>
+                         <i class="base-color fas fa-book fa-3x"></i>
+                         <h4>MAINS MATERIALS</h4>
+                         <h4>GS-II</h4>
+                         <a href="{{ route('user.mains.2023.material.(gs-2)') }}"
+                             class=" btn color-two button text-white">VIEW</a>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
+                 <div class="single-features-light text-center">
+                     <div>
+                         <i class="base-color fas fa-book fa-3x"></i>
+                         <h4>MAINS MATERIALS</h4>
+                         <h4>GS-III</h4>
+                         <a href="{{ route('user.mains.2023.material.(gs-3)') }}"
+                             class=" btn color-two button text-white">VIEW</a>
+                     </div>
+                 </div>
+
+             </div>
+
+             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
+
+                 <div class="single-features-light text-center">
+
+                     <div>
+                         <i class="base-color fas fa-book fa-3x"></i>
+                         <h4>MAINS MATERIALS</h4>
+                         <h4>GS-IV</h4>
+                         <a href="{{ route('user.mains.2023.material.(gs-4)') }}"
+                             class=" btn color-two button text-white">VIEW</a>
+                     </div>
+                 </div>
+
+             </div>
+             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
+
+                 <div class="single-features-light text-center">
+
+                     <div>
+                         <i class="base-color fas fa-book fa-3x"></i>
+                         <h4>UPSC MAINS PYQ</h4>
+                         <a href="{{ route('user.mains.2023.upaper') }}"
+                             class=" btn color-two button text-white">VIEW</a>
+                     </div>
+                 </div>
+
+             </div>
+             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
+                 <div class="single-features-light text-center">
+                     <div>
+                         <i class="base-color fas fa-book fa-3x"></i>
+                         <h4>RECORDED CLASSES</h4>
+                         <a href="{{ route('user.new.video', 'UPSC MAINS PREPARATION') }}"
+                             class=" btn color-two button text-white">VIEW</a>
+                     </div>
+                 </div>
+             </div>
+             @endif
+
              @if ($course->title == 'SELF STUDY COURSE (UPSC + APSC)')
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
                  <div class="single-features-light text-center">

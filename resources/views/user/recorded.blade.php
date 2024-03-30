@@ -15,6 +15,7 @@
              $course->title != 'UPSC PRELIMS BOOSTER TEST SERIES' &&
              $course->title != 'SELF STUDY COURSE (UPSC)' &&
              $course->title != 'SELF STUDY COURSE (UPSC + APSC)' &&
+             $course->title != 'UPSC MAINS PREPARATION' &&
              $course->title != 'IAS WORKSHOP')
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
                  <div class="single-features-light text-center">
@@ -183,6 +184,7 @@
              $course->title != 'Advanced CSAT (GS II)' &&
              $course->title != 'UPSC PRELIMS BOOSTER TEST SERIES' &&
              $course->title != 'SELF STUDY COURSE (UPSC)' &&
+             $course->title != 'UPSC MAINS PREPARATION' && 
              $course->title != 'SELF STUDY COURSE (UPSC + APSC)'&&
              $course->title != 'IAS WORKSHOP')
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
@@ -288,6 +290,7 @@
 
              @if ($course->title != 'UPSC PRELIMS BOOSTER TEST SERIES' &&
              $course->title != 'SELF STUDY COURSE (UPSC)' &&
+             $course->title != 'UPSC MAINS PREPARATION' &&
              $course->title != 'SELF STUDY COURSE (UPSC + APSC)')
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
                  <!-- 2 -->
@@ -352,6 +355,7 @@
 
              @if ($course->title != 'UPSC PRELIMS BOOSTER TEST SERIES' &&
              $course->title != 'SELF STUDY COURSE (UPSC)' &&
+             $course->title != 'UPSC MAINS PREPARATION' &&
              $course->title != 'SELF STUDY COURSE (UPSC + APSC)')
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
                  <!-- 2 -->
@@ -420,6 +424,7 @@
              @if ($course->title != 'REVISE PRELIMS (BOOSTER COURSE & TEST SERIES)' &&
              $course->title != 'UPSC PRELIMS BOOSTER TEST SERIES' &&
              $course->title != 'SELF STUDY COURSE (UPSC)' &&
+             $course->title != 'UPSC MAINS PREPARATION' &&
              $course->title != 'SELF STUDY COURSE (UPSC + APSC)'&&
              $course->title != 'IAS WORKSHOP')
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
@@ -478,6 +483,7 @@
              &&
              $course->title != 'UPSC PRELIMS BOOSTER TEST SERIES' &&
              $course->title != 'SELF STUDY COURSE (UPSC)' &&
+             $course->title != 'UPSC MAINS PREPARATION' &&
              $course->title != 'SELF STUDY COURSE (UPSC + APSC)'&&
              $course->title != 'IAS WORKSHOP')
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
@@ -527,6 +533,7 @@
              </div>
              @endif
              @if ($course->title != 'IAS STUDY MATERIALS' &&
+             $course->title != 'UPSC MAINS PREPARATION' &&
              $course->title != 'UPSC PRELIMS BOOSTER TEST SERIES')
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
                  <!-- 2 -->
@@ -691,6 +698,7 @@
              </div>
              @elseif ($course->title != 'UPSC PRELIMS BOOSTER TEST SERIES' &&
              $course->title != 'SELF STUDY COURSE (UPSC)' &&
+             $course->title != 'UPSC MAINS PREPARATION' &&
              $course->title != 'SELF STUDY COURSE (UPSC + APSC)'&&
              $course->title != 'IAS WORKSHOP')
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
@@ -709,6 +717,7 @@
              <!-- 100 current affairs -->
              @if ($course->title != 'UPSC PRELIMS BOOSTER TEST SERIES' &&
              $course->title != 'SELF STUDY COURSE (UPSC)' &&
+             $course->title != 'UPSC MAINS PREPARATION' &&
              $course->title != 'SELF STUDY COURSE (UPSC + APSC)'&&
              $course->title != 'IAS WORKSHOP')
 

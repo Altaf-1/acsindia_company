@@ -1144,6 +1144,10 @@
                          <a href="{{ route('user.new.video', $course->title) }}"
                              class=" btn color-two button text-white">VIEW</a>
                          @endif
+                         @if ($course->title == 'APSC MARCH 2024 COURSE (MRNG)')
+                         <a href="{{ route('user.new.video', $course->title) }}"
+                             class=" btn color-two button text-white">VIEW</a>
+                         @endif
                      </div>
                  </div>
                  <!-- end single features  -->

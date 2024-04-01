@@ -216,7 +216,7 @@ Swal.fire({
                                 </div>
                                     <div class="col-sm-6 p-2 d-flex justify-content-center">
                                         <div class="container mt-2">
-                                            <h5 class="text-white">Extra Hardcopy Materials</h5>
+                                            <h5 class="text-white">Free Hardcopy Materials Till 25th April 2024</h5>
                                             <form action="{{route('user.extra_material.add_remove_material')}}"
                                                 method="POST">
                                                 @csrf
@@ -224,17 +224,17 @@ Swal.fire({
                                                     name="course_type_id">
                                                 <input type="hidden" value="{{$course->id}}" name="course_id">
                                                 <div class="form-group font-weight-bold">
-                                                    <label for="course_1" class="text-white material-label">UPSC
+                                                    <!-- <label for="course_1" class="text-white material-label">UPSC
                                                         Material ( ₹ 2000 ):</label>
                                                     <input type="checkbox" class="check-form"
                                                         @if(\App\UserExtraMaterial::check_material_exists($course->course_id,
                                                     $course->id, 1))
                                                     checked
                                                     @endif
-                                                    name="course_1">
+                                                    name="course_1"> -->
 
-                                                    <label for="no_material" class="text-white material-label">No
-                                                        Material ( ₹ 0 ):</label>
+                                                    <label for="no_material" class="text-white material-label">Free
+                                                        Material:</label>
                                                     <input type="checkbox" class="check-form"
                                                         @if(\App\UserExtraMaterial::check_material_exists($course->course_id,
                                                     $course->id, 3))

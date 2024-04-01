@@ -216,7 +216,7 @@ Swal.fire({
                                 </div>
                                     <div class="col-sm-6 p-2 d-flex justify-content-center">
                                         <div class="container mt-2">
-                                            <h5 class="text-danger">Free Hardcopy Materials Till 25th April 2024</h5>
+                                            <h5 class="text-danger bg-white p-2">Free Hardcopy Materials Till 25th April 2024</h5>
                                             <form action="{{route('user.extra_material.add_remove_material')}}"
                                                 method="POST">
                                                 @csrf
@@ -233,7 +233,7 @@ Swal.fire({
                                                     @endif
                                                     name="course_1"> -->
 
-                                                    <label for="no_material" class="text-white material-label">Free
+                                                    <label for="no_material" class="text-white material-label pt-3">Free
                                                         Material:</label>
                                                     <input type="checkbox" class="check-form"
                                                         @if(\App\UserExtraMaterial::check_material_exists($course->course_id,

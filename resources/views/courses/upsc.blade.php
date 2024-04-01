@@ -216,7 +216,7 @@ Swal.fire({
                                 </div>
                                     <div class="col-sm-6 p-2 d-flex justify-content-center">
                                         <div class="container mt-2">
-                                            <h5 class="text-white">Free Hardcopy Materials Till 25th April 2024</h5>
+                                            <h5 class="text-danger">Free Hardcopy Materials Till 25th April 2024</h5>
                                             <form action="{{route('user.extra_material.add_remove_material')}}"
                                                 method="POST">
                                                 @csrf

@@ -153,9 +153,9 @@ Swal.fire({
                     <!-- 2 -->
                     <div class="themeioan_course">
                         <article>
-                            <!-- single course -->
+                            <!-- single course cor/main/5.png cor/1.png-->
                             <div class="blog-photo ">
-                                <img class="img-fluid course-img" src="{{asset('cor/1.png')}}" alt="">
+                                <img class="img-fluid course-img" src="{{asset('cor/main/5.png')}}" alt="">
                             </div>
                             <div class="blog-content">
                                 <h5 class="title text-center">---- SELECT DATE ----</h5>

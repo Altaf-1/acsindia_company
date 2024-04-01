@@ -267,12 +267,14 @@ Swal.fire({
                         <!-- end single course -->
                     </div>
                 </div>
+                <br/>
 
                 @empty
 
                 @endforelse
-                <br>
-                @forelse($recorded_courses as $rcourse)
+                
+                <div>
+                    @forelse($recorded_courses as $rcourse)
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 p-0 course-animation course-single mb20">
                     <!-- 2 -->
                     <div class="themeioan_course">
@@ -305,6 +307,7 @@ Swal.fire({
                 @empty
 
                 @endforelse
+</div>
 
             </div>
             <!-- .row end -->

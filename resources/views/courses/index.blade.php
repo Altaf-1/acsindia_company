@@ -273,7 +273,7 @@ Swal.fire({
 
                 @endforelse
                 
-                <div>
+                <div class="row justify-content-center pt-5 ">
                     @forelse($recorded_courses as $rcourse)
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 p-0 course-animation course-single mb20">
                     <!-- 2 -->

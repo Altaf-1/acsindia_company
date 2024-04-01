@@ -149,11 +149,9 @@ Swal.fire({
     <div id="courses" class="wrap-bg wrap-bg-dark bg-bottom-zero p-0">
         <div class="container p-0 justify-content-center ">
             <div class="row justify-content-center pt-5 ">
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 p-0 course-animation mb20">
-                    <!-- 2 -->
+                <!-- <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 p-0 course-animation mb20">
                     <div class="themeioan_course">
                         <article>
-                            <!-- single course cor/main/5.png cor/1.png-->
                             <div class="blog-photo ">
                                 <img class="img-fluid course-img" src="{{asset('cor/main/5.png')}}" alt="">
                             </div>
@@ -166,9 +164,8 @@ Swal.fire({
                                 </ul>
                             </div>
                         </article>
-                        <!-- end single course -->
                     </div>
-                </div>
+                </div> -->
 
                 <!--<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 p-0 course-animation mb20">-->
                 <!--     2 -->

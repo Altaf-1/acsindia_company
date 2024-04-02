@@ -457,7 +457,6 @@
                  </div>
                  <!-- end single features -->
              </div>
-
              @endif
 
              {{-- DOWNLOAD --}}

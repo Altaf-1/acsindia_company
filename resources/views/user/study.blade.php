@@ -33,6 +33,9 @@
              $course->title != 'DAILY MAINS TEST' &&
              $course->title != 'DAILY MAINS TEST 2023' &&
              $course->title != 'WRITE TO WIN' &&
+             $course->title != 'APSC 2024 MAINS PREPARATION' &&
+             $course->title != 'WRITE TO WIN 2024' &&
+             $course->title != 'MAINS ANSWER WRITING HOMEWORK' &&
              $course->title != 'WRITE TO WIN .' )
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
                  <div class="single-features-light text-center">
@@ -63,6 +66,9 @@
              $course->title != 'APSC 2023 MAINS PREPARATION' &&
              $course->title != 'DAILY MAINS TEST' &&
              $course->title != 'DAILY MAINS TEST 2023' &&
+             $course->title != 'APSC 2024 MAINS PREPARATION' &&
+             $course->title != 'WRITE TO WIN 2024' &&
+             $course->title != 'MAINS ANSWER WRITING HOMEWORK' &&
              $course->title != 'WRITE TO WIN' &&
              $course->title != 'WRITE TO WIN .')
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
@@ -2407,7 +2413,7 @@
              </div>
              @endif
 
-             @if ($course->title == 'APSC 2024 MAINS PREPARATION')
+             @if ($course->title == 'WRITE TO WIN 2024')
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-2">
                  <div class="single-features-light text-center">
                      <!-- single features -->
@@ -2588,7 +2594,7 @@
              
              @endif
 
-             @if ($course->title == 'APSC 2023 MAINS PREPARATION')
+             @if ($course->title == 'MAINS ANSWER WRITING HOMEWORK')
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-2">
                  <div class="single-features-light text-center">
                      <!-- single features -->

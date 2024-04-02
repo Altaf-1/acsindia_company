@@ -416,7 +416,7 @@ Toast.fire({
                         aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
-                    <a href="https://acsindiaias.com/apsc/course/61">
+                    <a href="https://acsindiaias.com/user/study/show/38">
                         <div class="carousel-item active">
                         <img src="img/main1.png" class="d-block w-100" alt="...">
                     </div>
@@ -461,23 +461,27 @@ Toast.fire({
 
     </section> -->
     <section>
-        <div class="container pt-3 pb-3" style="background-color: #134982;">
+        <h1 class="bg-dark text-white text-center fw-bold pt-2 pb-2">APSC 2024 MAINS PREPARATION</h1>
+        <div class="container-fluid pt-2 pb-2">
             <div class="row" id="mains">
-            <div class="col-lg-8">
+            <div class="col-lg-3">
                 <iframe width="670" height="305" src="https://www.youtube.com/embed/d3rBwk7N8TQ?si=HaENe0vNAipH_2oL"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
             </div>
-            <div class="col-lg-4 pb-3">
-                    <div>
-                        <h1 class="fw-bold text-white pb-3 pt-5">APSC 2024 MAINS PREPARATION</h1>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUqb984n-rLWfoBzWpux1uah8QTiziYJj-Qgmt6g9_rb-rEw/viewform?usp=sharing" class="bg-danger text-white fw-bold text-center p-4 rounded">Click Here For More Information</a>
-                </div>
+            <div class="col-lg-3 pb-3 pt-4">
+                    <a href="https://acsindiaias.com/user/study/show/38"><img src="course/1.png" style="height: 230px" class="rounded" alt="Cinque Terre"></a>
             </div>
-</div>
+            <div class="col-lg-3 pb-3 pt-4">
+                    <a href="https://acsindiaias.com/user/study/show/39"><img src="course/2.png" style="height: 230px" class="rounded" alt="Cinque Terre"></a>
+            </div>
+            <div class="col-lg-3 pb-3 pt-4">
+                    <a href="https://acsindiaias.com/user/study/show/40"><img src="course/3.png" style="height: 230px" class="rounded" alt="Cinque Terre"></a>
+            </div>
+            </div>
         </div>
-</section>
+    </section>
     <h1 class="bg-dark text-white text-center fw-bold pt-2 pb-2">Online/Offline Classes</h1>
     <div class="section-017 mt-2 pt-2">
         <div class="row justify-content-center">
@@ -571,7 +575,7 @@ Toast.fire({
         </div>
     </div>
 
-    <section>
+    <!-- <section>
         <div class="container-fluid mt-5 mb-5">
             <div class="row">
                 <div class="col-lg-3 text-center p-2 pt-5 pb-5"
@@ -600,7 +604,7 @@ Toast.fire({
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <section>
         <div class="rs-faq-part style1 md-pt-10 md-pb-70 mt-2 bg-light">

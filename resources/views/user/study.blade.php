@@ -2517,99 +2517,9 @@
              </div>
              @endif
 
-             @if ($course->title == 'APSC 2024 MAINS PREPARATION')
-             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
-                 <div class="single-features-light text-center">
-                     <div>
-                         <i class="base-color fas fa-book fa-3x"></i>
-                         <h4>MAINS MATERIALS</h4>
-                         <h4>GS-I</h4>
-                         <a href="{{ route('user.mains.2023.material.(gs-1)') }}"
-                             class=" btn color-two button text-white">VIEW</a>
-                     </div>
-                 </div>
-             </div>
-             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
-                 <div class="single-features-light text-center">
-                     <div>
-                         <i class="base-color fas fa-book fa-3x"></i>
-                         <h4>MAINS MATERIALS</h4>
-                         <h4>GS-II</h4>
-                         <a href="{{ route('user.mains.2023.material.(gs-2)') }}"
-                             class=" btn color-two button text-white">VIEW</a>
-                     </div>
-                 </div>
-             </div>
-             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
-                 <div class="single-features-light text-center">
-                     <div>
-                         <i class="base-color fas fa-book fa-3x"></i>
-                         <h4>MAINS MATERIALS</h4>
-                         <h4>GS-III</h4>
-                         <a href="{{ route('user.mains.2023.material.(gs-3)') }}"
-                             class=" btn color-two button text-white">VIEW</a>
-                     </div>
-                 </div>
-             </div>
-             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
-                 <div class="single-features-light text-center">
-
-                     <div>
-                         <i class="base-color fas fa-book fa-3x"></i>
-                         <h4>MAINS MATERIALS</h4>
-                         <h4>GS-IV</h4>
-                         <a href="{{ route('user.mains.2023.material.(gs-4)') }}"
-                             class=" btn color-two button text-white">VIEW</a>
-                     </div>
-                 </div>
-             </div>
-             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
-                 <div class="single-features-light text-center">
-                     <div>
-                         <i class="base-color fas fa-book fa-3x"></i>
-                         <h4>MAINS MATERIALS</h4>
-                         <h4>GS-V</h4>
-                         <a href="{{ route('user.mains.2023.material.(gs-6)') }}"
-                             class=" btn color-two button text-white">VIEW</a>
-                     </div>
-                 </div>
-             </div>
-             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
-                 <div class="single-features-light text-center">
-                     <div>
-                         <i class="base-color fas fa-book fa-3x"></i>
-                         <h4>UPSC MAINS PYQ</h4>
-                         <a href="{{ route('user.mains.2023.upaper') }}"
-                             class=" btn color-two button text-white">VIEW</a>
-                     </div>
-                 </div>
-             </div>
-             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
-                 <div class="single-features-light text-center">
-                     <div>
-                         <i class="base-color fas fa-book fa-3x"></i>
-                         <h4>APSC MAINS PYQ</h4>
-                         <a href="{{ route('user.mains.2023.paper') }}"
-                             class=" btn color-two button text-white">VIEW</a>
-                     </div>
-                 </div>
-             </div>
-             
-             @endif
+            
 
              @if ($course->title == 'MAINS ANSWER WRITING HOMEWORK')
-             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-2">
-                 <div class="single-features-light text-center">
-                     <!-- single features -->
-                     <div>
-                         <i class="base-color fas fa-clipboard fa-3x"></i>
-                         <h4>ANSWER WRITING & EVALUATION REPORT</h4>
-                         <a href="{{ route('assignments.index') }}" class="btn color-two button text-white">View</a>
-                     </div>
-                 </div>
-             </div>
-
-
              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
 
                  <div class="single-features-light text-center">
@@ -2727,18 +2637,6 @@
                      </div>
                  </div>
 
-             </div>
-
-
-             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-3">
-                 <div class="single-features-light text-center">
-                     <div>
-                         <i class="base-color fas fa-book fa-3x"></i>
-                         <h4>RECORDED CLASSES</h4>
-                         <a href="{{ route('user.class.video.index', 'APSC 2023 MAINS PREPARATION') }}"
-                             class=" btn color-two button text-white">VIEW</a>
-                     </div>
-                 </div>
              </div>
              @endif
 

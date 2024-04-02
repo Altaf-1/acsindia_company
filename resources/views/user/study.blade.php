@@ -2750,6 +2750,9 @@
              $course->title != 'INDIAN ECONOMY(UPSC)' &&
              $course->title != 'APSC 2023 MAINS PREPARATION' &&
              $course->title != 'DAILY MAINS TEST' &&
+             $course->title != 'APSC 2024 MAINS PREPARATION' &&
+             $course->title != 'WRITE TO WIN 2024' &&
+             $course->title != 'MAINS ANSWER WRITING HOMEWORK' &&
              $course->title != 'DAILY MAINS TEST 2023' &&
              $course->title != 'WRITE TO WIN' &&
              $course->title != 'WRITE TO WIN .')

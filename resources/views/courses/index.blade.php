@@ -1,7 +1,7 @@
 @extends('layouts.main')
 @section('title')
 Course - Academy of Civil Services
-@endsection
+@endsection  
 @section('links')
 <!-- Favicon -->
 <link rel="shortcut icon" href="{{asset('comimages/gbar.webp')}}" type="image/x-icon">
@@ -234,8 +234,6 @@ Swal.fire({
     <div id="courses" class="wrap-bg wrap-bg-dark bg-bottom-zero p-0">
         <div class="container p-0 justify-content-center ">
             <div class="row justify-content-center pt-5 ">
-
-
                 @forelse($courses as $course)
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 p-0 course-animation mb20">
                     <!-- 2 -->

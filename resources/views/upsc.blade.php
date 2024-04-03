@@ -359,7 +359,7 @@ Toast.fire({
                                     <!--   <h4 style="background-color: #134982; font-family: 'Righteous';" class="d-flex flex-column btn text-white p-2 shadow_1" >Online Courses</h4>-->
                                     <!--   </i>-->
                                     <!--</a>-->
-                                    <a href="{{asset('/course')}}"
+                                    <a href="{{asset('/course/index')}}"
                                         class="shadow_1 d-flex flex-column text-white p-2 rounded-pill mb-2"
                                         style="background-color: #134982; font-family: 'Righteous';">Online Courses</a>
                                 </div>

@@ -39,7 +39,7 @@
                                                 style="font-family: 'Righteous';">UPSC <spam><i class="fa fa-caret-down"
                                                         aria-hidden="true"></i></spam></a>
                                             <div class="dropdown-content">
-                                                <a href="{{asset('/course')}}">Online
+                                                <a href="{{asset('/course/index')}}">Online 
                                                     Courses</a>
                                                 <a href="{{asset('/offline')}}">UPSC
                                                     Offline Courses</a>

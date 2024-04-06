@@ -205,13 +205,13 @@
                                                                 '  <img src="{{asset('comimages/payment/bank.webp')}}" width="100%" >\n' +
                                                                 ' </a></div>\n' +
                                                                 '<div class="card col-5 m-2"><a href="{{route('user.study.payment', $study->slug)}}">\n' +
-                                                                '  <img src="{{asset('comimages/payment/razorpay.webp')}}" width="100%">\n' +
-                                                                ' </a></div>' +
-                                                                '<div class="card col-5 m-2 p-5">' +
-                                                                '<a href="{{route('hdfc.payment.study-material.initiate', $study->slug)}}">\n' +
-                                                                '  <img src="{{asset('comimages/payment/hdfc.png')}}" width="100%">\n' +
-                                                                '</a>' +
-                                                                '</div>' +
+                                                                '  <img src="{{asset('comimages/payment/razorpay.webp')}}" width="100%">\n' + ' </a></div>'+
+                                                                // ' </a></div>' +
+                                                                // '<div class="card col-5 m-2 p-5">' +
+                                                                // '<a href="{{route('hdfc.payment.study-material.initiate', $study->slug)}}">\n' +
+                                                                // '  <img src="{{asset('comimages/payment/hdfc.png')}}" width="100%">\n' +
+                                                                // '</a>' +
+                                                                // '</div>' +
                                                                 '</div>',
                                                             width: 800,
                                                         })

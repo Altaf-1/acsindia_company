@@ -40,7 +40,8 @@
              $course->title != 'APSC BOOSTER COURSE (E)'&&
              $course->title != 'GHY BOOSTER COURSE (G)' &&
              $course->title != 'APSC 2023 INTERVIEW PREPARATION' &&
-             $course->title != 'DIBRU OFFLINE (M)' &&
+             $course->title != 'DIBRU OFFLINE (M)' && 
+             $course->title != 'DIBRU OFFLINE (M-2)' &&
              $course->title != 'GHY OFFLINE (M)' &&
              $course->title != 'DEMO OFFLINE COURSE' &&
              $course->title != 'APSC BOOSTER COURSE (R)' &&
@@ -88,6 +89,7 @@
              $course->title != 'GHY BOOSTER COURSE (G)' &&
              $course->title != 'APSC 2023 INTERVIEW PREPARATION' &&
              $course->title != 'DIBRU OFFLINE (M)' &&
+             $course->title != 'DIBRU OFFLINE (M-2)' &&
              $course->title != 'GHY OFFLINE (M)' &&
              $course->title != 'DEMO OFFLINE COURSE' &&
              $course->title != 'APSC BOOSTER COURSE (R)' &&
@@ -131,6 +133,7 @@
              $course->title != 'GHY BOOSTER COURSE (G)' &&
              $course->title != 'APSC 2023 INTERVIEW PREPARATION' &&
              $course->title != 'DIBRU OFFLINE (M)' &&
+             $course->title != 'DIBRU OFFLINE (M-2)' &&
              $course->title != 'GHY OFFLINE (M)' &&
              $course->title != 'DEMO OFFLINE COURSE' &&
              $course->title != 'APSC BOOSTER COURSE (R)' &&
@@ -1088,6 +1091,10 @@
                              class=" btn color-two button text-white">VIEW</a>
                          @endif
                          @if ($course->title == 'DIBRU OFFLINE (M)')
+                         <a href="{{ route('user.new.video', $course->title) }}"
+                             class=" btn color-two button text-white">VIEW</a>
+                         @endif
+                         @if ($course->title == 'DIBRU OFFLINE (M-2)')
                          <a href="{{ route('user.new.video', $course->title) }}"
                              class=" btn color-two button text-white">VIEW</a>
                          @endif

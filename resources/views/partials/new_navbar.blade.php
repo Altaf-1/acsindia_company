@@ -83,7 +83,7 @@
                                     <li id="menu-item-238"
                                         class="menu-item menu-item-type-custom menu-item-object-custom menu-item-238">
                                         @auth
-                                        <div class="dropdown">
+                                        <!-- <div class="dropdown">
                                             <a class="btn dropbtn text-white"
                                                 style="background-color: #e52e06; font-family: 'Righteous';">{{ Auth::user()->name }}
                                                 <spam><i class="fa fa-caret-down" aria-hidden="true"></i></spam>
@@ -108,7 +108,7 @@
                                                     @csrf
                                                 </form>
                                             </div>
-                                        </div>
+                                        </div> -->
                                         @else
                                         <a class="kobolg-menu-item-title"
                                             style="color: azure; background-color: #e52e06; line-height: 20px; font-family: 'Righteous'; padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; margin: 7px; border-radius: 20px;"

@@ -31,7 +31,7 @@
                 <li class="subnav header-cta">
                 
                 @auth
-                    <li class="nav-item dropdown">
+                    <!-- <li class="nav-item dropdown">
                         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                             {{ Auth::user()->name }} <span class="caret"></span>
@@ -64,7 +64,7 @@
                                 @csrf
                             </form>
                         </div>
-                    </li>
+                    </li> -->
                 @else
                     <li class="nav-item">
                         <a class="nav-link btn p-1 pl-4 pr-4 mt-2" style="background-color: #d99032;"
